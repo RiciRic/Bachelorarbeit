@@ -1,0 +1,329 @@
+%Dokumentklasse
+\documentclass[a4paper,12pt]{scrreprt}
+\usepackage[left= 3.5cm,right = 2cm, bottom = 2 cm]{geometry}
+\addtolength{\footskip}{-0.5cm}
+\usepackage[onehalfspacing]{setspace}
+% ============= Packages =============
+
+% Dokumentinformationen
+\usepackage[hyphens]{url}
+\usepackage[
+pdfsubject={},
+pdfauthor={Ricardo Valente de Matos},
+pdfkeywords={},	
+%Links nicht einrahmen
+hidelinks,
+breaklinks=true
+]{hyperref}
+% Standard Packages
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx, subfig}
+\graphicspath{{img/}}
+\usepackage{fancyhdr}
+\usepackage{lmodern}
+\usepackage{color}
+
+\usepackage{dirtree}
+
+\usepackage[style=ieee, sorting=nty, urldate =comp, backend=bibtex]{biblatex}
+\addbibresource{Literatur.bib}
+
+%\usepackage[numbers]{natbib}
+%\bibpunct{(}{)}{;}{a}{,}{,}
+
+\usepackage{listings}
+
+% zusätzliche Schriftzeichen der American Mathematical Society
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{float}
+
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+
+%nicht einrücken nach Absatz
+\setlength{\parindent}{0pt}
+\RedeclareSectionCommand[beforeskip=0pt]{chapter}
+\usepackage{listings}
+\usepackage{color}
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+
+\lstdefinelanguage{JavaScript}{
+	keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+	keywordstyle=\color{blue}\bfseries,
+	ndkeywords={class, export, boolean, throw, implements, import, this},
+	ndkeywordstyle=\color{darkgray}\bfseries,
+	identifierstyle=\color{black},
+	sensitive=false,
+	comment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	commentstyle=\color{purple}\ttfamily,
+	stringstyle=\color{red}\ttfamily,
+	morestring=[b]',
+	morestring=[b]"
+}
+
+\lstset{
+	language=JavaScript,
+	backgroundcolor=\color{lightgray},
+	extendedchars=true,
+	basicstyle=\footnotesize\ttfamily,
+	showstringspaces=false,
+	showspaces=false,
+	numbers=left,
+	numberstyle=\footnotesize,
+	numbersep=9pt,
+	tabsize=2,
+	breaklines=true,
+	showtabs=false,
+	captionpos=b
+}
+
+
+% ============= Kopf- und Fußzeile =============
+\pagestyle{fancy}
+%
+\lhead{}
+\chead{}
+\rhead{\slshape \leftmark}
+%%
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+%%
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ============= Package Einstellungen & Sonstiges ============= 
+%Besondere Trennungen
+\hyphenation{De-zi-mal-tren-nung}
+
+\newcommand{\hiddenchapter}[1]{
+	\chapter*{{#1}}
+}
+
+%-------------
+
+\newcommand{\todo}[1]{\textcolor{red}{ToDo:} #1\marginpar{<--hier}}
+
+% ============= Dokumentbeginn =============
+
+\begin{document}
+%Seiten ohne Kopf- und Fußzeile sowie Seitenzahl
+\pagestyle{empty}
+
+\include{proposal}
+
+%\setcounter{page}{1}
+%\pagestyle{plain}
+
+%letztes kapitel zusammenfassung und ausblick
+\pagestyle{fancy}
+\pagenumbering{Roman}
+\tableofcontents
+%\listoffigures
+%\lstlistoflistings
+\newpage
+%-NOCH ZU ERLEDIGEN-\\
+
+%\chapter*{Lesehinweis}
+%Aus Gründen der besseren Lesbarkeit werden Wörter und Wortgruppen, die hervorgehoben werden oder mehrfach auftauchen, durch \emph{kursiven} Text kenntlich gemacht. Zudem wird in dieser Projektarbeit die Sprachform des generischen Maskulinums angewandt. Sämtliche Ausführungen sind jedoch geschlechtsunabhängig und beziehen sich damit auf alle Geschlechter.
+\newpage
+
+\setcounter{page}{1}
+\pagestyle{fancy}
+\pagenumbering{arabic}
+\setcounter{chapter}{0}
+\newpage
+
+%ai act verabschiedet, gabs diskussion --> vielleicht gibt es da vorgaben
+%gemini --> google hat was gefaked, advanced model, video war aber gefaked
+
+%ich gehe in themensondierung
+%vielleicht finde ich dabei was
+%primärliteratur finden
+%related work kapitel
+
+%prblemstellung
+%grundlagen um problem
+%ausprägung des problems
+%um problem zu lösen brauche ich diese anforderungen(gibt es andere die ähnliches problem haben und wie machen die das, und bewerte die herangehensweisen über meine anforderungen)
+
+%empfehlungssysteme auswärten
+%ki zweig, recommender systems
+
+%gpt fragen ob es related work
+
+-quantifizierung
+was macht die metriken, wofür sind die da,
+genauer checken,
+
+
+related work genauer, wie hast du das verwendet
+
+was will ich erreichen. semistrukturiert, unstrukturierte daten für matching
+
+
+----------------
+
+\cite{said2013evaluating}
+
+\cite{lerche2017implizites}
+
+\cite{silveira2019good}
+
+----------------
+
+
+\cite{andersson2022comparison}
+distance and similarity measures: euclidean distance, cosine similarity, ...,
+um dinge richtig zu vergleichen heuristic success metric, statistic analysis (t-test) performance(time, memory usage), ethical( energieverbrauch, )
+
+vergleich zwischen traditionellen metriken wie cosine, euclidean, etc mit bert, performance tracken
+
+\cite{navrozidis2020using}
+
+python flask anwendung --> evaluation mit 17 trainees, implementationsdetails (wie die modelle implementiert sind, rource of models ), preprocessing teil, evaluation method ist precision, recall,
+
+er hat cosine similarity genutzt um dokument nach relevant und unrelevant zu sortieren --> die dann als similar oder not similar eingestuft,
+
+
+
+\cite{lavi2021consultantbert}
+roc-auc, precision, recall, f1
+
+\cite{jamshidian2023evaluation}
+precision, recall, f1
+
+optimierung preprocessing,
+
+\cite{henderi2021text}
+vergleich cosine, jaccard und dice's coefficient
+preprocessing techniques
+
+correlation and mae comparison(pearson correlation, mean absolute error )
+
+\cite{gross2016funktionieren}
+jaccard, pearson, precision recall
+
+\cite{ahrendt2016genauigkeit}
+genauigkeitsmetriken: MAE und RMSE, klassifikationsmetriken: precision, recall, f1, durchführung mit eigenen daten, daten vorbereiten
+
+\cite{karypis2001evaluation}
+top n empfehlungen
+
+\cite{fard2013recommender}
+precision, recall, f1
+
+\cite{sondur2016similarity}
+vergleich jaccard, pearson, cosine similarity, etc
+
+
+-----------------
+
+ich will die metriken in das frontend einbauen und anwenden, 
+
+mehr ansätze hinzu nehmen? Pearson, jaccard sind andere ansätze für similarity --> evaluieren(precision, recall f1 )
+
+
+drei schritte:
+
+runtergebrochen vergleich von cosine similarity mit sbert und sklearn. Augenmerk auf die architektur und die fähigkeit mitarbeiter mit einer bedarfsmeldung zu vergleichen, vergleich der ansätze mit zeit und speichernutzung
+
+-ansätze und metriken erforschen (genauigkeitsmetriken: MAE und RMSE, klassifikationsmetriken: precision, recall, f1, daten vorbereiten)
+-implementationsdetails(visuell darstellen im lab, was steht bereits)
+-evaluieren (metriken anwenden --> vergleich der drei ansätze bzw vielleicht nehme ich ansätze hinzu, performance (zeit und speichernutzung) ) --> daraus schlüsse ziehen welcher ansatz am geeignetsten für Mitarbeiterempfehlung ist
+
+
+------------
+
+welcher ansatz repräsentiert die bereits verteilten vorschlägen,
+
+ergebnisgüte bewerten
+gucken ob ansätze ergebnis
+
+Anforderungskatalog erarbeiten --> entscheidung macht sinn oder nicht sinn
+--> möglichkeiten quantifiziert --> man fragt leute die das tagtäglich machen, statistische verfahren, man braucht kontrolle, reproduzieren können ob ergebnis liefert was man haben will, bedarfsmeldung und person ob stelle bekommen hat, crossvalidation, ethische verwendung von ki in bewerbung
+
+
+-->  oder cc leiter fragen ob die vielleicht datenlage haben, da mal fragen, projektleiter, aquise, personal in der hinterhand, lars ist in aquisen, systematisch aufarbeiten, mechanismus zum durchjagen der daten, deterministische ergebnis wenn sich profilker nicht ändert, ergebnisanalyse, mechanismus zum wiederholen um aussage zu treffen
+ziel: bei neuen ansätzen neue erkenntnisse ziehen. Quasi einen riesen Test/benchmark erstellen für die dinger, wiederholbar, Benchmarking system (kann man viel drüber philosophieren, t-test ist sehr basic, interessante frage was eignet sich da eigentlich um sowas zu bewerten), was für ne beurteilungsmetrik kann man da verwenden. Diskurs mit welchen mitteln geht man da ran ob ergebnis brauchbar oder nicht brauchbar. Welche art der probleme haben wir --> welche lösungen können wir benutzen (einmal durcharbeiten)
+rapidminer, panda python, welche existierenden verfahren haben wir, vor und nachteile --> vielleicht reicht ein verfahren nicht, wir müssen diese drei auswertungen machen, anderer diskurs wäre kann man das für reinforced learning nutzen, bevor nutzer ergebnis sieht um bewertung vorher zu machen.
+
+projekt eingefrieren, repo darf sich nicht mehr ändern durch andere commits. ich selbnst arbeite da dann nur dran
+
+ai ergebnisse interpretieren, amazon ai bewerbung hireing interessanter ansatz (einfach mal reingucken, wie stellen die fest dass system so kacke ist, rassistisch, auch weil ähnlicher anwendungsfall, qualität von ai ergebnissen sicherstellen(statistik etc)),
+
+
+
+-------------------------------------------------------
+fachsprache berücksichtigung, text bestimmte form,
+
+ki modell neu entwickeln
+
+macht das ein unterschied ob der inhalt fachlich ist.
+
+
+
+-------------------------------------------------------
+
+zu jedem zeitpunkt das system verwenden können,
+
+----------------------
+
+information retrieval
+
+\cite{kobayashi2000information}
+
+\cite{singhal2001modern}
+
+\cite{croft2000combining}
+
+\cite{horesh2016information}
+
+\cite{belkin1992information}
+
+information filtering
+\cite{lanquillon2001enhancing}
+
+preprocessing
+\cite{alasadi2017review}
+
+-------
+spam-filter
+\cite{shafi2017review}
+\cite{khorsi2007overview}
+\cite{tretyakov2004machine}
+----
+
+
+
+\include{einleitung}
+
+\include{grundlagen}
+
+\include{nutzung_daten}
+
+\include{staffing_advisor}
+
+\include{visualisierungstechnik}
+
+%\include{umsetzung_visualisierung}
+
+\include{evaluation}
+
+\include{zusammenfassung}
+
+\include{eidesstattliche_erklaerung}
+
+%\bibliographystyle{IEEEtranS}
+%\bibliography{Literatur}
+\raggedright
+\printbibliography
+
+\end{document}

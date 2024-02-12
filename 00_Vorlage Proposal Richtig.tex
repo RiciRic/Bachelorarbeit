@@ -1,0 +1,280 @@
+%Dokumentklasse
+\documentclass[a4paper,12pt]{scrreprt}
+\usepackage[left= 3.5cm,right = 2cm, bottom = 2 cm]{geometry}
+\addtolength{\footskip}{-0.5cm}
+\usepackage[onehalfspacing]{setspace}
+% ============= Packages =============
+
+% Dokumentinformationen
+\usepackage[hyphens]{url}
+\usepackage[
+pdfsubject={},
+pdfauthor={Ricardo Valente de Matos},
+pdfkeywords={},	
+%Links nicht einrahmen
+hidelinks,
+breaklinks=true
+]{hyperref}
+% Standard Packages
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx, subfig}
+\graphicspath{{img/}}
+\usepackage{fancyhdr}
+\usepackage{lmodern}
+\usepackage{color}
+
+\usepackage{dirtree}
+
+\usepackage[style=ieee, sorting=nty, urldate =comp, backend=bibtex]{biblatex}
+\addbibresource{Literatur.bib}
+
+%\usepackage[numbers]{natbib}
+%\bibpunct{(}{)}{;}{a}{,}{,}
+
+\usepackage{listings}
+
+% zusätzliche Schriftzeichen der American Mathematical Society
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{float}
+
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+
+%nicht einrücken nach Absatz
+\setlength{\parindent}{0pt}
+\RedeclareSectionCommand[beforeskip=0pt]{chapter}
+\usepackage{listings}
+\usepackage{color}
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+
+\lstdefinelanguage{JavaScript}{
+	keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+	keywordstyle=\color{blue}\bfseries,
+	ndkeywords={class, export, boolean, throw, implements, import, this},
+	ndkeywordstyle=\color{darkgray}\bfseries,
+	identifierstyle=\color{black},
+	sensitive=false,
+	comment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	commentstyle=\color{purple}\ttfamily,
+	stringstyle=\color{red}\ttfamily,
+	morestring=[b]',
+	morestring=[b]"
+}
+
+\lstset{
+	language=JavaScript,
+	backgroundcolor=\color{lightgray},
+	extendedchars=true,
+	basicstyle=\footnotesize\ttfamily,
+	showstringspaces=false,
+	showspaces=false,
+	numbers=left,
+	numberstyle=\footnotesize,
+	numbersep=9pt,
+	tabsize=2,
+	breaklines=true,
+	showtabs=false,
+	captionpos=b
+}
+
+
+% ============= Kopf- und Fußzeile =============
+\pagestyle{fancy}
+%
+\lhead{}
+\chead{}
+\rhead{\slshape \leftmark}
+%%
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+%%
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ============= Package Einstellungen & Sonstiges ============= 
+%Besondere Trennungen
+\hyphenation{De-zi-mal-tren-nung}
+
+\newcommand{\hiddenchapter}[1]{
+	\chapter*{{#1}}
+}
+
+%-------------
+
+\newcommand{\todo}[1]{\textcolor{red}{ToDo:} #1\marginpar{<--hier}}
+
+% ============= Dokumentbeginn =============
+
+\begin{document}
+%Seiten ohne Kopf- und Fußzeile sowie Seitenzahl
+\pagestyle{empty}
+
+\include{proposal}
+
+%\setcounter{page}{1}
+%\pagestyle{plain}
+
+%letztes kapitel zusammenfassung und ausblick
+\pagestyle{fancy}
+\pagenumbering{Roman}
+%\tableofcontents
+
+
+%\listoffigures
+%\lstlistoflistings
+\newpage
+%-NOCH ZU ERLEDIGEN-\\
+
+%\chapter*{Lesehinweis}
+%Aus Gründen der besseren Lesbarkeit werden Wörter und Wortgruppen, die hervorgehoben werden oder mehrfach auftauchen, durch \emph{kursiven} Text kenntlich gemacht. Zudem wird in dieser Projektarbeit die Sprachform des generischen Maskulinums angewandt. Sämtliche Ausführungen sind jedoch geschlechtsunabhängig und beziehen sich damit auf alle Geschlechter.
+\newpage
+
+\setcounter{page}{1}
+\pagestyle{fancy}
+\pagenumbering{arabic}
+\setcounter{chapter}{0}
+\newpage
+
+\hiddenchapter{Motivation}
+Die Suche nach qualifizierten Mitarbeitern ist für Unternehmen von entscheidender Bedeutung, um wettbewerbsfähig zu bleiben und langfristigen Erfolg zu sichern. In einer Zeit, in der der Arbeitsmarkt zunehmend global und dynamisch wird, stehen Organisationen vor der Herausforderung, aus einer Vielzahl von Mitarbeitern diejenigen zu identifizieren, die am besten zu einem spezifischen Projekt im Unternehmen passen. Hier setzt die Entwicklung eines Recommender Systems zur Mitarbeiterempfehlung an. Ein solches System kann Unternehmen dabei unterstützen, den Prozess der Mitarbeiterrekrutierung und -auswahl zu optimieren. Durch die Berücksichtigung verschiedener Kriterien wie Qualifikationen, Fähigkeiten, Erfahrungen kann das Recommender-System dazu beitragen, die Auswahl effektiv zu filtern und diejenigen herauszufiltern, die am besten zu einem Projekt im Unternehmen passen. Ein solches System bietet außerdem den Vorteil, den Prozess der Mitarbeiterempfehlung zu automatisieren und zu beschleunigen. Dies ermöglicht Unternehmen, schneller auf offene Stellen zu reagieren und potenzielle Kandidaten zeitnah zu identifizieren. Dadurch wird die Effizienz der Mitarbeitersuche verbessert und die Qualität der Einstellungsentscheidungen erhöht.\\
+
+Das Potenzial von Recommender Systems wurde auch bei \emph{adesso} entdeckt und nun wird nach und nach Wege gesucht, KI-gestützte Systeme in die eigenen Prozesse zu integrieren. Im internen Projekt \emph{adesso Staffing Advisor} wird an einem Recommender-System zur Mitarbeiterempfehlung für ausgewählte Projekte gearbeitet. Die Umsetzung der Recommender Systems bedient sich verschiedener KI-basierten Ansätze. Ein ganz entscheidender Schritt im Prozess der Mitarbeiterempfehlung ist die Vorverarbeitung der Bedarfsmeldungen. Diese sind eine wertvolle Informationsquelle, die Fachkräften helfen kann, die Empfehlungen effizienter zu gestalten, um dadurch wettbewerbsfähig zu bleiben. Allerdings sind diese oft umfangreich und komplex, was ihre effektive Nutzung erschwert.\\
+
+Deshalb ist es entscheidend, effiziente Methoden und Techniken des Information Retrieval anzuwenden, um so relevante Informationen schnell und präzise aus Bedarfsmeldungen zu extrahieren. Die Extraktion wichtiger Schlüsselwörter, Phrasen und Themen ermöglicht es einen besseren Einblick in die Ziele, Methoden und Ergebnisse der Projekte zu bekommen. Dadurch können fundierte Entscheidungen bezüglich der Personalbesetzung getroffen und Ressourcen effizient genutzt werden.\\
+\hiddenchapter{Problemstellung}
+In einer immer stärker vernetzten und informationsreichen Welt stehen Organisationen vor der Herausforderung, relevante Informationen effizient aus umfangreichen Bedarfsmeldungen zu extrahieren. Obwohl diese Beschreibungen wichtige Einblicke in Ziele, Methoden und Ergebnisse liefern, können sie aufgrund ihres Umfangs und ihrer Komplexität schwer durchsuchbar und analysierbar sein. Die manuelle Identifizierung und Extraktion relevanter Inhalte ist zeitaufwendig und fehleranfällig. Daher stellt sich die Problemstellung: \\
+
+Wie können wir effektive Methoden und Techniken des Information Retrieval und Data-Mining nutzen, um automatisiert relevante Inhalte aus Bedarfsmeldungen im spezifischen Software Entwicklungs-Kontext zu extrahieren und somit die Effizienz, Genauigkeit und Geschwindigkeit der Informationsgewinnung für Führungskräfte zu verbessern.
+\hiddenchapter{Ziele und Ergebnisse der Arbeit}
+Diese Ausarbeitung präsentiert eine umfassende Untersuchung zur Entwicklung eines automatisierten Systems zur Extraktion relevanter Inhalte aus Bedarfsmeldungen im Software-Entwicklungs-Kontext.
+\begin{itemize}
+	\item Die erste Phase dieser Ausarbeitung besteht darin, eine klare Erwartungshaltung hinsichtlich der Anforderungen und Bedürfnisse der Stakeholder zu entwickeln. Hierfür werden Interviews mit Führungskräften durchgeführt, um die Erwartungen bezüglich einer \glqq{}perfekten\grqq{} Bedarfsmeldung herauszuarbeiten. Diese dient als Grundlage für die weiteren Entwicklungs- und Evaluierungsphasen.
+	\item Im Anschluss erfolgt eine eingehende Analyse der Techniken <was für Techniken> des Information Retrieval und Data-Mining, um die besten Ansätze zur Extraktion relevanter Inhalte zu identifizieren. Diese Analyse bildet die Grundlage für die Konzeptionierung einer Vorverarbeitung, das eine Kombination der erforschten Ergebnisse darstellt. Die Implementierung dieses Modells erfolgt durch den Aufbau einer Pipeline in Python, die eine effiziente Verarbeitung und Extraktion der Bedarfsmeldungen ermöglicht.
+	\item Zur Evaluierung der Leistungsfähigkeit des entwickelten Systems werden reale Bedarfsmeldungen und Mitarbeiterinformationen verwendet. Dabei wird überprüft, inwiefern das Ergebnis der definierten Erwartungshaltung entspricht. Mithilfe von den Metriken \emph{Precision}, \emph{Recall} und \emph{F1-Score} werden Abweichungen, Ähnlichkeiten und Anpassungen in Parametern analysiert, um Erkenntnisse darüber zu gewinnen, wie das System inhaltlich abschneidet und verbessert werden kann.
+	\item (Schließlich wird eine vergleichende Untersuchung mit einem auf Large Language Model basierenden Vorverarbeitungsansatz durchgeführt. Dabei werden die Performance, Zeit und Ergebnisqualität des entwickelten Systems mit diesem alternativen Ansatz verglichen. Dieser Vergleich dient dazu, die Stärken und Schwächen des entwickelten Systems zu identifizieren und gegebenenfalls weitere Verbesserungen vorzunehmen.)
+\end{itemize}
+
+\hiddenchapter{Vorgehen und Zeitplan}
+%handelt sich um Projektarbeit, peile bis  ende august bsw an
+Ziel ist es die Arbeit im Mai fertig zu stellen. Die einzelnen Monatsziele können aus der nachfolgenden Tabelle entnommen werden. \\ \\
+\begin{tabularx}{1\textwidth} { 
+		| >{\raggedright\arraybackslash}X 
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	Februar
+	& \begin{itemize}
+		\item Durchführung der Interviews mit Fachkräften
+		\item Zusammentragung aller relevanter Information Retrieval- und Preprocessing-Ansätze 
+	\end{itemize}\\
+	\hline
+	März
+	& \begin{itemize}
+		\item Durchführung der Interviews mit Fachkräften
+		\item Formulierung der Anforderungen für Bedarfsmeldungen
+	\end{itemize}\\
+	\hline
+	April
+	& \begin{itemize}
+		\item Entwicklung des Eigenen Preprocessing-Modells
+		\item Evaluierung der Ergebnisse
+	\end{itemize}\\
+	\hline
+	Mai
+	& \begin{itemize}
+		\item Schluss schreiben
+		\item Korrekturen
+	\end{itemize}\\
+	\hline
+\end{tabularx}
+\newpage
+
+\renewcommand\contentsname{Aufbau der Arbeit}
+\todo{Aufbau der Arbeit anpassen}
+\tableofcontents
+
+\cite{kobayashi2000information}
+
+\cite{singhal2001modern}
+
+\cite{croft2000combining}
+
+\cite{horesh2016information}
+
+\cite{belkin1992information}
+
+information filtering
+\cite{lanquillon2001enhancing}
+
+preprocessing
+\cite{alasadi2017review}
+
+-------
+spam-filter
+\cite{shafi2017review}
+\cite{khorsi2007overview}
+\cite{tretyakov2004machine}
+----
+TF-IDF (Term Frequency-Inverse Document Frequency): TF-IDF ist eine statistische Methode, die verwendet wird, um die Relevanz eines Begriffs in einem Dokument relativ zu einem Korpus von Dokumenten zu bestimmen. Wörter mit höheren TF-IDF-Werten werden als potenzielle Schlüsselwörter betrachtet.
+\cite{bafna2016document}
+\cite{ramos2003using}
+
+Text-Ranking-Algorithmen: Text-Ranking-Algorithmen wie TextRank oder YAKE (Yet Another Keyword Extractor) verwenden Graphen-basierte Methoden, um Schlüsselwörter in einem Text zu identifizieren. Diese Algorithmen bewerten die Wichtigkeit von Wörtern basierend auf ihrer Verbindung zu anderen Wörtern im Text und extrahieren Schlüsselwörter entsprechend ihrer Rangfolge.
+\cite{mihalcea2004textrank}
+\cite{zhang2020empirical}
+\cite{pay2019ensemble}
+
+N-Gramm-Analyse: N-Gramme sind Sequenzen von N aufeinanderfolgenden Wörtern in einem Text. Durch die Analyse von N-Grammen können häufig auftretende Phrasen oder Begriffe identifiziert werden, die potenzielle Schlüsselwörter darstellen.
+\cite{pirk2019implementierung}
+
+
+Part-of-Speech (POS) Tagging: POS-Tagging wird verwendet, um die grammatischen Kategorien von Wörtern in einem Text zu bestimmen. Durch die Berücksichtigung von Wörtern mit bestimmten POS-Tags wie Substantiven oder Adjektiven können relevante Schlüsselwörter extrahiert werden.
+\cite{kumawat2015pos}
+\cite{nakagawa2007hybrid}
+
+bekommen wir ein unsupervised learning ansatz der 
+
+Regelbasierte Ansätze: Regelbasierte Ansätze verwenden vordefinierte Regeln oder Muster, um Schlüsselwörter zu identifizieren. Dies kann beispielsweise das Extrahieren von Wörtern sein, die häufig im Text vorkommen oder bestimmten Mustern entsprechen.
+
+Hybride Ansätze: Hybride Ansätze kombinieren verschiedene Methoden und Techniken, um eine genauere Extraktion von Schlüsselwörtern zu ermöglichen. Zum Beispiel könnte eine Kombination aus TF-IDF-Gewichtung und Text-Ranking-Algorithmen verwendet werden, um eine robuste Schlüsselwortextraktion zu erreichen.
+
+
+transformation von bedarfsmeldung zu guter bedarfsmeldung, was ist der fokus von der bedarfsmeldung, wie gut machen die ansätze das, und muss man das dann noch weiter verarbeiten, haben wir alles was wir brauchen mit nur einem algorithmus, inferenz falls parameter fehlt, gibt es einen der alles löst,
+
+ergebnis der arbeit: diese modelle in der reihenfolge kommen am nähesten an die bedarfsmeldung
+
+ausblick: die keyword extraction auch für die profile nutzen 
+
+was muss ich jetzt machen: gucken wie ich das inhaltlich genau machen will, also pipeline genauch checken, quellen von der bachelorarbeit checken
+
+\include{einleitung}
+
+\include{grundlagen}
+
+\include{nutzung_daten}
+
+\include{staffing_advisor}
+
+\include{visualisierungstechnik}
+
+%\include{umsetzung_visualisierung}
+
+\include{evaluation}
+
+\include{zusammenfassung}
+
+\include{eidesstattliche_erklaerung}
+
+%\bibliographystyle{IEEEtranS}
+%\bibliography{Literatur}
+\raggedright
+\printbibliography
+
+\end{document}

@@ -1,0 +1,86 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: 00_Vorlage Proposal Richtig.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: biblatex.bst
+Reallocating 'name_of_file' (item size: 1) to 32 items.
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: proposal.aux
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+A level-1 auxiliary file: einleitung.aux
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+A level-1 auxiliary file: grundlagen.aux
+Reallocating 'name_of_file' (item size: 1) to 18 items.
+A level-1 auxiliary file: nutzung_daten.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: staffing_advisor.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
+A level-1 auxiliary file: visualisierungstechnik.aux
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+A level-1 auxiliary file: evaluation.aux
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: zusammenfassung.aux
+Reallocating 'name_of_file' (item size: 1) to 31 items.
+A level-1 auxiliary file: eidesstattliche_erklaerung.aux
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: 00_Vorlage_Proposal_Richtig-blx.bib
+Database file #2: Literatur.bib
+Biblatex version: 3.19
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 24 entries,
+            6399 wiz_defined-function locations,
+            1352 strings with 13846 characters,
+and the built_in function-call counts, 194450 in all, are:
+= -- 15349
+> -- 3680
+< -- 903
++ -- 6213
+- -- 1807
+* -- 13715
+:= -- 22271
+add.period$ -- 0
+call.type$ -- 24
+change.case$ -- 458
+chr.to.int$ -- 105
+cite$ -- 46
+duplicate$ -- 20122
+empty$ -- 16433
+format.name$ -- 1686
+if$ -- 38873
+int.to.chr$ -- 0
+int.to.str$ -- 63
+missing$ -- 0
+newline$ -- 801
+num.names$ -- 1220
+pop$ -- 8369
+preamble$ -- 2
+purify$ -- 596
+quote$ -- 0
+skip$ -- 4805
+stack$ -- 0
+substring$ -- 28085
+swap$ -- 3829
+text.length$ -- 734
+text.prefix$ -- 29
+top$ -- 1
+type$ -- 798
+warning$ -- 0
+while$ -- 2656
+width$ -- 0
+write$ -- 777

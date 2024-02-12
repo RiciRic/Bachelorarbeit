@@ -1,0 +1,32 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{\numberline {1}Einleitung}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Problemstellung}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Ziele und Ergebnisse der Arbeit}{4}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Grundlagen}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Künstliche Intelligenz}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Recommender Systems}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Warum Testen und Überwachen der KI}{5}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Verwandte Arbeiten}{6}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Adesso Staffing Advisor}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Aufbau des Projekts}{7}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Preprocessing}{7}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Keyword-Extraction}{7}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Normalizing}{7}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Large Language Models}{7}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}KI-Modelle}{7}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}spacy}{7}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}sbert}{7}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Nutzung von Daten}{7}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Welche Daten werden in die KI gegeben}{7}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Welche Daten werden von den KI-Ansätzen erstellt}{7}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Welche Daten werden von der KI zurückgegeben}{7}{subsection.4.4.3}%
+\contentsline {chapter}{\numberline {5}Ähnlichkeitsmetriken}{8}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Genauigkeit der Ähnlichkeit}{9}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Qualität und Relevanz der Merkmale}{9}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Eintönige Empfehlungen}{9}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Benutzerbewertungen und -feedback}{9}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Cold Start}{9}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Sensitivität des Systems}{9}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Evaluation}{10}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Zusammenfassung und Ausblick}{11}{chapter.7}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

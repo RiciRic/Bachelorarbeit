@@ -1,0 +1,73 @@
+\chapter{Einleitung}
+\label{chap:einleitung}
+Die allgemeine Bewusstheit von KI-gestützten Systemen ist in den letzten Jahren vor allem durch die Verbreitung von Large Language Models wie Chat-GPT gestiegen \cite{de2023chatgpt}. Sie können komplexe Fragen beantworten und kurze Texte zu Themen verfassen \cite{de2023chatgpt}. \\
+
+Das Thema Künstliche Intelligenz wird auch in der Europäischen Kommission diskutiert. Der AI Act behandelt Aspekte der Sicherheit und des Vertrauens bei der Nutzung von KI-Systemen \cite{eu}. \\
+\glqq Um einen Beitrag zum Aufbau eines widerstandsfähigen Europas für die digitale Dekade zu leisten, sollten Menschen und Unternehmen in der Lage sein, die Vorteile von KI zu nutzen und sich gleichzeitig sicher und geschützt zu fühlen.\grqq \cite{euger} \\
+Das Gesetz behandelt einen Ansatz für vertrauenswürdige KI. Es werden Anforderungen gestellt, die neben Aspekten wie der Risikominderung und Qualität der Daten auch eine hohe Robustheit und Genauigkeit sicherstellen sollen \cite{highrisk}. \\
+
+Das Potenzial von KI wurde auch bei der Einbindung in Unternehmen entdeckt. Eine KI kann Arbeiten übernehmen, die für Beschäftigte eine Entlastung bedeuten können \cite{stowasser2020einfuhrung}. \emph{adesso} hat auch das Potenzial erkannt und sucht nun nach und nach Wege, KI-gestützte Systeme in die eigenen Prozesse zu integrieren. Im internen Projekt \emph{adesso Staffing Advisor} wird an einem Recommender-System zur Mitarbeiterempfehlung für ausgewählte Projekte gearbeitet. Die Umsetzung der Recommender Systems bedient sich verschiedener KI-basierten Ansätze. Da der Staffing-Prozess geschäftskritisch ist, ist es für adesso wichtig, die Qualität der Ergebnisse zu überprüfen und deinen geeignetsten Ansatz zu ermitteln.
+%Bei der Nutzung und Einbindung von KI müssen auch negative Aspekte berücksichtigt werden. \cite{stowasser2020einfuhrung}. 
+
+%-Schnittstelle zwischen Mensch und Maschine
+\newpage
+\section{Problemstellung}
+\label{sec:problemstellung}
+Recommender-Systeme existieren bereits seit geraumer Zeit. Es wurden viele Methoden und Metriken entwickelt, die eine Auskunft über die Qualität der Ergebnisse solcher Systeme liefern. Da das Recommender-System auf das spezifische Szenario einer Mitarbeiterempfehlung abzielt, ist es notwendig, die Ergebnisse angepasst auf den Staffing-Kontext zu evaluieren. Das KI-basierte Recommender-System des adesso Staffing Advisors verfolgt mehrere ähnlichkeitsbasierte Ansätze, von denen jeder seine Stärken und Schwächen hat. Die Zielgruppe des Systems sind die Fachkräfte. Diese haben eine Erwartungshaltung, das vom System erfüllt werden soll. \\
+
+(Das Recommender System des adesso Staffing Advisors ist nicht transparenz) 
+
+(eventuell eine darstellung des systems?)
+\newpage
+\section{Ziele und Ergebnisse der Arbeit}
+\label{sec:zieleundergebnis}
+Die vorliegende Arbeit hat das Ziel zu untersuchen, ob die Ergebnisqualität der Recommender-System-Ansätze des adesso Staffing Advisors für das Unternehmen adesso geeignet sind. Hierfür wird ein Konzept entwickelt, das schrittweise durch konkrete Methoden und Metriken die Genauigkeit und Ähnlichkeit im Staffing-Kontext erfasst und die Ergebnisqualität evaluiert. Das Ziel besteht darin, am Ende einen Ansatz auszuwählen, der im Staffing-Kontext einsetzbar ist und den vorher definierten Anforderungen entspricht. 
+\begin{itemize}
+	\item Dazu werden Methoden und Metriken zur Genauigkeit und Ähnlichkeit der Ansätze angewendet, wie beispielsweise die Kosinus-Ähnlichkeit, Pearson-Korrelation und Jaccard-Ähnlichkeit auf konkrete Testdaten 
+	\item Außerdem wird die Repräsentationsfähigkeit der Inputdaten zur Überprüfung der Qualität und Relevanz analysiert
+	\item Das System soll praktisch anwendbar und vielseitig sein und einer vorher definierten Bewertung standhalten. Es soll auch Auskunft über die Sensitivität des Systems durch Änderungen in der Menge der Testdaten geben
+	\item  Schließlich sollen Fachkräfte, die den Staffing-Prozess manuell durchführen, Bewertungen und Feedback liefern, um potenziell notwendige Anpassungen an das System zu rechtfertigen
+\end{itemize}
+\newpage
+%Similarity-basierten, spezifische Methoden und Metriken,
+
+%Genauigkeit der Ähnlichkeitsmetriken, Untersuchung wie gut die Merkmale (Features) der Elemente im System repräsentiert sind, Evaluierung ob System in der lage ist Top-N-Empfehlungen zu platzieren, Überprüfung ob ähnlichkeitsbasierten Empfehlungen zu vielfältig sind, Benutzerbewertungen und -feedback durch Führungskraft, Cold Start (effektive Ergebnisse mit begrenzten Daten), Analyse wie Hinzufügen und entfernen von Merkmalen auswirkt
+
+%Die Projektarbeit umfasst zwei Ziele:
+%\begin{itemize}
+%	\item Zum einen erfolgt 
+%	\item Außerdem wird auf Basis des erarbeiteten Konzepts 
+%\end{itemize}
+%Insgesamt soll die darauf folgende Bachelorarbeit die Auseinandersetzung der Visualisierungs- und Transparenzschaffungsmethoden einer KI-Lösung näher betrachten. 
+%\section{Aufbau der Arbeit}
+%\label{sec:aufbauderarbeit}
+
+%Wenn es speziell um Recommender-Systeme geht, die auf Ähnlichkeiten basieren (wie Content-basierte Recommender-Systeme oder Hybrid-Modelle), gibt es einige spezifische Methoden und Metriken, die für die Evaluierung verwendet werden können. Hier sind einige Ansätze, um die Leistung von Similarity-basierten Recommender-Systemen zu testen:
+
+%Ähnlichkeitsmetriken:
+
+%Überprüfe die Genauigkeit der Ähnlichkeitsmetriken, die im Recommender-System verwendet werden. Dazu gehören beispielsweise Kosinus-Ähnlichkeit, Pearson-Korrelation, Jaccard-Ähnlichkeit oder andere, je nach Kontext.
+%Repräsentation der Merkmale:
+
+%Untersuche, wie gut die Merkmale (Features) der Elemente im System repräsentiert sind. Eine gute Ähnlichkeitsberechnung hängt oft von der Qualität und Relevanz der Merkmale ab.
+%Top-N-Empfehlungen:
+
+%Evaluieren Sie, wie gut das Recommender-System in der Lage ist, relevante Elemente unter den Top-N-Empfehlungen zu platzieren. Dies ist eine gängige Metrik, um die praktische Anwendbarkeit des Systems zu bewerten.
+%Diversität der Empfehlungen:
+
+%Prüfe, ob die Ähnlichkeitsbasierten Empfehlungen zu vielfältig sind. Eine zu starke Konzentration auf ähnliche Elemente könnte zu eintönigen Empfehlungen führen.
+%Benutzerbewertungen und Feedback:
+
+%Integriere Benutzerbewertungen und -feedback in die Evaluierung, um sicherzustellen, dass die Ähnlichkeitsberechnungen den tatsächlichen Vorlieben der Benutzer entsprechen.
+%Cold Start-Szenarien:
+
+%Teste das System unter Bedingungen des "Cold Start", um sicherzustellen, dass es auch effektive Empfehlungen machen kann, wenn es nur begrenzte Daten gibt.
+%Auswirkungen von Merkmalen:
+
+%Analysiere, wie sich das Hinzufügen oder Entfernen von Merkmalen auf die Empfehlungen auswirkt. Dies kann helfen, die Sensitivität des Systems gegenüber verschiedenen Merkmalen zu verstehen.
+%Nutzerinteraktion:
+
+%Untersuche, wie gut das Recommender-System auf Veränderungen in der Benutzerinteraktion reagiert. Dies könnte Änderungen in den Präferenzen der Benutzer oder neue Interaktionen mit dem System einschließen.
+%Es ist wichtig, die spezifischen Anforderungen deines Recommender-Systems zu berücksichtigen und die Evaluierungsmethoden entsprechend anzupassen. Kombiniere mehrere Metriken, um ein umfassenderes Bild der Leistung des Systems zu erhalten.
+
+\newpage

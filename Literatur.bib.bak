@@ -1,0 +1,710 @@
+@preamble{ "\newcommand{\lastaccesseddate}{2023-04-15}" }
+@preamble{ "\newcommand{\lastaccessed}{(abgerufen: \lastaccesseddate)}" }
+
+@ARTICLE{test,
+  author = {Matsutani, H. and Koibuchi, M. and Yamada, Y. and Hsu, D.F. and Amano,
+	H.},
+  title = {Fat H-Tree: A Cost-Efficient Tree-Based On-Chip Network},
+  journal = {Parallel and Distributed Systems, IEEE Transactions on},
+  year = {2009},
+  volume = {20},
+  pages = {1126-1141},
+  number = {8},
+  doi = {10.1109/TPDS.2008.233},
+  issn = {1045-9219},
+  keywords = {multiprocessor interconnection networks;network-on-chip;cell library;cost-efficient
+	tree-based on-chip network;deadlock-free routing;fat H-tree;microarchitecture
+	domain;network logic area;on-chip routers;process technology;tree
+	networks;tree-based interconnection network;Interconnection networks;Network
+	topology;On-chip interconnection networks;network topology;on-chip
+	networks;routing algorithm.;tree}
+}
+
+@online{m2,
+	title = {Material Design 2},
+	url = {https://m2.material.io/design},
+	author = {Google},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@online{m3,
+	title = {Material Design 3},
+	url = {https://m3.material.io/},
+	author = {Google},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@online{materialchips,
+	title = {Chips},
+	url = {https://m3.material.io/components/chips/overview},
+	author = {Google},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@online{materialdesign,
+	title = {Material Design – Die Designsprache von Google},
+	url = {https://kulturbanause.de/blog/material-design-die-designsprache-von-google/},
+	author = {kulturbanause},
+	urldate = {2023-04-15},
+	langid = {german},
+	year = {2021},
+}
+
+@book{colortheory,
+  title={Contemporary color: Theory and use},
+  author={Bleicher, Steven},
+  year={2012},
+  publisher={Cengage Learning}
+}
+
+@online{coloremotion,
+	title = {Create Emotion With Color In UX Design},
+	url = {https://uxplanet.org/create-emotion-with-color-in-ux-design-446a3766b085#.833er7ned},
+	author = {Nick Babich},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {2016},
+}
+
+@online{farbentheorie,
+	title = {App Design: Die Bedeutung und Wirkung der Farben},
+	url = {https://de.yeeply.com/blog/app-design-die-bedeutung-der-farben/},
+	author = {yeeply},
+	urldate = {2023-04-15},
+	langid = {german},
+	year = {o. J.},
+}
+
+@online{howmanycolors,
+	title = {How many colors should a brand have?},
+	url = {https://brandingcompass.com/branding/how-many-colors-should-a-brand-have/},
+	author = {branding compass},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@article{farbkombinationen,
+  title={An interactive method for generating harmonious color schemes},
+  author={Hu, Guosheng and Pan, Zhigeng and Zhang, Mingmin and Chen, De and Yang, Wenzhen and Chen, Jian},
+  journal={Color Research \& Application},
+  volume={39},
+  number={1},
+  pages={70--78},
+  year={2014},
+  publisher={Wiley Online Library}
+}
+
+@inproceedings{farbkombinationen,
+  title={Color harmony classification using machine learning algorithms: KNN and SVM},
+  author={Abushmmala, Faten F and Abughali, Heba A},
+  booktitle={2020 International Conference on Promising Electronic Technologies (ICPET)},
+  pages={150--154},
+  year={2020},
+  organization={IEEE}
+}
+
+
+@article{hexcode,
+  title={Choosing color palettes for scientific figures},
+  author={Plante, Timothy B and Cushman, Mary},
+  journal={Research and Practice in Thrombosis and Haemostasis},
+  volume={4},
+  number={2},
+  pages={176},
+  year={2020},
+  publisher={Wiley-Blackwell}
+}
+
+@online{createCB,
+	title = {Building a React app with TypeScript and Material Design},
+	url = {https://www.welcomedeveloper.com/react-typescript-material-design},
+	author = {Welcome, Developer},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {2020},
+}
+
+@online{whatiscomponentlibrary,
+	title = {What Is a Component Library, and Why Should You Use One for UI Development?},
+	url = {https://www.uxpin.com/studio/blog/ui-component-library/},
+	author = {UXPin},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {2021},
+}
+
+@online{storybook,
+	title = {Introduction to Storybook for React},
+	url = {https://storybook.js.org/docs/react/get-started/introduction},
+	author = {Storybook},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@online{componentdriveninterface,
+	title = {Component Driven User Interfaces},
+	url = {https://www.componentdriven.org/},
+	author = {Chromatic},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@online{storybooktutorial,
+	title = {Storybook for React tutorial},
+	url = {https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/},
+	author = {Storybook},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@online{storybookaddons,
+	title = {Learn how to integrate and use the popular Controls addon},
+	url = {https://storybook.js.org/tutorials/intro-to-storybook/react/en/using-addons/},
+	author = {Storybook},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@online{storybookdeploy,
+	title = {Learn how to deploy Storybook online},
+	url = {https://storybook.js.org/tutorials/intro-to-storybook/react/en/deploy/},
+	author = {Storybook},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@online{reactdesignprinciples,
+	title = {Design Principles},
+	url = {https://reactjs.org/docs/design-principles.html},
+	author = {Meta},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@book{reactessentials,
+  title={React. js essentials},
+  author={Fedosejev, Artemij},
+  year={2015},
+  publisher={Packt Publishing Ltd},
+  url={https://books.google.de/books?hl=de&lr=&id=Rhl1CgAAQBAJ&oi=fnd&pg=PP1&dq=component+library+js&ots=JkxypxASOF&sig=djFvR_6Ap__I05eTCBXbaKu075Q#v=onepage&q=component%20library%20js&f=false}
+}
+
+@book{gackenheimer2015introduction,
+  title={Introduction to React},
+  author={Gackenheimer, Cory},
+  year={2015},
+  publisher={Apress}
+}
+
+@online{jsx,
+	title = {Introducing JSX},
+	url = {https://reactjs.org/docs/introducing-jsx.html},
+	author = {Meta},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@online{dom,
+	title = {Document Object Model (DOM): Definition, Aufbau und Beispiel},
+	url = {https://www.ionos.de/digitalguide/websites/web-entwicklung/was-ist-das-document-object-model-dom/},
+	author = {Digital Guide IONIS},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {2020},
+}
+
+@online{mui,
+	title = {MUI Core},
+	url = {https://mui.com/material-ui/getting-started/overview/},
+	author = {Material UI},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@online{storybookwithmaterialui,
+	title = {Material UI in Storybook},
+	url = {https://storybook.js.org/blog/material-ui-in-storybook/},
+	author = {Storybook},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {2022},
+}
+
+@online{typographyadobe,
+	title = {XD Essentials: Typography in Mobile Apps},
+	url = {https://medium.com/thinking-design/xd-essentials-typography-in-mobile-apps-7048abfb1cc5#.tu3y5hv6z},
+	author = {Adobe Creative Cloud},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {2016},
+}
+
+@online{typographyguide,
+	title = {Your ultimate guide to understanding typography},
+	url = {https://www.canva.com/learn/typography-guide/},
+	author = {Canva},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@online{serifsanserif,
+	title = {SERIF AND SANS-SERIF FONTS – WHAT’S THE DIFFERENCE?},
+	url = {https://about.easil.com/serif-vs-sans-serif/},
+	author = {easil},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@online{serifhistory,
+	title = {Warum die Serifen doch nichts mit dem Meißel zu tun haben},
+	url = {https://www.typografie.info/3/artikel.htm/wissen/serifen-meissel-ursprung/},
+	author = {Ralf Herrmann},
+	urldate = {2023-04-15},
+	langid = {german},
+	year = {2014},
+}
+
+@online{fontscom,
+	title = {Type Classifications},
+	url = {https://www.fonts.com/content/learning/fontology/level-1/type-anatomy/type-classifications},
+	author = {fonts.com},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@article{grothesquehuman,
+  title={Influence of HMI Ergonomy on Drivers in Area of Cooperative Systems},
+  author={Tomáš Jizba},
+  journal={Engineering economics},
+  number={17},
+  year={2016},
+}
+
+@article{brandidentity,
+  title={Relationship of brand identity and image},
+  author={Janonis, Vytautas and Dovalien{\.e}, Aist{\.e} and Virvilait{\.e}, Regina},
+  journal={Engineering economics},
+  volume={51},
+  number={1},
+  year={2007},
+  url={https://www.inzeko.ktu.lt/index.php/EE/article/view/11465/6179},
+}
+
+@online{brandidentity2,
+	title = {Die Brand Identity und ihr Zweck für eine erfolgreiche Marke},
+	url = {https://wedot.ch/lexikon/brand-identity},
+	author = {Alexander Bürgin},
+	urldate = {2023-04-15},
+	langid = {german},
+	year = {2022},
+}
+
+@online{adessobrand,
+	title = {business. people. technology.},
+	author = {adesso},
+	url = {https://www.adesso.de/de/index.jsp},
+	langid = {german},
+	urldate = {2023-04-15},
+	year = {o. J.},
+}
+
+@online{adessomilestones,
+	title = {milestones},
+	url = {https://www.adesso.de/milestones/},
+	author = {Mike Deecke},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {2022},
+}
+
+@online{unternehmenskultur,
+	title = {Unternehmenskultur – die Spielregeln},
+	url = {https://www.adesso.de/de/news/blog/unternehmenskultur-die-spielregeln.jsp},
+	author = {adesso},
+	langid = {english},
+	urldate = {2023-04-15},
+	year = {2022},
+}
+
+@inproceedings{typescript,
+  title={Understanding typescript},
+  author={Bierman, Gavin and Abadi, Mart{\'\i}n and Torgersen, Mads},
+  booktitle={ECOOP 2014--Object-Oriented Programming: 28th European Conference, Uppsala, Sweden, July 28--August 1, 2014. Proceedings 28},
+  pages={257--281},
+  year={2014},
+  organization={Springer}
+}
+
+@online{npm,
+	title = {What is npm?},
+	url = {https://www.w3schools.com/whatis/whatis_npm.asp},
+	author = {W3school},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@article{eslint,
+  title={The adoption of javascript linters in practice: A case study on eslint},
+  author={T{\'o}masd{\'o}ttir, Krist{\'\i}n Fj{\'o}la and Aniche, Mauricio and Van Deursen, Arie},
+  journal={IEEE Transactions on Software Engineering},
+  volume={46},
+  number={8},
+  pages={863--891},
+  year={2018},
+  publisher={IEEE}
+}
+
+@online{prettier,
+	title = {What is Prettier?},
+	url = {https://prettier.io/},
+	author = {Prettier},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@online{jest,
+	title = {Jest is a delightful JavaScript Testing Framework with a focus on simplicity.},
+	url = {https://jestjs.io/},
+	author = {Meta},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@online{releasepublish,
+	title = {How to Create and Publish a React Component Library},
+	url = {https://dev.to/alexeagleson/how-to-create-and-publish-a-react-component-library-2oe},
+	author = {Alex Eagleson},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {2022},
+}
+
+@online{materialvsflat,
+	title = {Google’s Material Design vs Apple’s Flat Design: Which is better?},
+	url = {https://blog.prototypr.io/googles-material-design-vs-apple-s-flat-design-which-is-better-16a94aed6e2},
+	author = {Promatics Technologies},
+	urldate = {\lastaccesseddate},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {2017},
+}
+
+@online{materialvsflatvsfluent,
+	title = {Flat design vs. Material Design},
+	url = {https://www.justinmind.com/blog/flat-design-vs-material-design-differences/},
+	author = {Joseph Downs},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {2020},
+}
+
+@online{materialvsfluent,
+	title = {Modern Design Systems – Material Vs Fluent},
+	url = {https://blogs.weplusconsultancy.com/2021/05/20/modern-design-systems-material-vs-fluent/},
+	author = {WePlus Consultancy},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {2021},
+}
+
+@article{git,
+  title={A quick introduction to version control with Git and GitHub},
+  author={Blischak, John D and Davenport, Emily R and Wilson, Greg},
+  journal={PLoS computational biology},
+  volume={12},
+  number={1},
+  pages={e1004668},
+  year={2016},
+  publisher={Public Library of Science}
+}
+
+@online{tsdx,
+	title = {Zero-config CLI for TypeScript package development},
+	url = {https://tsdx.io/},
+	author = {TSDX},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@online{cli,
+	title = {What is Command Line Interface (CLI)?},
+	url = {https://www.w3schools.com/whatis/whatis_cli.asp},
+	author = {W3school},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@online{rollup,
+	title = {Introduction},
+	url = {https://rollupjs.org/introduction/#:~:text=Rollup%20is%20a%20module%20bundler,such%20as%20CommonJS%20and%20AMD.},
+	author = {Rollup},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@online{jesttest,
+	title = {Globals},
+	url = {https://jestjs.io/docs/api#describename-fn},
+	author = {JEST},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {2023},
+}
+
+@online{svg,
+	title = {PNG vs. SVG.},
+	url = {https://www.adobe.com/creativecloud/file-types/image/comparison/png-vs-svg.html#:~:text=While%20PNGs%20are%20capable%20of,size%20without%20losing%20their%20resolution.},
+	author = {Adobe},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@article{munassar2010comparison,
+  title={A comparison between five models of software engineering},
+  author={Munassar, Nabil Mohammed Ali and Govardhan, A},
+  journal={International Journal of Computer Science Issues (IJCSI)},
+  volume={7},
+  number={5},
+  pages={95},
+  year={2010},
+  publisher={Citeseer}
+}
+
+@online{pwc,
+	title = {Industry 4.0: Building the digital enterprise},
+	url = {https://www.pwc.com/gx/en/industries/industries-4.0/landing-page/industry-4.0-building-your-digital-enterprise-april-2016.pdf},
+	author = {pwc},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {2016},
+}
+
+@online{accenture,
+	title = {Künstliche Intelligenz},
+	url = {https://www.accenture.com/de-de/insights/artificial-intelligence-summary-index},
+	author = {accenture},
+	urldate = {2023-04-15},
+	langid = {english},
+	year = {o. J.},
+}
+
+@online{softwarelebenszyklus,
+	title = {Software-Lebenszyklus: Phasen mit Beispielen erklärt},
+	url = {https://www.scnsoft.de/blog/beispiele-fuer-den-software-lebenszyklus},
+	author = {Boris Shiklo},
+	urldate = {2023-04-15},
+	langid = {german},
+	year = {2019},
+}
+
+@article{burke2000knowledge,
+  title={Knowledge-based recommender systems},
+  author={Burke, Robin},
+  journal={Encyclopedia of library and information systems},
+  volume={69},
+  number={Supplement 32},
+  pages={175--186},
+  year={2000},
+  publisher={Citeseer}
+}
+
+@article{pannu2015artificial,
+  title={Artificial intelligence and its application in different areas},
+  author={Pannu, Avneet},
+  journal={Artificial Intelligence},
+  volume={4},
+  number={10},
+  pages={79--84},
+  year={2015}
+}
+
+@online{kieuregelung,
+	title = {Künstliche Intelligenz (KI): Neue EU-Regeln zur Produkthaftung und harmonisierte Haftungsvorschriften},
+	url = {https://germany.representation.ec.europa.eu/news/kunstliche-intelligenz-ki-neue-eu-regeln-zur-produkthaftung-und-harmonisierte-haftungsvorschriften-2022-09-28_de},
+	author = {Vertretung in Deutschland},
+	urldate = {2023-04-15},
+	langid = {german},
+	year = {2022},
+}
+
+@article{statuscodes,
+  title={Preliminary analysis of REST API style guidelines},
+  author={Murphy, Lauren and Alliyu, Tosin and Macvean, Andrew and Kery, Mary Beth and Myers, Brad A},
+  journal={Ann Arbor},
+  volume={1001},
+  pages={48109},
+  year={2017}
+}
+
+@article{rest,
+  title={RESTful API testing methodologies: Rationale, challenges, and solution directions},
+  author={Ehsan, Adeel and Abuhaliqa, Mohammed Ahmad ME and Catal, Cagatay and Mishra, Deepti},
+  journal={Applied Sciences},
+  volume={12},
+  number={9},
+  pages={4369},
+  year={2022},
+  publisher={MDPI}
+}
+
+@book{express,
+  title={Web development with node and express: leveraging the JavaScript stack},
+  author={Brown, Ethan},
+  year={2019},
+  publisher={O'Reilly Media}
+}
+
+@article{mongodb,
+  title={A review on various aspects of MongoDb databases},
+  author={Chauhan, Anjali},
+  journal={Int. J. Eng. Res. Sci. Technol},
+  volume={8},
+  number={5},
+  pages={90--92},
+  year={2019}
+}
+
+@techreport{jwt,
+  title={Json web token (jwt)},
+  author={Jones, Michael and Bradley, John and Sakimura, Nat},
+  year={2015}
+}
+
+@article{herzberg2022kunstliche,
+  title={K{\"u}nstliche Intelligenz in der Hochschulbildung und das Transparenzproblem: Eine Analyse und ein L{\"o}sungsvorschlag},
+  author={Herzberg, Dominikus},
+  journal={K{\"u}nstliche Intelligenz in der Hochschulbildung. Chancen und Grenzen des KI-gest{\"u}tzten Lernens und Lehrens},
+  pages={97--110},
+  year={2022}
+}
+
+@online{jira,
+	title = {Im Team schneller vorankommen, an einem Strang ziehen und besser entwickeln},
+	url = {https://www.atlassian.com/de/software/jira},
+	author = {atlassian},
+	urldate = {2023-04-15},
+	langid = {german},
+	year = {o. J.},
+}
+
+@article{framework,
+  title={Frameworks=(components+ patterns)},
+  author={Johnson, Ralph E},
+  journal={Communications of the ACM},
+  volume={40},
+  number={10},
+  pages={39--42},
+  year={1997},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{kumar2012advanced,
+  title={Advanced applications of neural networks and artificial intelligence: A review},
+  author={Kumar, Koushal and Thakur, Gour Sundar Mitra},
+  journal={International journal of information technology and computer science},
+  volume={4},
+  number={6},
+  pages={57},
+  year={2012}
+}
+
+@article{dray1995importance,
+  title={The importance of designing usable systems},
+  author={Dray, Susan},
+  journal={interactions},
+  volume={2},
+  number={1},
+  pages={17--20},
+  year={1995},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{schwabe2001web,
+  title={Web design frameworks: An approach to improve reuse in web applications},
+  author={Schwabe, Daniel and Rossi, Gustavo and Esmeraldo, Luiselena and Lyardet, Fernando},
+  journal={Web Engineering: Managing Diversity and Complexity of Web Application Development},
+  pages={335--352},
+  year={2001},
+  publisher={Springer}
+}
+
+@article{beck1999bad,
+  title={Bad smells in code},
+  author={Beck, Kent and Fowler, Martin and Beck, Grandma},
+  journal={Refactoring: Improving the design of existing code},
+  volume={1},
+  number={1999},
+  pages={75--88},
+  year={1999}
+}
+
+@article{ariadi2022implementation,
+  title={Implementation and Analysis on Color Theory Usage in Website User Interface to Develop Brand Image},
+  author={Ariadi, Cindy and Deli, D},
+  journal={IJISTECH (International Journal of Information System and Technology)},
+  volume={6},
+  number={4},
+  pages={495--511},
+  year={2022}
+}
+
+@book{carter2018typographic,
+  title={Typographic design: Form and communication},
+  author={Carter, Rob and Maxa, Sandra and Sanders, Mark and Meggs, Philip B and Day, Ben},
+  year={2018},
+  publisher={John Wiley \& Sons}
+}
+
+@article{swasty2017does,
+  title={Does color matter on web user interface design},
+  author={Swasty, Wirania and Adriyanto, Andreas Rio},
+  journal={CommIT (Communication and Information Technology) Journal},
+  volume={11},
+  number={1},
+  pages={17--24},
+  year={2017}
+}
+
+@article{nayak2013type,
+  title={Type of NOSQL databases and its comparison with relational databases},
+  author={Nayak, Ameya and Poriya, Anil and Poojary, Dikshay},
+  journal={International Journal of Applied Information Systems},
+  volume={5},
+  number={4},
+  pages={16--19},
+  year={2013}
+}
+
+@online{vite,
+	title = {Im Team schneller vorankommen, an einem Strang ziehen und besser entwickeln},
+	url = {https://vitejs.dev/guide/why.html},
+	author = {Vite},
+	urldate = {2023-10-18},
+	langid = {english},
+	year = {o. J.},
+}

@@ -1,0 +1,234 @@
+%Dokumentklasse
+\documentclass[a4paper,12pt]{scrreprt}
+\usepackage[left= 3.5cm,right = 2cm, bottom = 2 cm]{geometry}
+\usepackage[onehalfspacing]{setspace}
+% ============= Packages =============
+
+% Dokumentinformationen
+\usepackage[hyphens]{url}
+\usepackage[
+pdfsubject={},
+pdfauthor={Ricardo Valente de Matos},
+pdfkeywords={},	
+%Links nicht einrahmen
+hidelinks,
+breaklinks=true
+]{hyperref}
+% Standard Packages
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx, subfig}
+\graphicspath{{img/}}
+\usepackage{fancyhdr}
+\usepackage{lmodern}
+\usepackage{color}
+
+\usepackage[style=ieee, sorting=nty, urldate =comp, backend=bibtex]{biblatex}
+\addbibresource{Literatur.bib}
+
+%\usepackage[numbers]{natbib}
+%\bibpunct{(}{)}{;}{a}{,}{,}
+
+\usepackage{listings}
+
+% zusätzliche Schriftzeichen der American Mathematical Society
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{float}
+
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+
+%nicht einrücken nach Absatz
+\setlength{\parindent}{0pt}
+\RedeclareSectionCommand[beforeskip=0pt]{chapter}
+\usepackage{listings}
+\usepackage{color}
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+
+\lstdefinelanguage{JavaScript}{
+	keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+	keywordstyle=\color{blue}\bfseries,
+	ndkeywords={class, export, boolean, throw, implements, import, this},
+	ndkeywordstyle=\color{darkgray}\bfseries,
+	identifierstyle=\color{black},
+	sensitive=false,
+	comment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	commentstyle=\color{purple}\ttfamily,
+	stringstyle=\color{red}\ttfamily,
+	morestring=[b]',
+	morestring=[b]"
+}
+
+\lstset{
+	language=JavaScript,
+	backgroundcolor=\color{lightgray},
+	extendedchars=true,
+	basicstyle=\footnotesize\ttfamily,
+	showstringspaces=false,
+	showspaces=false,
+	numbers=left,
+	numberstyle=\footnotesize,
+	numbersep=9pt,
+	tabsize=2,
+	breaklines=true,
+	showtabs=false,
+	captionpos=b
+}
+
+
+% ============= Kopf- und Fußzeile =============
+\pagestyle{fancy}
+%
+\lhead{}
+\chead{}
+\rhead{\slshape \leftmark}
+%%
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+%%
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ============= Package Einstellungen & Sonstiges ============= 
+%Besondere Trennungen
+\hyphenation{De-zi-mal-tren-nung}
+
+\newcommand{\hiddenchapter}[1]{
+	\stepcounter{chapter}
+	\chapter*{\arabic{chapter}\hspace{1em}{#1}}
+}
+
+
+% ============= Dokumentbeginn =============
+
+\begin{document}
+%Seiten ohne Kopf- und Fußzeile sowie Seitenzahl
+\pagestyle{empty}
+
+\include{01_proposal}
+
+\setcounter{page}{1}
+\pagestyle{plain}
+
+\hiddenchapter{Motivation}
+Künstliche Intelligenz (KI) gewinnt im Alltag immer mehr an Relevanz. Es durchdringt kontinuierlich viele Bereiche des Menschen und verändert Aspekte des täglichen Lebens. Dadurch ist es immer wichtiger zu überprüfen, ob eine KI den gewünschten Ansprüchen entspricht\cite{pannu2015artificial}. \\
+
+Die Debatte um Akzeptanzsteigerung in der KI wurde bereits mehrfach diskutiert und auch die Europäische Kommission versucht dies durch Verschärfung der Rechtssicherheit anzuheben: \glqq Wir wollen, dass die KI-Technologien in der EU florieren. Um dies zu erreichen, müssen die Menschen digitalen Innovationen vertrauen.\grqq{}\cite{kieuregelung}.\\
+
+Ein Einsatzgebiet von KI sind Empfehlungssysteme. Mit diesen kann durch Informationen Schlussfolgerungen gezogen werden, die den Anforderungen des Nutzers entsprechen\cite{burke2000knowledge}. Diese Technologie soll nun in den eigenen internen Prozessen eingebunden werden. \\
+
+Als IT-Dienstleister wird \emph{adesso} von Kunden unter anderem mit der Entwicklung von Individual-Softwarelösungen beauftragt. Derzeit wenden Führungskräfte jedoch viel Zeit auf, manuell interne Mitarbeiter für Kundenprojekte zu suchen und diese im Anschluss, basierend auf ihren Erfahrungen und Fähigkeiten, auszuwählen und entsprechend zuzuteilen. Dieser Prozess soll durch eine KI-Lösung unterstützt werden. Da die Personalsuche ein geschäftskritischer Prozess darstellt, bleibt wenig Spielraum für Fehler. Die Entscheidungen der KI müssen somit nachvollziehbar dargestellt werden. \\
+
+Im internen Projekt \emph{adesso Staffing Advisor} wird eine KI-gestützte Anwendung entwickelt die Führungskräfte bei der Suche nach passendem Personal für ausgewählte Projekte unterstützen soll. Es bedarf einer Plattform, um die Visualisierung darzustellen. Zusätzlich dazu muss diese Plattform flexibel genug sein um Ergänzungen weiterer Methodiken der Visualisierung anwenden zu können.
+\newpage
+
+\hiddenchapter{Problemstellung}
+Da KI-Lösungen in sehr spezifischen Anwendungsszenarien angewandt werden, ist es nicht möglich, eine universelle Lösung zur Überprüfung und Testen aller KI-Systeme zu erstellen. Überwachungs- und Testmethoden müssen somit konkret mit dem Hintergrund eines Anwendungsszenarios analysiert und erstellt werden. \\
+
+Im \glqq Staffing\grqq{}-Prozess müssen Führungskräfte Mitarbeiterlisten mit Anforderungen des Kundenprojekts vergleichen. Das Ziel der KI ist es, diesen Prozess zu unterstützen. Um schließlich die Akzeptanz der KI zu steigern sind visuelle Gegenüberstellungen von dem erhaltenen Resultat und dem gewünschten Ergebnis notwendig. Es muss dem Nutzer ersichtlich werden, wie das System zu den Ergebnissen gelangt ist, um dem Nutzer Transparenz zu gewährleisten. \\
+
+Die Auswahl der richtigen Art und Weise, wie Transparenz geschaffen werden kann, muss systematisch untersucht werden. Zudem wird die Relevanz und Notwendigkeit von Eingaben der KI in Hinblick auf die einzelnen Herangehensweisen zur Transparenzschaffung berücksichtigt. \\
+
+Damit eine praktische Umsetzung der Art und Weise zur Transparenzschaffung des \emph{adesso Staffing Advisor} erfolgen kann, wird eine Plattform benötigt, die um Elemente zur Visualisierung erweitert werden kann. Die Idee ist, dass anhand konkreter Fall- und Realbeispiele von Bedarfsmeldungen, Visualisierungstechniken, wie \glqq Word Cloud\grqq{}, oder diverse Diagramme implementiert werden können. Dabei soll die Plattform alle KI-Schnittstellen ansprechen und die resultierenden Ergebnisse zur Visualisierung und zum Testen weiterverarbeiten.
+\newpage
+
+\hiddenchapter{Ziele und Ergebnisse der Arbeit}\mbox{}
+Die Projektarbeit umfasst zwei Ziele:
+\begin{itemize}
+\item Zum einen erfolgt die Ausarbeitung eines Konzepts der Plattform \emph{adesso Staffing Advisor Lab}, die zur Visualisierung von KI-Daten des \emph{adesso Staffing Advisor} verwendet werden soll. Zu diesem Zweck wird eine Anforderungsanalyse angefertigt, die sich mit Berücksichtigung auf das zukünftige Ziel, einer KI-Test und Visualisierungsumgebung, auf die wichtigsten Anwendungsfälle beschränken. Diverse Diagramme und Methodiken der Anforderungsanalyse helfen der Klärung von Strukturen und Abhängigkeiten innerhalb der Software und konkrete Anforderungen, die seitens des \emph{adesso Staffing Advisor}-Projekts gestellt wurden, stellen den Rahmen des finalen Produkts dar. Neben der Anforderungsanalyse und Architektur der Plattform ist auch die Anfertigung der Oberfläche ein Bestandteil der Konzeptionierung. Ziel ist es eine Plattform zu entwickeln, die den \glqq Look \& Feel\grqq{} von \emph{adesso} widerspiegelt.
+\item Außerdem wird auf Basis des erarbeiteten Konzepts ein lauffähiger Prototyp der Plattform \emph{adesso Staffing Advisor Lab} erstellt. Bei der Umsetzung werden auf Methoden der Code-Formatierung, Code-Analyse, Code-Testing und Versionierung zurückgegriffen, um langfristig eine optimale Team-Zusammenarbeit zu gewährleisten. Der Funktionsumfang beschränkt sich auf die Anforderungen aus der Konzeptionierungsphase. Technische Schulden werden in der Evaluation näher betrachtet.
+\end{itemize}
+Im gesamten betrachtet soll die darauf folgende Bachelorarbeit die Auseinandersetzung der Visualisierungs- und Transparenzschaffungsmethoden einer KI-Lösung näher betrachten. Die Funktion dieser Projektarbeit ist dabei die Vorbereitung zur erfolgreichen Umsetzung der Bachelorarbeit Ergebnisse.
+\newpage
+
+%anzusprechen: quellen, titel arbeit, Vorgehen und Zeitplan, noch ein bisschen aufbau
+%in mail schreiben dass arbeitstitel
+
+%architektur(osi-modell)
+%-Visualisierung
+%-Logik
+%-Schnittstelle
+
+%router gehört in architektur
+
+%3.2 kann in 4 rein
+
+%in auslieferung: jenkins pipeline, docker, etc., git versionierung
+
+%kapitel 5 und 6 eins machen. --> Kapitel evaluation --> sind alle anforderungen erfüllt? kognitiv walkthrough --> um 
+
+%letztes kapitel zusammenfassung und ausblick
+
+%\newpage
+
+\hiddenchapter{Vorgehen und Zeitplan}
+%handelt sich um Projektarbeit, peile bis  ende august bsw an
+Ziel ist es die Arbeit im Juli fertig zu stellen. Die einzelnen Monatsziele können aus der nachfolgenden Tabelle entnommen werden. \\ \\
+\begin{tabularx}{1\textwidth} { 
+		| >{\raggedright\arraybackslash}X 
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	April
+	& \begin{itemize}
+		\item Umsetzung des Prototypen
+		\item Überarbeitung der bereits verfassten Kapitel.
+	\end{itemize}\\
+	\hline
+	Mai
+	& \begin{itemize}
+		\item Kapitel \glqq Implementierung verfassen
+		\item Finalisierung des Prototypen
+	\end{itemize}\\
+	\hline
+	Juni
+	& \begin{itemize}
+		\item Kapitel \glqq Evaluation\grqq{} verfassen
+		\item Kapitel \glqq Zusammenfassung und Ausblick verfassen
+	\end{itemize}\\
+	\hline
+	Juli
+	& \begin{itemize}
+		\item Korrekturen durchführen
+	\end{itemize}\\
+	\hline
+\end{tabularx}
+\newpage
+
+\renewcommand\contentsname{5  Aufbau der Arbeit}
+\tableofcontents
+\newpage
+
+%\bibliographystyle{IEEEtranS}
+\renewcommand{\bibname}{6  Literatur}
+%\bibliography{Literatur}
+\raggedright
+\printbibliography
+\newpage
+
+\setcounter{page}{1}
+\pagestyle{fancy}
+\setcounter{chapter}{0}
+\newpage
+
+\include{04_einleitung}
+
+%\include{05_grundlagen}
+
+\include{06_anforderungsanalyse}
+
+\include{07_design}
+
+\include{08_implementation}
+
+\include{10_evaluation}
+
+\include{11_zusammenfassung}
+
+\end{document}
