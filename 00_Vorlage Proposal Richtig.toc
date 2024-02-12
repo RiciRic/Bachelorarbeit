@@ -1,32 +1,24 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {chapter}{\numberline {1}Einleitung}{8}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Problemstellung}{9}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Ziele und Ergebnisse der Arbeit}{10}{section.1.2}%
-\contentsline {chapter}{\numberline {2}Grundlagen}{11}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Künstliche Intelligenz}{11}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Recommender Systems}{11}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Warum Testen und Überwachen der KI}{11}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Verwandte Arbeiten}{12}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Adesso Staffing Advisor}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Aufbau des Projekts}{13}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Preprocessing}{13}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Keyword-Extraction}{13}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Normalizing}{13}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Large Language Models}{13}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}KI-Modelle}{13}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}spacy}{13}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}sbert}{13}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Nutzung von Daten}{13}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Welche Daten werden in die KI gegeben}{13}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Welche Daten werden von den KI-Ansätzen erstellt}{13}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Welche Daten werden von der KI zurückgegeben}{13}{subsection.4.4.3}%
-\contentsline {chapter}{\numberline {5}Ähnlichkeitsmetriken}{14}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Genauigkeit der Ähnlichkeit}{15}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Qualität und Relevanz der Merkmale}{15}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Eintönige Empfehlungen}{15}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Benutzerbewertungen und -feedback}{15}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Cold Start}{15}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Sensitivität des Systems}{15}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Evaluation}{16}{chapter.6}%
+\contentsline {chapter}{\numberline {1}Einleitung}{9}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Problemstellung}{10}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Ziele und Ergebnisse der Arbeit}{11}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Aufbau der Arbeit}{11}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Literaturüberblick}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Definitionen und Konzepte: Information Retrieval, Data-Mining, Bedarfsmeldungen}{12}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Vorherige Forschung und Ansätze zur Personalbeschaffung und Vorverarbeitung von Bedarfsmeldungen}{12}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Relevante Methoden und Techniken im Bereich Information Retrieval und Data-Mining}{12}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Entwicklung einer klaren Erwartungshaltung}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Beschreibung der Interviews mit Führungskräften zur Identifizierung von Stakeholder-Erwartungen}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Analyse der Ergebnisse und Entwicklung einer klaren Erwartungshaltung für die Bedarfsmeldungen}{13}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Analyse der Techniken des Information Retrieval und Data-Mining}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Beschreibung der untersuchten Techniken und Ansätze}{14}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Bewertung und Auswahl der besten Ansätze für die Extraktion relevanter Inhalte aus Bedarfsmeldungen}{14}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Konzeptionierung und Implementierung der Vorverarbeitung}{15}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Beschreibung des entwickelten Vorverarbeitungsmodells basierend auf den ausgewählten Techniken}{15}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Details zur Implementierung der Pipeline in Python für die effiziente Verarbeitung von Bedarfsmeldungen}{15}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Evaluierung des entwickelten Systems}{16}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Beschreibung des verwendeten Datensatzes und der Evaluierungsmethodik}{16}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Präsentation und Diskussion der Ergebnisse basierend auf den Metriken Precision, Recall und F1-Score}{16}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Analyse von Abweichungen, Ähnlichkeiten und Verbesserungspotenzialen des Systems}{16}{section.6.3}%
 \contentsline {chapter}{\numberline {7}Zusammenfassung und Ausblick}{17}{chapter.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  9 FEB 2024 13:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  12 FEB 2024 17:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -959,8 +959,8 @@ LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 (00_Vorlage Proposal Richtig.aux (proposal.aux) (einleitung.aux)
-(grundlagen.aux) (nutzung_daten.aux) (staffing_advisor.aux)
-(visualisierungstechnik.aux) (evaluation.aux) (zusammenfassung.aux)
+(literaturueberblick.aux) (entwicklung_erwartungshaltung.aux) (analyse.aux)
+(implementationsdetails.aux) (evaluation.aux) (zusammenfassung.aux)
 (eidesstattliche_erklaerung.aux))
 \openout1 = `"00_Vorlage Proposal Richtig.aux"'.
 
@@ -1182,41 +1182,46 @@ l.152 \hiddenchapter{Problemstellung}
 
 
 
-]
+] [2]
 Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
-[2
 
-]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-59.
- (C:\Users\ricar\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-[3
-
-{C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 167--197
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
+[3
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+61.
+ (C:\Users\ricar\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 [4
 
-] [5] (00_Vorlage Proposal Richtig.toc)
+{C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 169--199
+
+ []
+
+[5
+
+] (00_Vorlage Proposal Richtig.toc)
 \tf@toc=\write5
 \openout5 = `"00_Vorlage Proposal Richtig.toc"'.
 
  [6
 
 ]
-Overfull \hbox (1.20692pt too wide) in paragraph at lines 229--233
+Overfull \hbox (1.20692pt too wide) in paragraph at lines 230--234
 []\T1/lmr/m/n/12 Text-Ranking-Algorithmen: Text-Ranking-Algorithmen wie Tex-tRa
 nk oder YA-KE (Yet
  []
 
-[7]
+[7] [8]
 \openout2 = `einleitung.aux'.
 
  (einleitung.tex
@@ -1236,77 +1241,50 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
-
- []
+[9
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--8
+] [10] [11])
+\openout2 = `literaturueberblick.aux'.
 
- []
-
-[8
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-
- []
-
-[9]
-Overfull \hbox (32.92223pt too wide) in paragraph at lines 24--26
-\T1/lmr/m/n/12 Die vor-lie-gen-de Ar-beit hat das Ziel zu un-ter-su-chen, ob di
-e Er-geb-nis-qua-li-tät der Recommender-
- []
-
-
-Overfull \hbox (2.49886pt too wide) in paragraph at lines 26--27
-\T1/lmr/m/n/12 sät-ze an-ge-wen-det, wie bei-spiels-wei-se die Kosinus-Ähnlichk
-eit, Pearson-Korrelation
- []
-
-[10])
-\openout2 = `grundlagen.aux'.
-
- (grundlagen.tex
+ (literaturueberblick.tex
 chapter 2.
-[11
-
-
-
-
-])
-\openout2 = `nutzung_daten.aux'.
-
- (nutzung_daten.tex
-chapter 3.
 [12
 
 
 
 
 ])
-\openout2 = `staffing_advisor.aux'.
+\openout2 = `entwicklung_erwartungshaltung.aux'.
 
- (staffing_advisor.tex
-chapter 4.
+ (entwicklung_erwartungshaltung.tex
+chapter 3.
 [13
 
 
 
 
 ])
-\openout2 = `visualisierungstechnik.aux'.
+\openout2 = `analyse.aux'.
 
- (visualisierungstechnik.tex
-chapter 5.
+ (analyse.tex
+chapter 4.
 [14
 
 
 
 
-] [15])
+])
+\openout2 = `implementationsdetails.aux'.
+
+ (implementationsdetails.tex
+chapter 5.
+[15
+
+
+
+
+])
 \openout2 = `evaluation.aux'.
 
  (evaluation.tex
@@ -1330,22 +1308,22 @@ chapter 7.
 \openout2 = `eidesstattliche_erklaerung.aux'.
 
  (eidesstattliche_erklaerung.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 3--264
+Underfull \hbox (badness 10000) in paragraph at lines 3--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--264
+Underfull \hbox (badness 10000) in paragraph at lines 3--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--264
+Underfull \hbox (badness 10000) in paragraph at lines 3--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--264
+Underfull \hbox (badness 10000) in paragraph at lines 3--274
 
  []
 
@@ -1356,7 +1334,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--264
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-69.
+79.
  (C:\Users\ricar\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1364,9 +1342,9 @@ File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 
 
-] [20] [21] (00_Vorlage Proposal Richtig.aux (proposal.aux) (einleitung.aux) (g
-rundlagen.aux) (nutzung_daten.aux) (staffing_advisor.aux)
-(visualisierungstechnik.aux) (evaluation.aux) (zusammenfassung.aux)
+] [20] [21] (00_Vorlage Proposal Richtig.aux (proposal.aux) (einleitung.aux) (l
+iteraturueberblick.aux) (entwicklung_erwartungshaltung.aux) (analyse.aux)
+(implementationsdetails.aux) (evaluation.aux) (zusammenfassung.aux)
 (eidesstattliche_erklaerung.aux))
  ***********
 LaTeX2e <2023-11-01>
@@ -1381,10 +1359,10 @@ Package logreq Info: Writing requests to '"00_Vorlage Proposal Richtig".run.xml
 
  ) 
 Here is how much of TeX's memory you used:
- 26219 strings out of 474592
- 489305 string characters out of 5745798
+ 26188 strings out of 474592
+ 489604 string characters out of 5745798
  1937533 words of memory out of 5000000
- 47905 multiletter control sequences out of 15000+600000
+ 47882 multiletter control sequences out of 15000+600000
  614034 words of font info for 70 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  108i,14n,107p,10987b,2383s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1396,9 +1374,9 @@ b><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pf
 b><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.
 pfb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.
 pfb>
-Output written on "00_Vorlage Proposal Richtig.pdf" (22 pages, 262428 bytes).
+Output written on "00_Vorlage Proposal Richtig.pdf" (22 pages, 256039 bytes).
 PDF statistics:
- 366 PDF objects out of 1000 (max. 8388607)
- 83 named destinations out of 1000 (max. 500000)
- 241 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 329 PDF objects out of 1000 (max. 8388607)
+ 75 named destinations out of 1000 (max. 500000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 
