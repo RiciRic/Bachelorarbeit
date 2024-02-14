@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  12 FEB 2024 17:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  14 FEB 2024 16:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1153,22 +1153,22 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 2--53
 {C:/Users/ricar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/rica
 r/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
-46.
+45.
 
 (C:\Users\ricar\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
@@ -1177,18 +1177,18 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.152 \hiddenchapter{Problemstellung}
+l.151 \hiddenchapter{Problemstellung}
                                       [1
 
 
 
 ] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
@@ -1196,14 +1196,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-61.
+60.
  (C:\Users\ricar\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 [4
 
 {C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 169--199
+Underfull \hbox (badness 10000) in paragraph at lines 167--197
 
  []
 
@@ -1215,13 +1215,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--199
 
  [6
 
-]
-Overfull \hbox (1.20692pt too wide) in paragraph at lines 230--234
-[]\T1/lmr/m/n/12 Text-Ranking-Algorithmen: Text-Ranking-Algorithmen wie Tex-tRa
-nk oder YA-KE (Yet
- []
-
-[7] [8]
+] [7]
 \openout2 = `einleitung.aux'.
 
  (einleitung.tex
@@ -1241,15 +1235,15 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface.
 
-[9
+[8
 
 
-] [10] [11])
+] [9] [10])
 \openout2 = `literaturueberblick.aux'.
 
  (literaturueberblick.tex
 chapter 2.
-[12
+[11
 
 
 
@@ -1259,27 +1253,87 @@ chapter 2.
 
  (entwicklung_erwartungshaltung.tex
 chapter 3.
-[13
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
+
+ []
+
+[12
 
 
 
 
-])
+]
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--34
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--40
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--43
+
+ []
+
+[13] [14])
 \openout2 = `analyse.aux'.
 
  (analyse.tex
 chapter 4.
-[14
+
+Overfull \hbox (1.20692pt too wide) in paragraph at lines 9--13
+[]\T1/lmr/m/n/12 Text-Ranking-Algorithmen: Text-Ranking-Algorithmen wie Tex-tRa
+nk oder YA-KE (Yet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+[15
 
 
 
 
-])
+]
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[16])
 \openout2 = `implementationsdetails.aux'.
 
  (implementationsdetails.tex
 chapter 5.
-[15
+[17
 
 
 
@@ -1289,7 +1343,7 @@ chapter 5.
 
  (evaluation.tex
 chapter 6.
-[16
+[18
 
 
 
@@ -1299,7 +1353,7 @@ chapter 6.
 
  (zusammenfassung.tex
 chapter 7.
-[17
+[19
 
 
 
@@ -1308,42 +1362,36 @@ chapter 7.
 \openout2 = `eidesstattliche_erklaerung.aux'.
 
  (eidesstattliche_erklaerung.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 3--274
+Underfull \hbox (badness 10000) in paragraph at lines 3--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--274
+Underfull \hbox (badness 10000) in paragraph at lines 3--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--274
+Underfull \hbox (badness 10000) in paragraph at lines 3--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--274
+Underfull \hbox (badness 10000) in paragraph at lines 3--223
 
  []
 
-[18
+[20
 
 
 
 
-]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-79.
- (C:\Users\ricar\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-[19
+] [21
 
 
 
-] [20] [21] (00_Vorlage Proposal Richtig.aux (proposal.aux) (einleitung.aux) (l
-iteraturueberblick.aux) (entwicklung_erwartungshaltung.aux) (analyse.aux)
+] [22] (00_Vorlage Proposal Richtig.aux (proposal.aux) (einleitung.aux) (litera
+turueberblick.aux) (entwicklung_erwartungshaltung.aux) (analyse.aux)
 (implementationsdetails.aux) (evaluation.aux) (zusammenfassung.aux)
 (eidesstattliche_erklaerung.aux))
  ***********
@@ -1359,11 +1407,11 @@ Package logreq Info: Writing requests to '"00_Vorlage Proposal Richtig".run.xml
 
  ) 
 Here is how much of TeX's memory you used:
- 26188 strings out of 474592
- 489604 string characters out of 5745798
+ 26120 strings out of 474592
+ 487972 string characters out of 5745798
  1937533 words of memory out of 5000000
- 47882 multiletter control sequences out of 15000+600000
- 614034 words of font info for 70 fonts, out of 8000000 for 9000
+ 47822 multiletter control sequences out of 15000+600000
+ 613716 words of font info for 69 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  108i,14n,107p,10987b,2383s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
@@ -1372,11 +1420,10 @@ fb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pf
 b><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pf
 b><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pf
 b><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.
-pfb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.
 pfb>
-Output written on "00_Vorlage Proposal Richtig.pdf" (22 pages, 256039 bytes).
+Output written on "00_Vorlage Proposal Richtig.pdf" (23 pages, 234774 bytes).
 PDF statistics:
- 329 PDF objects out of 1000 (max. 8388607)
- 75 named destinations out of 1000 (max. 500000)
+ 316 PDF objects out of 1000 (max. 8388607)
+ 71 named destinations out of 1000 (max. 500000)
  177 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -127,7 +127,6 @@ breaklinks=true
 \pagenumbering{Roman}
 %\tableofcontents
 
-
 %\listoffigures
 %\lstlistoflistings
 \newpage
@@ -161,11 +160,10 @@ Diese Ausarbeitung präsentiert eine umfassende Untersuchung zur Entwicklung ein
 	\item Die erste Phase dieser Ausarbeitung besteht darin, eine klare Erwartungshaltung hinsichtlich der Anforderungen und Bedürfnisse der Stakeholder zu entwickeln. Hierfür werden Interviews mit Führungskräften durchgeführt, um die Erwartungen bezüglich einer \glqq{}perfekten\grqq{} Bedarfsmeldung herauszuarbeiten. Diese dient als Grundlage für die weiteren Entwicklungs- und Evaluierungsphasen.
 	\item Im Anschluss erfolgt eine eingehende Analyse der Techniken <was für Techniken> des Information Retrieval und Data-Mining, um die besten Ansätze zur Extraktion relevanter Inhalte zu identifizieren. Diese Analyse bildet die Grundlage für die Konzeptionierung einer Vorverarbeitung, das eine Kombination der erforschten Ergebnisse darstellt. Die Implementierung dieses Modells erfolgt durch den Aufbau einer Pipeline in Python, die eine effiziente Verarbeitung und Extraktion der Bedarfsmeldungen ermöglicht.
 	\item Zur Evaluierung der Leistungsfähigkeit des entwickelten Systems werden reale Bedarfsmeldungen und Mitarbeiterinformationen verwendet. Dabei wird überprüft, inwiefern das Ergebnis der definierten Erwartungshaltung entspricht. Mithilfe von den Metriken \emph{Precision}, \emph{Recall} und \emph{F1-Score} werden Abweichungen, Ähnlichkeiten und Anpassungen in Parametern analysiert, um Erkenntnisse darüber zu gewinnen, wie das System inhaltlich abschneidet und verbessert werden kann.
-	\item (Schließlich wird eine vergleichende Untersuchung mit einem auf Large Language Model basierenden Vorverarbeitungsansatz durchgeführt. Dabei werden die Performance, Zeit und Ergebnisqualität des entwickelten Systems mit diesem alternativen Ansatz verglichen. Dieser Vergleich dient dazu, die Stärken und Schwächen des entwickelten Systems zu identifizieren und gegebenenfalls weitere Verbesserungen vorzunehmen.)
+	%\item (Schließlich wird eine vergleichende Untersuchung mit einem auf Large Language Model basierenden Vorverarbeitungsansatz durchgeführt. Dabei werden die Performance, Zeit und Ergebnisqualität des entwickelten Systems mit diesem alternativen Ansatz verglichen. Dieser Vergleich dient dazu, die Stärken und Schwächen des entwickelten Systems zu identifizieren und gegebenenfalls weitere Verbesserungen vorzunehmen.)
 \end{itemize}
 
 \hiddenchapter{Vorgehen und Zeitplan}
-%handelt sich um Projektarbeit, peile bis  ende august bsw an
 Ziel ist es die Arbeit im Mai fertig zu stellen. Die einzelnen Monatsziele können aus der nachfolgenden Tabelle entnommen werden. \\ \\
 \begin{tabularx}{1\textwidth} { 
 		| >{\raggedright\arraybackslash}X 
@@ -174,7 +172,7 @@ Ziel ist es die Arbeit im Mai fertig zu stellen. Die einzelnen Monatsziele könn
 	Februar
 	& \begin{itemize}
 		\item Durchführung der Interviews mit Fachkräften
-		\item Zusammentragung aller relevanter Information Retrieval- und Preprocessing-Ansätze 
+		\item Zusammentragung aller relevanter Information Retrieval- und Data-Mining-Ansätze 
 	\end{itemize}\\
 	\hline
 	März
@@ -201,57 +199,8 @@ Ziel ist es die Arbeit im Mai fertig zu stellen. Die einzelnen Monatsziele könn
 \renewcommand\contentsname{Aufbau der Arbeit}
 \tableofcontents
 
-\cite{kobayashi2000information}
-
-\cite{singhal2001modern}
-
-\cite{croft2000combining}
-
-\cite{horesh2016information}
-
-\cite{belkin1992information}
-
-information filtering
-\cite{lanquillon2001enhancing}
-
-preprocessing
-\cite{alasadi2017review}
-
--------
-spam-filter
-\cite{shafi2017review}
-\cite{khorsi2007overview}
-\cite{tretyakov2004machine}
-----
-TF-IDF (Term Frequency-Inverse Document Frequency): TF-IDF ist eine statistische Methode, die verwendet wird, um die Relevanz eines Begriffs in einem Dokument relativ zu einem Korpus von Dokumenten zu bestimmen. Wörter mit höheren TF-IDF-Werten werden als potenzielle Schlüsselwörter betrachtet.
-\cite{bafna2016document}
-\cite{ramos2003using}
-
-Text-Ranking-Algorithmen: Text-Ranking-Algorithmen wie TextRank oder YAKE (Yet Another Keyword Extractor) verwenden Graphen-basierte Methoden, um Schlüsselwörter in einem Text zu identifizieren. Diese Algorithmen bewerten die Wichtigkeit von Wörtern basierend auf ihrer Verbindung zu anderen Wörtern im Text und extrahieren Schlüsselwörter entsprechend ihrer Rangfolge.
-\cite{mihalcea2004textrank}
-\cite{zhang2020empirical}
-\cite{pay2019ensemble}
-
-N-Gramm-Analyse: N-Gramme sind Sequenzen von N aufeinanderfolgenden Wörtern in einem Text. Durch die Analyse von N-Grammen können häufig auftretende Phrasen oder Begriffe identifiziert werden, die potenzielle Schlüsselwörter darstellen.
-\cite{pirk2019implementierung}
-
-
-Part-of-Speech (POS) Tagging: POS-Tagging wird verwendet, um die grammatischen Kategorien von Wörtern in einem Text zu bestimmen. Durch die Berücksichtigung von Wörtern mit bestimmten POS-Tags wie Substantiven oder Adjektiven können relevante Schlüsselwörter extrahiert werden.
-\cite{kumawat2015pos}
-\cite{nakagawa2007hybrid}
-
-bekommen wir ein unsupervised learning ansatz der 
-
-Regelbasierte Ansätze: Regelbasierte Ansätze verwenden vordefinierte Regeln oder Muster, um Schlüsselwörter zu identifizieren. Dies kann beispielsweise das Extrahieren von Wörtern sein, die häufig im Text vorkommen oder bestimmten Mustern entsprechen.
-
-Hybride Ansätze: Hybride Ansätze kombinieren verschiedene Methoden und Techniken, um eine genauere Extraktion von Schlüsselwörtern zu ermöglichen. Zum Beispiel könnte eine Kombination aus TF-IDF-Gewichtung und Text-Ranking-Algorithmen verwendet werden, um eine robuste Schlüsselwortextraktion zu erreichen.
-
 
 transformation von bedarfsmeldung zu guter bedarfsmeldung, was ist der fokus von der bedarfsmeldung, wie gut machen die ansätze das, und muss man das dann noch weiter verarbeiten, haben wir alles was wir brauchen mit nur einem algorithmus, inferenz falls parameter fehlt, gibt es einen der alles löst,
-
-ergebnis der arbeit: diese modelle in der reihenfolge kommen am nähesten an die bedarfsmeldung
-
-ausblick: die keyword extraction auch für die profile nutzen 
 
 was muss ich jetzt machen: gucken wie ich das inhaltlich genau machen will, also pipeline genauch checken, quellen von der bachelorarbeit checken
 
