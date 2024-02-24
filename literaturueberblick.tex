@@ -1,35 +1,69 @@
 \chapter{Literaturüberblick}
 \label{chap:literaturüberblick}
 
-\section{Definitionen und Konzepte: Information Retrieval, Data-Mining, Bedarfsmeldungen}
-\label{sec:definitionen-konzepte}
-
 %\section{Vorherige Forschung und Ansätze zur Personalbeschaffung und Vorverarbeitung von Bedarfsmeldungen}
 %\label{sec:forschung-und-ansätze}
 
+-Einschätzen der Fähigkeiten, Talente und des Fachwissens der Mitarbeiter\\
+-In diesem Papier wird ein Ansatz beschrieben, um aus Unternehmensdaten und den digitalen Fußabdrücken der Mitarbeiter Informationen zu gewinnen.\\
+-Beurteilung des Fachwissens eines Mitarbeiters in einem breiten Bereich wie cloud computing oder cybersecurity\\
+-Auf einer hohen Ebene lässt sich der Ansatz der Informationsbeschaffung und -fusion wie folgt beschreiben: Es wird eine Liste von Suchbegriffen erstellt, die sich auf das breite Fachgebiet beziehen.\\
+-Die Suche wird nach jedem dieser Abfragebegriffe durchgeführt, um Beweise für Mitarbeiter und Datenquellen zu finden. Die verschiedenen Beweisstücke werden miteinander verschmolzen, gewichtet und nach der Abfrage sortiert. Die Mitarbeiter werden nach Datenquelle gewichtet und möglicherweise auf andere Weise bewertet, um einen einzigen Ordinalwert (sehr niedrig, niedrig, moderat, etwas, begrenzt) für ihr Fachwissen in diesem breiten Bereich zu erhalten.\cite{horesh2016information} \\
 
-\cite{horesh2016information}
-
-\cite{kobayashi2000information}
-
-\cite{singhal2001modern}
-
-\cite{croft2000combining}
-
-\cite{belkin1992information}
-
-information filtering
+information filtering\\
+-Informationen für seine Benutzer betreffend der Anwender in Bezug auf ihre Interessengebiete zu reduzieren
+-Dazu werden nicht relevante Dokumente aus einem Strom von Informationen entfernt, sodass den Anwendern nur relevante Dokumente präsentiert werden.
+-Ein Teil der Arbeit beschäftigt sich mit der der Informationsfilterung und mögliche Filterungsvarianten werden vorgestellt. Die Arbeit konzentriert sich auf die inhaltsbasierte Filterung von Textdokumenten und identifizieren Informationsfilterung als einen Spezialfall der Textklassifikation.
+-Überblick über gängige Methoden. Anschließend werden bekannte Filterungsprojekte kurz vorgestellt, bevor verwandte Aufgaben verglichen werden.
 \cite{lanquillon2001enhancing}
 
 preprocessing
 \cite{alasadi2017review}
+-Wege und Schritte zur Aufbereitung von Datensätzen
+-Arbeit umfasst Data-Mining Vorverarbeitung um Qualität der Daten zu verbessern
+-Wichtiger Schritt um Effizienz zu verbessern
 
 -------
-spam-filter
-\cite{shafi2017review}
-\cite{khorsi2007overview}
-\cite{tretyakov2004machine}
+spam-filter\\
+-Überblick über verfügbare Methoden, Herausforderungen und zukünftige Forschungsrichtungen im Bereich der Spam-Erkennung, Filterung und Eindämmung von SMS-Spam. Dabei werden auch Methodiken der keyword frequency ratio und Herunterbrechung auf keyword components behandelt \cite{shafi2017review}\\
+
 ----
+In diesem Beitrag werden Studien zu Technologien vorgestellt, die für die Suche und das Abrufen von Informationen im Web nützlich sind. Es wird aufgezeigt, dass Information Retrieval und Ranking im Web-Kontext anders Funktioniert als in einer statischen Datenbank. \cite{kobayashi2000information}\\
+
+Die Kombination von verschiedenen Textdarstellungen und Suchstrategien ist zu einer Standardtechnik geworden, um die Effektivität der Informationsbeschaffung zu verbessern.\cite{croft2000combining}\\
+
+In dieser Arbeit wird eine Pipeline entwickelt, die die N-Gramm-Analyse verwendet, um Schlagwörter aus einem Text zu extrahieren und mit verschiedenen Ansätzen von Word-Clouds zu visualisieren.\cite{pirk2019implementierung}\\
+
+python pipeline mit python und tf-idf. Beschreibt warum TF-IDF häufig in  als Vorverarbeitung beim maschinellen Lernen eingesetzt wird. Hat in der Regel einen höheren Vorhersagewert als rohe Termhäufigkeit. Die Gewichtung von Themenwörtern wird erhöt,, um die Bedeutung von Wörtern zu erhöhen, während die Gewichtung von hochfrequenten Funktionswörtern verringert wird.\cite{lavin2019analyzing}\\
+
+Kombination drei Ansätze Ansätze. Unter anderem auch TF-IDF. Kombinieren mit einem sogenannten CLASSIFIER Model. Das Klassifikationsmodell bezieht sich direkt auf die
+Ergebnisse der Modelle LSTM, VADER und TFIDF, die jeweils drei Eingaben liefern. Die Werte dieser Eingaben liegen im
+Bereich von [0,1].
+Die Ausgabe des Klassifikationsmodells ist binär und liefert eine Vorhersage der
+Stimmung des vollständigen Textes der Modelleingabe (positiv oder negativ).\cite{chiny2021lstm}\\
+
+Das erste vorverarbeitete Dokument wird mithilfe eines Extraktionsalgorithmus
+analysiert und anschließend wird für jeden Begriff TF/IDF berechnet.
+Danach werden alle TF/IDF-Begriffe für jeden Satz summiert.
+Im nächsten Schritt werden alle Sätze anhand der Summe von TF/IDF eingestuft.
+Das Kompressionsverhältnis bestimmt die Position des Satzrangs. In dieser Studie wird eine Kompression von 50\% verwendet, was bedeutet,
+dass die Satzzusammenfassung um 50\% des Originaltextes gekürzt wird. Nach der Auswahl des Satzes wird seine Berechnung durchgeführt.
+Ähnlichkeit wird mit der Cosinus-Ähnlichkeitsmethode berechnet. 
+Anschließend werden alle Sätze anhand ihrer Cosinus-Ähnlichkeit von der höchsten zur niedrigsten sortiert.
+Der resultierende Text mit
+neuer Satzanordnung ist die endgültige Zusammenfassung.\cite{darmawan2015hybrid}\\
+
+
+Kombination aus TD-IDF und N-Gram. Um Fake news heraus zu filtern\cite{suhasini2021hybrid}
+
+Named ENtity Recognition mit POS-Tagger Implementierung mit Spacy für die griechische Sprache\cite{partalidou2019design}\\
+
+Preprocessing von Softwareanforderungen. Generierung aus Text Anforderungen zu diversen Diagrammen etc \cite{kroha2000preprocessing}
+
+\section{Definitionen und Konzepte: Information Retrieval, Data-Mining, Bedarfsmeldungen}
+\label{sec:definitionen-konzepte}
+
+Diese Arbeit beschreibt den Unterschied zwischen Information Filtering und Information Retrieval\cite{belkin1992information}
 
 %\section{Relevante Methoden und Techniken im Bereich Information Retrieval und Data-Mining}
 %\label{sec:relevante-methoden}

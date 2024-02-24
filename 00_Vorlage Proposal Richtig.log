@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  14 FEB 2024 16:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  21 FEB 2024 17:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1200,6 +1200,11 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
  (C:\Users\ricar\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
+Overfull \hbox (10.83481pt too wide) in paragraph at lines 161--162
+[]\T1/lmr/m/n/12 Im An-schluss er-folgt ei-ne ein-ge-hen-de Ana-ly-se der Tech-
+ni-ken \T1/lmr/m/it/12 TF-IDF\T1/lmr/m/n/12 , \T1/lmr/m/it/12 Text-Ranking-
+ []
+
 [4
 
 {C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
@@ -1243,12 +1248,57 @@ Class scrreprt Warning: \float@addtolists detected!
 
  (literaturueberblick.tex
 chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
+
+ []
+
 [11
 
 
 
 
-])
+]
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+ []
+
+[12] [13])
 \openout2 = `entwicklung_erwartungshaltung.aux'.
 
  (entwicklung_erwartungshaltung.tex
@@ -1258,7 +1308,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--25
 
  []
 
-[12
+[14
 
 
 
@@ -1293,33 +1343,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--43
 
  []
 
-[13] [14])
+[15] [16])
 \openout2 = `analyse.aux'.
 
  (analyse.tex
 chapter 4.
 
-Overfull \hbox (1.20692pt too wide) in paragraph at lines 9--13
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+
+Overfull \hbox (1.20692pt too wide) in paragraph at lines 7--8
 []\T1/lmr/m/n/12 Text-Ranking-Algorithmen: Text-Ranking-Algorithmen wie Tex-tRa
 nk oder YA-KE (Yet
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-[15
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+[17
 
 
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (18.125pt): 
 (fancyhdr)                Make it at least 27.11652pt, for example:
@@ -1328,12 +1402,12 @@ Package fancyhdr Warning: \headheight is too small (18.125pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
 
-[16])
+[18])
 \openout2 = `implementationsdetails.aux'.
 
  (implementationsdetails.tex
 chapter 5.
-[17
+[19
 
 
 
@@ -1343,7 +1417,7 @@ chapter 5.
 
  (evaluation.tex
 chapter 6.
-[18
+[20
 
 
 
@@ -1353,7 +1427,7 @@ chapter 6.
 
  (zusammenfassung.tex
 chapter 7.
-[19
+[21
 
 
 
@@ -1381,19 +1455,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--223
 
  []
 
-[20
+[22
 
 
 
 
-] [21
+] [23
 
 
 
-] [22] (00_Vorlage Proposal Richtig.aux (proposal.aux) (einleitung.aux) (litera
-turueberblick.aux) (entwicklung_erwartungshaltung.aux) (analyse.aux)
-(implementationsdetails.aux) (evaluation.aux) (zusammenfassung.aux)
-(eidesstattliche_erklaerung.aux))
+] [24] [25] (00_Vorlage Proposal Richtig.aux (proposal.aux)
+(einleitung.aux) (literaturueberblick.aux) (entwicklung_erwartungshaltung.aux)
+(analyse.aux) (implementationsdetails.aux) (evaluation.aux)
+(zusammenfassung.aux) (eidesstattliche_erklaerung.aux))
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-01>
@@ -1407,10 +1481,10 @@ Package logreq Info: Writing requests to '"00_Vorlage Proposal Richtig".run.xml
 
  ) 
 Here is how much of TeX's memory you used:
- 26120 strings out of 474592
- 487972 string characters out of 5745798
- 1937533 words of memory out of 5000000
- 47822 multiletter control sequences out of 15000+600000
+ 26177 strings out of 474592
+ 490392 string characters out of 5745798
+ 1936533 words of memory out of 5000000
+ 47866 multiletter control sequences out of 15000+600000
  613716 words of font info for 69 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  108i,14n,107p,10987b,2383s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1421,9 +1495,9 @@ b><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pf
 b><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pf
 b><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.
 pfb>
-Output written on "00_Vorlage Proposal Richtig.pdf" (23 pages, 234774 bytes).
+Output written on "00_Vorlage Proposal Richtig.pdf" (26 pages, 249603 bytes).
 PDF statistics:
- 316 PDF objects out of 1000 (max. 8388607)
- 71 named destinations out of 1000 (max. 500000)
- 177 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 347 PDF objects out of 1000 (max. 8388607)
+ 84 named destinations out of 1000 (max. 500000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
