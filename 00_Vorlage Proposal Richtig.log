@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  21 FEB 2024 17:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  26 FEB 2024 16:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1168,59 +1168,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--149
  []
 
 
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.149 \hiddenchapter{Problemstellung}
+                                      [1
+
+
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.151 \hiddenchapter{Problemstellung}
-                                      [1
-
-
-
-] [2]
 Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
-
- []
-
-[3
+[2
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-60.
+58.
  (C:\Users\ricar\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (10.83481pt too wide) in paragraph at lines 161--162
+Overfull \hbox (10.83481pt too wide) in paragraph at lines 159--160
 []\T1/lmr/m/n/12 Im An-schluss er-folgt ei-ne ein-ge-hen-de Ana-ly-se der Tech-
 ni-ken \T1/lmr/m/it/12 TF-IDF\T1/lmr/m/n/12 , \T1/lmr/m/it/12 Text-Ranking-
  []
 
-[4
+[3
 
 {C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 167--197
+Underfull \hbox (badness 10000) in paragraph at lines 165--192
 
  []
 
-[5
+[4
 
 ] (00_Vorlage Proposal Richtig.toc)
 \tf@toc=\write5
 \openout5 = `"00_Vorlage Proposal Richtig.toc"'.
 
- [6
+ [5
 
-] [7]
+]
 \openout2 = `einleitung.aux'.
 
  (einleitung.tex
@@ -1240,10 +1235,28 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface.
 
-[8
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4 \newpage
+             [1
 
 
-] [9] [10])
+]
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.8 \newpage
+             [2]
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.14 \newpage
+              [3])
 \openout2 = `literaturueberblick.aux'.
 
  (literaturueberblick.tex
@@ -1259,16 +1272,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--29
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--32
-
- []
-
-[11
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.29 
+      [4
 
 
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
@@ -1294,56 +1313,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--55
  []
 
 
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.57 K
+      ombination aus TD-IDF und N-Gram. Um Fake news heraus zu filtern\cite{...
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
-[12] [13])
+[6] [7] [8] [9] [10] [11] [12] [13] [14] [15])
 \openout2 = `entwicklung_erwartungshaltung.aux'.
 
- (entwicklung_erwartungshaltung.tex
+
+(entwicklung_erwartungshaltung.tex
 chapter 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--25
-
- []
-
-[14
+[16
 
 
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 26--28
+] [17] [18] [19] [20] [21]
+Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--31
+Underfull \hbox (badness 10000) in paragraph at lines 36--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--34
+Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--37
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--40
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--43
+Underfull \hbox (badness 10000) in paragraph at lines 48--50
 
  []
 
-[15] [16])
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
+
+ []
+
+[22] [23] [24] [25])
 \openout2 = `analyse.aux'.
 
  (analyse.tex
@@ -1384,7 +1411,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
-[17
+[26
 
 
 
@@ -1402,32 +1429,140 @@ Package fancyhdr Warning: \headheight is too small (18.125pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
 
-[18])
+[27]
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[28]
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[29]
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[30]
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[31]
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[32])
 \openout2 = `implementationsdetails.aux'.
 
  (implementationsdetails.tex
 chapter 5.
-[19
+[33
 
 
 
 
-])
+]
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[34]
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[35]
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[36]
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[37]
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[38]
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[39]
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[40])
 \openout2 = `evaluation.aux'.
 
  (evaluation.tex
 chapter 6.
-[20
+[41
 
 
 
 
-])
+] [42] [43] [44] [45] [46] [47] [48] [49])
 \openout2 = `zusammenfassung.aux'.
 
  (zusammenfassung.tex
 chapter 7.
-[21
+[50
 
 
 
@@ -1436,35 +1571,35 @@ chapter 7.
 \openout2 = `eidesstattliche_erklaerung.aux'.
 
  (eidesstattliche_erklaerung.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 3--223
+Underfull \hbox (badness 10000) in paragraph at lines 3--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--223
+Underfull \hbox (badness 10000) in paragraph at lines 3--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--223
+Underfull \hbox (badness 10000) in paragraph at lines 3--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--223
+Underfull \hbox (badness 10000) in paragraph at lines 3--220
 
  []
 
-[22
+[51
 
 
 
 
-] [23
+] [52
 
 
 
-] [24] [25] (00_Vorlage Proposal Richtig.aux (proposal.aux)
+] [53] [54] (00_Vorlage Proposal Richtig.aux (proposal.aux)
 (einleitung.aux) (literaturueberblick.aux) (entwicklung_erwartungshaltung.aux)
 (analyse.aux) (implementationsdetails.aux) (evaluation.aux)
 (zusammenfassung.aux) (eidesstattliche_erklaerung.aux))
@@ -1481,10 +1616,10 @@ Package logreq Info: Writing requests to '"00_Vorlage Proposal Richtig".run.xml
 
  ) 
 Here is how much of TeX's memory you used:
- 26177 strings out of 474592
- 490392 string characters out of 5745798
+ 26222 strings out of 474592
+ 490781 string characters out of 5745798
  1936533 words of memory out of 5000000
- 47866 multiletter control sequences out of 15000+600000
+ 47871 multiletter control sequences out of 15000+600000
  613716 words of font info for 69 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  108i,14n,107p,10987b,2383s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1495,9 +1630,9 @@ b><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pf
 b><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pf
 b><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.
 pfb>
-Output written on "00_Vorlage Proposal Richtig.pdf" (26 pages, 249603 bytes).
+Output written on "00_Vorlage Proposal Richtig.pdf" (60 pages, 277576 bytes).
 PDF statistics:
- 347 PDF objects out of 1000 (max. 8388607)
- 84 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 505 PDF objects out of 1000 (max. 8388607)
+ 124 named destinations out of 1000 (max. 500000)
+ 169 words of extra memory for PDF output out of 10000 (max. 10000000)
 

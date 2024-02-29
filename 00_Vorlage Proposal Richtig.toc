@@ -1,22 +1,23 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {chapter}{\numberline {1}Einleitung}{8}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Problemstellung}{9}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Ziele und Ergebnisse der Arbeit}{10}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Aufbau der Arbeit}{10}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Literaturüberblick}{11}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Definitionen und Konzepte: Information Retrieval, Data-Mining, Bedarfsmeldungen}{13}{section.2.1}%
-\contentsline {chapter}{\numberline {3}Entwicklung einer klaren Erwartungshaltung}{14}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Beschreibung der Interviews mit Führungskräften zur Identifizierung von Stakeholder-Erwartungen}{14}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Analyse der Ergebnisse und Entwicklung einer klaren Erwartungshaltung für die Bedarfsmeldungen}{15}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Analyse der Techniken des Information Retrieval und Data-Mining}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Beschreibung der untersuchten Techniken und Ansätze}{17}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Bewertung und Auswahl der besten Ansätze für die Extraktion relevanter Inhalte aus Bedarfsmeldungen}{18}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Konzeptionierung und Implementierung der Vorverarbeitung}{19}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Beschreibung des entwickelten Vorverarbeitungsmodells basierend auf den ausgewählten Techniken}{19}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Details zur Implementierung der Pipeline in Python für die effiziente Verarbeitung von Bedarfsmeldungen}{19}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Evaluierung des entwickelten Systems}{20}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Beschreibung des verwendeten Datensatzes und der Evaluierungsmethodik}{20}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Präsentation und Diskussion der Ergebnisse basierend auf den Metriken Precision, Recall und F1-Score}{20}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Analyse von Abweichungen, Ähnlichkeiten und Verbesserungspotenzialen des Systems}{20}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Zusammenfassung und Ausblick}{21}{chapter.7}%
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Problemstellung}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Ziele und Ergebnisse der Arbeit}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Aufbau der Arbeit}{3}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Literaturüberblick}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Verwandte Arbeiten}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Definitionen und Konzepte: Information Retrieval, Data-Mining, Bedarfsmeldungen}{13}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Entwicklung einer klaren Erwartungshaltung}{16}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Beschreibung der Interviews mit Führungskräften zur Identifizierung von Stakeholder-Erwartungen}{16}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Analyse der Ergebnisse und Entwicklung einer klaren Erwartungshaltung für die Bedarfsmeldungen}{22}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Analyse der Techniken des Information Retrieval und Data-Mining}{26}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Beschreibung der untersuchten Techniken und Ansätze}{26}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Bewertung und Auswahl der besten Ansätze für die Extraktion relevanter Inhalte aus Bedarfsmeldungen}{31}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Konzeptionierung und Implementierung der Vorverarbeitung}{33}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Beschreibung des entwickelten Vorverarbeitungsmodells}{33}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Details zur Implementierung der Pipeline in Python}{38}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Evaluierung des entwickelten Systems}{41}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Beschreibung des verwendeten Datensatzes und der Evaluierungsmethodik}{41}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Präsentation und Diskussion der Ergebnisse}{42}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Analyse von Abweichungen, Ähnlichkeiten und Verbesserungspotenzialen des Systems}{48}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Zusammenfassung und Ausblick}{50}{chapter.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
