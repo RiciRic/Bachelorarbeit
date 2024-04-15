@@ -145,9 +145,9 @@ breaklinks=true
 \hiddenchapter{Motivation}
 In einer globalisierten und dynamischen Wirtschaftswelt sind Unternehmen zunehmend auf Projekte angewiesen, um ihre Ziele zu erreichen und Wettbewerbsvorteile zu erlangen. Die Personalbeschaffung für solche Projekte erfordert oft spezialisiertes Fachwissen und vielfältige Fähigkeiten, um erfolgreich umgesetzt zu werden. Es ist entscheidend für den Projekterfolg, dass die Personalbeschaffung die passenden Mitarbeiter für ausgewählte Projekte findet. Hier setzt die Entwicklung eines Recommender Systems zur Mitarbeiterempfehlung an. Ein solches System kann Unternehmen dabei unterstützen, den Prozess der Mitarbeiterrekrutierung und -auswahl zu optimieren. Durch die Berücksichtigung verschiedener Kriterien wie Qualifikationen, Fähigkeiten und Erfahrungen kann das Recommender-System dazu beitragen, die Auswahl effektiv zu filtern und diejenigen herauszufiltern, die am besten zu einem Projekt im Unternehmen passen. Ein solches System bietet außerdem den Vorteil, den Prozess der Mitarbeiterempfehlung zu automatisieren und zu beschleunigen. Dies ermöglicht Unternehmen, schneller auf offene Stellen zu reagieren und potenzielle Kandidaten zeitnah zu identifizieren. Dadurch wird die Effizienz der Mitarbeitersuche verbessert und die Qualität der Einstellungsentscheidungen erhöht.\\
 
-Das Potenzial von Recommender Systems wurde auch bei \emph{adesso} entdeckt und nun wird nach und nach Wege gesucht, KI-gestützte Systeme in die eigenen Prozesse zu integrieren. Im internen Projekt \emph{adesso Staffing Advisor} wird an einem Recommender-System zur Mitarbeiterempfehlung für ausgewählte Projekte gearbeitet. Die Umsetzung der Recommender Systems bedient sich verschiedener KI-basierten Ansätze. Ein ganz entscheidender Schritt im Prozess der Mitarbeiterempfehlung ist die Vorverarbeitung der Bedarfsmeldungen. Diese sind eine wertvolle Informationsquelle, die Fachkräften helfen kann, die Empfehlungen effizienter zu gestalten, um dadurch wettbewerbsfähig zu bleiben. Allerdings sind diese oft umfangreich, unsortiert und komplex, was ihre effektive Nutzung erschwert. Deshalb ist es entscheidend, effiziente Methoden und Techniken des Information Retrieval anzuwenden, um so relevante Informationen schnell und präzise aus Bedarfsmeldungen zu extrahieren. Die Extraktion wichtiger Schlüsselwörter, Phrasen und Themen ermöglicht es einen besseren Einblick in die Ziele, Methoden und Ergebnisse der Projekte zu bekommen. Dadurch können fundierte Entscheidungen bezüglich der Personalbesetzung getroffen und Ressourcen effizient genutzt werden.\\
+Das Potenzial von Recommender Systems wurde auch bei \emph{adesso} entdeckt und nun wird nach und nach Wege gesucht, KI-gestützte Systeme in die eigenen Prozesse zu integrieren. Im internen Projekt \emph{adesso Staffing Advisor} wird an einem Recommender-System zur Mitarbeiterempfehlung für ausgewählte Projekte gearbeitet. Die Umsetzung der Recommender Systems bedient sich verschiedener KI-basierten Ansätze. Ein ganz entscheidender Schritt im Prozess der Mitarbeiterempfehlung ist die Vorverarbeitung der Bedarfsmeldungen. Diese sind eine wertvolle Informationsquelle, die Führungskräften helfen kann, die Empfehlungen effizienter zu gestalten, um dadurch wettbewerbsfähig zu bleiben. Allerdings sind diese oft umfangreich, unsortiert und komplex, was ihre effektive Nutzung erschwert. Deshalb ist es entscheidend, effiziente Methoden und Techniken des Information Retrieval anzuwenden, um so relevante Informationen schnell und präzise aus Bedarfsmeldungen zu extrahieren. Die Extraktion wichtiger Schlüsselwörter, Phrasen und Themen ermöglicht es einen besseren Einblick in die Ziele, Methoden und Ergebnisse der Projekte zu bekommen. Dadurch können fundierte Entscheidungen bezüglich der Personalbesetzung getroffen und Ressourcen effizient genutzt werden.\\
 \hiddenchapter{Problemstellung}
-In einer immer stärker vernetzten und informationsreichen Welt stehen Organisationen vor der Herausforderung, relevante Informationen effizient aus umfangreichen Bedarfsmeldungen zu extrahieren. Obwohl diese Beschreibungen wichtige Einblicke in Ziele, Methoden und Ergebnisse liefern, können sie aufgrund ihres Umfangs und ihrer Komplexität schwer durchsuchbar und analysierbar sein. Die manuelle Identifizierung und Extraktion relevanter Inhalte ist zeitaufwendig und fehleranfällig. Daher stellt sich die Problemstellung: \\
+Um das Entlastungspotenzial für Führungskräfte durch das Gesamtsystem eines Recommender Systems für Mitarbeiterempfehlungen zu ausgewählten Projekten zu realisieren, sind mehrere Schritte notwendig. Eine Informationsgewinnung aus den unstrukturierten Projekt- und Mitarbeiterdaten ist unerlässlich, um schließlich den Ähnlichkeitsvergleich für die Empfehlungen durchführen zu können. Diese Ausarbeitung befasst sich mit dem ersten Schritt der Strukturierung und Informationsextraktion der vorhandenen Bedarfsmeldungen. Somit steht \emph{adesso} vor der Herausforderung, relevante Informationen effizient aus umfangreichen Bedarfsmeldungen zu extrahieren. Obwohl diese Beschreibungen wichtige Einblicke in Ziele, Methoden und Ergebnisse liefern, können sie aufgrund ihres Umfangs und ihrer Komplexität schwer durchsuchbar und analysierbar sein. Die manuelle Identifizierung und Extraktion relevanter Inhalte ist zeitaufwendig und fehleranfällig. Daher stellt sich die Problemstellung: \\
 
 Wie können wir effektive Methoden und Techniken des Information Retrieval und Data-Mining nutzen, um automatisiert relevante Inhalte aus Bedarfsmeldungen im spezifischen Software Entwicklungs-Kontext zu extrahieren und somit die Effizienz, Genauigkeit und Geschwindigkeit der Informationsgewinnung für Führungskräfte zu verbessern.\\
 
@@ -155,34 +155,33 @@ In der Vergangenheit wurden bereits Methoden im Bereich des automatisierten Recr
 \hiddenchapter{Ziele und Ergebnisse der Arbeit}
 Diese Ausarbeitung präsentiert eine umfassende Untersuchung zur Entwicklung eines automatisierten Systems zur Extraktion relevanter Inhalte aus Bedarfsmeldungen im Software-Entwicklungs-Kontext.
 \begin{itemize}
-	\item Die erste Phase dieser Ausarbeitung besteht darin, eine klare Erwartungshaltung hinsichtlich der Anforderungen und Bedürfnisse der Stakeholder zu entwickeln. Hierfür werden Interviews mit Führungskräften durchgeführt, um die Erwartungen bezüglich einer \glqq{}perfekten\grqq{} Bedarfsmeldung herauszuarbeiten. Diese dient als Grundlage für die weiteren Entwicklungs- und Evaluierungsphasen.
-	\item Im Anschluss erfolgt eine eingehende Analyse der Techniken \emph{TF-IDF}, \emph{Text-Ranking-Algorithmen}, \emph{N-Gramm-Analyse}, \emph{POS-Tagging}, \emph{Named Entity Recognition}, Regelbasierte Ansätze und Hybride Ansätze des Information Retrieval und Data-Mining, um die besten Ansätze zur Extraktion relevanter Inhalte zu identifizieren. Diese Analyse bildet die Grundlage für die Konzeptionierung einer Vorverarbeitung, das eine Kombination der erforschten Ergebnisse darstellt. Die Implementierung dieser Modelle erfolgt durch den Aufbau einer Pipeline in Python, die eine effiziente Verarbeitung und Extraktion der Bedarfsmeldungen ermöglicht.
-	\item Zur Evaluierung der Leistungsfähigkeit des entwickelten Systems werden reale Bedarfsmeldungen in die Pipeline eingefügt. Dabei wird überprüft, inwiefern das Ergebnis der definierten Erwartungshaltung entspricht. Mit Hilfe einer manuellen Überprüfung werden Abweichungen, Ähnlichkeiten und Anpassungen analysiert, um Erkenntnisse darüber zu gewinnen, wie das System inhaltlich abschneidet und welche Techniken allein oder in Kombination mit mehreren Ansätzen die wichtigsten Informationen filtert. Da die Dauer eine entscheidende Rolle spielt, werden auch Zeit und Leistung gemessen.
-	\item Schließlich wird eine vergleichende Untersuchung mit einem auf Large Language Model basierenden Vorverarbeitungsansatz durchgeführt. Dabei werden die Performance, Zeit und Ergebnisqualität des entwickelten Systems mit diesem alternativen Ansatz verglichen. Dieser Vergleich dient dazu, die Stärken und Schwächen des entwickelten Systems zu identifizieren und gegebenenfalls weitere Verbesserungen vorzunehmen.
+	\item In der Ausarbeitung wird zunächst ein Konzept einer standardisierten Bedarfsmeldung erarbeitet. Dazu wird eine klare Erwartungshaltung hinsichtlich der Anforderungen und Bedürfnisse der Stakeholder entwickeln. Hierfür werden Interviews mit Führungskräften durchgeführt, um die Erwartungen bezüglich einer \glqq{}perfekten\grqq{} Bedarfsmeldung herauszuarbeiten. Dieses Konzept dient als Grundlage für die weiteren Entwicklungs- und Evaluierungsphasen.
+	\item Es wird an einer ausführbaren prototypischen Software gearbeitet, die Bedarfsmeldungen effizient verarbeitet und wichtige Informationen extrahiert. Hierfür wird eine Pipeline in Python aufgebaut und strukturell durch Use-Case- und UML-Diagramme dokumentiert. Es werden Modelle des Information Retrieval und Data-Mining implementiert. Dabei erfolgt zunächst eine eingehende Analyse der Techniken \emph{TF-IDF}, \emph{Text-Ranking-Algorithmen}, \emph{N-Gramm-Analyse}, \emph{POS-Tagging}, \emph{Named Entity Recognition}, Regelbasierte Ansätze und Hybride Ansätze, um die besten Ansätze zur Extraktion relevanter Inhalte zu identifizieren. Diese Analyse bildet die Grundlage für die Konzeptionierung des Software-Prototypen, das eine Kombination der erforschten Ergebnisse darstellt.
+	\item Um die Leistungsfähigkeit des entwickelten Systems zu evaluieren, werden Testfälle für reale Bedarfsmeldungen definiert. Dabei wird überprüft, inwieweit das Ergebnis den Erwartungen entspricht. Mit Hilfe einer manuellen Überprüfung werden Abweichungen, Ähnlichkeiten und Anpassungen analysiert, um Erkenntnisse über die inhaltliche Leistung des Systems und die Techniken zu gewinnen, die allein oder in Kombination mit mehreren Ansätzen die wichtigsten Informationen herausfiltern. Da die Dauer eine entscheidende Rolle spielt, werden auch Zeit und Leistung gemessen. Diese Ergebnisse werden mit einem neuen Vorverarbeitungsansatz verglichen, der auf dem Large Language Model basiert. Die Performance, Zeit und Ergebnisqualität des entwickelten Systems soll im Vergleich mit diesem alternativen Ansatz die Stärken und Schwächen des entwickelten Systems aufzeigen, um daraus gegebenenfalls weitere Verbesserungsmöglichkeiten zu identifizieren.
 \end{itemize}
 
 \hiddenchapter{Vorgehen und Zeitplan}
-Ziel ist es die Arbeit im Mai fertig zu stellen. Die einzelnen Monatsziele können aus der nachfolgenden Tabelle entnommen werden. \\ \\
+Ziel ist es die Arbeit im Juni fertig zu stellen. Die einzelnen Monatsziele können aus der nachfolgenden Tabelle entnommen werden. \\ \\
 \begin{tabularx}{1\textwidth} { 
 		| >{\raggedright\arraybackslash}X 
 		| >{\raggedright\arraybackslash}X | }
 	\hline
-	März
-	& \begin{itemize}
-		\item Durchführung der Interviews mit Fachkräften
-		\item Zusammentragung aller relevanter Information Retrieval- und Data-Mining-Ansätze
-		\item Durchführung der Interviews mit Fachkräften
-		\item Formulierung der Anforderungen für Bedarfsmeldungen
-	\end{itemize}\\
-	\hline
 	April
 	& \begin{itemize}
+		\item Durchführung der Interviews mit Führungskräften
+		\item Zusammentragung aller relevanter Information Retrieval- und Data-Mining-Ansätze
+		\item Formulierung der Anforderungen für Bedarfsmeldungen
 		\item Implementierung
+	\end{itemize}\\
+	\hline
+	Mai
+	& \begin{itemize}
+		\item Fertigstellung der Implementierung
 		\item Durchführung der Tests mit echten Bedarfsmeldungen
 		\item Evaluierung der Ergebnisse
 	\end{itemize}\\
 	\hline
-	Mai
+	Juni
 	& \begin{itemize}
 		\item Schluss schreiben
 		\item Korrekturen
@@ -196,6 +195,31 @@ Ziel ist es die Arbeit im Mai fertig zu stellen. Die einzelnen Monatsziele könn
 
 \newpage
 
+\hiddenchapter{Interviewfragen mit Führungskräften zur Identifizierung von Stakeholder-Erwartungen}
+\begin{enumerate}
+	\item Wer sind die typischen Stakeholder bei der Erstellung von Bedarfsmeldungen und welche
+	Rolle spielen sie?
+	\item Welche Art von Projekten sind typischerweise in Ihrem Unternehmen an der Tagesordnung?
+	Können Sie uns Beispiele für verschiedene Arten von Projekten geben, die adesso
+	durchführt?
+	\item Wie werden Projektbedarfe und -anforderungen innerhalb von adesso typischerweise
+	kommuniziert und dokumentiert?
+	\item Welche Informationen halten Sie in einer Bedarfsmeldung für besonders wichtig oder
+	unverzichtbar?
+	\item Wie detailliert sollten Projektbeschreibungen Ihrer Meinung nach sein? Sind bestimmte
+	Schlüsselaspekte oder -informationen in jeder Bedarfsmeldung enthalten?
+	\item Wie wird die Qualität von Bedarfsmeldungen bei adesso bewertet? Gibt es bestimmte
+	Kriterien oder Standards, anhand derer Bedarfsmeldungen beurteilt werden?
+	\item Wie können Sie die Qualität und Klarheit von Bedarfsmeldungen verbessern?
+	\item Welche Herausforderungen oder Schwierigkeiten sind bei unklaren oder unvollständigen
+	Bedarfsmeldungen aufgetreten?
+	\item Welche Auswirkungen haben unklare oder fehlende Informationen in Bedarfsmeldungen
+	auf die Effizienz und den Erfolg von Projekten?
+	\item Wie können Sie sicherstellen, dass die Bedürfnisse und Anforderungen aller relevanten
+	Stakeholder in einer Bedarfsmeldung angemessen berücksichtigt werden?
+\end{enumerate}
+
+\newpage
 \setcounter{page}{1}
 \pagestyle{fancy}
 \pagenumbering{arabic}
