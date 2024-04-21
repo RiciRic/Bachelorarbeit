@@ -1,0 +1,1272 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+\preamble{%
+\newcommand{\lastaccesseddate}{2023-04-15}\newcommand{\lastaccessed}{(abgerufen:
+  \lastaccesseddate)}
+}
+
+  \entry{alasadi2017review}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ASA}{%
+         family={Alasadi},
+         familyi={A\bibinitperiod},
+         given={Suad\bibnamedelima A},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=BWS}{%
+         family={Bhaya},
+         familyi={B\bibinitperiod},
+         given={Wesam\bibnamedelima S},
+         giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ASABWS1}
+    \strng{fullhash}{ASABWS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{16}
+    \field{pages}{4102\bibrangedash 4107}
+    \field{title}{Review of data preprocessing techniques in data mining}
+    \field{volume}{12}
+    \field{journaltitle}{Journal of Engineering and Applied Sciences}
+    \field{year}{2017}
+  \endentry
+
+  \entry{bafna2016document}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=BP}{%
+         family={Bafna},
+         familyi={B\bibinitperiod},
+         given={Prafulla},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Pramod},
+         familyi={P\bibinitperiod},
+         given={Dhanya},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=VA}{%
+         family={Vaidya},
+         familyi={V\bibinitperiod},
+         given={Anagha},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{BPPDVA1}
+    \strng{fullhash}{BPPDVA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{2016 International Conference on Electrical, Electronics,
+  and Optimization Techniques (ICEEOT)}
+    \field{pages}{61\bibrangedash 66}
+    \field{title}{Document clustering: TF-IDF approach}
+    \field{year}{2016}
+  \endentry
+
+  \entry{belkin1992information}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BNJ}{%
+         family={Belkin},
+         familyi={B\bibinitperiod},
+         given={Nicholas\bibnamedelima J},
+         giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=CWB}{%
+         family={Croft},
+         familyi={C\bibinitperiod},
+         given={W\bibnamedelima Bruce},
+         giveni={W\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM New York, NY, USA}%
+    }
+    \strng{namehash}{BNJCWB1}
+    \strng{fullhash}{BNJCWB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{12}
+    \field{pages}{29\bibrangedash 38}
+    \field{title}{Information filtering and information retrieval: Two sides of
+  the same coin?}
+    \field{volume}{35}
+    \field{journaltitle}{Communications of the ACM}
+    \field{year}{1992}
+  \endentry
+
+  \entry{bohne2013data}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=BT}{%
+         family={Bohne},
+         familyi={B\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BUM}{%
+         family={Borghoff},
+         familyi={B\bibinitperiod},
+         given={Uwe\bibnamedelima M},
+         giveni={U\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{BTBUM1}
+    \strng{fullhash}{BTBUM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{2013 20th IEEE International Conference and Workshops on
+  Engineering of Computer Based Systems (ECBS)}
+    \field{pages}{166\bibrangedash 173}
+    \field{title}{Data fusion: Boosting performance in keyword extraction}
+    \field{year}{2013}
+  \endentry
+
+  \entry{burke2011recommender}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BR}{%
+         family={Burke},
+         familyi={B\bibinitperiod},
+         given={Robin},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=FA}{%
+         family={Felfernig},
+         familyi={F\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GMH}{%
+         family={G{\"o}ker},
+         familyi={G\bibinitperiod},
+         given={Mehmet\bibnamedelima H},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BRFAGMH1}
+    \strng{fullhash}{BRFAGMH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{3}
+    \field{pages}{13\bibrangedash 18}
+    \field{title}{Recommender systems: An overview}
+    \field{volume}{32}
+    \field{journaltitle}{Ai Magazine}
+    \field{year}{2011}
+  \endentry
+
+  \entry{chartron2014general}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CG}{%
+         family={Chartron},
+         familyi={C\bibinitperiod},
+         given={Ghislaine},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=KG}{%
+         family={Kembellec},
+         familyi={K\bibinitperiod},
+         given={G{\'e}rald},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{CGKG1}
+    \strng{fullhash}{CGKG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{pages}{1\bibrangedash 23}
+    \field{title}{General introduction to recommender systems}
+    \field{journaltitle}{Recommender Systems}
+    \field{year}{2014}
+  \endentry
+
+  \entry{chiny2021lstm}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CM}{%
+         family={Chiny},
+         familyi={C\bibinitperiod},
+         given={Mohamed},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Chihab},
+         familyi={C\bibinitperiod},
+         given={Marouane},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BO}{%
+         family={Bencharef},
+         familyi={B\bibinitperiod},
+         given={Omar},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=CY}{%
+         family={Chihab},
+         familyi={C\bibinitperiod},
+         given={Younes},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Science}%
+      {Information (SAI) Organization Limited}%
+    }
+    \strng{namehash}{CMCMBO+1}
+    \strng{fullhash}{CMCMBOCY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{7}
+    \field{title}{LSTM, VADER and TF-IDF based hybrid sentiment analysis model}
+    \field{volume}{12}
+    \field{journaltitle}{International Journal of Advanced Computer Science and
+  Applications}
+    \field{year}{2021}
+  \endentry
+
+  \entry{croft2000combining}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=CWB}{%
+         family={Croft},
+         familyi={C\bibinitperiod},
+         given={W\bibnamedelima Bruce},
+         giveni={W\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{CWB1}
+    \strng{fullhash}{CWB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{booktitle}{Advances in Information Retrieval: Recent Research from
+  the center for intelligent information retrieval}
+    \field{pages}{1\bibrangedash 36}
+    \field{title}{Combining approaches to information retrieval}
+    \field{year}{2000}
+  \endentry
+
+  \entry{darmawan2015hybrid}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DR}{%
+         family={Darmawan},
+         familyi={D\bibinitperiod},
+         given={Rizki},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=WRS}{%
+         family={Wahono},
+         familyi={W\bibinitperiod},
+         given={Romi\bibnamedelima Satria},
+         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IlmuKomputer. com}%
+    }
+    \strng{namehash}{DRWRS1}
+    \strng{fullhash}{DRWRS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{2}
+    \field{pages}{109\bibrangedash 114}
+    \field{title}{Hybrid Keyword Extraction Algorithm and Cosine Similarity for
+  Improving Sentences Cohesion in Text Summarization}
+    \field{volume}{1}
+    \field{journaltitle}{Journal of Intelligent Systems}
+    \field{year}{2015}
+  \endentry
+
+  \entry{dong2022brief}{article}{}
+    \name{author}{5}{}{%
+      {{hash=DZ}{%
+         family={Dong},
+         familyi={D\bibinitperiod},
+         given={Zhenhua},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Zhe},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=XJ}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Jun},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=TR}{%
+         family={Tang},
+         familyi={T\bibinitperiod},
+         given={Ruiming},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wen},
+         familyi={W\bibinitperiod},
+         given={Jirong},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DZWZXJ+1}
+    \strng{fullhash}{DZWZXJTRWJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{A brief history of recommender systems}
+    \field{journaltitle}{arXiv preprint arXiv:2209.01860}
+    \field{year}{2022}
+  \endentry
+
+  \entry{famili1997data}{article}{}
+    \name{author}{4}{}{%
+      {{hash=FA}{%
+         family={Famili},
+         familyi={F\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=SWM}{%
+         family={Shen},
+         familyi={S\bibinitperiod},
+         given={Wei-Min},
+         giveni={W\bibinithyphendelim M\bibinitperiod},
+      }}%
+      {{hash=WR}{%
+         family={Weber},
+         familyi={W\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Simoudis},
+         familyi={S\bibinitperiod},
+         given={Evangelos},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IOS Press}%
+    }
+    \strng{namehash}{FASWMWR+1}
+    \strng{fullhash}{FASWMWRSE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{1}
+    \field{pages}{3\bibrangedash 23}
+    \field{title}{Data preprocessing and intelligent data analysis}
+    \field{volume}{1}
+    \field{journaltitle}{Intelligent data analysis}
+    \field{year}{1997}
+  \endentry
+
+  \entry{frank2005comparing}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FHD}{%
+         family={Frank\bibnamedelima Hsu},
+         familyi={F\bibinitperiod\bibinitdelim H\bibinitperiod},
+         given={D},
+         giveni={D},
+      }}%
+      {{hash=TI}{%
+         family={Taksa},
+         familyi={T\bibinitperiod},
+         given={Isak},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{FHDTI1}
+    \strng{fullhash}{FHDTI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{3}
+    \field{pages}{449\bibrangedash 480}
+    \field{title}{Comparing rank and score combination methods for data fusion
+  in information retrieval}
+    \field{volume}{8}
+    \field{journaltitle}{Information retrieval}
+    \field{year}{2005}
+  \endentry
+
+  \entry{garcia2016big}{article}{}
+    \name{author}{5}{}{%
+      {{hash=GS}{%
+         family={Garc{\'\i}a},
+         familyi={G\bibinitperiod},
+         given={Salvador},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=RGS}{%
+         family={Ram{\'\i}rez-Gallego},
+         familyi={R\bibinithyphendelim G\bibinitperiod},
+         given={Sergio},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Luengo},
+         familyi={L\bibinitperiod},
+         given={Juli{\'a}n},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BJM}{%
+         family={Ben{\'\i}tez},
+         familyi={B\bibinitperiod},
+         given={Jos{\'e}\bibnamedelima Manuel},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=HF}{%
+         family={Herrera},
+         familyi={H\bibinitperiod},
+         given={Francisco},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {BioMed Central}%
+    }
+    \strng{namehash}{GSRGSLJ+1}
+    \strng{fullhash}{GSRGSLJBJMHF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 22}
+    \field{title}{Big data preprocessing: methods and prospects}
+    \field{volume}{1}
+    \field{journaltitle}{Big Data Analytics}
+    \field{year}{2016}
+  \endentry
+
+  \entry{horesh2016information}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=HR}{%
+         family={Horesh},
+         familyi={H\bibinitperiod},
+         given={Raya},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=VKR}{%
+         family={Varshney},
+         familyi={V\bibinitperiod},
+         given={Kush\bibnamedelima R},
+         giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=YJ}{%
+         family={Yi},
+         familyi={Y\bibinitperiod},
+         given={Jinfeng},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{HRVKRYJ1}
+    \strng{fullhash}{HRVKRYJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{booktitle}{2016 IEEE International Conference on Big Data (Big
+  Data)}
+    \field{pages}{1385\bibrangedash 1393}
+    \field{title}{Information retrieval, fusion, completion, and clustering for
+  employee expertise estimation}
+    \field{year}{2016}
+  \endentry
+
+  \entry{jain2013data}{article}{}
+    \name{author}{2}{}{%
+      {{hash=JN}{%
+         family={Jain},
+         familyi={J\bibinitperiod},
+         given={Nikita},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=SV}{%
+         family={Srivastava},
+         familyi={S\bibinitperiod},
+         given={Vishal},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{JNSV1}
+    \strng{fullhash}{JNSV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{number}{11}
+    \field{pages}{2319\bibrangedash 1163}
+    \field{title}{Data mining techniques: a survey paper}
+    \field{volume}{2}
+    \field{journaltitle}{IJRET: International Journal of Research in
+  Engineering and Technology}
+    \field{year}{2013}
+  \endentry
+
+  \entry{jun2001review}{article}{}
+    \name{author}{2}{}{%
+      {{hash=JLS}{%
+         family={Jun\bibnamedelima Lee},
+         familyi={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+         given={Sang},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Siau},
+         familyi={S\bibinitperiod},
+         given={Keng},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MCB UP Ltd}%
+    }
+    \strng{namehash}{JLSSK1}
+    \strng{fullhash}{JLSSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{number}{1}
+    \field{pages}{41\bibrangedash 46}
+    \field{title}{A review of data mining techniques}
+    \field{volume}{101}
+    \field{journaltitle}{Industrial Management \& Data Systems}
+    \field{year}{2001}
+  \endentry
+
+  \entry{kobayashi2000information}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KM}{%
+         family={Kobayashi},
+         familyi={K\bibinitperiod},
+         given={Mei},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=TK}{%
+         family={Takeda},
+         familyi={T\bibinitperiod},
+         given={Koichi},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM New York, NY, USA}%
+    }
+    \strng{namehash}{KMTK1}
+    \strng{fullhash}{KMTK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{number}{2}
+    \field{pages}{144\bibrangedash 173}
+    \field{title}{Information retrieval on the web}
+    \field{volume}{32}
+    \field{journaltitle}{ACM computing surveys (CSUR)}
+    \field{year}{2000}
+  \endentry
+
+  \entry{kroha2000preprocessing}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=KP}{%
+         family={Kroha},
+         familyi={K\bibinitperiod},
+         given={Petr},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{KP1}
+    \strng{fullhash}{KP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{booktitle}{Database and Expert Systems Applications: 11th
+  International Conference, DEXA 2000 London, UK, September 4--8, 2000
+  Proceedings 11}
+    \field{pages}{675\bibrangedash 684}
+    \field{title}{Preprocessing of requirements specification}
+    \field{year}{2000}
+  \endentry
+
+  \entry{kumawat2015pos}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KD}{%
+         family={Kumawat},
+         familyi={K\bibinitperiod},
+         given={Deepika},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JV}{%
+         family={Jain},
+         familyi={J\bibinitperiod},
+         given={Vinesh},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{KDJV1}
+    \strng{fullhash}{KDJV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{number}{6}
+    \field{title}{POS tagging approaches: A comparison}
+    \field{volume}{118}
+    \field{journaltitle}{International Journal of Computer Applications}
+    \field{year}{2015}
+  \endentry
+
+  \entry{lanquillon2001enhancing}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=LC}{%
+         family={Lanquillon},
+         familyi={L\bibinitperiod},
+         given={Carsten},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LC1}
+    \strng{fullhash}{LC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Enhancing text classification to improve information
+  filtering}
+    \list{institution}{1}{%
+      {Otto-von-Guericke-Universit{\"a}t Magdeburg,
+  Universit{\"a}tsbibliothek}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{2001}
+  \endentry
+
+  \entry{lavin2019analyzing}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LM}{%
+         family={Lavin},
+         familyi={L\bibinitperiod},
+         given={Matthew},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Programming Historian}%
+    }
+    \strng{namehash}{LM1}
+    \strng{fullhash}{LM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Analyzing documents with TF-IDF}
+    \field{year}{2019}
+  \endentry
+
+  \entry{lu2020recommender}{book}{}
+    \name{author}{3}{}{%
+      {{hash=LJ}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Jie},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZQ}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Qian},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=ZG}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Guangquan},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {World Scientific}%
+    }
+    \strng{namehash}{LJZQZG1}
+    \strng{fullhash}{LJZQZG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Recommender systems: advanced developments}
+    \field{year}{2020}
+  \endentry
+
+  \entry{maguire2002user}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=MM}{%
+         family={Maguire},
+         familyi={M\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BN}{%
+         family={Bevan},
+         familyi={B\bibinitperiod},
+         given={Nigel},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{MMBN1}
+    \strng{fullhash}{MMBN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{IFIP World Computer Congress, TC 13}
+    \field{pages}{133\bibrangedash 148}
+    \field{title}{User requirements analysis: a review of supporting methods}
+    \field{year}{2002}
+  \endentry
+
+  \entry{mansouri2008named}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MA}{%
+         family={Mansouri},
+         familyi={M\bibinitperiod},
+         given={Alireza},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ALS}{%
+         family={Affendey},
+         familyi={A\bibinitperiod},
+         given={Lilly\bibnamedelima Suriani},
+         giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mamat},
+         familyi={M\bibinitperiod},
+         given={Ali},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{MAALSMA1}
+    \strng{fullhash}{MAALSMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{number}{2}
+    \field{pages}{339\bibrangedash 344}
+    \field{title}{Named entity recognition approaches}
+    \field{volume}{8}
+    \field{journaltitle}{International Journal of Computer Science and Network
+  Security}
+    \field{year}{2008}
+  \endentry
+
+  \entry{mihalcea2004textrank}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=MR}{%
+         family={Mihalcea},
+         familyi={M\bibinitperiod},
+         given={Rada},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=TP}{%
+         family={Tarau},
+         familyi={T\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MRTP1}
+    \strng{fullhash}{MRTP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{Proceedings of the 2004 conference on empirical methods
+  in natural language processing}
+    \field{pages}{404\bibrangedash 411}
+    \field{title}{Textrank: Bringing order into text}
+    \field{year}{2004}
+  \endentry
+
+  \entry{nadeau2007survey}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ND}{%
+         family={Nadeau},
+         familyi={N\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Sekine},
+         familyi={S\bibinitperiod},
+         given={Satoshi},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Benjamins}%
+    }
+    \strng{namehash}{NDSS1}
+    \strng{fullhash}{NDSS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{number}{1}
+    \field{pages}{3\bibrangedash 26}
+    \field{title}{A survey of named entity recognition and classification}
+    \field{volume}{30}
+    \field{journaltitle}{Lingvisticae Investigationes}
+    \field{year}{2007}
+  \endentry
+
+  \entry{nakagawa2007hybrid}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=NT}{%
+         family={Nakagawa},
+         familyi={N\bibinitperiod},
+         given={Tetsuji},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=UK}{%
+         family={Uchimoto},
+         familyi={U\bibinitperiod},
+         given={Kiyotaka},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NTUK1}
+    \strng{fullhash}{NTUK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{booktitle}{Proceedings of the 45th annual meeting of the Association
+  for Computational Linguistics Companion Volume Proceedings of the Demo and
+  Poster Sessions}
+    \field{pages}{217\bibrangedash 220}
+    \field{title}{A hybrid approach to word segmentation and pos tagging}
+    \field{year}{2007}
+  \endentry
+
+  \entry{partalidou2019design}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=PE}{%
+         family={Partalidou},
+         familyi={P\bibinitperiod},
+         given={Eleni},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=SXE}{%
+         family={Spyromitros-Xioufis},
+         familyi={S\bibinithyphendelim X\bibinitperiod},
+         given={Eleftherios},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Doropoulos},
+         familyi={D\bibinitperiod},
+         given={Stavros},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=VS}{%
+         family={Vologiannidis},
+         familyi={V\bibinitperiod},
+         given={Stavros},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DK}{%
+         family={Diamantaras},
+         familyi={D\bibinitperiod},
+         given={Konstantinos},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PESXEDS+1}
+    \strng{fullhash}{PESXEDSVSDK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{booktitle}{IEEE/WIC/ACM International Conference on Web
+  Intelligence}
+    \field{pages}{337\bibrangedash 341}
+    \field{title}{Design and implementation of an open source Greek POS Tagger
+  and Entity Recognizer using spaCy}
+    \field{year}{2019}
+  \endentry
+
+  \entry{pay2019ensemble}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PT}{%
+         family={Pay},
+         familyi={P\bibinitperiod},
+         given={Tayfun},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Lucci},
+         familyi={L\bibinitperiod},
+         given={Stephen},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CJL}{%
+         family={Cox},
+         familyi={C\bibinitperiod},
+         given={James\bibnamedelima L},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Instituto Polit{\'e}cnico Nacional, Centro de Investigaci{\'o}n en
+  Computaci{\'o}n}%
+    }
+    \strng{namehash}{PTLSCJL1}
+    \strng{fullhash}{PTLSCJL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{3}
+    \field{pages}{703\bibrangedash 710}
+    \field{title}{An ensemble of automatic keyword extractors: TextRank, RAKE
+  and TAKE}
+    \field{volume}{23}
+    \field{journaltitle}{Computaci{\'o}n y Sistemas}
+    \field{year}{2019}
+  \endentry
+
+  \entry{pirk2019implementierung}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=PS}{%
+         family={Pirk},
+         familyi={P\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PS1}
+    \strng{fullhash}{PS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{Implementierung und Visualisierung N-Gramm-basierter
+  Word-Clouds}
+    \field{type}{{B.S.} thesis}
+    \field{year}{2019}
+  \endentry
+
+  \entry{ramos2003using}{inproceedings}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{1}{}{%
+      {{hash=RJ}{%
+         family={Ramos},
+         familyi={R\bibinitperiod},
+         given={Juan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{RJ+1}
+    \strng{fullhash}{RJ+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{booktitle}{Proceedings of the first instructional conference on
+  machine learning}
+    \field{number}{1}
+    \field{pages}{29\bibrangedash 48}
+    \field{title}{Using tf-idf to determine word relevance in document queries}
+    \field{volume}{242}
+    \field{year}{2003}
+  \endentry
+
+  \entry{reddy2019content}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=RS}{%
+         family={Reddy},
+         familyi={R\bibinitperiod},
+         given={SRS},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NS}{%
+         family={Nalluri},
+         familyi={N\bibinitperiod},
+         given={Sravani},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kunisetti},
+         familyi={K\bibinitperiod},
+         given={Subramanyam},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Ashok},
+         familyi={A\bibinitperiod},
+         given={S},
+         giveni={S},
+      }}%
+      {{hash=VB}{%
+         family={Venkatesh},
+         familyi={V\bibinitperiod},
+         given={B},
+         giveni={B},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{RSNSKS+1}
+    \strng{fullhash}{RSNSKSASVB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{booktitle}{Smart Intelligent Computing and Applications: Proceedings
+  of the Second International Conference on SCI 2018, Volume 2}
+    \field{pages}{391\bibrangedash 397}
+    \field{title}{Content-based movie recommendation system using genre
+  correlation}
+    \field{year}{2019}
+  \endentry
+
+  \entry{ricci2014recommender}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=RF}{%
+         family={Ricci},
+         familyi={R\bibinitperiod},
+         given={Francesco},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{RF1}
+    \strng{fullhash}{RF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{Recommender Systems: Models and Techniques.}
+    \field{year}{2014}
+  \endentry
+
+  \entry{shafi2017review}{article}{}
+    \name{author}{7}{}{%
+      {{hash=SMA}{%
+         family={Shafi’I},
+         familyi={S\bibinitperiod},
+         given={Muhammad\bibnamedelima Abdulhamid},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=ALMS}{%
+         family={Abd\bibnamedelima Latiff},
+         familyi={A\bibinitperiod\bibinitdelim L\bibinitperiod},
+         given={Muhammad\bibnamedelima Shafie},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=CH}{%
+         family={Chiroma},
+         familyi={C\bibinitperiod},
+         given={Haruna},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=OO}{%
+         family={Osho},
+         familyi={O\bibinitperiod},
+         given={Oluwafemi},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=ASG}{%
+         family={Abdul-Salaam},
+         familyi={A\bibinithyphendelim S\bibinitperiod},
+         given={Gaddafi},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=AAI}{%
+         family={Abubakar},
+         familyi={A\bibinitperiod},
+         given={Adamu\bibnamedelima I},
+         giveni={A\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Herawan},
+         familyi={H\bibinitperiod},
+         given={Tutut},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{SMAALMSCH+1}
+    \strng{fullhash}{SMAALMSCHOOASGAAIHT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{pages}{15650\bibrangedash 15666}
+    \field{title}{A review on mobile SMS spam filtering techniques}
+    \field{volume}{5}
+    \field{journaltitle}{IEEE Access}
+    \field{year}{2017}
+  \endentry
+
+  \entry{suhasini2021hybrid}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SV}{%
+         family={Suhasini},
+         familyi={S\bibinitperiod},
+         given={V},
+         giveni={V},
+      }}%
+      {{hash=VN}{%
+         family={Vimala},
+         familyi={V\bibinitperiod},
+         given={N},
+         giveni={N},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Karadeniz Technical University Distance Education Research}%
+      {Application~…}%
+    }
+    \strng{namehash}{SVVN1}
+    \strng{fullhash}{SVVN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{6}
+    \field{pages}{5710\bibrangedash 5723}
+    \field{title}{A Hybrid TF-IDF and N-Grams Based Feature Extraction Approach
+  for Accurate Detection of Fake News on Twitter Data}
+    \field{volume}{12}
+    \field{journaltitle}{Turkish Journal of Computer and Mathematics Education}
+    \field{year}{2021}
+  \endentry
+
+  \entry{zhang2020empirical}{article}{}
+    \name{author}{4}{}{%
+      {{hash=ZM}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Mingxi},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Xuemin},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={Yue},
+         familyi={Y\bibinitperiod},
+         given={Shuibo},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=YL}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Liuqian},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{ZMLXYS+1}
+    \strng{fullhash}{ZMLXYSYL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{pages}{178849\bibrangedash 178858}
+    \field{title}{An empirical study of TextRank for keyword extraction}
+    \field{volume}{8}
+    \field{journaltitle}{IEEE access}
+    \field{year}{2020}
+  \endentry
+\enddatalist
+\endinput

@@ -1,0 +1,54 @@
+\documentclass[fontsize=11pt, paper=a4, parskip=half]{scrartcl}
+\pagestyle{plain}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{lipsum}
+
+\setkomafont{disposition}{\normalcolor\bfseries}
+
+% In den folgenden Zeilen {...} jeweils durch die tatsächliche personen-/exposébezogene Angaben ergänzen
+\title{
+	\{TITEL DES EXPOSÉS\}
+}
+
+\subtitle{Exposé zur 
+	\{TYP DER ARBEIT\}
+}
+
+\author{
+	\{IHR NAME\}
+	\\
+	\{\texttt{IHRE FH-MAILADRESSE}\}
+	\\ \\
+	{\{IHRE MATRIKELNUMMER\}}
+}
+
+\begin{document}
+
+\maketitle
+
+\section{Motivation}
+% Lipsum durch tatsächlichen Exposé-Text ersetzen
+\lipsum[1] \cite{Brown2012}
+
+\section{Problemstellung}
+% Lipsum durch tatsächlichen Exposé-Text ersetzen
+\lipsum[2] \cite{Erl2005}
+
+\section{Zielsetzung}
+% Lipsum durch tatsächlichen Exposé-Text ersetzen
+\lipsum[3] \cite{Pautasso2008}
+
+\section{Vorgehensweise}
+% Lipsum durch tatsächlichen Exposé-Text ersetzen
+\lipsum[4-5]
+
+\pagebreak
+
+\bibliographystyle{alphadin}
+\bibliography{literature}
+\end{document}
