@@ -1,29 +1,37 @@
 \chapter{Literaturüberblick}
 \label{chap:literaturüberblick}
+Das Ziel dieser Arbeit ist die Informationsgewinnung aus semistrukutrierten \emph{Bedarfsmeldungen} für ein Recommender System, das Mitarbeiterempfehlungen innerhalb von \emph{adesso} für ausgewählte Projekte generieren soll. In diesem Kapitel werden die für das Thema notwendigen Grundlagen und bereits erforschten Themengebiete im Kontext von Recommender Systemen und Informationsverarbeitung behandelt, die für das weitere Verständnis der Arbeit notwendig sind. Es wird ein Einblick in die Art und Weise gegeben, wie andere Autoren Information Retrieval und Filtering einsetzen und kombinieren.
 
 \section{Recommender Systems Historie und aktueller Stand der Forschung}
-\cite{dong2022brief}
-\cite{burke2011recommender}
+Auch wenn die Erstellung eines Recommender Systems nicht Gegenstand der vorliegenden Ausarbeitung ist, stellt die Nutzung von Information Retrieval und Filtering ein entscheidener Schritt in Richtung eines funktionierenden Recommender Systems dar. Das Verständnis der Funktionsweise eines Recommender Systems sowie dessen Entwicklung in den vergangenen Jahren ist daher für das Verständnis des Teilbereichs dieser Thematik von Nutzen.\\
 
-\cite{chartron2014general}
+Recommender Systems existieren bereits seit vielen Jahren. Im Jahr 1992 führten Belkin und Croft eine Analyse und einen Vergleich des Information Retrievals und Filtering durch \cite{dong2022brief}. Das Information Retrieval behandelt dahingehend die grundlegende Technologie der Suchmaschine \cite{dong2022brief}. Das Recommender System basiert hauptsächlich auf der Technologie des Information Filtering. Im selben Jahr präsentierte Goldberg das Tapestry-System, welches das erste System zur Informationsfilterung darstellt, das auf kollaboratives Filtern durch menschliche Bewertung basiert. Die Mehrheit der frühen Empfehlungsmodelle basiert auf kollaborativer Empfehlungen, wobei K-Nearest-Neighbor (KNN)-Modelle eine besondere Rolle einnehmen. Diese Modelle prognostizieren die Nachbarn eines Zielnutzers, indem sie eine Ähnlichkeit zwischen den vorherigen Präferenzen und den Präferenzen der anderen Nutzer berechnen \cite{dong2022brief}. Die Studie von Goldberg inspirierte einige Forscher des Massachusetts Institute of Technology (MIT) und der University of Minnesota (UMN) dazu, einen Nachrichtenempfehlungsdienst mit dem Namen \emph{GroupLens} zu entwickeln. Die Hauptkomponente dieses Dienstes ist ein Modell zur kollaborativen Filterung zwischen Nutzern \cite{dong2022brief}. Das gleichnamige Forschungslabor kann somit als Pionier auf dem Gebiet der Recommender Systems bezeichnet werden. Die dort durchgeführten Forschungen bilden die Grundlage für nachfolgende Musik- und Video-Ähnlichkeitsempfehlungen \cite{dong2022brief}. \\
 
-\cite{ricci2014recommender}
+Recommender Systeme haben in den letzten Jahren verschiedene Definitionen erhalten. Eine dieser Definitionen wird in dem Artikel von Resnick und Varian (1997) sinngemäß so beschrieben, dass ein typisches Recommender System Empfehlungen durch Personen als Eingabe erhält, die das System dann zusammenschließt und an geeignete Empfänger weiterleitet \cite{burke2011recommender}. In einigen Fällen besteht die primäre Transformation in der Zusammenführung, in anderen Fällen liegt die Fähigkeit des Systems darin, gute Übereinstimmungen zwischen Empfehlungsgebern und Empfehlungsempfängern herzustellen \cite{burke2011recommender}. Empfehlungssysteme stellen ein Instrument zur Interaktion mit umfangreichen und vielschichtigen Informationen dar. Sie ermöglichen eine personalisierte Sicht auf diese Informationen, indem sie die für den Nutzer wahrscheinlich relevanten Inhalte aufbereiten \cite{burke2011recommender}. Besonders im Handelsverkehr im Internet sind Recommender Systeme ein häufiger Einsatzgebiet. Dabei werden Recommender Systeme als Werkzeuge zum Suchen und Filtern von Informationen verwendet, die dem Benutzer Vorschläge unterbreiten, die für ihn nützlich sein könnten. Sie sind in einer Vielzahl von Internetanwendungen weit verbreitet und helfen den Nutzern, bessere Entscheidungen bei der Suche nach Nachrichten, Musik, Urlaubsangeboten oder Geldanlagen zu treffen \cite{ricci2014recommender}. Eine spezifisches Recommender System konzentriert sich normalerweise auf eine Art von Themengebiet wie z. B. Filme oder Nachrichten \cite{ricci2014recommender}. Darüber hinaus sind sie zu einem entscheidenden Faktor in der Entscheidungsfindung von Organisationen geworden \cite{chartron2014general}. Unternehmen wie \emph{adesso} bauen immer weiter auf Recommender System unterstützte System auf, um Prozesse zu beschleunigen oder zu vereinfachen.\\
 
-\cite{lu2020recommender}
-
-g
-\newpage
-g
-\newpage
-
+Grundsätzlich können die Methoden in vier Typen unterteilt werden:
+\begin{itemize}
+	\item collaborative Filtering-based (kollaborative Empfehlungssysteme)
+	\item content-based (inhaltsbasierte Empfehlungssysteme)
+	\item knowledge-based (wissensbasiert Empfehlungssysteme)
+	\item hybrid (hybride Empfehlungssysteme)
+\end{itemize}
+Jede Empfehlungsmethode hat ihre Vorteile und Grenzen \cite{lu2020recommender}. Insbesondere das inhaltsbasierte Empfehlungssystem bring eine hohe Relevanz für das Mitarbeiterempfehlungssystem. Die Grundprinzipien inhaltsbasierter Empfehlungssysteme sind zum einen die Analyse der Beschreibung der von einem bestimmten Benutzer bevorzugten \emph{Items}, um die gemeinsamen Hauptattribute (Präferenzen) zu identifizieren, die diese \emph{Items} unterscheiden. Diese Präferenzen werden in einem \emph{Benutzerprofil} gespeichert \cite{lu2020recommender}. Zusätzlich werden die Eigenschaften jedes \emph{Items} mit dem \emph{Benutzerprofil} verglichen, so dass nur \emph{Items} empfohlen werden, die eine hohe Ähnlichkeit mit dem \emph{Benutzerprofil} aufweisen \cite{lu2020recommender}. Bei der Idee der Mitarbeiterempfehlung kann also die \emph{Bedarfsmeldung} mit den benötigten Projektskills und Anforderung als \emph{Benutzerprofil} angesehen werden. Die Mitarbeiterprofile sind dabei die \emph{Items}. Die Attribute werden verglichen (Skills der Mitarbeiter mit den Skills und Anforderungen der \emph{Bedarfsmeldung}) und ähnliche \emph{Items} werden vorgeschlagen. Mit Hilfe traditioneller Methoden des Information Retrievals, wie z.B. dem Kosinus-Ähnlichkeitsmaß, werden dann Empfehlungen generiert \cite{lu2020recommender}. Darüber hinaus generieren sie Empfehlungen mit Hilfe von statistischen und maschinelle Lernverfahren, die in der Lage sind, Nutzerinteressen aus historischen Nutzerdaten zu lernen \cite{lu2020recommender}.
 \section{Verwandte Arbeiten}
 %\label{sec:forschung-und-ansätze}
+Es gibt eine Reihe an verwandten Arbeiten die sich mit unterschiedlichen Aspekten des Staffing Prozesses und der Nutzung von Information Retrieval und Filtering zur Informationsgewinnung beschäftigen. Dennoch beschäftigt sich keine Arbeit mit dem spezifischen Problem der Informationsgewinnung aus \emph{Bedarfsmeldungen}.
+
+\subsection{Staffing Prozess}
 
 -Einschätzen der Fähigkeiten, Talente und des Fachwissens der Mitarbeiter\\
 -In diesem Papier wird ein Ansatz beschrieben, um aus Unternehmensdaten und den digitalen Fußabdrücken der Mitarbeiter Informationen zu gewinnen.\\
 -Beurteilung des Fachwissens eines Mitarbeiters in einem breiten Bereich wie cloud computing oder cybersecurity\\
 -Auf einer hohen Ebene lässt sich der Ansatz der Informationsbeschaffung und -fusion wie folgt beschreiben: Es wird eine Liste von Suchbegriffen erstellt, die sich auf das breite Fachgebiet beziehen.\\
 -Die Suche wird nach jedem dieser Abfragebegriffe durchgeführt, um Beweise für Mitarbeiter und Datenquellen zu finden. Die verschiedenen Beweisstücke werden miteinander verschmolzen, gewichtet und nach der Abfrage sortiert. Die Mitarbeiter werden nach Datenquelle gewichtet und möglicherweise auf andere Weise bewertet, um einen einzigen Ordinalwert (sehr niedrig, niedrig, moderat, etwas, begrenzt) für ihr Fachwissen in diesem breiten Bereich zu erhalten.\cite{horesh2016information} \\
+
+Content based recommendation für musik über genres \cite{reddy2019content}\\
+
+\subsection{Information Filtering}
 
 information filtering\\
 -Informationen für seine Benutzer betreffend der Anwender in Bezug auf ihre Interessengebiete zu reduzieren
@@ -32,24 +40,20 @@ information filtering\\
 -Überblick über gängige Methoden. Anschließend werden bekannte Filterungsprojekte kurz vorgestellt, bevor verwandte Aufgaben verglichen werden.
 \cite{lanquillon2001enhancing}
 
+\subsection{Vorverarbeitung}
+
 preprocessing
 \cite{alasadi2017review}
 -Wege und Schritte zur Aufbereitung von Datensätzen
 -Arbeit umfasst Data-Mining Vorverarbeitung um Qualität der Daten zu verbessern
 -Wichtiger Schritt um Effizienz zu verbessern
 
+Preprocessing von Softwareanforderungen. Generierung aus Text Anforderungen zu diversen Diagrammen etc \cite{kroha2000preprocessing}\\
+
 -------
-spam-filter\\
--Überblick über verfügbare Methoden, Herausforderungen und zukünftige Forschungsrichtungen im Bereich der Spam-Erkennung, Filterung und Eindämmung von SMS-Spam. Dabei werden auch Methodiken der keyword frequency ratio und Herunterbrechung auf keyword components behandelt \cite{shafi2017review}\\
 
-----
-In diesem Beitrag werden Studien zu Technologien vorgestellt, die für die Suche und das Abrufen von Informationen im Web nützlich sind. Es wird aufgezeigt, dass Information Retrieval und Ranking im Web-Kontext anders Funktioniert als in einer statischen Datenbank. \cite{kobayashi2000information}\\
-
+\subsection{Kombinationen}
 Die Kombination von verschiedenen Textdarstellungen und Suchstrategien ist zu einer Standardtechnik geworden, um die Effektivität der Informationsbeschaffung zu verbessern.\cite{croft2000combining}\\
-
-In dieser Arbeit wird eine Pipeline entwickelt, die die N-Gramm-Analyse verwendet, um Schlagwörter aus einem Text zu extrahieren und mit verschiedenen Ansätzen von Word-Clouds zu visualisieren.\cite{pirk2019implementierung}\\
-
-python pipeline mit python und tf-idf. Beschreibt warum TF-IDF häufig in  als Vorverarbeitung beim maschinellen Lernen eingesetzt wird. Hat in der Regel einen höheren Vorhersagewert als rohe Termhäufigkeit. Die Gewichtung von Themenwörtern wird erhöt,, um die Bedeutung von Wörtern zu erhöhen, während die Gewichtung von hochfrequenten Funktionswörtern verringert wird.\cite{lavin2019analyzing}\\
 
 Kombination drei Ansätze Ansätze. Unter anderem auch TF-IDF. Kombinieren mit einem sogenannten CLASSIFIER Model. Das Klassifikationsmodell bezieht sich direkt auf die
 Ergebnisse der Modelle LSTM, VADER und TFIDF, die jeweils drei Eingaben liefern. Die Werte dieser Eingaben liegen im
@@ -57,6 +61,14 @@ Bereich von [0,1].
 Die Ausgabe des Klassifikationsmodells ist binär und liefert eine Vorhersage der
 Stimmung des vollständigen Textes der Modelleingabe (positiv oder negativ).\cite{chiny2021lstm}\\
 
+Kombination aus TD-IDF und N-Gram. Um Fake news heraus zu filtern\cite{suhasini2021hybrid}
+
+\subsection{Pipeline}
+In dieser Arbeit wird eine Pipeline entwickelt, die die N-Gramm-Analyse verwendet, um Schlagwörter aus einem Text zu extrahieren und mit verschiedenen Ansätzen von Word-Clouds zu visualisieren.\cite{pirk2019implementierung}\\
+
+python pipeline mit python und tf-idf. Beschreibt warum TF-IDF häufig in  als Vorverarbeitung beim maschinellen Lernen eingesetzt wird. Hat in der Regel einen höheren Vorhersagewert als rohe Termhäufigkeit. Die Gewichtung von Themenwörtern wird erhöt,, um die Bedeutung von Wörtern zu erhöhen, während die Gewichtung von hochfrequenten Funktionswörtern verringert wird.\cite{lavin2019analyzing}\\
+
+\subsection{Hybride Ansätze}
 Das erste vorverarbeitete Dokument wird mithilfe eines Extraktionsalgorithmus
 analysiert und anschließend wird für jeden Begriff TF/IDF berechnet.
 Danach werden alle TF/IDF-Begriffe für jeden Satz summiert.
@@ -69,13 +81,13 @@ Der resultierende Text mit
 neuer Satzanordnung ist die endgültige Zusammenfassung.\cite{darmawan2015hybrid}\\
 
 
-Kombination aus TD-IDF und N-Gram. Um Fake news heraus zu filtern\cite{suhasini2021hybrid}
-
 Named ENtity Recognition mit POS-Tagger Implementierung mit Spacy für die griechische Sprache\cite{partalidou2019design}\\
 
-Preprocessing von Softwareanforderungen. Generierung aus Text Anforderungen zu diversen Diagrammen etc \cite{kroha2000preprocessing}\\
+spam-filter\\
+-Überblick über verfügbare Methoden, Herausforderungen und zukünftige Forschungsrichtungen im Bereich der Spam-Erkennung, Filterung und Eindämmung von SMS-Spam. Dabei werden auch Methodiken der keyword frequency ratio und Herunterbrechung auf keyword components behandelt \cite{shafi2017review}\\
 
-Content based recommendation für musik über genres \cite{reddy2019content}\\
+----
+In diesem Beitrag werden Studien zu Technologien vorgestellt, die für die Suche und das Abrufen von Informationen im Web nützlich sind. Es wird aufgezeigt, dass Information Retrieval und Ranking im Web-Kontext anders Funktioniert als in einer statischen Datenbank. \cite{kobayashi2000information}\\
 
 konzeptbasiertes recruiting --> neuer Ansatz
 
@@ -87,7 +99,7 @@ g
 g
 \newpage
 
-\section{Definitionen und Konzepte: Information Retrieval, Data-Mining, Bedarfsmeldungen}
+\section{Definitionen und Konzepte: Information Retrieval, Data-Mining}
 \label{sec:definitionen-konzepte}
 
 Diese Arbeit beschreibt den Unterschied zwischen Information Filtering und Information Retrieval\cite{belkin1992information}

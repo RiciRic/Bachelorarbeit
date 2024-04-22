@@ -34,6 +34,18 @@ breaklinks=true
 %\usepackage[numbers]{natbib}
 %\bibpunct{(}{)}{;}{a}{,}{,}
 
+%----------Checkbox
+\usepackage{enumitem,amssymb}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
+	\hspace{-2.5pt}}
+\newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
+%--------------
+
 \usepackage{listings}
 
 % zusätzliche Schriftzeichen der American Mathematical Society
@@ -126,18 +138,16 @@ breaklinks=true
 %letztes kapitel zusammenfassung und ausblick
 \pagestyle{fancy}
 \pagenumbering{Roman}
-\tableofcontents
-\listoffigures
-\lstlistoflistings
-\newpage
-%-NOCH ZU ERLEDIGEN-\\
-
 \chapter*{Abstract}
 \todo{Abstract erstellen}
 \newpage
 
 \chapter*{Lesehinweis}
-Aus Gründen der besseren Lesbarkeit werden Wörter und Wortgruppen, die hervorgehoben werden oder mehrfach auftauchen, durch \emph{kursiven} Text kenntlich gemacht. Zudem wird in dieser Projektarbeit die Sprachform des generischen Maskulinums angewandt. Sämtliche Ausführungen sind jedoch geschlechtsunabhängig und beziehen sich damit auf alle Geschlechter.
+Aus Gründen der besseren Lesbarkeit werden Wörter und Wortgruppen, die hervorgehoben werden oder mehrfach auftauchen, durch \emph{kursiven} Text kenntlich gemacht. Zudem wird in dieser Ausarbeitung die Sprachform des generischen Maskulinums angewandt. Sämtliche Ausführungen sind jedoch geschlechtsunabhängig und beziehen sich damit auf alle Geschlechter.
+\newpage
+\tableofcontents
+\listoffigures
+\lstlistoflistings
 \newpage
 
 \setcounter{page}{1}
