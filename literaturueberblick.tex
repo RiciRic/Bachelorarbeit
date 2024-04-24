@@ -21,86 +21,51 @@ Jede Empfehlungsmethode hat ihre Vorteile und Grenzen \cite{lu2020recommender}. 
 %\label{sec:forschung-und-ansätze}
 Es gibt eine Reihe an verwandten Arbeiten die sich mit unterschiedlichen Aspekten des Staffing Prozesses und der Nutzung von Information Retrieval und Filtering zur Informationsgewinnung beschäftigen. Dennoch beschäftigt sich keine Arbeit mit dem spezifischen Problem der Informationsgewinnung aus \emph{Bedarfsmeldungen}.
 
-\subsection{Staffing Prozess}
+\subsection{kp wie ich es nenne}
 
--Einschätzen der Fähigkeiten, Talente und des Fachwissens der Mitarbeiter\\
--In diesem Papier wird ein Ansatz beschrieben, um aus Unternehmensdaten und den digitalen Fußabdrücken der Mitarbeiter Informationen zu gewinnen.\\
--Beurteilung des Fachwissens eines Mitarbeiters in einem breiten Bereich wie cloud computing oder cybersecurity\\
--Auf einer hohen Ebene lässt sich der Ansatz der Informationsbeschaffung und -fusion wie folgt beschreiben: Es wird eine Liste von Suchbegriffen erstellt, die sich auf das breite Fachgebiet beziehen.\\
--Die Suche wird nach jedem dieser Abfragebegriffe durchgeführt, um Beweise für Mitarbeiter und Datenquellen zu finden. Die verschiedenen Beweisstücke werden miteinander verschmolzen, gewichtet und nach der Abfrage sortiert. Die Mitarbeiter werden nach Datenquelle gewichtet und möglicherweise auf andere Weise bewertet, um einen einzigen Ordinalwert (sehr niedrig, niedrig, moderat, etwas, begrenzt) für ihr Fachwissen in diesem breiten Bereich zu erhalten.\cite{horesh2016information} \\
+Im ersten Paper beschreiben die Autoren einen Ansatz zur Ableitung von Unternehmensdaten und digitalen Fußabdrücken von Mitarbeitern. Mit Hilfe eines Big-Data-Workflows, der die Komponenten Information Retrieval und Suche, Datenfusion, Matrixvervollständigung und ordinale Regression nutzt, können Informationen zur Expertise automatisch zusammengeführt und für die Nutzung durch Experten aufbereitet werden. Das System soll Fähigkeiten, Talente und Fachwissens der Mitarbeiter in einem breiten Bereich wie cloud computing oder cybersecurity einschätzen. Beim Ansatz des Information Retrieval und -fusion wird eine Liste von Suchbegriffen erstellt, die sich auf das breite Fachgebiet der Mitarbeiter beziehen. Die Suche wird nach jedem dieser Abfragebegriffe durchgeführt, um Zusammenhänge zwischen Mitarbeiter und Datenquellen zu finden. Die verschiedenen Zusammenhänge werden miteinander verschmolzen, gewichtet und nach der Abfrage sortiert. Die Mitarbeiter werden nach Daten gewichtet und bewertet, um einen einzigen Wert (sehr niedrig, niedrig, moderat, etwas, begrenzt) für ihr Fachwissen in diesem breiten Bereich zu erhalten.\cite{horesh2016information}\\
 
-Content based recommendation für musik über genres \cite{reddy2019content}\\
+
+%\subsection{Recommender System}
+%Content based recommendation für filme über genres \cite{reddy2019content}\\
 
 \subsection{Information Filtering}
-
-information filtering\\
--Informationen für seine Benutzer betreffend der Anwender in Bezug auf ihre Interessengebiete zu reduzieren
--Dazu werden nicht relevante Dokumente aus einem Strom von Informationen entfernt, sodass den Anwendern nur relevante Dokumente präsentiert werden.
--Ein Teil der Arbeit beschäftigt sich mit der der Informationsfilterung und mögliche Filterungsvarianten werden vorgestellt. Die Arbeit konzentriert sich auf die inhaltsbasierte Filterung von Textdokumenten und identifizieren Informationsfilterung als einen Spezialfall der Textklassifikation.
--Überblick über gängige Methoden. Anschließend werden bekannte Filterungsprojekte kurz vorgestellt, bevor verwandte Aufgaben verglichen werden.
+Diese Arbeit befasst sich unter anderem mit dem Aspekt des content based Information Filtering. Das Ziel dabei ist es Informationen auf die Interessengebiete der Benutzer zu reduzieren. Dazu werden nicht relevante Dokumente aus einem Strom von Informationen entfernt, sodass dem Anwendern nur relevante Dokumente präsentiert werden. Ein Teil der Arbeit beschäftigt sich mit der Informationsfilterung und mögliche Filterungsvarianten werden vorgestellt. Die Arbeit konzentriert sich auf die inhaltsbasierte Filterung von Textdokumenten und identifiziert Informationsfilterung als einen Spezialfall der Textklassifikation. Dazu wird ein Überblick über gängige Methoden des Information Filtering gegeben und ihre Leistung evaluiert.
 \cite{lanquillon2001enhancing}
 
 \subsection{Vorverarbeitung}
+Diese Arbeit zeigt Wege und Schritte zur Aufbereitung von Datensätzen auf. Die Arbeit umfasst Data-Mining Vorverarbeitungsmethoden, um die Qualität der Daten zu verbessern. Diese weisen wichtiger Schritte auf, um die Effizienz in der Datensammlung zu verbessern \cite{alasadi2017review}. (Nicht sicher ob ich das drin lassen soll)\\
 
-preprocessing
-\cite{alasadi2017review}
--Wege und Schritte zur Aufbereitung von Datensätzen
--Arbeit umfasst Data-Mining Vorverarbeitung um Qualität der Daten zu verbessern
--Wichtiger Schritt um Effizienz zu verbessern
+In diesem Beitrag wird der Teil des Anforderungsspezifikationsprozesses diskutiert, der zwischen der textuellen Anforderungsdefinition und den dazugehörigen Diagrammen der Anforderungsspezifikation liegt. Es wird die These aufgestellt, dass die Erstellung einer textuellen Anforderungsbeschreibung, welche das Verständnis des Analysten für das Problem darstellt, die Effizienz der Anforderungsvalidierung durch den Benutzer verbessert. Die vorliegende Idee ist aus dem Problem entstanden, dass Software-Entwickler nicht immer über die erforderlichen Kenntnisse in den fachlichen Abläufen der Themengebiete verfügen, die für die Erstellung der Software relevant sind. Im Rahmen der Anforderungsdefinition erfolgt eine textuelle Verfeinerung, welche als Anforderungsbeschreibung bezeichnet werden kann. Bei der Arbeit mit dem unterstützten Werkzeug \emph{Tessi} ist der Analytiker durch die genannten Vorgaben gezwungen, Anforderungen zu vervollständigen und zu erklären sowie die Rollen der Wörter im Text im Sinne der objektorientierten Analyse zu spezifizieren. Im Rahmen der Vorverarbeitung erfolgt eine Transformation der Requirements durch Templates.\cite{kroha2000preprocessing}
 
-Preprocessing von Softwareanforderungen. Generierung aus Text Anforderungen zu diversen Diagrammen etc \cite{kroha2000preprocessing}\\
+\subsection{Hybride Ansätze}
+In der vorliegenden Untersuchung wird die Entwicklung von Kombinationen im Bereich des Information Retrievals analysiert. Dabei werden sowohl experimentelle Ergebnisse als auch die Retrieval-Modelle, die als formale Rahmen für die Kombination vorgeschlagen wurden, berücksichtigt. Es wird aufgezeigt, dass Kombinationsansätze für die Informationssuche als Kombination der Ergebnisse mehrerer Klassifikatoren auf der Grundlage einer oder mehrerer Darstellungen modelliert werden können. Zudem wird dargelegt, dass dieses einfache Modell Erklärungen für viele der experimentellen Ergebnisse liefern kann.\cite{croft2000combining}\\
 
--------
+Die vorliegende Arbeit kombiniert drei Ansätze des Information Retrievals mit dem Ziel, relevante Informationen aus Produktreviews zu extrahieren. Der Ansatz TF-IDF wird mit einem sogenannten CLASSIFIER Model kombiniert. Das Klassifikationsmodell verarbeitet drei Eingaben der Modelle LSTM, VADER und TF-IDF. Die Werte dieser Eingaben liegen im Bereich von [0,1]. Die Ausgabe des Klassifikationsmodells ist binär und gibt eine Vorhersage des vollständigen Textes der Modelleingabe aus (positiv oder negativ).\cite{chiny2021lstm}\\
 
-\subsection{Kombinationen}
-Die Kombination von verschiedenen Textdarstellungen und Suchstrategien ist zu einer Standardtechnik geworden, um die Effektivität der Informationsbeschaffung zu verbessern.\cite{croft2000combining}\\
+Diese Arbeit befasst sich mit der Filterung von Fake news. In diesem Beitrag werden hybride Verfahren zur Gewinnung von Merkmalen untersucht, die in dem Gebiet noch nicht gründlich erforscht wurden. Die Anwendung von Hybridsystemen hat sich in einer Vielzahl von Anwendungsbereichen als nützlich erwiesen und zeigen eine Tendenz, die Fehlerquote zu reduzieren, indem sie Techniken wie TF-IDF und N-Grams verwenden.\cite{suhasini2021hybrid}\\
 
-Kombination drei Ansätze Ansätze. Unter anderem auch TF-IDF. Kombinieren mit einem sogenannten CLASSIFIER Model. Das Klassifikationsmodell bezieht sich direkt auf die
-Ergebnisse der Modelle LSTM, VADER und TFIDF, die jeweils drei Eingaben liefern. Die Werte dieser Eingaben liegen im
-Bereich von [0,1].
-Die Ausgabe des Klassifikationsmodells ist binär und liefert eine Vorhersage der
-Stimmung des vollständigen Textes der Modelleingabe (positiv oder negativ).\cite{chiny2021lstm}\\
-
-Kombination aus TD-IDF und N-Gram. Um Fake news heraus zu filtern\cite{suhasini2021hybrid}
+Im Rahmen dieser Studie wurde ein hybrider Algorithmus zur Extraktion von Schlüsselwörtern und Kosinusähnlichkeit zur Verbesserung der Satzkohäsion bei der Textzusammenfassung vorgeschlagen. Die vorgeschlagene Methode basiert auf einer Komprimierung von 50 \%, 30 \% und 20 \%, um Kandidaten für die Zusammenfassung zu erstellen. Die Auswertung des Ergebnisses mittels t-Test zeigt, dass die vorgeschlagene Methode den Kohäsionsgrad signifikant erhöht.
+Der Ablauf umfasst die Analyse eines Dokuments mithilfe eines Extraktionsalgorithmus sowie die Berechnung der TF/IDF-Werte für jeden Begriff. Anschließend werden alle TF/IDF-Werte für jeden Satz summiert. Im nächsten Schritt werden alle Sätze anhand der Summe von TF/IDF eingestuft. Das Kompressionsverhältnis bestimmt die Position des Satzrangs. In dieser Studie wird eine Kompression von 50 \% verwendet, was bedeutet, dass die Satzzusammenfassung um 50 \% des Originaltextes gekürzt wird. Nach der Auswahl des Satzes wird dessen Berechnung durchgeführt. Die Ähnlichkeit wird mit der Cosinus-Ähnlichkeitsmethode berechnet. Anschließend werden alle Sätze anhand ihrer Cosinus-Ähnlichkeit von der höchsten zur niedrigsten sortiert. Der resultierende Text mit neuer Satzanordnung stellt die finale Zusammenfassung dar.\cite{darmawan2015hybrid}\\
 
 \subsection{Pipeline}
 In dieser Arbeit wird eine Pipeline entwickelt, die die N-Gramm-Analyse verwendet, um Schlagwörter aus einem Text zu extrahieren und mit verschiedenen Ansätzen von Word-Clouds zu visualisieren.\cite{pirk2019implementierung}\\
 
-python pipeline mit python und tf-idf. Beschreibt warum TF-IDF häufig in  als Vorverarbeitung beim maschinellen Lernen eingesetzt wird. Hat in der Regel einen höheren Vorhersagewert als rohe Termhäufigkeit. Die Gewichtung von Themenwörtern wird erhöt,, um die Bedeutung von Wörtern zu erhöhen, während die Gewichtung von hochfrequenten Funktionswörtern verringert wird.\cite{lavin2019analyzing}\\
+Die vorliegende Arbeit präsentiert eine Anleitung zur Erstellung einer Pipeline mit Python und TF-IDF. Darüber hinaus wird die Relevanz von TF-IDF als Vorverarbeitung beim maschinellen Lernen erörtert. Im Vergleich zur rohen Termhäufigkeit weist TF-IDF in der Regel einen höheren Vorhersagewert auf. Die Gewichtung von Themenwörtern wird erhöht, um die Bedeutung von Wörtern zu erhöhen, während die Gewichtung von hochfrequenten Funktionswörtern verringert wird. Es werden Verfahren zur Vorverarbeitung von Texten vorgestellt, die eine Umformung in die gewünschte Darstellungsform ermöglichen. Zudem werden Methoden zur Interpretation der Ergebnisse des TF-IDF-Verfahrens erörtert.\cite{lavin2019analyzing}\\
 
-\subsection{Hybride Ansätze}
-Das erste vorverarbeitete Dokument wird mithilfe eines Extraktionsalgorithmus
-analysiert und anschließend wird für jeden Begriff TF/IDF berechnet.
-Danach werden alle TF/IDF-Begriffe für jeden Satz summiert.
-Im nächsten Schritt werden alle Sätze anhand der Summe von TF/IDF eingestuft.
-Das Kompressionsverhältnis bestimmt die Position des Satzrangs. In dieser Studie wird eine Kompression von 50\% verwendet, was bedeutet,
-dass die Satzzusammenfassung um 50\% des Originaltextes gekürzt wird. Nach der Auswahl des Satzes wird seine Berechnung durchgeführt.
-Ähnlichkeit wird mit der Cosinus-Ähnlichkeitsmethode berechnet. 
-Anschließend werden alle Sätze anhand ihrer Cosinus-Ähnlichkeit von der höchsten zur niedrigsten sortiert.
-Der resultierende Text mit
-neuer Satzanordnung ist die endgültige Zusammenfassung.\cite{darmawan2015hybrid}\\
+Die Verarbeitung natürlicher Sprache wirft insbesondere bei der Analyse unüblicher Sprachen wie Griechisch Schwierigkeiten auf. In diesem Beitrag wird ein maschineller Lernansatz für die Bereiche Part-of-Speech-Tagging und Named-Entity-Recognition für die griechische Sprache unter Verwendung von spaCy erarbeitet und evaluiert. \cite{partalidou2019design}\\
 
-
-Named ENtity Recognition mit POS-Tagger Implementierung mit Spacy für die griechische Sprache\cite{partalidou2019design}\\
-
-spam-filter\\
+spam-filter (Empfinde das Thema eventuell als zu unpassend)\\
 -Überblick über verfügbare Methoden, Herausforderungen und zukünftige Forschungsrichtungen im Bereich der Spam-Erkennung, Filterung und Eindämmung von SMS-Spam. Dabei werden auch Methodiken der keyword frequency ratio und Herunterbrechung auf keyword components behandelt \cite{shafi2017review}\\
 
 ----
-In diesem Beitrag werden Studien zu Technologien vorgestellt, die für die Suche und das Abrufen von Informationen im Web nützlich sind. Es wird aufgezeigt, dass Information Retrieval und Ranking im Web-Kontext anders Funktioniert als in einer statischen Datenbank. \cite{kobayashi2000information}\\
+%In diesem Beitrag werden Studien zu Technologien vorgestellt, die für die Suche und das Abrufen von Informationen im Web nützlich sind. Es wird aufgezeigt, dass Information Retrieval und Ranking im Web-Kontext anders Funktioniert als in einer statischen Datenbank. \cite{kobayashi2000information}\\
 
-konzeptbasiertes recruiting --> neuer Ansatz
-
-\newpage
-g
-\newpage
-g
-\newpage
-g
-\newpage
+%konzeptbasiertes recruiting --> neuer Ansatz
 
 \section{Definitionen und Konzepte: Information Retrieval, Data-Mining}
 \label{sec:definitionen-konzepte}
+\todo{Lieber vor dem Kapitel Verwandte Arbeiten packen}
 
 Diese Arbeit beschreibt den Unterschied zwischen Information Filtering und Information Retrieval\cite{belkin1992information}
 

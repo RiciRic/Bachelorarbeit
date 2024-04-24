@@ -2,25 +2,35 @@
 \label{chap:staffingadvisor}
 
 \section{Beschreibung der untersuchten Techniken und Ansätze}
+
+\subsection{TF-IDF}
 TF-IDF (Term Frequency-Inverse Document Frequency): TF-IDF ist eine statistische Methode, die verwendet wird, um die Relevanz eines Begriffs in einem Dokument relativ zu einem Korpus von Dokumenten zu bestimmen. Wörter mit höheren TF-IDF-Werten gelten als potenzielle Schlüsselwörter.\\ \cite{bafna2016document}\cite{ramos2003using}\\
 
+\subsection{Text-Ranking-Algorithmen}
 Text-Ranking-Algorithmen: Text-Ranking-Algorithmen wie TextRank oder YAKE (Yet Another Keyword Extractor) verwenden graphenbasierte Methoden, um Schlüsselwörter in einem Text zu identifizieren. Die Algorithmen bewerten die Wichtigkeit von Wörtern basierend auf ihrer Verbindung zu anderen Wörtern im Text und extrahieren Schlüsselwörter entsprechend ihrer Rangfolge.\\ \cite{mihalcea2004textrank}\cite{zhang2020empirical}\cite{pay2019ensemble}\\
 
+\subsection{N-Gramm}
 N-Gramm-Analyse: N-Gramme sind Sequenzen von N aufeinanderfolgenden Wörtern in einem Text. Durch die Analyse von N-Grammen können häufig vorkommende Phrasen oder Begriffe identifiziert werden, die potenzielle Schlüsselwörter darstellen.\\ \cite{pirk2019implementierung}\\
 
-
+\subsection{POS-Tagging}
 Part-of-Speech (POS) Tagging: POS-Tagging wird genutzt, um die grammatischen Kategorien von Wörtern in einem Text zu bestimmen. Durch die Berücksichtigung von Wörtern mit bestimmten POS-Tags wie Substantiven oder Adjektiven können relevante Schlüsselwörter extrahiert werden.\\ \cite{kumawat2015pos}\cite{nakagawa2007hybrid}\\
 
+\subsection{Named Entity Recognition}
 Named Entity Recognition (NER) \cite{mansouri2008named} \cite{nadeau2007survey}\cite{partalidou2019design}\\
 
+\subsection{Regelbasierte Ansätze}
 Regelbasierte Ansätze: Regelbasierte Ansätze verwenden vordefinierte Regeln oder Muster, um Schlüsselwörter zu identifizieren. Dies kann beispielsweise das Extrahieren von Wörtern sein, die häufig im Text vorkommen oder bestimmten Mustern entsprechen.\\
 
+\subsection{Hybride Ansätze}
 Hybride Ansätze: Hybride Ansätze kombinieren verschiedene Methoden und Techniken, um eine genauere Extraktion von Schlüsselwörtern zu ermöglichen. (Z.B. Kombination aus TF-IDF-Gewichtung und Text-Ranking-Algorithmen verwendet).\cite{darmawan2015hybrid} \\
 
+\subsection{Data-Mining}
 Data-Mining: \cite{jun2001review}\cite{jain2013data}
 
+\subsection{preprocessing}
 preprocessing: \cite{garcia2016big}
 
+\subsection{data-fusion}
 data-fusion: \cite{famili1997data} \cite{frank2005comparing} \cite{bohne2013data}
 \newpage
 g
