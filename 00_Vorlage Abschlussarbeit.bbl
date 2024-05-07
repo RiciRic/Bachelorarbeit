@@ -364,6 +364,35 @@
     \field{year}{2022}
   \endentry
 
+  \entry{dresing2015praxisbuch}{book}{}
+    \name{author}{2}{}{%
+      {{hash=DT}{%
+         family={Dresing},
+         familyi={D\bibinitperiod},
+         given={Thorsten},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=PT}{%
+         family={Pehl},
+         familyi={P\bibinitperiod},
+         given={Thorsten},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {dr dresing \& pehl GmbH}%
+    }
+    \strng{namehash}{DTPT1}
+    \strng{fullhash}{DTPT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Praxisbuch Interview, Transkription \& Analyse: Anleitungen
+  und Regelsysteme f{\"u}r qualitativ Forschende}
+    \field{year}{2015}
+  \endentry
+
   \entry{famili1997data}{article}{}
     \name{author}{4}{}{%
       {{hash=FA}{%
@@ -594,38 +623,6 @@
     \field{year}{2001}
   \endentry
 
-  \entry{kobayashi2000information}{article}{}
-    \name{author}{2}{}{%
-      {{hash=KM}{%
-         family={Kobayashi},
-         familyi={K\bibinitperiod},
-         given={Mei},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=TK}{%
-         family={Takeda},
-         familyi={T\bibinitperiod},
-         given={Koichi},
-         giveni={K\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {ACM New York, NY, USA}%
-    }
-    \strng{namehash}{KMTK1}
-    \strng{fullhash}{KMTK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{K}
-    \field{sortinithash}{K}
-    \field{number}{2}
-    \field{pages}{144\bibrangedash 173}
-    \field{title}{Information retrieval on the web}
-    \field{volume}{32}
-    \field{journaltitle}{ACM computing surveys (CSUR)}
-    \field{year}{2000}
-  \endentry
-
   \entry{kroha2000preprocessing}{inproceedings}{}
     \name{author}{1}{}{%
       {{hash=KP}{%
@@ -792,6 +789,39 @@
     \field{pages}{133\bibrangedash 148}
     \field{title}{User requirements analysis: a review of supporting methods}
     \field{year}{2002}
+  \endentry
+
+  \entry{majumder2002n}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=MP}{%
+         family={Majumder},
+         familyi={M\bibinitperiod},
+         given={P},
+         giveni={P},
+      }}%
+      {{hash=MM}{%
+         family={Mitra},
+         familyi={M\bibinitperiod},
+         given={M},
+         giveni={M},
+      }}%
+      {{hash=CB}{%
+         family={Chaudhuri},
+         familyi={C\bibinitperiod},
+         given={BB},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MPMMCB1}
+    \strng{fullhash}{MPMMCB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{International conference on universal knowledge and
+  language}
+    \field{title}{N-gram: a language independent approach to IR and NLP}
+    \field{volume}{2}
   \endentry
 
   \entry{mansouri2008named}{article}{}
@@ -1009,6 +1039,31 @@
     \field{year}{2019}
   \endentry
 
+  \entry{pfadenhauer2009eye}{book}{}
+    \name{author}{1}{}{%
+      {{hash=PM}{%
+         family={Pfadenhauer},
+         familyi={P\bibinitperiod},
+         given={Michaela},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{PM1}
+    \strng{fullhash}{PM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{booktitle}{Interviewing experts}
+    \field{pages}{81\bibrangedash 97}
+    \field{title}{At eye level: the expert interview—a talk between expert
+  and quasi-expert}
+    \field{year}{2009}
+  \endentry
+
   \entry{pirk2019implementierung}{thesis}{}
     \name{author}{1}{}{%
       {{hash=PS}{%
@@ -1057,56 +1112,6 @@
     \field{title}{Using tf-idf to determine word relevance in document queries}
     \field{volume}{242}
     \field{year}{2003}
-  \endentry
-
-  \entry{reddy2019content}{inproceedings}{}
-    \name{author}{5}{}{%
-      {{hash=RS}{%
-         family={Reddy},
-         familyi={R\bibinitperiod},
-         given={SRS},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=NS}{%
-         family={Nalluri},
-         familyi={N\bibinitperiod},
-         given={Sravani},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=KS}{%
-         family={Kunisetti},
-         familyi={K\bibinitperiod},
-         given={Subramanyam},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=AS}{%
-         family={Ashok},
-         familyi={A\bibinitperiod},
-         given={S},
-         giveni={S},
-      }}%
-      {{hash=VB}{%
-         family={Venkatesh},
-         familyi={V\bibinitperiod},
-         given={B},
-         giveni={B},
-      }}%
-    }
-    \list{organization}{1}{%
-      {Springer}%
-    }
-    \strng{namehash}{RSNSKS+1}
-    \strng{fullhash}{RSNSKSASVB1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{R}
-    \field{sortinithash}{R}
-    \field{booktitle}{Smart Intelligent Computing and Applications: Proceedings
-  of the Second International Conference on SCI 2018, Volume 2}
-    \field{pages}{391\bibrangedash 397}
-    \field{title}{Content-based movie recommendation system using genre
-  correlation}
-    \field{year}{2019}
   \endentry
 
   \entry{ricci2014recommender}{misc}{}
