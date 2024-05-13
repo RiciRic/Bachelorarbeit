@@ -40,7 +40,7 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 10320 items.
+Reallocating 'field_info' (item size: 4) to 10180 items.
 Database file #1: 00_Vorlage_Abschlussarbeit-blx.bib
 Database file #2: Literatur.bib
 Illegal end of database file---line 1079 of file Literatur.bib
@@ -50,45 +50,45 @@ I'm skipping whatever remains of this entry
 Biblatex version: 3.19
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 38 entries,
+You've used 37 entries,
             6399 wiz_defined-function locations,
-            1432 strings with 16177 characters,
-and the built_in function-call counts, 306661 in all, are:
-= -- 24512
-> -- 5041
-< -- 1618
-+ -- 8922
-- -- 1896
-* -- 21956
-:= -- 33842
+            1427 strings with 15909 characters,
+and the built_in function-call counts, 300324 in all, are:
+= -- 24046
+> -- 4932
+< -- 1589
++ -- 8741
+- -- 1853
+* -- 21501
+:= -- 33143
 add.period$ -- 0
-call.type$ -- 38
-change.case$ -- 889
+call.type$ -- 37
+change.case$ -- 880
 chr.to.int$ -- 42
-cite$ -- 74
-duplicate$ -- 32150
-empty$ -- 25907
-format.name$ -- 2807
-if$ -- 62713
+cite$ -- 72
+duplicate$ -- 31440
+empty$ -- 25352
+format.name$ -- 2740
+if$ -- 61429
 int.to.chr$ -- 0
-int.to.str$ -- 103
+int.to.str$ -- 101
 missing$ -- 0
-newline$ -- 1248
-num.names$ -- 2113
-pop$ -- 13386
+newline$ -- 1221
+num.names$ -- 2072
+pop$ -- 13033
 preamble$ -- 2
-purify$ -- 1118
+purify$ -- 1104
 quote$ -- 0
-skip$ -- 8340
+skip$ -- 8164
 stack$ -- 0
-substring$ -- 43947
-swap$ -- 6184
-text.length$ -- 1198
-text.prefix$ -- 43
+substring$ -- 43151
+swap$ -- 6047
+text.length$ -- 1168
+text.prefix$ -- 42
 top$ -- 1
-type$ -- 1274
+type$ -- 1240
 warning$ -- 0
-while$ -- 4087
+while$ -- 3997
 width$ -- 0
-write$ -- 1210
+write$ -- 1184
 (There was 1 error message)

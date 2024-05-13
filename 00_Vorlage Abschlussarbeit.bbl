@@ -923,35 +923,6 @@
     \field{year}{2007}
   \endentry
 
-  \entry{nakagawa2007hybrid}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=NT}{%
-         family={Nakagawa},
-         familyi={N\bibinitperiod},
-         given={Tetsuji},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=UK}{%
-         family={Uchimoto},
-         familyi={U\bibinitperiod},
-         given={Kiyotaka},
-         giveni={K\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{NTUK1}
-    \strng{fullhash}{NTUK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{N}
-    \field{sortinithash}{N}
-    \field{booktitle}{Proceedings of the 45th annual meeting of the Association
-  for Computational Linguistics Companion Volume Proceedings of the Demo and
-  Poster Sessions}
-    \field{pages}{217\bibrangedash 220}
-    \field{title}{A hybrid approach to word segmentation and pos tagging}
-    \field{year}{2007}
-  \endentry
-
   \entry{partalidou2019design}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=PE}{%
