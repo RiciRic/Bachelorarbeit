@@ -10,7 +10,7 @@
 \contentsline {section}{\numberline {2.4}Information Retrieval und Information Filtering}{8}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Data-Mining}{9}{section.2.5}%
 \contentsline {chapter}{\numberline {3}Literaturüberblick}{10}{chapter.3}%
-\contentsline {section}{\numberline {3.1}kp wie ich es nenne}{10}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Automatisiertes Staffing}{10}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Information Filtering}{10}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Vorverarbeitung}{11}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Hybride Ansätze}{11}{section.3.4}%
@@ -19,33 +19,42 @@
 \contentsline {section}{\numberline {4.1}Beschreibung der Interviews mit Führungskräften zur Identifizierung von Stakeholder-Erwartungen}{15}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Ablauf der Interviews}{16}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Übersicht der Experten}{17}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Analyse der Ergebnisse und Entwicklung einer klaren Erwartungshaltung für die Bedarfsmeldungen}{18}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Analyse der Techniken des Information Retrieval und Data-Mining}{23}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Beschreibung der untersuchten Techniken und Ansätze}{23}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}TF-IDF}{23}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Text-Ranking-Algorithmen}{24}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}N-Gramm}{24}{subsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.1.4}POS-Tagging}{24}{subsection.5.1.4}%
-\contentsline {subsection}{\numberline {5.1.5}Named Entity Recognition}{25}{subsection.5.1.5}%
-\contentsline {subsection}{\numberline {5.1.6}Regelbasierte Ansätze}{25}{subsection.5.1.6}%
-\contentsline {subsection}{\numberline {5.1.7}Hybride Ansätze}{25}{subsection.5.1.7}%
-\contentsline {subsection}{\numberline {5.1.8}Data-Mining}{25}{subsection.5.1.8}%
-\contentsline {subsection}{\numberline {5.1.9}preprocessing}{26}{subsection.5.1.9}%
-\contentsline {subsection}{\numberline {5.1.10}data-fusion}{26}{subsection.5.1.10}%
-\contentsline {section}{\numberline {5.2}Bewertung und Auswahl der besten Ansätze für die Extraktion relevanter Inhalte aus Bedarfsmeldungen}{30}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Konzeptionierung und Implementierung der Vorverarbeitung}{32}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Beschreibung des entwickelten Vorverarbeitungsmodells}{32}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Details zur Implementierung der Pipeline in Python}{37}{section.6.2}%
-\contentsline {chapter}{\numberline {7}Evaluierung des entwickelten Systems}{39}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Beschreibung des verwendeten Datensatzes und der Evaluierungsmethodik}{39}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Präsentation und Diskussion der Ergebnisse}{40}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Vergleich des Systems mit einem Large Language Model-Ansatz}{46}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Analyse von Abweichungen, Ähnlichkeiten und Verbesserungspotenzialen des Systems}{50}{section.7.4}%
-\contentsline {chapter}{\numberline {8}Zusammenfassung und Ausblick}{52}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Anhang}{53}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Interviewtranskripte}{53}{section.9.1}%
-\contentsline {subsection}{\numberline {9.1.1}Vorabtest Fragen und Antworten}{53}{subsection.9.1.1}%
-\contentsline {subsection}{\numberline {9.1.2}Interview 2}{54}{subsection.9.1.2}%
-\contentsline {subsection}{\numberline {9.1.3}Interview 3}{57}{subsection.9.1.3}%
-\contentsline {section}{\numberline {9.2}Erklärung zu eingesetzten Hilfsmitteln}{66}{section.9.2}%
+\contentsline {section}{\numberline {4.4}Auswertungsmethode}{19}{section.4.4}%
+\contentsline {paragraph}{\nonumberline Festlegung des Materials}{20}{paragraph*.9}%
+\contentsline {paragraph}{\nonumberline Analyse der Entstehungssituation}{20}{paragraph*.11}%
+\contentsline {paragraph}{\nonumberline Formale Charakteristika des Materials}{20}{paragraph*.13}%
+\contentsline {paragraph}{\nonumberline Richtung der Analyse}{20}{paragraph*.15}%
+\contentsline {paragraph}{\nonumberline Theoretische Differenzierung der Fragestellung}{20}{paragraph*.17}%
+\contentsline {paragraph}{\nonumberline Bestimmung der Analysetechnik und Festlegung des konkreten Ablaufmodells}{20}{paragraph*.19}%
+\contentsline {paragraph}{\nonumberline Bestimmung der Analyseeinheiten}{21}{paragraph*.22}%
+\contentsline {paragraph}{\nonumberline Paraphrasierung und Reduktion}{22}{paragraph*.24}%
+\contentsline {chapter}{\numberline {5}Analyse der Techniken des Information Retrieval und Data-Mining}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Beschreibung der untersuchten Techniken und Ansätze}{25}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}TF-IDF}{25}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Text-Ranking-Algorithmen}{26}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}N-Gramm}{26}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}POS-Tagging}{26}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}Named Entity Recognition}{27}{subsection.5.1.5}%
+\contentsline {subsection}{\numberline {5.1.6}Regelbasierte Ansätze}{27}{subsection.5.1.6}%
+\contentsline {subsection}{\numberline {5.1.7}Hybride Ansätze}{27}{subsection.5.1.7}%
+\contentsline {subsection}{\numberline {5.1.8}Data-Mining}{27}{subsection.5.1.8}%
+\contentsline {subsection}{\numberline {5.1.9}preprocessing}{28}{subsection.5.1.9}%
+\contentsline {subsection}{\numberline {5.1.10}data-fusion}{28}{subsection.5.1.10}%
+\contentsline {section}{\numberline {5.2}Bewertung und Auswahl der besten Ansätze für die Extraktion relevanter Inhalte aus Bedarfsmeldungen}{32}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Konzeptionierung und Implementierung der Vorverarbeitung}{34}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Beschreibung des entwickelten Vorverarbeitungsmodells}{34}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Details zur Implementierung der Pipeline in Python}{39}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Evaluierung des entwickelten Systems}{41}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Beschreibung des verwendeten Datensatzes und der Evaluierungsmethodik}{41}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Präsentation und Diskussion der Ergebnisse}{42}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Vergleich des Systems mit einem Large Language Model-Ansatz}{48}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Analyse von Abweichungen, Ähnlichkeiten und Verbesserungspotenzialen des Systems}{52}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Zusammenfassung und Ausblick}{54}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Anhang}{55}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Interviewtranskripte}{55}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Vorabtest Fragen und Antworten}{55}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Interview 2}{57}{subsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.1.3}Interview 3}{61}{subsection.9.1.3}%
+\contentsline {subsection}{\numberline {9.1.4}Interview 4}{71}{subsection.9.1.4}%
+\contentsline {subsection}{\numberline {9.1.5}Interview 5}{75}{subsection.9.1.5}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

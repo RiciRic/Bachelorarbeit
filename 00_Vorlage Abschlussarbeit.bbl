@@ -761,36 +761,6 @@
     \field{year}{2020}
   \endentry
 
-  \entry{maguire2002user}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=MM}{%
-         family={Maguire},
-         familyi={M\bibinitperiod},
-         given={Martin},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=BN}{%
-         family={Bevan},
-         familyi={B\bibinitperiod},
-         given={Nigel},
-         giveni={N\bibinitperiod},
-      }}%
-    }
-    \list{organization}{1}{%
-      {Springer}%
-    }
-    \strng{namehash}{MMBN1}
-    \strng{fullhash}{MMBN1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{booktitle}{IFIP World Computer Congress, TC 13}
-    \field{pages}{133\bibrangedash 148}
-    \field{title}{User requirements analysis: a review of supporting methods}
-    \field{year}{2002}
-  \endentry
-
   \entry{majumder2002n}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=MP}{%
@@ -822,6 +792,7 @@
   language}
     \field{title}{N-gram: a language independent approach to IR and NLP}
     \field{volume}{2}
+    \field{year}{2002}
   \endentry
 
   \entry{mansouri2008named}{article}{}
@@ -861,6 +832,57 @@
     \field{journaltitle}{International Journal of Computer Science and Network
   Security}
     \field{year}{2008}
+  \endentry
+
+  \entry{mayring1994qualitative}{book}{}
+    \name{author}{1}{}{%
+      {{hash=MP}{%
+         family={Mayring},
+         familyi={M\bibinitperiod},
+         given={Philipp},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {UVK Univ.-Verl. Konstanz}%
+    }
+    \strng{namehash}{MP1}
+    \strng{fullhash}{MP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Qualitative inhaltsanalyse}
+    \field{volume}{14}
+    \field{year}{1994}
+  \endentry
+
+  \entry{mayring2019qualitative}{book}{}
+    \name{author}{2}{}{%
+      {{hash=MP}{%
+         family={Mayring},
+         familyi={M\bibinitperiod},
+         given={Philipp},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=FT}{%
+         family={Fenzl},
+         familyi={F\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{MPFT1}
+    \strng{fullhash}{MPFT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Qualitative inhaltsanalyse}
+    \field{year}{2019}
   \endentry
 
   \entry{mihalcea2004textrank}{inproceedings}{}
@@ -1105,67 +1127,6 @@
     \field{sortinithash}{R}
     \field{title}{Recommender Systems: Models and Techniques.}
     \field{year}{2014}
-  \endentry
-
-  \entry{shafi2017review}{article}{}
-    \name{author}{7}{}{%
-      {{hash=SMA}{%
-         family={Shafi’I},
-         familyi={S\bibinitperiod},
-         given={Muhammad\bibnamedelima Abdulhamid},
-         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-      {{hash=ALMS}{%
-         family={Abd\bibnamedelima Latiff},
-         familyi={A\bibinitperiod\bibinitdelim L\bibinitperiod},
-         given={Muhammad\bibnamedelima Shafie},
-         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-      {{hash=CH}{%
-         family={Chiroma},
-         familyi={C\bibinitperiod},
-         given={Haruna},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=OO}{%
-         family={Osho},
-         familyi={O\bibinitperiod},
-         given={Oluwafemi},
-         giveni={O\bibinitperiod},
-      }}%
-      {{hash=ASG}{%
-         family={Abdul-Salaam},
-         familyi={A\bibinithyphendelim S\bibinitperiod},
-         given={Gaddafi},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=AAI}{%
-         family={Abubakar},
-         familyi={A\bibinitperiod},
-         given={Adamu\bibnamedelima I},
-         giveni={A\bibinitperiod\bibinitdelim I\bibinitperiod},
-      }}%
-      {{hash=HT}{%
-         family={Herawan},
-         familyi={H\bibinitperiod},
-         given={Tutut},
-         giveni={T\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {IEEE}%
-    }
-    \strng{namehash}{SMAALMSCH+1}
-    \strng{fullhash}{SMAALMSCHOOASGAAIHT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \field{pages}{15650\bibrangedash 15666}
-    \field{title}{A review on mobile SMS spam filtering techniques}
-    \field{volume}{5}
-    \field{journaltitle}{IEEE Access}
-    \field{year}{2017}
   \endentry
 
   \entry{suhasini2021hybrid}{article}{}

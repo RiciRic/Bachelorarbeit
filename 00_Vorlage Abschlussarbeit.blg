@@ -43,52 +43,47 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'field_info' (item size: 4) to 10180 items.
 Database file #1: 00_Vorlage_Abschlussarbeit-blx.bib
 Database file #2: Literatur.bib
-Illegal end of database file---line 1079 of file Literatur.bib
- :   year={2002}
- :              
-I'm skipping whatever remains of this entry
 Biblatex version: 3.19
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 You've used 37 entries,
             6399 wiz_defined-function locations,
-            1427 strings with 15909 characters,
-and the built_in function-call counts, 300324 in all, are:
-= -- 24046
-> -- 4932
-< -- 1589
-+ -- 8741
-- -- 1853
-* -- 21501
-:= -- 33143
+            1425 strings with 15656 characters,
+and the built_in function-call counts, 284109 in all, are:
+= -- 22374
+> -- 4856
+< -- 1596
++ -- 8246
+- -- 1795
+* -- 20013
+:= -- 30878
 add.period$ -- 0
 call.type$ -- 37
-change.case$ -- 880
+change.case$ -- 899
 chr.to.int$ -- 42
 cite$ -- 72
-duplicate$ -- 31440
-empty$ -- 25352
-format.name$ -- 2740
-if$ -- 61429
+duplicate$ -- 30231
+empty$ -- 24014
+format.name$ -- 2656
+if$ -- 58330
 int.to.chr$ -- 0
 int.to.str$ -- 101
 missing$ -- 0
-newline$ -- 1221
-num.names$ -- 2072
-pop$ -- 13033
+newline$ -- 1182
+num.names$ -- 2090
+pop$ -- 12914
 preamble$ -- 2
-purify$ -- 1104
+purify$ -- 1109
 quote$ -- 0
-skip$ -- 8164
+skip$ -- 8173
 stack$ -- 0
-substring$ -- 43151
-swap$ -- 6047
-text.length$ -- 1168
+substring$ -- 39191
+swap$ -- 5952
+text.length$ -- 1151
 text.prefix$ -- 42
 top$ -- 1
 type$ -- 1240
 warning$ -- 0
-while$ -- 3997
+while$ -- 3777
 width$ -- 0
-write$ -- 1184
-(There was 1 error message)
+write$ -- 1145
