@@ -857,6 +857,29 @@
     \field{year}{1994}
   \endentry
 
+  \entry{mayring2012qualitative}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MP}{%
+         family={Mayring},
+         familyi={M\bibinitperiod},
+         given={Philipp},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MP1}
+    \strng{fullhash}{MP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{pages}{27\bibrangedash 36}
+    \field{title}{Qualitative Inhaltsanalyse--ein Beispiel f{\"u}r Mixed
+  Methods}
+    \field{volume}{1}
+    \field{journaltitle}{Mixed Methods in der empirischen Bildungsforschung}
+    \field{year}{2012}
+  \endentry
+
   \entry{mayring2019qualitative}{book}{}
     \name{author}{2}{}{%
       {{hash=MP}{%

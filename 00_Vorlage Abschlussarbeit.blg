@@ -40,50 +40,55 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 10180 items.
+Reallocating 'field_info' (item size: 4) to 10320 items.
 Database file #1: 00_Vorlage_Abschlussarbeit-blx.bib
 Database file #2: Literatur.bib
+Illegal end of database file---line 1129 of file Literatur.bib
+ :   publisher={Waxmann M{\"u}nster}
+ :                                  
+I'm skipping whatever remains of this entry
 Biblatex version: 3.19
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 37 entries,
+You've used 38 entries,
             6399 wiz_defined-function locations,
-            1425 strings with 15656 characters,
-and the built_in function-call counts, 284109 in all, are:
-= -- 22374
-> -- 4856
-< -- 1596
-+ -- 8246
-- -- 1795
-* -- 20013
-:= -- 30878
+            1430 strings with 15800 characters,
+and the built_in function-call counts, 288489 in all, are:
+= -- 22650
+> -- 4945
+< -- 1619
++ -- 8339
+- -- 1821
+* -- 20300
+:= -- 31291
 add.period$ -- 0
-call.type$ -- 37
-change.case$ -- 899
+call.type$ -- 38
+change.case$ -- 909
 chr.to.int$ -- 42
-cite$ -- 72
-duplicate$ -- 30231
-empty$ -- 24014
-format.name$ -- 2656
-if$ -- 58330
+cite$ -- 74
+duplicate$ -- 30738
+empty$ -- 24443
+format.name$ -- 2709
+if$ -- 59260
 int.to.chr$ -- 0
-int.to.str$ -- 101
+int.to.str$ -- 105
 missing$ -- 0
-newline$ -- 1182
-num.names$ -- 2090
-pop$ -- 12914
+newline$ -- 1204
+num.names$ -- 2137
+pop$ -- 13245
 preamble$ -- 2
-purify$ -- 1109
+purify$ -- 1121
 quote$ -- 0
-skip$ -- 8173
+skip$ -- 8343
 stack$ -- 0
-substring$ -- 39191
-swap$ -- 5952
-text.length$ -- 1151
-text.prefix$ -- 42
+substring$ -- 39588
+swap$ -- 6075
+text.length$ -- 1174
+text.prefix$ -- 43
 top$ -- 1
-type$ -- 1240
+type$ -- 1274
 warning$ -- 0
-while$ -- 3777
+while$ -- 3833
 width$ -- 0
-write$ -- 1145
+write$ -- 1166
+(There was 1 error message)
