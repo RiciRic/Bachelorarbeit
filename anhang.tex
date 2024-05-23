@@ -91,7 +91,7 @@ Welche Informationen sind denn für dich in Bedarfsmeldungen besonders wichtig o
 
 0:5:38 --> 0:6:50\\
 B:\\
-Ja genau, also Senioritätslevel ist ehrlicherweise erstmal das zweitrangige. Das müssen wir im Nachgang einmal prüfen. Wichtig ist halt was der Text Deck und was vom Kunden kommt. Und quasi anhand der Bedarfsmeldung an sich. Wie hoch ist der Aufwand, der dahinter steckt? Sowohl durch den Kunden als auch das, was wir teilweise schätzen. Dann kann durchaus sein, dass der Kunde sagt, was gebraucht wird, er aber eigentlich keine Ahnung hat. Es kann vorkommen, dass der Kunde gerne in 2 Monaten durch ist, aber es keinen Sinn macht und wir mindestens ein halbes Jahr benötigt. Dann trifft man sich irgendwo in der Mitte und muss aber noch abgrenzen was Sinn macht und was nicht. Wenn das alles klar ist, dann kannst du überlegen was du eher brauchst. Machst du z.B. nur was mit Senioren? Oder reicht ein Junior. Das hängt dann immer eher von der Gesamtsituation ab.\\
+Ja genau, also Senioritätslevel ist ehrlicherweise erstmal das zweitrangige. Das müssen wir im Nachgang einmal prüfen. Wichtig ist der Tech Stack und was vom Kunden kommt. Und quasi anhand der Bedarfsmeldung an sich. Wie hoch ist der Aufwand, der dahinter steckt? Sowohl durch den Kunden als auch das, was wir teilweise schätzen. Dann kann durchaus sein, dass der Kunde sagt, was gebraucht wird, er aber eigentlich keine Ahnung hat. Es kann vorkommen, dass der Kunde gerne in 2 Monaten durch ist, aber es keinen Sinn macht und wir mindestens ein halbes Jahr benötigt. Dann trifft man sich irgendwo in der Mitte und muss aber noch abgrenzen was Sinn macht und was nicht. Wenn das alles klar ist, dann kannst du überlegen was du eher brauchst. Machst du z.B. nur was mit Senioren? Oder reicht ein Junior. Das hängt dann immer eher von der Gesamtsituation ab.\\
 
 0:6:50 --> 0:7:5\\
 I:\\
@@ -380,25 +380,123 @@ B:\\
 Ich glaub, es gibt nicht die eine Person, die das sicherstellen kann. Das ist eine gemeinsame Verantwortung. Damit dann am Ende sichergestellt ist, dass das gut funktioniert, gibt es sicherlich ein paar Punkte, wo man positiv darauf einwirken kann. Wir machen regelmäßig Bereichsmeetings, wo dann auch ein Agenda Punkt im Normalfall ist wie das Staffing läuft. Wir haben auch wöchentlich Jour Fixe, wo wir dann über das Tagesgeschäft reden und was die aktuell laufende Staffing-Prozesse sind? Wie sieht die Auslastung aus usw.? Dort kann man schauen wo denn Probleme sind und dann entsprechend kommunizieren. Viele von den Bedarfen werden gar nicht im JIRA eingetragen, sondern es werden direkt entsprechende Mitarbeiter angesprochen.\\
 \newpage
 \section{Paraphrasierung und Reduktion}
-\begin{center}
-\begin{tabularx}{1\textwidth} {
-		| >{\hsize=.2\hsize}X 
-		| >{\hsize=.2\hsize}X
-		| >{\raggedright\arraybackslash}X
-		| >{\raggedright\arraybackslash}X
-		| >{\raggedright\arraybackslash}X | }
+\label{sec:reduktion}
+%\begin{center}
+\begin{longtable}{| p{0.5cm} | p{0.5cm} | p{4cm} | p{4cm} | p{4cm} |}
+	%{
+	%	| >{\hsize=.2\hsize}X 
+	%	| >{\hsize=.2\hsize}X
+	%	| >{\raggedright\arraybackslash}X
+	%	| >{\raggedright\arraybackslash}X
+	%	| >{\raggedright\arraybackslash}X | }
 	\hline
 	Fall & Nr. & Paraphrase & Generalisierung & Reduktion \\
 	\hline
 	\hline
-	
-	1 & 1 & test paraphrase & test generalisierung & \multirow{3}{3cm}{K1 \\ -tttttt \\ -ttttttt \\ -t} \\
+	\endhead
+	%\sout{test generalisierung}
+	1 & 1 & Bedarfsmeldungen beschreiben Software-Entwicklungsprojekte, angefangen von Projekten in dem ein adessi in einem Kundenprojekt arbeitet über gemischte Teams bis hin zur kompletten Lieferung. & Bedarfsmeldungen Beschreiben Software-Entwicklungsprojekte wie Kundenprojekte, bei dem in gemischten Teams bis zur Auslieferung gearbeitet wird & \multirow{3}{4cm}{K1 Arten von Projekten \\ -tttttt \\ -ttttttt \\ -t \\ \
+		
+		K2 Kommunikationswege \\ -tttttt \\ -ttttttt \\ \
+		
+		K3 Wichtige Informationen \\ -tttttt \\ -ttttttt \\ \
+		
+		K4 Detaillierungsgrad \\ -tttttt \\ -ttttttt \\ \
+		
+		K5 Herausforderungen \\ -tttttt \\ -ttttttt \\ \
+		
+		K6 Qualitätsbewertung \\ -tttttt \\ -ttttttt \\ \
+		
+		K7 Qualitätsverbesserung \\ -tttttt \\ -ttttttt \\ \
+		
+		K8 Auswirkungen \\ -tttttt \\ -ttttttt \\} \\
 	\cline{1-4}
-	1 & 2 & test paraphrase & test generalisierung & \\
+	1 & 2 & Initial über den Maitre, der das Staffing übernimmt, teilweise auch über das eigene Netzwerk zwischen Führungskräften. Am Ende über das Staffing Jira. & Maitre, Führungskräftenetzwerk, am ende Staffing Jira & \\
 	\cline{1-4}
-	1 & 3 & test paraphrase & test generalisierung & \\ 
+	1 & 3 & Senioritätslevel, Tagessatz, Remote/on Site Einsatz, Dauer, Technischer Stack (Muss- und Kann Kriterien), Einarbeitungszeiträume, Lieferverpflichtung. & Senioritätslevel, Tagessatz, Remote/on Site Einsatz, Dauer, Technischer Stack (Muss- und Kann Kriterien), Einarbeitungszeiträume, Lieferverpflichtung & \\
+	\cline{1-4}
+	1 & 4 & Bedarfsmeldungen sollten aussagefähig sein, welche technischen Kompetenzen wichtig sind, welche Tagessätze, ob Remote möglich ist und die Dauer. & Aussagefähigkeit von Bedarfsmeldungen durch technischen Kompetenzen, Tagessätze, Remote Möglichkeit und Dauer & \\ 
+	\cline{1-4}
+	1 & 5 & Der Anforderer muss ggf. Fragen mehrfach beantworten. Dadurch verliert man ggf. den Überblick. & Überblick verlieren durch Mehrfachbeantwortung von Fragen & \\ 
+	\cline{1-4}
+	1 & 6 & Typische Stakeholder sind Sales/PL: Anforderer mit den technischen Informationen, Maitre: kümmert sich um das Staffing. & Stakeholder sind Sales/PL: Anforderer mit technischen Informationen, Maitre & \\ 
+	\cline{1-4}
+	1 & 7 & Bewertung der Qualität erfolgt gar nicht. & keine Qualitätsbewertung & \\ 
+	\cline{1-4}
+	1 & 8 & Qualitätsverbesserung durch klarere Vorgaben und weniger Freitext, aktuell: durch Nachfragen und Bitten um nachträgliche Pflege, ggf. durch Reviewprozesse. & Qualitätsverbesserung durch klare Vorgaben, weniger Freitext, Nachfragen und nachträgliche Pflege (Reviewprozess) & \\ 
+	\cline{1-4}
+	1 & 9 & Auswirkungen fehlender Informationen sind, dass das Staffing länger dauert und ggf. die Stellen durch andere Dienstleister besetzt werden. & Fehlinformationsauswirkungen sind längerer Staffingprozess und Umbesetzung durch anderen Dienstleister & \\ 
+	\cline{1-4}
+	1 & 10 & Gute Abstimmungen bevor die Bedarfsmeldung erstellt wird, ggf. durch ein Quality-Gate (Review). & Abstimmung vor Bedarfsmeldungserstellung durch Quality-Gate (Review) & \\ 
+	\cline{1-4}
+	2 & 11 & In Bedarfsmeldungen sind die typischen Stakeholder Fachverantwortliche, Entscheider und höhere Management-Ebenen wie CEO oder Geschäftsführer. & Stakeholder sind Fachverantwortliche, Entscheider, CEO oder Geschäftsführer & \\ 
+	\cline{1-4}
+	2 & 12 & Projekte lassen sich in Time Material Projekte und Festpreis Projekte unterteilen, wobei die Art der Projekte die Ressourcenplanung beeinflusst. & Projektunterscheidung ind Time Material und Festpreis Projekte & \\
+	\cline{1-4} 
+	2 & 13 & Die Dokumentation der Bedarfsmeldungen variiert je nach Kundenanforderungen, von einfachen Word-Dokumenten bis zu detaillierten Präsentationen. & Dokumentation von Bedarfsmeldung variieren (von Word-Dokument bis Präsentation) & \\ 
+	\cline{1-4}
+	2 & 14 & Wichtig in Bedarfsmeldungen sind das Tech Stack, der Aufwand und die zeitlichen Erwartungen. & Wichtig sind Tech Stack, Aufwand und zeitliche Erwartungen & \\ 
+	\cline{1-4}
+	2 & 15 & Senioritätslevel ist zweitrangig und abhängig von der Projektsituation. & Senioritätslevel zweitrangig & \\ 
+	\cline{1-4}
+	2 & 16 & Unklare oder unvollständige Bedarfsmeldungen führen zu erhöhtem Aufwand und möglichen Verzögerungen, da Missverständnisse geklärt werden müssen. & Erhöhter Aufwand und Verzögerungen durch unklare/unvollständige Bedarfsmeldungen & \\ 
+	\cline{1-4}
+	2 & 17 & Die Qualität von Bedarfsmeldungen kann verbessert werden, indem man sicherstellt, dass das Verständnis auf allen Seiten übereinstimmt und Missverständnisse vermieden werden. & Qualitätssteigerung von Bedarfsmeldungen durch Verständnisübereinstimmung und Beseitigung von Missverständnisse & \\ 
+	\cline{1-4}
+	2 & 18 & Unklare Informationen in Bedarfsmeldungen erhöhen den Aufwand und führen zu Nacharbeit und potenziellen Konflikten zwischen den Beteiligten. & Unklare Informationen erhöhen Aufwand und resultieren in Nacharbeiten und Konflikten & \\ 
+	\cline{1-4}
+	2 & 19 & Erfahrung ist entscheidend, um sicherzustellen, dass die Bedürfnisse und Anforderungen aller Beteiligten angemessen berücksichtigt werden. & Erfahrung ist zur Sicherstellung von Bedürfnissen entscheidend & \\ 
+	\cline{1-4}
+	3 & 20 & Bedarfsmeldungen können entweder vom Kunden direkt kommen oder von uns selbst formuliert werden. & Bedarfsmeldungen können selbst formuliert oder vom Kunden stammen  & \\ 
+	\cline{1-4}
+	3 & 21 & Bedarfsmeldungen enthalten wirtschaftlich relevante Informationen wie vertragliche Konditionen, Tagessatz, Einsatzbeginn und voraussichtlicher Einsatzzeitraum. & Bedarfsmeldungsinfomationen sind vertragliche Konditionen, Tagessatz, Einsatzbeginn und Einsatzzeitraum & \\ 
+	\cline{1-4}
+	3 & 22 & Die typische Struktur einer Bedarfsmeldung beinhaltet eine Überschrift, eine allgemeine Beschreibung des Einsatzkontexts, eine Liste der geforderten Fähigkeiten und Erfahrungen sowie deren Gewichtung. & Bedarfsmeldungen enthalten eine Überschrift, eine Beschreibung des Einsatzkontexts, eine Liste der Fähigkeiten und Erfahrungen und deren Gewichtung & \\ 
+	\cline{1-4}
+	3 & 23 & Unklare oder unvollständige Bedarfsmeldungen können zu Missverständnissen führen und den Staffing-Prozess verlangsamen. & Unvollständige Bedarfsmeldungen führen zu Missverständnissen und langsamen Staffing-Prozess & \\ 
+	\cline{1-4}
+	3 & 24 & Projekte können entweder vom Kunden gesteuert werden oder von uns im Kundenauftrag durchgeführt werden. & Bedarfe sind entweder Kundengesteuert oder Kundenaufträge & \\ 
+	\cline{1-4}
+	3 & 25 & Die Art der Projektvergabe (Time and Material oder Festpreis) beeinflusst die Anforderungen und den Ablauf. & Beeinflussung der Anforderungen und Ablauf durch Art der Projektvergabe & \\ 
+	\cline{1-4}
+	3 & 26 & Der Staffing-Prozess bei adesso ist manuell und nicht normiert, aber es gibt eine grobe thematische Struktur, die sich etabliert hat. & Keine feste, aber grobe Struktur zur Erfassung des Staffing-Prozesses & \\ 
+	\cline{1-4}
+	3 & 27 & Die Schnelligkeit im Staffing-Prozess ist ein Wettbewerbsvorteil. Eine schnelle und präzise Bearbeitung von Bedarfsmeldungen ist entscheidend für den Erfolg. & schnelle und präzise Bearbeitung von Bedarfsmeldungen ist Erfolgsentscheidend & \\ 
+	\cline{1-4}
+	3 & 28 & Versierte Personen wie Delivery Manager oder Account Manager sollten den Prozess der Anforderungserhebung und Dokumentation begleiten und moderieren, um sicherzustellen, dass alle relevanten Informationen erfasst werden. & Begleitung des Bedarfsmeldungsdokumentierung durch Delivery Manager oder Account Manager & \\ 
+	\cline{1-4}
+	4 & 29 & Die Erstellung von Bedarfsmeldungen erfolgt durch Projektleiter und interne Maitre. Diese stimmen den Bedarf ab und sind für das Staffing verantwortlich. & Staffingverantwortliche sind Projektleiter und Maitre & \\ 
+	\cline{1-4}
+	4 & 30 & Rahmenbedingungen wie Kunde, Einsatzbeginn, Laufzeit, Ort und Tagessatz sowie notwendige Skills und Aufgabenbeschreibungen sind unverzichtbar in Bedarfsmeldungen. & Unverzichtbare Bedarfsmeldungsinformationen sind Rahmenbedingungen, Einsatzbeginn, Laufzeit, Ort und Tagessatz, Skills und Aufgabenbeschreibungen & \\ 
+	\cline{1-4}
+	4 & 31 & Bedarfsmeldungen werden über Jira erfasst und mit allen beteiligten Parteien geteilt. & Bedarfsmeldungserfassung in Jira & \\ 
+	\cline{1-4}
+	4 & 32 & Unklare oder unvollständige Bedarfsmeldungen führen dazu, dass das angebotene Personal möglicherweise nicht passt oder verfügbar ist. & Unvollständige/Unklare Bedarfsmeldungen führen zu unpassenden Personal & \\ 
+	\cline{1-4}
+	4 & 33 & Technische Validierung der Daten erfolgt über Jira, weitergehende Validierung im Vier-Augen-Prinzip durch die Projektleitung. & Qualitätssicherung erfolgt über Jira und der Projektleitung & \\ 
+	\cline{1-4}
+	4 & 34 & Verbesserungsvorschlag: Strukturiertere Erfassung der Daten und KI-gestützte Prüfungen für Freitextinformationen. & Qualitätssicherungsvorschlag durch strukturierte Datenerfassung und KI-gestützte Prüfungen & \\ 
+	\cline{1-4}
+	4 & 35 & Fehlende Informationen in Bedarfsmeldungen können dazu führen, dass Mitarbeitende den Aufgaben nicht gewachsen sind, was den Projekterfolg gefährdet. & fehlende Informationen führen zu fehlplatzierten Mitarbeitern und gefährdeten Projekterfolg & \\ 
+	\cline{1-4}
+	4 & 36 & Durch intensives Lesen, Rückfragen und die Berücksichtigung aller involvierten Personen werden Bedürfnisse und Anforderungen sichergestellt. & Sicherstellung der Anforderungen und Bedürfnisse durch intensives Lesen, Rückfragen und Berücksichtigung involvierter Personen & \\ 
+	\cline{1-4}
+	5 & 37 & Bedarfsmeldungen werden normalerweise von Sales oder dem internen Maitre erstellt, basierend auf Kundenanforderungen. & Bedarfsmeldungserstellung durch Maitre oder Sales basierend auf Kundenanforderungen. & \\ 
+	\cline{1-4}
+	5 & 38 & Der Ersteller der Bedarfsmeldung legt auch die Kriterien für den benötigten Mitarbeiter fest. & Festlegung der Kiterien durch den Ersteller der Bedarfsmeldung & \\ 
+	\cline{1-4}
+	5 & 39 & Die Bedarfsmeldungen werden in JIRA-Tickets überführt, die verschiedene Felder enthalten, wie Tagessatz, Startdatum, Volumen und Aufgaben. Es gibt auch Freitextfelder und Excel-Dokumente zur Selbstbeurteilung des Kandidaten. & Überführung der Bedarfsmeldung in Jira in die Felder Tagessatz, Startdatum, Volumen, Aufgaben, Freitext und Selbstbeurteilung & \\ 
+	\cline{1-4}
+	5 & 40 & Wichtige Informationen in einer Bedarfsmeldung sind das Startdatum, die Dauer und der Prozentsatz der Einsatzzeit des Mitarbeiters sowie die Muss- und Soll-Kriterien, um die Passgenauigkeit des Mitarbeiters sicherzustellen. & Wichtige Bedarfsmeldungsinformationen sind Startdatum, Prozentsatz, Einsatzzeit und Muss-/Soll- Kriterien & \\ 
+	\cline{1-4}
+	5 & 41 & Unklare oder unvollständige Bedarfsmeldungen führen zu falschen Zuordnungen, Kommunikationsaufwand und notwendigen Korrekturen. Dies kann auch zu einem erheblichen Overhead und Zeitaufwand durch Interviews führen. & Unklare/Unvollständige Bedarfsmeldungen führen zu falscher Zuordnung, Kommunikations-/Zeitaufwand und Korrekturen & \\ 
+	\cline{1-4}
+	5 & 42 & Es gibt feste Felder und Zustände in Jira, die einen groben Rahmen bieten, sowie feste Rahmenbedingungen bei größeren Vereinbarungen. Es gibt jedoch keine übergreifende Qualitätssicherung, sondern es handelt sich um einen Lernprozess. & Trotz fehlender Qualitätssicherung groben Rahmen durch feste Felder in Jira und Erfahrung & \\ 
+	\cline{1-4}
+	5 & 43 & Die Bedürfnisse und Anforderungen aller Beteiligten werden durch regelmäßige Meetings, wöchentliche Jour Fixe und direkte Kommunikation berücksichtigt. Viele Bedarfe werden direkt angesprochen und nicht im JIRA eingetragen. & Bedarfe durch regelmäßigen Meetings, Jour Fixe und Kommunikation besprochen und berücksichtigt & \\ 
 	\hline
-\end{tabularx}
-\captionof{table}{Kategorien}
-\label{tab:Erstellung der Kategorien aus den Experteninterviews}
-\end{center}
+	\caption{Erstellung der Kategorien aus den Experteninterviews.\label{tab:kategorien}}\\
+\end{longtable}
+%\captionof{table}{Kategorien}
+%\label{tab:Erstellung der Kategorien aus den Experteninterviews}
+%\end{center}
