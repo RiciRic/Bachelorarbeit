@@ -9,20 +9,18 @@ Reallocating 'name_of_file' (item size: 1) to 13 items.
 A level-1 auxiliary file: proposal.aux
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 A level-1 auxiliary file: einleitung.aux
-Reallocating 'name_of_file' (item size: 1) to 24 items.
-A level-1 auxiliary file: literaturueberblick.aux
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+A level-1 auxiliary file: grundlagen.aux
 Reallocating 'name_of_file' (item size: 1) to 34 items.
 A level-1 auxiliary file: entwicklung_erwartungshaltung.aux
-Reallocating 'name_of_file' (item size: 1) to 12 items.
-A level-1 auxiliary file: analyse.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: literaturueberblick.aux
 Reallocating 'name_of_file' (item size: 1) to 27 items.
 A level-1 auxiliary file: implementationsdetails.aux
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 A level-1 auxiliary file: evaluation.aux
 Reallocating 'name_of_file' (item size: 1) to 20 items.
 A level-1 auxiliary file: zusammenfassung.aux
-Reallocating 'name_of_file' (item size: 1) to 11 items.
-A level-1 auxiliary file: anhang.aux
 Reallocating 'name_of_file' (item size: 1) to 31 items.
 A level-1 auxiliary file: eidesstattliche_erklaerung.aux
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
@@ -52,7 +50,7 @@ Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 You've used 38 entries,
             6399 wiz_defined-function locations,
-            1430 strings with 15800 characters,
+            1429 strings with 15793 characters,
 and the built_in function-call counts, 288489 in all, are:
 = -- 22650
 > -- 4945

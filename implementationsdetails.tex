@@ -1,22 +1,93 @@
-\chapter{Konzeptionierung und Implementierung der Vorverarbeitung}
+\chapter{Implementationsdetails}
 \label{chap:implementierung}
-
-\section{Beschreibung des entwickelten Vorverarbeitungsmodells}
-basierend auf den ausgewählten Techniken
+In diesem Kapitel werden das die Funktionalitäten der Pipeline ermittelt. Um die Anforderungen genauer zu beschreiben, wird ein Use-Case-Diagramm und ein Klassendiagramm dargestellt und beschrieben. Zudem werden konkrete funktionale und nichtfunktionale Anforderungen des Systems erfasst.
+\section{Beschreibung des entwickelten Systems}
+basierend auf den ausgewählten Techniken\\
+für die effiziente Verarbeitung von Bedarfsmeldungen\\
 
 -auch translate erwähnen. Wichtig damit die meisten ansätze gut funktionieren
+\todo{erzählen was die Pipeline leisten soll}
 \newpage
-g
+\section{Use-Case}
 \newpage
-g
+\section{Anforderungen}
+Im Folgenden werden die funktionalen sowie nichtfunktionalen Anforderungen des Systems beschrieben. Diese Informationen wurden aus den Ergebnissen der Experteninterviews aus Kapitel \ref{chap:erwartungshaltung} hergeleitet und bilden den Rahmen des Systems.
+\subsection{Funktionale Anforderungen}
+Die funktionalen Anforderungen beschreiben konkrete Funktionalitäten des Systems. Dazu werden zusammengehörende Anforderungen nummeriert und im Falle der Systemanforderungen in detaillierte Unterpunkte aufgelistet und beschrieben.
+\paragraph{Benutzeranforderungen}
+\begin{enumerate}
+	\item Dem Benutzer soll es möglich sein, sich mithilfe vom \emph{SSO ADFS} zu autorisieren.
+	\item Dem Benutzer wird eine Auflistung von Bedarfsmeldungen zur Verfügung stehen.
+	\item Ein Benutzer sollte die Möglichkeit haben, nach Bedarfsmeldungen zu suchen und dadurch passende Mitarbeiter zu ermitteln.
+\end{enumerate}
+\paragraph{Systemanforderungen}
+\begin{enumerate}[label=1.\arabic*]
+	\item Die Autorisierung des Benutzers soll überprüfen, dass nur Admins, Führungskräfte und \emph{Staffing-Interessierte} Zugriff haben.
+	\item Bei der Autorisierung werden Anmeldedaten des Benutzers angefragt und verarbeitet.
+\end{enumerate}
+\begin{enumerate}[label=2.\arabic*]
+	\item Die Bedarfsmeldungen werden aus JIRA bezogen.
+	\item Die Bedarfsmeldungen sollen durchsucht werden können.
+\end{enumerate}
+\begin{enumerate}[label=3.\arabic*]
+	\item Die Webseite wird ein Eingabefeld zur Verfügung stellen, bei dem Informationen eines Projekts eingetragen werden können.
+	\item Die erstellten Bedarfsmeldungen werden gespeichert und in einer Liste dargestellt.
+\end{enumerate}
+\subsection{Nichtfunktionale Anforderungen}
+Hierbei handelt es sich um qualitätsbezogene Anforderungen. Diese umfassen nicht konkrete Funktionen des Systems, sondern stellen Rahmenbedingungen des Systems im Ganzen zusammen.
+\begin{enumerate}
+	\item Das \emph{adesso Staffing Advisor Lab} soll als Webapplikation erstellt werden.
+	\item Das Projekt muss eine sichere Datenhaltung bieten, um App Tokens speichern zu können.
+	\item Das Projekt muss ein separates Backend mit Datenbank beinhalten.
+	\item Variablen müssen zwischen Entwicklungsumgebung und Produktionsumgebung unterscheiden können
+	\item Das \emph{adesso Staffing Advisor Lab} Projekt wird anstelle eines \emph{singlepage}-Prinzips, ein Router-System verwenden.
+	\item Das Projekt wird den \emph{Look \& Feel} von \emph{adesso} widerspiegeln.
+	\item Die Code-Qualität wird mithilfe von Formatierungs-, Codeanalyse- und Test-Technologien sichergestellt.
+\end{enumerate}
 \newpage
-g
+\section{Klassendiagramm}
 \newpage
-g
-\newpage
+\section{Details zur Implementierung der Pipeline}
+Dieses Kapitel beschreibt den technischen Entwicklungsprozess zur Umsetzung der Anforderungen des Systems. Die Implementierung fokussiert sich auf die Umsetzungen von Technologien und Funktionsweisen verschiedener Anforderungen. Zudem wird die Struktur des Projektes aufgezeigt.
+\subsection{Umsetzung}
+in python - warum, modular
+\subsection{Projektstruktur}
+Das Projekt wird in einem git Repository gespeichert und versioniert. Die Projektstruktur ist ohne zusätzliche Konfigurationsdateien wie folgt aufgebaut:
+\dirtree{%
+	.1 .git/.
+	.2 modules/.
+	.3 nGram.py.
+	.3 posTagging.py.
+	.3 preprocessing.
+	.3 ruleBasedApproach.py.
+	.3 textRankingArgorithm.py.
+	.3 tfIdf.py.
+	.2 requirements/.
+	.3 syntheticData.txt.
+	.3 ....
+	.2 app.py.
+	.2 ....
+}
+\url{client/}-Verzeichnis
 
-\section{Details zur Implementierung der Pipeline in Python}
-für die effiziente Verarbeitung von Bedarfsmeldungen
-\newpage
-g
-\newpage
+\subsection{Modulimplemetierungen}
+
+\paragraph{Dateiformat}
+
+\paragraph{Übersetzung}
+
+\paragraph{Preprocessing}
+
+\paragraph{TF-IDF}
+
+\paragraph{Text-Ranking-Algorithmen}
+
+\paragraph{N-Gramm}
+
+\paragraph{POS-Tagging}
+
+\paragraph{Named Entity Recognition}
+
+\paragraph{Regelbasierte Ansätze}
+
+\paragraph{data-fusion}

@@ -1,7 +1,7 @@
 \chapter{Entwicklung einer klaren Erwartungshaltung}
 \label{chap:erwartungshaltung}
 Dieses Kapitel befasst sich mit der Methodologie und Durchführung von Experteninterviews mit dem Ziel wichtige Aspekte einer \emph{Bedarfsmeldung} durch eine qualitative Inhaltsanalyse zu identifizieren, um daraus Anforderungen an das zu Entwickelnde System zur Extraktion relevanter Informationen aus semistrukturierten \emph{Bedarfsmeldungen} zu entwickeln.
-\section{Beschreibung der Interviews mit Führungskräften zur Identifizierung von Stakeholder-Erwartungen}
+\section{Experteninterviews}
 \label{sec:beschreibung-der-interviews}
 Im Rahmen der vorliegenden Ausarbeitung werden halbstrukturierte Interviews mit Experten aus dem Bereich des \emph{Staffings} durchgeführt. Sinn und Zweck von Experteninterviews ist die Rekonstruktion spezifischer Wissensbestände oder besonders exklusiver, detaillierter oder umfassender Kenntnisse über bestimmte Wissensbestände und Praktiken.\\
 
@@ -26,6 +26,7 @@ Die Übersicht der interviewten Experten ist in der Tabelle \ref{tab:experten} a
 		Nr. und Datum
 		& Profil der Befragten & Durchführungs-art & Dauer & Transkripte (Anhang)\\
 		\hline
+		\hline
 		1. 28.03.2024 & CC-Leiter und Softwarearchitekt & schriftlicher Vorabtest & - & \ref{interview1}\\
 		\hline
 		2. 29.04.2024 & CC-Leiter und Projektleiter & Video-Interview & 15min & \ref{interview2}\\
@@ -34,7 +35,7 @@ Die Übersicht der interviewten Experten ist in der Tabelle \ref{tab:experten} a
 		\hline
 		4. 30.04.2024 & CC-Leiter und Softwarearchitekt & Video-Interview & 15min & \ref{interview4}\\
 		\hline
-		5. 6.05.2024 & CC-Leiter und Bereichsleiter & Video-Interview & 25min & \ref{interview5}\\
+		5. 6.05.2024 & Bereichsleiter & Video-Interview & 25min & \ref{interview5}\\
 		\hline
 	\end{tabularx}\\
 	\captionof{table}{Übersicht der Experten}
@@ -111,7 +112,7 @@ Das Ziel der Analyse ist die Informationsgewinnung aus den Interviews, um die wi
 \paragraph{Theoretische Differenzierung der Fragestellung}\mbox{} \\
 \todo{fehlt noch}
 \paragraph{Bestimmung der Analysetechnik und Festlegung des konkreten Ablaufmodells}\mbox{} \\
-Zur extraktion der relevanten Informationen wurde die zusammenfassende Inhaltsanalyse nach Mayring verwendet. Innerhalb der Analyse wird der Text auf wesentliche Inhalte reduziert und in Kategorien unterteilt. Die einzelnen Schritte des Ablaufmodells für eine zusammenfassende Inhaltsanalyse ist in Abbildung \ref{fig:zusammenfassendeinhaltsanalyse} abgebildet.
+Zur Extraktion der relevanten Informationen wurde die zusammenfassende Inhaltsanalyse nach Mayring verwendet. Innerhalb der Analyse wird der Text auf wesentliche Inhalte reduziert und in Kategorien unterteilt. Die einzelnen Schritte des Ablaufmodells für eine zusammenfassende Inhaltsanalyse ist in Abbildung \ref{fig:zusammenfassendeinhaltsanalyse} abgebildet.
 %\begin{figure}[H]%htb
 %	\centering  
 %	\includegraphics[scale=0.5]{Abbildungen/zusammenfassendeInhaltsanalyse.png}
@@ -196,21 +197,105 @@ Mayring beschreibt drei Analyseeinheiten. Die (i)\emph{Auswertungseinheit} defin
 \paragraph{Zusammenstellung der Aussagen als Kategoriesystem}\mbox{} \\
 Die Kategorien sind induktiv aus dem Material erstellt worden \cite{mayring2012qualitative}. Die Ergebnisse der Schritte aus dem Ablaufmodell der Abbildung \ref{fig:zusammenfassendeinhaltsanalyse} sind im Anhang \ref{sec:reduktion} in der Tabelle \ref{tab:kategorien} dargestellt. \\
 
+\todo{genauer beschreiben was K1-K7 bedeutet (Kategorie...)}\\
+
 Nachfolgend sind die Ergebnisse aus der qualitativen Inhaltsanalyse:
 \begin{itemize}
-	\item[K1] Planung
+	\item[K1] Arten von Projekten
 	\begin{itemize}
-		\item[-] asdasd
-		\item[-] dsfsdf
+		\item[-] Kundenprojekte
+		\item[-] Softwareentwicklungsprojekte
+		\item[-] Time Material
+		\item[-] Festpreis
 	\end{itemize}
-	\item[K2] Planung
+	\item[K2] Stakeholder
 	\begin{itemize}
-		\item[-] asdasd
-		\item[-] dsfsdf
+		\item[-] Maitre
+		\item[-] Führungskräftenetzwerk
+		\item[-] Sales
+		\item[-] Projektleiter
+		\item[-] Fachverantwortliche
+		\item[-] Entscheider
+		\item[-] Geschäftsführer
+		\item[-] Delivery Manager
+		\item[-] Account Manager
+	\end{itemize}
+	\item[K3] Wichtige Informationen
+	\begin{itemize}
+		\item[-] Tagessatz
+		\item[-] Einsatz
+		\item[-] Dauer
+		\item[-] Tech Stack
+		\item[-] Muss/Kann Kriterien
+		\item[-] Einarbeitungszeiträume
+		\item[-] Lieferverpflichtung
+	\end{itemize}
+	\item[K4] Bedarfsmeldung
+	\begin{itemize}
+		\item[-] Überschrift
+		\item[-] Beschreibung
+		\item[-] Einsatzkontext
+		\item[-] Datum
+		\item[-] Volumen
+		\item[-] in Jira gespeichert
+		\item[-] gewichtete Fähigkeiten
+		\item[-] keine feste Struktur
+	\end{itemize}
+	\item[K5] Qualitätsbewertung
+	\begin{itemize}
+		\item[-] keine vorhanden
+		\item[-] Erfahrung
+		\item[-] über Projektleitung
+		\item[-] intensives Lesen
+		\item[-] Rückfragen stellen
+		\item[-] grober Rahmen durch Jira
+		\item[-] regelmäßige Meetings
+	\end{itemize}
+	\item[K6] Qualitätsverbesserung
+	\begin{itemize}
+		\item[-] klare Vorgaben
+		\item[-] weniger Freitext
+		\item[-] Reviewprozess
+		\item[-] Verständnisübereinstimmung
+		\item[-] Beseitigung Missverständnisse
+		\item[-] strukturierte Datenerfassung
+		\item[-] KI-gestützte Prüfungen
+	\end{itemize}
+	\item[K7] Auswirkungen
+	\begin{itemize}
+		\item[-] Überblick verlieren
+		\item[-] längerer Staffing-Prozess
+		\item[-] Umbesetzung
+		\item[-] erhöhter Aufwand
+		\item[-] Mehrfachbeantwortung
+		\item[-] Missverständnis
+		\item[-] unpassendes Personal
 	\end{itemize}
 \end{itemize}
+\section{Interpretation der Ergebnisse}
+\todo{was ziehe ich hier für ein Ergebnis raus}\\
+Die Kategorien zeigen, dass \emph{Bedarfsmeldungen} Bestandteil eines komplexen und vielschichtigen Prozesses sind, der verschiedene Arten von Projekten, eine Vielzahl von Stakeholdern und detaillierte Informationen umfasst. Die Qualität der Bedarfsmeldungen ist entscheidend für den Erfolg der Projekte, und es existieren Möglichkeiten zur Verbesserung durch Strukturierung, Automatisierung und klarer Kommunikationswege. Die Auswirkungen von unzureichender Pflege und fehlendem Informationsgehalt der \emph{Bedarfsmeldungen} sind weitreichend und können zu erheblicher Ineffizienz und Problemen innerhalb von \emph{adesso} führen.\\
 
-\section{Anforderungen an das System}
+Eine Bedarfsmeldung umfasst mehrere wesentliche Aspekte, die dafür sorgen klar und effektiv zu sein. Dazu gehört eine Überschrift, die die Projektart und den Bedarf kurz zusammenfasst. Die Beschreibung spiegelt den Bedarf wider und durch den Einsatzkontext können wichtige Hintergrundinformationen zum Umfeld des Projekts erklärt werden. Das Datum gibt Aufschluss über den Zeitplan, in welchem das Projekt durchgeführt werden soll. Durch das Volumen können benötigte Ressourcen und den Umfang des Bedarfs dokumentiert werden. Die \emph{Bedarfsmeldungen} werden in Jira gespeichert und erhalten dadurch einen groben Rahmen, wie diese gepflegt werden. Dennoch existiert keine einheitliche Strukturierung. Dadurch entstehen Abschnitte mit unstrukturiertem Informationsgehalt.\\
+\todo{gucken ob ich davon was gebrauchen kann}\\
+Eine \emph{Bedarfsmeldung} bezeichnet eine Projektbeschreibung eines Kunden, die Anforderungen an ein zu entwickelndes System enthält. Die Erstellung der \emph{Bedarfsmeldung} erfolgt durch den Kunden, wobei eine gemeinsame Abstimmung mit \emph{adesso} zur Finalisierung und Speicherung im JIRA erfolgt. Die Informationen sind insofern unstrukturiert, als dass sie ohne vordefinierte Struktur in Form eines Volltexts vorliegen. Infolgedessen kann es zu Abweichungen hinsichtlich der Ausgestaltung von \emph{Bedarfsmeldungen} kommen.\\
+
+Besonders wichtige Elemente einer \emph{Bedarfsmeldung} sind
+
+Tagessatz
+Einsatz
+Dauer
+Tech Stack
+Muss/Kann Kriterien
+Einarbeitungszeiträume
+Lieferverpflichtung
+
+-
+
+\section{Bedarfsmeldungen}
+Die Problemstellung umfasst eine Reihe von Punkten, die im Rahmen der Ausarbeitung zu behandeln sind. Aufgrund der unstrukturierten und mit fehlenden Informationen versehenen \emph{Bedarfsmeldungen} ist eine Standardisierung von besonderer Relevanz. Dies würde die Extraktion relevanter Informationen erleichtern und somit die Effizienz des Systems verbessern. Zudem würde ein solcher Ansatz einen Einblick in die Relevanz von Informationen und Stichpunkten geben. Im Rahmen der weiteren Bearbeitung einer Standardisierung ist die Extraktion der erforderlichen Informationen aus dem Volltext erforderlich. In diesem Kontext existiert bereits eine Reihe an Methoden und Ansätzen, die sich in der Forschung bewährt haben. Der unstrukturierte Volltext muss in eine strukturierte inhaltliche Aufteilung in einzelne Sequenzen und Stichpunkte überführt werden.\\
+
+
 
 
 %\cite{maguire2002user}
