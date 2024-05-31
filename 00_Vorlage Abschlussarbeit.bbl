@@ -680,31 +680,6 @@
     \field{year}{2015}
   \endentry
 
-  \entry{lanquillon2001enhancing}{thesis}{}
-    \name{author}{1}{}{%
-      {{hash=LC}{%
-         family={Lanquillon},
-         familyi={L\bibinitperiod},
-         given={Carsten},
-         giveni={C\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LC1}
-    \strng{fullhash}{LC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{L}
-    \field{sortinithash}{L}
-    \field{title}{Enhancing text classification to improve information
-  filtering}
-    \list{institution}{1}{%
-      {Otto-von-Guericke-Universit{\"a}t Magdeburg,
-  Universit{\"a}tsbibliothek}%
-    }
-    \field{type}{phdthesis}
-    \field{year}{2001}
-  \endentry
-
   \entry{lavin2019analyzing}{article}{}
     \name{author}{1}{}{%
       {{hash=LM}{%
