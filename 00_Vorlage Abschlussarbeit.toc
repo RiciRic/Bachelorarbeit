@@ -8,6 +8,7 @@
 \contentsline {section}{\numberline {2.2}Recommender Systems Historie und aktueller Stand der Forschung}{5}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Information Retrieval und Information Filtering}{7}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Data-Mining}{8}{section.2.4}%
+\contentsline {section}{\numberline {2.5}NLP}{8}{section.2.5}%
 \contentsline {chapter}{\numberline {3}Entwicklung einer klaren Erwartungshaltung}{9}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Experteninterviews}{9}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Ablauf der Interviews}{10}{section.3.2}%
@@ -22,15 +23,15 @@
 \contentsline {paragraph}{\nonumberline Bestimmung der Analyseeinheiten}{15}{paragraph*.22}%
 \contentsline {paragraph}{\nonumberline Zusammenstellung der Aussagen als Kategoriesystem}{16}{paragraph*.24}%
 \contentsline {section}{\numberline {3.5}Interpretation der Ergebnisse}{18}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Bedarfsmeldungen}{19}{section.3.6}%
+\contentsline {section}{\numberline {3.6}keine Ahnung wie ich es nenne}{19}{section.3.6}%
 \contentsline {chapter}{\numberline {4}Literaturüberblick}{20}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Automatisiertes Staffing}{20}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Preprocessing}{21}{section.4.2}%
 \contentsline {section}{\numberline {4.3}TF-IDF}{21}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Text-Ranking-Algorithmen}{22}{section.4.4}%
-\contentsline {section}{\numberline {4.5}N-Gramm}{23}{section.4.5}%
-\contentsline {section}{\numberline {4.6}POS-Tagging}{24}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Named Entity Recognition}{25}{section.4.7}%
+\contentsline {section}{\numberline {4.4}N-Gramm}{22}{section.4.4}%
+\contentsline {section}{\numberline {4.5}POS-Tagging}{23}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Text-Ranking-Algorithmus}{24}{section.4.6}%
+\contentsline {section}{\numberline {4.7}NER}{25}{section.4.7}%
 \contentsline {section}{\numberline {4.8}Hybride Ansätze}{25}{section.4.8}%
 \contentsline {section}{\numberline {4.9}data-fusion}{27}{section.4.9}%
 \contentsline {section}{\numberline {4.10}Pipeline}{28}{section.4.10}%
@@ -59,10 +60,12 @@
 \contentsline {paragraph}{\nonumberline Regelbasierte Ansätze}{36}{paragraph*.46}%
 \contentsline {paragraph}{\nonumberline data-fusion}{36}{paragraph*.48}%
 \contentsline {chapter}{\numberline {6}Evaluierung des entwickelten Systems}{37}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Beschreibung des verwendeten Datensatzes und der Evaluierungsmethodik}{37}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Präsentation und Diskussion der Ergebnisse}{38}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Vergleich des Systems mit einem Large Language Model-Ansatz}{44}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Analyse von Abweichungen, Ähnlichkeiten und Verbesserungspotenzialen des Systems}{48}{section.6.4}%
+\contentsline {section}{\numberline {6.1}Evaluationsmetrik}{37}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Beschreibung des verwendeten Datensatzes}{37}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Beschreibung des verwendeten Datensatzes}{38}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Präsentation und Diskussion der Ergebnisse}{38}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Vergleich des Systems mit einem Large Language Model-Ansatz}{44}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Analyse von Abweichungen, Ähnlichkeiten und Verbesserungspotenzialen des Systems}{48}{section.6.6}%
 \contentsline {chapter}{\numberline {7}Zusammenfassung und Ausblick}{50}{chapter.7}%
 \contentsline {chapter}{\numberline {A}Anhang}{51}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Interviewtranskripte}{51}{section.A.1}%

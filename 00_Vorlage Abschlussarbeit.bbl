@@ -470,56 +470,6 @@
     \field{year}{2005}
   \endentry
 
-  \entry{garcia2016big}{article}{}
-    \name{author}{5}{}{%
-      {{hash=GS}{%
-         family={Garc{\'\i}a},
-         familyi={G\bibinitperiod},
-         given={Salvador},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=RGS}{%
-         family={Ram{\'\i}rez-Gallego},
-         familyi={R\bibinithyphendelim G\bibinitperiod},
-         given={Sergio},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=LJ}{%
-         family={Luengo},
-         familyi={L\bibinitperiod},
-         given={Juli{\'a}n},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=BJM}{%
-         family={Ben{\'\i}tez},
-         familyi={B\bibinitperiod},
-         given={Jos{\'e}\bibnamedelima Manuel},
-         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=HF}{%
-         family={Herrera},
-         familyi={H\bibinitperiod},
-         given={Francisco},
-         giveni={F\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {BioMed Central}%
-    }
-    \strng{namehash}{GSRGSLJ+1}
-    \strng{fullhash}{GSRGSLJBJMHF1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \field{number}{1}
-    \field{pages}{1\bibrangedash 22}
-    \field{title}{Big data preprocessing: methods and prospects}
-    \field{volume}{1}
-    \field{journaltitle}{Big Data Analytics}
-    \field{year}{2016}
-  \endentry
-
   \entry{horesh2016information}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=HR}{%
@@ -591,36 +541,55 @@
     \field{year}{2013}
   \endentry
 
-  \entry{jun2001review}{article}{}
-    \name{author}{2}{}{%
-      {{hash=JLS}{%
-         family={Jun\bibnamedelima Lee},
-         familyi={J\bibinitperiod\bibinitdelim L\bibinitperiod},
-         given={Sang},
-         giveni={S\bibinitperiod},
+  \entry{kang2020natural}{article}{}
+    \name{author}{5}{}{%
+      {{hash=KY}{%
+         family={Kang},
+         familyi={K\bibinitperiod},
+         given={Yue},
+         giveni={Y\bibinitperiod},
       }}%
-      {{hash=SK}{%
-         family={Siau},
-         familyi={S\bibinitperiod},
-         given={Keng},
-         giveni={K\bibinitperiod},
+      {{hash=CZ}{%
+         family={Cai},
+         familyi={C\bibinitperiod},
+         given={Zhao},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=TCW}{%
+         family={Tan},
+         familyi={T\bibinitperiod},
+         given={Chee-Wee},
+         giveni={C\bibinithyphendelim W\bibinitperiod},
+      }}%
+      {{hash=HQ}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Qian},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Hefu},
+         giveni={H\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {MCB UP Ltd}%
+      {Taylor \& Francis}%
     }
-    \strng{namehash}{JLSSK1}
-    \strng{fullhash}{JLSSK1}
+    \strng{namehash}{KYCZTCW+1}
+    \strng{fullhash}{KYCZTCWHQLH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{J}
-    \field{sortinithash}{J}
-    \field{number}{1}
-    \field{pages}{41\bibrangedash 46}
-    \field{title}{A review of data mining techniques}
-    \field{volume}{101}
-    \field{journaltitle}{Industrial Management \& Data Systems}
-    \field{year}{2001}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{number}{2}
+    \field{pages}{139\bibrangedash 172}
+    \field{title}{Natural language processing (NLP) in management research: A
+  literature review}
+    \field{volume}{7}
+    \field{journaltitle}{Journal of Management Analytics}
+    \field{year}{2020}
   \endentry
 
   \entry{kroha2000preprocessing}{inproceedings}{}
@@ -841,6 +810,9 @@
          giveni={P\bibinitperiod},
       }}%
     }
+    \list{publisher}{1}{%
+      {Waxmann M{\"u}nster}%
+    }
     \strng{namehash}{MP1}
     \strng{fullhash}{MP1}
     \field{labelnamesource}{author}
@@ -911,38 +883,6 @@
     \field{year}{2004}
   \endentry
 
-  \entry{nadeau2007survey}{article}{}
-    \name{author}{2}{}{%
-      {{hash=ND}{%
-         family={Nadeau},
-         familyi={N\bibinitperiod},
-         given={David},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=SS}{%
-         family={Sekine},
-         familyi={S\bibinitperiod},
-         given={Satoshi},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {John Benjamins}%
-    }
-    \strng{namehash}{NDSS1}
-    \strng{fullhash}{NDSS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{N}
-    \field{sortinithash}{N}
-    \field{number}{1}
-    \field{pages}{3\bibrangedash 26}
-    \field{title}{A survey of named entity recognition and classification}
-    \field{volume}{30}
-    \field{journaltitle}{Lingvisticae Investigationes}
-    \field{year}{2007}
-  \endentry
-
   \entry{partalidou2019design}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=PE}{%
@@ -987,46 +927,6 @@
     \field{pages}{337\bibrangedash 341}
     \field{title}{Design and implementation of an open source Greek POS Tagger
   and Entity Recognizer using spaCy}
-    \field{year}{2019}
-  \endentry
-
-  \entry{pay2019ensemble}{article}{}
-    \name{author}{3}{}{%
-      {{hash=PT}{%
-         family={Pay},
-         familyi={P\bibinitperiod},
-         given={Tayfun},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=LS}{%
-         family={Lucci},
-         familyi={L\bibinitperiod},
-         given={Stephen},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=CJL}{%
-         family={Cox},
-         familyi={C\bibinitperiod},
-         given={James\bibnamedelima L},
-         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Instituto Polit{\'e}cnico Nacional, Centro de Investigaci{\'o}n en
-  Computaci{\'o}n}%
-    }
-    \strng{namehash}{PTLSCJL1}
-    \strng{fullhash}{PTLSCJL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{P}
-    \field{sortinithash}{P}
-    \field{number}{3}
-    \field{pages}{703\bibrangedash 710}
-    \field{title}{An ensemble of automatic keyword extractors: TextRank, RAKE
-  and TAKE}
-    \field{volume}{23}
-    \field{journaltitle}{Computaci{\'o}n y Sistemas}
     \field{year}{2019}
   \endentry
 
@@ -1159,49 +1059,6 @@
     \field{volume}{12}
     \field{journaltitle}{Turkish Journal of Computer and Mathematics Education}
     \field{year}{2021}
-  \endentry
-
-  \entry{zhang2020empirical}{article}{}
-    \name{author}{4}{}{%
-      {{hash=ZM}{%
-         family={Zhang},
-         familyi={Z\bibinitperiod},
-         given={Mingxi},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=LX}{%
-         family={Li},
-         familyi={L\bibinitperiod},
-         given={Xuemin},
-         giveni={X\bibinitperiod},
-      }}%
-      {{hash=YS}{%
-         family={Yue},
-         familyi={Y\bibinitperiod},
-         given={Shuibo},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=YL}{%
-         family={Yang},
-         familyi={Y\bibinitperiod},
-         given={Liuqian},
-         giveni={L\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {IEEE}%
-    }
-    \strng{namehash}{ZMLXYS+1}
-    \strng{fullhash}{ZMLXYSYL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{Z}
-    \field{sortinithash}{Z}
-    \field{pages}{178849\bibrangedash 178858}
-    \field{title}{An empirical study of TextRank for keyword extraction}
-    \field{volume}{8}
-    \field{journaltitle}{IEEE access}
-    \field{year}{2020}
   \endentry
 \enddatalist
 \endinput

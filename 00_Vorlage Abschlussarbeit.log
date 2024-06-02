@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  31 MAY 2024 18:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  2 JUN 2024 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1396,147 +1396,142 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
 
 ] [10]
-Overfull \hbox (7.31445pt too wide) in paragraph at lines 40--40
+Overfull \hbox (7.31445pt too wide) in paragraph at lines 41--41
 []|\T1/lmr/m/n/12 Durchführungs- 
  []
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 41.
+(caption)                particular \caption on input line 42.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
-<Abbildungen/Ablaufmodell.png, id=282, 148.30406pt x 279.29344pt>
+<Abbildungen/Ablaufmodell.png, id=291, 148.30406pt x 279.29344pt>
 File: Abbildungen/Ablaufmodell.png Graphic file (type png)
 <use Abbildungen/Ablaufmodell.png>
-Package pdftex.def Info: Abbildungen/Ablaufmodell.png  used on input line 99.
+Package pdftex.def Info: Abbildungen/Ablaufmodell.png  used on input line 100.
 (pdftex.def)             Requested size: 148.30368pt x 279.29276pt.
-[13 <./Abbildungen/Ablaufmodell.png>]
-<Abbildungen/zusammenfassendeInhaltsanalyse.png, id=294, 289.08pt x 651.93562pt
+[13 <./Abbildungen/Ablaufmodell.png>] [14]
+<Abbildungen/zusammenfassendeInhaltsanalyse.png, id=320, 289.08pt x 651.93562pt
 >
 File: Abbildungen/zusammenfassendeInhaltsanalyse.png Graphic file (type png)
 <use Abbildungen/zusammenfassendeInhaltsanalyse.png>
 Package pdftex.def Info: Abbildungen/zusammenfassendeInhaltsanalyse.png  used o
-n input line 125.
+n input line 126.
 (pdftex.def)             Requested size: 144.53964pt x 325.96701pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--126
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
 [][][]|\T1/lmr/m/n/12 Ab-lauf-mo-dell
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--126
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
 \T1/lmr/m/n/12 zu-sam-men-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--126
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
 \T1/lmr/m/n/12 fas-sen-der In-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--126
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
 \T1/lmr/m/n/12 halts-ana-ly-se
  []
 
 
-Underfull \hbox (badness 1571) in paragraph at lines 126--126
+Underfull \hbox (badness 1571) in paragraph at lines 127--127
 \T1/lmr/m/n/12 (May-ring, 1988)
  []
 
-<Abbildungen/verfahrensregeln.png, id=297, 143.78719pt x 342.5297pt>
+<Abbildungen/verfahrensregeln.png, id=323, 143.78719pt x 342.5297pt>
 File: Abbildungen/verfahrensregeln.png Graphic file (type png)
 <use Abbildungen/verfahrensregeln.png>
 Package pdftex.def Info: Abbildungen/verfahrensregeln.png  used on input line 1
-31.
+32.
 (pdftex.def)             Requested size: 143.78683pt x 342.52885pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--132
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
 [][][]|\T1/lmr/m/n/12 Ver-fah-rens-re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--132
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
 \T1/lmr/m/n/12 geln zu-sam-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--132
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
 \T1/lmr/m/n/12 men-fas-sen-der
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--132
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
 \T1/lmr/m/n/12 In-halts-ana-ly-se
  []
 
 
-Underfull \hbox (badness 1571) in paragraph at lines 132--132
+Underfull \hbox (badness 1571) in paragraph at lines 133--133
 \T1/lmr/m/n/12 (May-ring, 1988)
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 197--199
-
  []
 
 [15 <./Abbildungen/zusammenfassendeInhaltsanalyse.png> <./Abbildungen/verfahren
 sregeln.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Underfull \hbox (badness 10000) in paragraph at lines 198--200
 
  []
 
 [16] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 276--278
+Underfull \hbox (badness 10000) in paragraph at lines 275--277
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--282
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
+Underfull \hbox (badness 10000) in paragraph at lines 283--285
 
  []
 
@@ -1570,61 +1565,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-
-Overfull \hbox (3.25583pt too wide) in paragraph at lines 27--29
-[]\T1/lmr/m/n/12 ToDo:[] aus-bau-en und be-schrei-ben was die quel-len ma-chen 
-Text-Ranking-Algorithmen:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--29
-
- []
-
-[22]
-Overfull \hbox (2.33449pt too wide) in paragraph at lines 30--31
-[]\T1/lmr/m/n/12 Ein gra-phen-ba-sier-ter Rang-ord-nungs-al-go-rith-mus stellt 
-ei-ne Mög-lich-keit dar, die Wich-
- []
-
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 41--43
+[22] [23]
+Underfull \hbox (badness 10000) in paragraph at lines 37--39
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 55--57
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--60
 
  []
 
 [26] [27]
-Overfull \hbox (5.59407pt too wide) in paragraph at lines 64--65
+Overfull \hbox (5.59407pt too wide) in paragraph at lines 67--68
 \T1/lmr/m/n/12 In der Ar-beit mit dem Ti-tel ``Im-ple-men-tie-rung und Vi-sua-l
 i-sie-rung N-Gramm-basierter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
@@ -3938,10 +3916,10 @@ Package logreq Info: Writing requests to '"00_Vorlage Abschlussarbeit".run.xml'
 
  ) 
 Here is how much of TeX's memory you used:
- 27514 strings out of 474592
- 510803 string characters out of 5745798
+ 27501 strings out of 474592
+ 510064 string characters out of 5745798
  2088533 words of memory out of 5000000
- 48971 multiletter control sequences out of 15000+600000
+ 48959 multiletter control sequences out of 15000+600000
  615397 words of font info for 74 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  108i,14n,107p,10990b,2630s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3955,9 +3933,9 @@ pfb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.
 pfb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/s
 ymbols/msam10.pfb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/urw
 /zapfding/uzdr.pfb>
-Output written on "00_Vorlage Abschlussarbeit.pdf" (100 pages, 857281 bytes).
+Output written on "00_Vorlage Abschlussarbeit.pdf" (100 pages, 859909 bytes).
 PDF statistics:
- 1023 PDF objects out of 1200 (max. 8388607)
- 267 named destinations out of 1000 (max. 500000)
- 440 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1032 PDF objects out of 1200 (max. 8388607)
+ 266 named destinations out of 1000 (max. 500000)
+ 464 words of extra memory for PDF output out of 10000 (max. 10000000)
 

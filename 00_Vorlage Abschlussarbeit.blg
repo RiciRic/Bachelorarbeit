@@ -38,55 +38,49 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 10180 items.
 Database file #1: 00_Vorlage_Abschlussarbeit-blx.bib
 Database file #2: Literatur.bib
-Illegal end of database file---line 1129 of file Literatur.bib
- :   publisher={Waxmann M{\"u}nster}
- :                                  
-I'm skipping whatever remains of this entry
 Biblatex version: 3.19
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 37 entries,
+You've used 33 entries,
             6399 wiz_defined-function locations,
-            1425 strings with 15618 characters,
-and the built_in function-call counts, 282105 in all, are:
-= -- 22141
-> -- 4804
-< -- 1537
-+ -- 8184
-- -- 1795
-* -- 20011
-:= -- 30818
+            1399 strings with 14931 characters,
+and the built_in function-call counts, 244547 in all, are:
+= -- 19036
+> -- 4202
+< -- 1336
++ -- 7107
+- -- 1571
+* -- 17262
+:= -- 26709
 add.period$ -- 0
-call.type$ -- 37
-change.case$ -- 837
+call.type$ -- 33
+change.case$ -- 713
 chr.to.int$ -- 42
-cite$ -- 72
-duplicate$ -- 30052
-empty$ -- 23892
-format.name$ -- 2661
-if$ -- 57809
+cite$ -- 64
+duplicate$ -- 26289
+empty$ -- 20734
+format.name$ -- 2335
+if$ -- 50079
 int.to.chr$ -- 0
-int.to.str$ -- 102
+int.to.str$ -- 91
 missing$ -- 0
-newline$ -- 1181
-num.names$ -- 2031
-pop$ -- 12904
+newline$ -- 1039
+num.names$ -- 1777
+pop$ -- 11455
 preamble$ -- 2
-purify$ -- 1047
+purify$ -- 895
 quote$ -- 0
-skip$ -- 8014
+skip$ -- 7016
 stack$ -- 0
-substring$ -- 38875
-swap$ -- 5899
-text.length$ -- 1150
-text.prefix$ -- 42
+substring$ -- 33116
+swap$ -- 5164
+text.length$ -- 1021
+text.prefix$ -- 38
 top$ -- 1
-type$ -- 1241
+type$ -- 1105
 warning$ -- 0
-while$ -- 3780
+while$ -- 3309
 width$ -- 0
-write$ -- 1144
-(There was 1 error message)
+write$ -- 1006
