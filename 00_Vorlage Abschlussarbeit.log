@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  2 JUN 2024 15:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  3 JUN 2024 19:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1346,12 +1346,17 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
  (grundlagen.tex
 chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
@@ -1361,12 +1366,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
@@ -1445,13 +1450,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
-<Abbildungen/Ablaufmodell.png, id=291, 148.30406pt x 279.29344pt>
+<Abbildungen/Ablaufmodell.png, id=295, 148.30406pt x 279.29344pt>
 File: Abbildungen/Ablaufmodell.png Graphic file (type png)
 <use Abbildungen/Ablaufmodell.png>
 Package pdftex.def Info: Abbildungen/Ablaufmodell.png  used on input line 100.
 (pdftex.def)             Requested size: 148.30368pt x 279.29276pt.
 [13 <./Abbildungen/Ablaufmodell.png>] [14]
-<Abbildungen/zusammenfassendeInhaltsanalyse.png, id=320, 289.08pt x 651.93562pt
+<Abbildungen/zusammenfassendeInhaltsanalyse.png, id=324, 289.08pt x 651.93562pt
 >
 File: Abbildungen/zusammenfassendeInhaltsanalyse.png Graphic file (type png)
 <use Abbildungen/zusammenfassendeInhaltsanalyse.png>
@@ -1483,7 +1488,7 @@ Underfull \hbox (badness 1571) in paragraph at lines 127--127
 \T1/lmr/m/n/12 (May-ring, 1988)
  []
 
-<Abbildungen/verfahrensregeln.png, id=323, 143.78719pt x 342.5297pt>
+<Abbildungen/verfahrensregeln.png, id=327, 143.78719pt x 342.5297pt>
 File: Abbildungen/verfahrensregeln.png Graphic file (type png)
 <use Abbildungen/verfahrensregeln.png>
 Package pdftex.def Info: Abbildungen/verfahrensregeln.png  used on input line 1
@@ -1541,12 +1546,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 283--285
  (literaturueberblick.tex
 chapter 4.
 
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
@@ -1556,53 +1566,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 22--24
+Underfull \hbox (badness 10000) in paragraph at lines 21--23
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
 [22] [23]
-Underfull \hbox (badness 10000) in paragraph at lines 37--39
+Underfull \hbox (badness 10000) in paragraph at lines 36--38
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--60
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
 
 [26] [27]
-Overfull \hbox (5.59407pt too wide) in paragraph at lines 67--68
+Overfull \hbox (5.59407pt too wide) in paragraph at lines 66--67
 \T1/lmr/m/n/12 In der Ar-beit mit dem Ti-tel ``Im-ple-men-tie-rung und Vi-sua-l
 i-sie-rung N-Gramm-basierter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
@@ -1612,7 +1622,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
  (implementationsdetails.tex
 chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--7
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
@@ -1621,23 +1631,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--7
 
 
 
-] [31] [32]
-Overfull \hbox (1.18517pt too wide) in paragraph at lines 43--44
-[]\T1/lmr/m/n/12 Das \T1/lmr/m/it/12 ades-so Staf-fing Ad-vi-sor Lab \T1/lmr/m/
-n/12 Pro-jekt wird an-stel-le ei-nes \T1/lmr/m/it/12 single-pa-ge\T1/lmr/m/n/12
- -Prinzips,
+]
+<Abbildungen/use-case.png, id=453, 298.11375pt x 347.79938pt>
+File: Abbildungen/use-case.png Graphic file (type png)
+<use Abbildungen/use-case.png>
+Package pdftex.def Info: Abbildungen/use-case.png  used on input line 15.
+(pdftex.def)             Requested size: 426.79135pt x 497.95433pt.
+ [31 <./Abbildungen/use-case.png>] [32] [33]
+<Abbildungen/flowchart.png, id=498, 491.58656pt x 229.60782pt>
+File: Abbildungen/flowchart.png Graphic file (type png)
+<use Abbildungen/flowchart.png>
+Package pdftex.def Info: Abbildungen/flowchart.png  used on input line 82.
+(pdftex.def)             Requested size: 426.79135pt x 199.35077pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
  []
 
-[33] [34]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7
-0.
- (C:\Users\ricar\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+[34 <./Abbildungen/flowchart.png>]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+08.
+
+(C:\Users\ricar\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [35]) [36]
+) [35])
+[36]
 \openout2 = `evaluation.aux'.
 
  (evaluation.tex
 chapter 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--9
+
+ []
+
 [37
 
 
@@ -3893,9 +3925,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--184
 [88] [89
 
 
-] [90
 
-] [91] [92] (00_Vorlage Abschlussarbeit.aux (proposal.aux)
+] [90] [91] (00_Vorlage Abschlussarbeit.aux (proposal.aux)
 (einleitung.aux) (grundlagen.aux) (entwicklung_erwartungshaltung.aux)
 (literaturueberblick.aux) (implementationsdetails.aux) (evaluation.aux)
 (zusammenfassung.aux) (eidesstattliche_erklaerung.aux))
@@ -3916,10 +3947,10 @@ Package logreq Info: Writing requests to '"00_Vorlage Abschlussarbeit".run.xml'
 
  ) 
 Here is how much of TeX's memory you used:
- 27501 strings out of 474592
- 510064 string characters out of 5745798
+ 27531 strings out of 474592
+ 510711 string characters out of 5745798
  2088533 words of memory out of 5000000
- 48959 multiletter control sequences out of 15000+600000
+ 48981 multiletter control sequences out of 15000+600000
  615397 words of font info for 74 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  108i,14n,107p,10990b,2630s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3933,9 +3964,9 @@ pfb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.
 pfb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/s
 ymbols/msam10.pfb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/urw
 /zapfding/uzdr.pfb>
-Output written on "00_Vorlage Abschlussarbeit.pdf" (100 pages, 859909 bytes).
+Output written on "00_Vorlage Abschlussarbeit.pdf" (99 pages, 985960 bytes).
 PDF statistics:
- 1032 PDF objects out of 1200 (max. 8388607)
- 266 named destinations out of 1000 (max. 500000)
- 464 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1048 PDF objects out of 1200 (max. 8388607)
+ 274 named destinations out of 1000 (max. 500000)
+ 474 words of extra memory for PDF output out of 10000 (max. 10000000)
 
