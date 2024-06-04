@@ -1,9 +1,9 @@
 \chapter{Implementationsdetails}
 \label{chap:implementierung}
-In diesem Kapitel werden das die Funktionalitäten der Pipeline zusammengetragen. Um die Anforderungen genauer zu beschreiben, wird ein Use-Case-Diagramm und ein Klassendiagramm dargestellt und beschrieben. Zudem werden konkrete funktionale und nichtfunktionale Anforderungen des Systems erfasst. Abschließend werden verwendete Technologien und Implementationsaspekte genauer beschrieben.
+In diesem Kapitel werden die Funktionalitäten der Pipeline zusammengetragen. Um die Anforderungen genauer zu beschreiben, wird ein Use-Case-Diagramm und ein Flussdiagramm dargestellt und beschrieben. Zudem werden konkrete funktionale und nichtfunktionale Anforderungen des Systems erfasst. Abschließend werden verwendete Technologien und Implementationsaspekte genauer beschrieben.
 \section{Beschreibung des entwickelten Systems}
 \label{sec:beschreibungsystem}
-Es wird eine Lösung gesucht, die eine effiziente Verarbeitung von \emph{Bedarfsmeldungen} durchführen kann. Welche Aspekte in einer Bedarfsmeldung relevant sind, wurde bereits im Kapitel \ref{chap:erwartungshaltung} näher erläutert. Auf Basis welcher Methodiken und Ansätze die relevanten Informationen extrahiert werden können, wurde in Kapitel \ref{sec:literaturueberblick} dargestellt. Nun gilt es eine Lösung zu entwickeln, die diese Ansätze in einem System implementiert und Möglichkeiten zur Evaluation bietet. Die Idee ist es, eine Pipeline zu entwickeln, die Möglichkeiten zum laden von \emph{Bedarfsmeldungen} hat. Damit alle Ansätze und Methoden zur Extraktion von Informationen gut funktionieren und vergleichbar bleiben, wird eine Übersetzungsfunktion der \emph{Bedarfsmeldungen} benötigt. Auch wenn die \emph{Bedarfsmeldungen} in den meisten Fällen auf Deutsch sind, hilf es diese zu übersetzen, damit keine Unterschiede in der Ergebnisqualität resultiert, da einige Methoden und Ansätze auf Basis von Englischen Trainingssätzen trainiert wurden. Schließlich müssen alle aus Kapitel \ref{sec:literaturueberblick} untersuchten Ansätze implementiert und nutzbar ein. Sie sollen die Möglichkeit haben \emph{Bedarfsmeldungen} als Input zu erhalten und eine Ausgabe zurückzugeben. Zur besseren Evaluationsmöglichkeit soll das System modular sein, damit Methoden und Ansätze nach belieben durchgetauscht werden können. Zur Überprüfung der Laufzeit soll eine Zeitmessung verfügbar sein, die die Zeit zwischen dem Start und der Beendigung des Systems zurückgibt.\\
+Es wird eine Lösung gesucht, die eine effiziente Verarbeitung von \emph{Bedarfsmeldungen} durchführen kann. Welche Aspekte in einer Bedarfsmeldung relevant sind, wurde bereits im Kapitel \ref{chap:erwartungshaltung} näher erläutert. Auf Basis welcher Methodiken und Ansätze die relevanten Informationen extrahiert werden können, wurde in Kapitel \ref{sec:literaturueberblick} dargestellt. Nun gilt es eine Lösung zu entwickeln, die diese Ansätze in einem System implementiert und Möglichkeiten zur Evaluation bietet. Die Idee ist es, eine Pipeline zu entwickeln, die Möglichkeiten zum laden von \emph{Bedarfsmeldungen} bietet. Damit alle Ansätze und Methoden zur Extraktion von Informationen gut funktionieren und vergleichbar bleiben, wird eine Übersetzungsfunktion der \emph{Bedarfsmeldungen} benötigt. Auch wenn die \emph{Bedarfsmeldungen} in den meisten Fällen auf Deutsch sind, hilf es diese zu übersetzen, damit keine Unterschiede in der Ergebnisqualität resultiert, da einige Methoden und Ansätze auf Basis von Englischen Trainingssätzen trainiert wurden. Schließlich müssen alle aus Kapitel \ref{sec:literaturueberblick} untersuchten Ansätze implementiert und nutzbar sein. Sie sollen die Möglichkeit haben \emph{Bedarfsmeldungen} als Input zu erhalten und eine Ausgabe zurückzugeben. Zur besseren Evaluationsmöglichkeit soll das System modular sein, damit Methoden und Ansätze nach belieben durchgetauscht werden können. Zur Überprüfung der Laufzeit soll eine Zeitmessung verfügbar sein, die die Zeit zwischen dem Start und der Beendigung des Systems zurückgibt.\\
 
 \todo{erzählen was die Pipeline leisten soll, im Falle vom Hybrid wird wahrscheinlich noch data-fusion gebraucht, vektorisierung eventuell auch noch für cosine similarity}
 \newpage
@@ -16,8 +16,7 @@ In diesem Kapitel werden die Interaktionen zwischen Benutzer und System beschrie
 	\caption{Use-Case Diagramm der Pipeline.}
 	\label{fig:usecasediagrammwirklich}
 \end{figure}\mbox{} \\
-\todo{use case beschreiben}
-%Es existieren zwei Akteure mit differenzierten Rechten. Beide authentifizieren sich zu Beginn auf der Anmeldeseite. Einer der beiden Akteure ist der Benutzer, der die Option hat, eine Bedarfsmeldung aus JIRA auszuwählen oder in einem Freitext eine eigene Anforderung zu hinterlegen. Anschließend kann die Bedarfsmeldung entweder zur Schlüsselwörterüberprüfung oder direkt an die KI-Schnittstelle gesendet werden. Der zweite Akteur ist der Admin. Dieser hat Zugriff auf alle Funktionalitäten, die der Benutzer verwenden darf. Darüber hinaus stehen diesem auf dem \emph{Dashboard} visualisierende und vergleichende Methoden des KI-Ansatzes zur Verfügung.
+In der Abbildung \ref{fig:usecasediagrammwirklich} ist das Use-Case Diagramm zur Pipeline. Es existiert ein Akteur. Dieser hat die Möglichkeit eine oder mehrere \emph{Bedarfsmeldungen} zu laden. Zudem kann diese ins Englische übersetzt werden. Darüber hinaus kann die \emph{Bedarfsmeldung} durch \emph{Preprocessing} vorverarbeitet werden und irrelevante Wörter und Zeichen aus der \emph{Bedarfsmeldung} ausschließen. Der Benutzer kann die Methoden \emph{TF-IDF}, \emph{TextRank}, \emph{N-Gram}, \emph{POS-Tagging} und \emph{NER} mit der \emph{Bedarfsmeldung} anwenden. Wenn mehrere Methoden in der Pipeline sind, können die Resultate durch die Anwendung von \emph{Data-Fusion} zusammengeführt werden.
 \section{Anforderungen}
 Im Folgenden werden die funktionalen sowie nichtfunktionalen Anforderungen des Systems beschrieben. Diese Informationen wurden aus der Beschreibung des Systems aus Kapitel \ref{sec:beschreibungsystem} und dem Use-Case aus Kapitel \ref{sec:usecase} hergeleitet und bilden den Rahmen des Systems.
 \subsection{Funktionale Anforderungen}
@@ -83,11 +82,10 @@ Hierbei handelt es sich um qualitätsbezogene Anforderungen. Diese umfassen nich
 	\caption{Flussdiagramm der Pipeline.}
 	\label{fig:flowchart}
 \end{figure}\mbox{} \\
-\newpage
 \section{Details zur Implementierung der Pipeline}
 Dieses Kapitel beschreibt den technischen Entwicklungsprozess zur Umsetzung der Anforderungen des Systems. Die Implementierung fokussiert sich auf die Umsetzungen von Technologien und Funktionsweisen verschiedener Anforderungen. Zudem wird die Struktur des Projektes aufgezeigt.
 \subsection{Umsetzung}
-in python - warum, modular
+Die Pipeline wurde in der Programmiersprache Python umgesetzt. Python hat sich zu einer der populärsten interpretierten Programmiersprachen entwickelt \cite{mckinney2012python}. Die Programmiersprache eignet sich insbesondere für die Erstellung kleiner Programme und Skripte, die zur Automatisierung von Aufgaben eingesetzt werden können \cite{mckinney2012python}. Python hat eine große und aktive Community für wissenschaftliche Berechnungen und Datenanalysen hervorgebracht und hat sich in den letzten Jahren zu einer der wichtigsten Sprachen für Data Science, maschinelles Lernen und allgemeine Softwareentwicklung in Wissenschaft und Industrie entwickelt \cite{mckinney2012python}. Python unterstützt Modularität, wodurch ein Teil der Anforderungen somit abgedeckt werden kann. Das Ziel der Arbeit besteht nicht in der Erweiterung der Verfahren, sondern in der Evaluierung ihrer Eignung zur Extraktion relevanter Informationen aus \emph{Bedarfsmeldungen}. Dadurch erfolgt die Implementierung der Methoden aus den Anforderungen nicht manuell, sondern es wurde auf bereits existierende Bibliotheken zurückgegriffen.
 \subsection{Projektstruktur}
 Das Projekt wird in einem git Repository gespeichert und versioniert. Die Projektstruktur ist ohne zusätzliche Konfigurationsdateien wie folgt aufgebaut:
 \dirtree{%
@@ -95,10 +93,12 @@ Das Projekt wird in einem git Repository gespeichert und versioniert. Die Projek
 	.2 modules/.
 	.3 nGram.py.
 	.3 posTagging.py.
-	.3 preprocessing.
+	.3 preprocessing.py.
 	.3 ner.py.
 	.3 textRankingArgorithm.py.
 	.3 tfIdf.py.
+	.3 readRequirements.py.
+	.3 translate.py.
 	.2 requirements/.
 	.3 syntheticData.txt.
 	.3 syntheticData.json.
@@ -106,24 +106,45 @@ Das Projekt wird in einem git Repository gespeichert und versioniert. Die Projek
 	.2 app.py.
 	.2 ....
 }
-\url{client/}-Verzeichnis
-
+Die einzelnen Module aus dem Flussdiagramm in Kapitel \ref{fig:flowchart} sind im Verzeichnis \url{modules/} in separaten \url{.py} Dateien gelagert. Die \emph{Bedarfsmeldungen} werdem im \url{requirements/}-Verzeichnis gespeichert. Diese können die Endung \url{.txt} bei einzelnen und \url{.json} bei mehreren \emph{Bedarfsmeldungen} haben. Die Datei \url{app.py} importiert alle Module und kann über den Befehl \lstinline{> py app.py}
+gestartet werden.
 \subsection{Modulimplemetierungen}
-Das Ziel der Arbeit besteht nicht in der Erweiterung der Verfahren, sondern in der Evaluierung ihrer Eignung zur Extraktion relevanter Informationen aus Bedarfsmeldungen. Die Prüfung erfolgt ohne die Notwendigkeit der Entwicklung und Testung neuer Systeme. Es existieren bereits Bibliotheken mit Implementierungen.
-\paragraph{Dateiformat}
+Nachfolgend werden Implementationsdetails zu den einzelnen Modulen gegeben. Dabei werden verwendete Bibliotheken und Code-Details näher erläutert.
+\paragraph{Dateiformat}\mbox{}\\
+\todo{darauf eingehen welche Felder in der JSON von JIRA sind und worauf sich genau konzentriert wird.}\\
+\begin{lstlisting}[caption={Implementation des Moduls \emph{translate.py}}, label=lst:data]
+	from deep_translator import GoogleTranslator
+	
+	def translate(requirements):
+	translated = GoogleTranslator(source='auto', target='en').translate(requirements)
+	return translated
+\end{lstlisting}
+\paragraph{Übersetzung}\mbox{}\\
+Das Module \emph{translate.py} ist dazu da, um die \emph{Bedarfsmeldungen} zu übersetzen. Für die Übersetzung wurde die Python Bibliothek \emph{deep-translator} verwendet. Diese bietet Implementationen unterschiedlicher Übersetzungs-APIs von diversen Anbietern. Der Vorteil ist dabei die vereinfachte Möglichkeit Anbieter bei Bedarf zu wechseln.
+\begin{lstlisting}[caption={Implementation des Moduls \emph{translate.py}}, label=lst:translate]
+	from deep_translator import GoogleTranslator
+	
+	def translate(requirements):
+		translated = GoogleTranslator(source='auto', target='en').translate(requirements)
+		return translated
+\end{lstlisting}
+Das Listing \ref{lst:translate} zeigt die Implementation des Moduls. Es wurde sich für den Google Translator entschieden, da hierfür kein API-Key benötigt wird. Die Methode erhält als die \emph{Bedarfsmeldung} als Parameter. Der Google Translator erhält die Parameter \emph{source} und \emph{target}. \emph{source} gibt an in welcher Sprache der Input ist. Durch Angabe von \emph{'auto'} wird die Sprache ermittelt. Der Grund dafür ist, dass grundsätzlich eine anderssprachige \emph{Bedarfsmeldung} enthalten sein kann. \emph{target} ist die Zielsprache in welche der Input übersetzt werden soll. Die Zielsprache ist hier Englisch (\emph{'en'}).
+\paragraph{Preprocessing}\mbox{}\\
 
-\paragraph{Übersetzung}
+\paragraph{TF-IDF}\mbox{}\\
 
-\paragraph{Preprocessing}
+\paragraph{TextRank}\mbox{}\\
 
-\paragraph{TF-IDF}
+\paragraph{N-Gramm}\mbox{}\\
 
-\paragraph{TextRank}
+\paragraph{POS-Tagging}\mbox{}\\
 
-\paragraph{N-Gramm}
+\paragraph{NER}\mbox{}\\
 
-\paragraph{POS-Tagging}
+\paragraph{data-fusion}\mbox{}\\
 
-\paragraph{NER}
+\paragraph{Zeitmessung}\mbox{}\\
 
-\paragraph{data-fusion}
+\paragraph{Vektorisierung}\mbox{}\\
+
+\paragraph{Cosine-Similarity}\mbox{}\\

@@ -855,6 +855,29 @@
     \field{year}{2019}
   \endentry
 
+  \entry{mckinney2012python}{book}{}
+    \name{author}{1}{}{%
+      {{hash=MW}{%
+         family={McKinney},
+         familyi={M\bibinitperiod},
+         given={Wes},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {" O'Reilly Media, Inc."}%
+    }
+    \strng{namehash}{MW1}
+    \strng{fullhash}{MW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Python for data analysis: Data wrangling with Pandas, NumPy,
+  and IPython}
+    \field{year}{2012}
+  \endentry
+
   \entry{mihalcea2004textrank}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=MR}{%
