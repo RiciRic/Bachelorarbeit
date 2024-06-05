@@ -50,31 +50,31 @@
 \contentsline {subsection}{\numberline {5.5.2}Projektstruktur}{35}{subsection.5.5.2}%
 \contentsline {subsection}{\numberline {5.5.3}Modulimplemetierungen}{35}{subsection.5.5.3}%
 \contentsline {paragraph}{\nonumberline Dateiformat}{36}{paragraph*.33}%
-\contentsline {paragraph}{\nonumberline Übersetzung}{36}{paragraph*.35}%
-\contentsline {paragraph}{\nonumberline Preprocessing}{36}{paragraph*.37}%
-\contentsline {paragraph}{\nonumberline TF-IDF}{36}{paragraph*.39}%
-\contentsline {paragraph}{\nonumberline TextRank}{37}{paragraph*.41}%
-\contentsline {paragraph}{\nonumberline N-Gramm}{37}{paragraph*.43}%
-\contentsline {paragraph}{\nonumberline POS-Tagging}{37}{paragraph*.45}%
-\contentsline {paragraph}{\nonumberline NER}{37}{paragraph*.47}%
-\contentsline {paragraph}{\nonumberline data-fusion}{37}{paragraph*.49}%
-\contentsline {paragraph}{\nonumberline Zeitmessung}{37}{paragraph*.51}%
-\contentsline {paragraph}{\nonumberline Vektorisierung}{37}{paragraph*.53}%
-\contentsline {paragraph}{\nonumberline Cosine-Similarity}{37}{paragraph*.55}%
-\contentsline {chapter}{\numberline {6}Evaluierung des entwickelten Systems}{38}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Evaluationsmetrik}{38}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Beschreibung des verwendeten Datensatzes}{38}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Beschreibung des verwendeten Datensatzes}{39}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Präsentation und Diskussion der Ergebnisse}{39}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Vergleich des Systems mit einem Large Language Model-Ansatz}{45}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Analyse von Abweichungen, Ähnlichkeiten und Verbesserungspotenzialen des Systems}{49}{section.6.6}%
-\contentsline {chapter}{\numberline {7}Zusammenfassung und Ausblick}{51}{chapter.7}%
-\contentsline {chapter}{\numberline {A}Anhang}{52}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Interviewtranskripte}{52}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Vorabtest Fragen und Antworten}{52}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Interview 2}{54}{subsection.A.1.2}%
-\contentsline {subsection}{\numberline {A.1.3}Interview 3}{58}{subsection.A.1.3}%
-\contentsline {subsection}{\numberline {A.1.4}Interview 4}{68}{subsection.A.1.4}%
-\contentsline {subsection}{\numberline {A.1.5}Interview 5}{72}{subsection.A.1.5}%
-\contentsline {section}{\numberline {A.2}Paraphrasierung und Reduktion}{77}{section.A.2}%
+\contentsline {paragraph}{\nonumberline Übersetzung}{37}{paragraph*.35}%
+\contentsline {paragraph}{\nonumberline Preprocessing}{37}{paragraph*.37}%
+\contentsline {paragraph}{\nonumberline TF-IDF}{37}{paragraph*.39}%
+\contentsline {paragraph}{\nonumberline TextRank}{38}{paragraph*.41}%
+\contentsline {paragraph}{\nonumberline N-Gramm}{38}{paragraph*.43}%
+\contentsline {paragraph}{\nonumberline POS-Tagging}{38}{paragraph*.45}%
+\contentsline {paragraph}{\nonumberline NER}{38}{paragraph*.47}%
+\contentsline {paragraph}{\nonumberline data-fusion}{38}{paragraph*.49}%
+\contentsline {paragraph}{\nonumberline Zeitmessung}{38}{paragraph*.51}%
+\contentsline {paragraph}{\nonumberline Vektorisierung}{38}{paragraph*.53}%
+\contentsline {paragraph}{\nonumberline Cosine-Similarity}{38}{paragraph*.55}%
+\contentsline {chapter}{\numberline {6}Evaluierung des entwickelten Systems}{39}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Evaluationsmetrik}{39}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Beschreibung des verwendeten Datensatzes}{39}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Beschreibung des verwendeten Datensatzes}{40}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Präsentation und Diskussion der Ergebnisse}{40}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Vergleich des Systems mit einem Large Language Model-Ansatz}{46}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Analyse von Abweichungen, Ähnlichkeiten und Verbesserungspotenzialen des Systems}{50}{section.6.6}%
+\contentsline {chapter}{\numberline {7}Zusammenfassung und Ausblick}{52}{chapter.7}%
+\contentsline {chapter}{\numberline {A}Anhang}{53}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Interviewtranskripte}{53}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Vorabtest Fragen und Antworten}{53}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Interview 2}{55}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Interview 3}{59}{subsection.A.1.3}%
+\contentsline {subsection}{\numberline {A.1.4}Interview 4}{69}{subsection.A.1.4}%
+\contentsline {subsection}{\numberline {A.1.5}Interview 5}{73}{subsection.A.1.5}%
+\contentsline {section}{\numberline {A.2}Paraphrasierung und Reduktion}{78}{section.A.2}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
