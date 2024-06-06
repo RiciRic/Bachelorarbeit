@@ -152,7 +152,24 @@ Das Module \emph{translate.py} ist dazu da, um die \emph{Bedarfsmeldungen} zu ü
 \end{lstlisting}
 Das Listing \ref{lst:translate} zeigt die Implementation des Moduls. Es wurde sich für den Google Translator entschieden, da hierfür kein API-Key benötigt wird. Die Methode erhält als die \emph{Bedarfsmeldung} als Parameter. Der Google Translator erhält die Parameter \emph{source} und \emph{target}. \emph{source} gibt an in welcher Sprache der Input ist. Durch Angabe von \emph{'auto'} wird die Sprache ermittelt. Der Grund dafür ist, dass grundsätzlich eine anderssprachige \emph{Bedarfsmeldung} enthalten sein kann. \emph{target} ist die Zielsprache in welche der Input übersetzt werden soll. Die Zielsprache ist hier Englisch (\emph{'en'}).
 \paragraph{Preprocessing}\mbox{}\\
-
+Vor der Durchführung einer \emph{Bedarfsmeldung} mit einer der ausgewählten Methoden ist es erforderlich, die Bedarfsmeldung von irrelevanten Wörtern und Satzzeichen zu befreien. Zur Entfernung von Satzzeichen wurde die Bibliothek \emph{string} verwendet.
+\begin{lstlisting}[caption={Implementation der Methode removePunctuation() des Moduls \emph{preprocessing.py}}, label=lst:punctuation]
+	import string
+	def removePunctuation(requirement):
+		content=""
+		for i in requirement: 
+			if i not in string.punctuation:
+				content+=i    
+		return content
+\end{lstlisting}
+Im Listing \ref{lst:punctuation} ist die Implementierung dargestellt. Die \emph{Bedarfsmeldung} wird in Zeile 2 als Parameter übergeben. In Zeile 4 erfolgt ein Durchlauf jedes Zeichens innerhalb der \emph{Bedarfsmeldung}. Falls innerhalb der Schleife das Aktuelle Zeichen kein Satzzeichen enthält wird dieses in die Variable \emph{content} zwischengespeichert. Nach Abschluss der Schleife wird die Variable zurückgegeben. Zur Elimination wiederaufgetretener Wörter, die keine Relevanz für den Informationsgehalt aufweisen, wurde die Bibliothek \emph{nltk} verwendet. Diese beinhaltet eine Liste an sogenannten \emph{stopwords}.
+\begin{lstlisting}[caption={Implementation der Methode removeStopwords() des Moduls \emph{preprocessing.py}}, label=lst:stopwords]
+	from nltk.corpus import stopwords
+	def removeStopwords(requirement):
+		words=[word for word in requirement.split(" ") if word not in set(stopwords.words('english'))]
+		return " ".join(str(word) for word in words)
+\end{lstlisting}
+Im Listing \ref{lst:stopwords} ist die Implementierung zur Entfernung von \emph{stopwords} dargestellt. In Zeile 3 werden alle mit einem Leerzeichen getrennten Wörter aus der übergebenen \emph{Bedarfsmeldung} in einem Array aufgeteilt. Dabei wird jeder Array-Eintrag mit der \emph{stopword}-Liste verglichen. Stimmt das Wort nicht mit einem Eintrag der \emph{stopwords} überein, wird diese in das Array \emph{words} hinzugefügt. Zum Schluss werden in Zeile 4 die Wörter aus \emph{words} zu einem String zusammengetragen und zurückgegeben.
 \paragraph{TF-IDF}\mbox{}\\
 
 \paragraph{TextRank}\mbox{}\\
