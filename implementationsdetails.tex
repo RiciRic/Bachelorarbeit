@@ -182,7 +182,20 @@ Im Listing \ref{lst:stopwords} ist die Implementierung zur Entfernung von \emph{
 \paragraph{POS-Tagging}\mbox{}\\
 
 \paragraph{NER}\mbox{}\\
-
+Um die Methode \emph{NER} zu Implementieren wurde die Bibliothek \emph{spaCy} verwendet. Dieses bietet die NLP-Pipeline \emph{en\_core\_web\_sm}, das mit Internettext vortrainiert wurde und Vokabeln, Syntax und Entitäten enthält.
+\begin{lstlisting}[caption={Implementation des Moduls \emph{ner.py}}, label=lst:ner]
+	import spacy
+	nlp = spacy.load("en_core_web_sm")
+	ner_categories = ["ORG","FAC","GPE","PRODUCT", "EVENT", "LANGUAGE", "DATE", "QUANTITY"]
+	def useNER(requirement):
+		tokenized = nlp(requirement)
+		entities = []
+		for ent in tokenized.ents:
+			if ent.label_ in ner_categories:
+				entities.append((ent.text, ent.label_))
+	return entities
+\end{lstlisting}
+Im Listing \ref{lst:ner} ist die Implementation des Moduls \emph{ner.py} abgebildet. In Zeile 1 und 2 wird \emph{spaCy} importiert und das Modell \emph{en\_core\_web\_sm} geladen. In Zeile 3 werden die relevanten Kategorien von Wörtern definiert, die aus den \emph{Bedarfsmeldungen} extrahiert werden sollen. Die Kategorien sind Organisation (ORG), Einrichtung (FAC), Ort (GPE), Produkt (PRODUCT), Event (EVENT), Sprache (LANGUAGE), Datum (DATE) und Menge (QUANTITY). Innerhalb der Methode \lstinline{useNER()} wird die Bedarfsmeldung als Parameter übergeben und in Zeile 5 zu Tokens umgeformt. Anschließend werden alle Tokens durchlaufen und nach ihren Kategorien überprüft. Ist ein Token in einer der definierten Kategorien enthalten, wird der Text und die Kategorie in einem Tupel im Array \emph{entities} gespeichert und zurückgegeben.
 \paragraph{data-fusion}\mbox{}\\
 
 \paragraph{Zeitmessung}\mbox{}\\
