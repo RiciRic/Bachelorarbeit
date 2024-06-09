@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  8 JUN 2024 15:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  9 JUN 2024 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1478,13 +1478,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
-<Abbildungen/Ablaufmodell.png, id=320, 148.30406pt x 279.29344pt>
+<Abbildungen/Ablaufmodell.png, id=322, 148.30406pt x 279.29344pt>
 File: Abbildungen/Ablaufmodell.png Graphic file (type png)
 <use Abbildungen/Ablaufmodell.png>
 Package pdftex.def Info: Abbildungen/Ablaufmodell.png  used on input line 100.
 (pdftex.def)             Requested size: 148.30368pt x 279.29276pt.
 [13 <./Abbildungen/Ablaufmodell.png>] [14]
-<Abbildungen/zusammenfassendeInhaltsanalyse.png, id=349, 289.08pt x 651.93562pt
+<Abbildungen/zusammenfassendeInhaltsanalyse.png, id=351, 289.08pt x 651.93562pt
 >
 File: Abbildungen/zusammenfassendeInhaltsanalyse.png Graphic file (type png)
 <use Abbildungen/zusammenfassendeInhaltsanalyse.png>
@@ -1516,7 +1516,7 @@ Underfull \hbox (badness 1571) in paragraph at lines 127--127
 \T1/lmr/m/n/12 (May-ring, 1988)
  []
 
-<Abbildungen/verfahrensregeln.png, id=352, 143.78719pt x 342.5297pt>
+<Abbildungen/verfahrensregeln.png, id=354, 143.78719pt x 342.5297pt>
 File: Abbildungen/verfahrensregeln.png Graphic file (type png)
 <use Abbildungen/verfahrensregeln.png>
 Package pdftex.def Info: Abbildungen/verfahrensregeln.png  used on input line 1
@@ -1549,22 +1549,22 @@ Underfull \hbox (badness 1571) in paragraph at lines 133--133
 
 [15 <./Abbildungen/zusammenfassendeInhaltsanalyse.png> <./Abbildungen/verfahren
 sregeln.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 198--200
+Underfull \hbox (badness 10000) in paragraph at lines 199--201
 
  []
 
 [16] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 275--277
+Underfull \hbox (badness 10000) in paragraph at lines 276--278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--279
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 283--285
+Underfull \hbox (badness 10000) in paragraph at lines 284--286
 
  []
 
@@ -1660,13 +1660,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
 
 ]
-<Abbildungen/use-case.png, id=478, 298.11375pt x 347.79938pt>
+<Abbildungen/use-case.png, id=480, 298.11375pt x 347.79938pt>
 File: Abbildungen/use-case.png Graphic file (type png)
 <use Abbildungen/use-case.png>
 Package pdftex.def Info: Abbildungen/use-case.png  used on input line 15.
 (pdftex.def)             Requested size: 426.79135pt x 497.95433pt.
  [31 <./Abbildungen/use-case.png>] [32] [33]
-<Abbildungen/flowchart.png, id=524, 491.58656pt x 229.60782pt>
+<Abbildungen/flowchart.png, id=526, 491.58656pt x 229.60782pt>
 File: Abbildungen/flowchart.png Graphic file (type png)
 <use Abbildungen/flowchart.png>
 Package pdftex.def Info: Abbildungen/flowchart.png  used on input line 81.
@@ -1698,18 +1698,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
-
- []
-
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
@@ -1718,8 +1708,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
+
+ []
+
 )
-Underfull \hbox (badness 10000) in paragraph at lines 214--183
+Underfull \hbox (badness 10000) in paragraph at lines 227--183
 
  []
 
@@ -4020,10 +4015,10 @@ Package logreq Info: Writing requests to '"00_Vorlage Abschlussarbeit".run.xml'
 
  ) 
 Here is how much of TeX's memory you used:
- 27996 strings out of 474592
- 515392 string characters out of 5745798
- 2088533 words of memory out of 5000000
- 49374 multiletter control sequences out of 15000+600000
+ 28010 strings out of 474592
+ 515579 string characters out of 5745798
+ 2089533 words of memory out of 5000000
+ 49379 multiletter control sequences out of 15000+600000
  619024 words of font info for 77 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  108i,14n,107p,10990b,2630s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -4040,9 +4035,9 @@ fb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.p
 fb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sy
 mbols/msam10.pfb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
 zapfding/uzdr.pfb>
-Output written on "00_Vorlage Abschlussarbeit.pdf" (104 pages, 1101796 bytes).
+Output written on "00_Vorlage Abschlussarbeit.pdf" (104 pages, 1104649 bytes).
 PDF statistics:
- 1199 PDF objects out of 1200 (max. 8388607)
- 343 named destinations out of 1000 (max. 500000)
+ 1211 PDF objects out of 1440 (max. 8388607)
+ 352 named destinations out of 1000 (max. 500000)
  474 words of extra memory for PDF output out of 10000 (max. 10000000)
 

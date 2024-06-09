@@ -109,7 +109,7 @@ Das Projekt wird in einem git Repository gespeichert und versioniert. Die Projek
 }
 Die einzelnen Module aus dem Flussdiagramm in Kapitel \ref{fig:flowchart} sind im Verzeichnis \url{modules/} in separaten \url{.py} Dateien gelagert. Die \emph{Bedarfsmeldungen} werdem im \url{requirements/}-Verzeichnis gespeichert. Diese können die Endung \url{.txt} bei einzelnen und \url{.json} bei mehreren \emph{Bedarfsmeldungen} haben. Die Datei \url{app.py} ist der Kern der Pipeline. Diese importiert alle Module und kann über den Befehl \lstinline{> py app.py}
  das System starten.
-\subsection{Modulimplemetierungen}
+\subsection{Modulimplementationen}
 Nachfolgend werden Implementationsdetails zu den einzelnen Modulen gegeben. Dabei werden verwendete Bibliotheken und Code-Details näher erläutert.
 \paragraph{Dateiformat}\mbox{}\\
 Zum laden der \emph{Bedarfsmeldung} sollen die Datenformate \url{.txt} und \url{.json} unterstützt werden. Das Verzeichnis mit den gespeicherten \emph{Bedarfsmeldungen} ist, wie es in Kapitel \ref{sec:projektstruktur} zu sehen ist, nicht im selben Verzeichnis wie die Module. Um die Daten laden zu können muss der richtige Pfad ermittelt werden. Dazu wird die Bibliothek \emph{os} verwendet.
@@ -178,7 +178,20 @@ Im Listing \ref{lst:stopwords} ist die Implementierung zur Entfernung von \emph{
 \end{lstlisting}
 
 \paragraph{N-Gramm}\mbox{}\\
-
+Die Methode der \emph{n-Gramme} wurde mit der Bibliothek \emph{nltk} implementiert.
+\begin{lstlisting}[caption={Implementation des Moduls \emph{nGram.py}}, label=lst:ngram]
+	from nltk import ngrams
+	n = 3
+	def useNGram(requirement):
+		nGramList = []
+		nGrams = ngrams(requirement.split(), n)
+		for grams in nGrams:
+			nGramList.append(grams)
+		return nGramList
+\end{lstlisting}
+Das Listing \ref{lst:ngram} zeigt die Implementation des Moduls \emph{nGram.py}. In Zeile zwei ist die Variable \emph{n} definiert, die die Größe eines \emph{n-Gramms} widerspiegelt. Mit der der Methode \lstinline{ngrams()}
+in Zeile 5 können die \emph{n-Gramme} generiert werden. Diese erhält als parameter einen \emph{String} und die Variable \emph{n}. Die \emph{Bedarfsmeldung} wird als Parameter in Zeile 2 übergeben und in Zeile 5 durch die Methode \lstinline{split()}
+in einem Array auf die einzelnen Wörter umgeformt. Die einzelnen Tupel mit den \emph{n-Grammen} werden in Zeile 6-7 in das Array \emph{nGramList} gespeichert und am Ende zurückgegeben.
 \paragraph{POS-Tagging}\mbox{}\\
 
 \paragraph{NER}\mbox{}\\
