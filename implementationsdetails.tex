@@ -3,6 +3,7 @@
 In diesem Kapitel werden die Funktionalitäten der Pipeline zusammengetragen. Um die Anforderungen genauer zu beschreiben, wird ein Use-Case-Diagramm und ein Flussdiagramm dargestellt und beschrieben. Zudem werden konkrete funktionale und nichtfunktionale Anforderungen des Systems erfasst. Abschließend werden verwendete Technologien und Implementationsaspekte genauer beschrieben.
 \section{Beschreibung des entwickelten Systems}
 \label{sec:beschreibungsystem}
+\todo{danach wie muss ich software zusammenwürfeln um das was ich aktuell an infos habe zu template umformulieren.}\\
 Es wird eine Lösung gesucht, die eine effiziente Verarbeitung von \emph{Bedarfsmeldungen} durchführen kann. Welche Aspekte in einer Bedarfsmeldung relevant sind, wurde bereits im Kapitel \ref{chap:erwartungshaltung} näher erläutert. Auf Basis welcher Methodiken und Ansätze die relevanten Informationen extrahiert werden können, wurde in Kapitel \ref{sec:literaturueberblick} dargestellt. Nun gilt es eine Lösung zu entwickeln, die diese Ansätze in einem System implementiert und Möglichkeiten zur Evaluation bietet. Die Idee ist es, eine Pipeline zu entwickeln, die Möglichkeiten zum laden von \emph{Bedarfsmeldungen} bietet. Damit alle Ansätze und Methoden zur Extraktion von Informationen gut funktionieren und vergleichbar bleiben, wird eine Übersetzungsfunktion der \emph{Bedarfsmeldungen} benötigt. Auch wenn die \emph{Bedarfsmeldungen} in den meisten Fällen auf Deutsch sind, hilf es diese zu übersetzen, damit keine Unterschiede in der Ergebnisqualität resultiert, da einige Methoden und Ansätze auf Basis von Englischen Trainingssätzen trainiert wurden. Schließlich müssen alle aus Kapitel \ref{sec:literaturueberblick} untersuchten Ansätze implementiert und nutzbar sein. Sie sollen die Möglichkeit haben \emph{Bedarfsmeldungen} als Input zu erhalten und eine Ausgabe zurückzugeben. Zur besseren Evaluationsmöglichkeit soll das System modular sein, damit Methoden und Ansätze nach belieben durchgetauscht werden können. Zur Überprüfung der Laufzeit soll eine Zeitmessung verfügbar sein, die die Zeit zwischen dem Start und der Beendigung des Systems zurückgibt.\\
 
 \todo{erzählen was die Pipeline leisten soll, im Falle vom Hybrid wird wahrscheinlich noch data-fusion gebraucht, vektorisierung eventuell auch noch für cosine similarity}
@@ -131,7 +132,7 @@ Um einen Freitext aus einer einzelnen \emph{Bedarfsmeldung} für die Pipeline zu
 \end{lstlisting}
 Im Listing \ref{lst:read} ist die Implementierung der Methode zum laden eines Freitextes dargestellt. Durch ein mitgelieferten Parameter \emph{filename} wird der Name der Datei in Zeile 2 an den Pfad angehängt. Mit der Methode \lstinline{open()}
 aus Zeile 3 kann die Datei geladen werden. Die Methode erhält die Parameter Pfad, \emph{'r'} (read) und das encoding \emph{'utf-8'}. Das encoding ist dabei Entscheidend, damit die unstrukturierten \emph{Bedarfsmeldungen} laden können. Bei der Pflege in Jira wird wenig Wert auf eine einheitliche Struktur. Somit können Zeichen enthalten sein, die beim öffnen nicht erkannt werden und eine Fehlermeldung wird zurückgegeben. Zur Vermeidung dieses Fehlers wird das encoding festgelegt. Nach dem laden durch die Methode \lstinline{read()} wird der Inhalt der \url{.txt} Datei in der Variable \emph{content} gespeichert und zurückgegeben.
-Um mehrere \emph{Bedarfsmeldungen} zu laden wird das Dateiformat \url{.json} verwendet, da diese in einem Array gespeichert sind.
+Um mehrere \emph{Bedarfsmeldungen} zu laden wird das Dateiformat \url{.json} verwendet, da diese in einer Liste gespeichert sind.
 \begin{lstlisting}[caption={Implementation der Methode loadJson() des Moduls \emph{readRequirements.py}}, label=lst:load]
 	import json
 	def loadJson(filename):
@@ -169,14 +170,25 @@ Im Listing \ref{lst:punctuation} ist die Implementierung dargestellt. Die \emph{
 		words=[word for word in requirement.split(" ") if word not in set(stopwords.words('english'))]
 		return " ".join(str(word) for word in words)
 \end{lstlisting}
-Im Listing \ref{lst:stopwords} ist die Implementierung zur Entfernung von \emph{stopwords} dargestellt. In Zeile 3 werden alle mit einem Leerzeichen getrennten Wörter aus der übergebenen \emph{Bedarfsmeldung} in einem Array aufgeteilt. Dabei wird jeder Array-Eintrag mit der \emph{stopword}-Liste verglichen. Stimmt das Wort nicht mit einem Eintrag der \emph{stopwords} überein, wird diese in das Array \emph{words} hinzugefügt. Zum Schluss werden in Zeile 4 die Wörter aus \emph{words} zu einem String zusammengetragen und zurückgegeben.
+Im Listing \ref{lst:stopwords} ist die Implementierung zur Entfernung von \emph{stopwords} dargestellt. In Zeile 3 werden alle mit einem Leerzeichen getrennten Wörter aus der übergebenen \emph{Bedarfsmeldung} in einer Liste aufgeteilt. Dabei wird jeder Listeneintrag mit der \emph{stopword}-Liste verglichen. Stimmt das Wort nicht mit einem Eintrag der \emph{stopwords} überein, wird diese in die Liste \emph{words} hinzugefügt. Zum Schluss werden in Zeile 4 die Wörter aus \emph{words} zu einem String zusammengetragen und zurückgegeben.
 \paragraph{TF-IDF}\mbox{}\\
 
 \paragraph{TextRank}\mbox{}\\
+Für die Implementation von \emph{TextRank} wurde die Bibliothek \emph{spaCy} und \emph{pytextrank} verwendet. Dieses bietet die NLP-Pipeline \emph{en\_core\_web\_sm}, das mit Internettext vortrainiert wurde und Vokabeln, Syntax und Entitäten enthält.
 \begin{lstlisting}[caption={Implementation des Moduls \emph{textRankingAlgorithm.py}}, label=lst:textrank]
-	return content
+	import spacy
+	import pytextrank
+	def useTextRank(requirement):
+		nlp = spacy.load("en_core_web_sm")
+		nlp.add_pipe("textrank")
+		tokenized = nlp(requirement)
+		for phrase in tokenized._.phrases:
+			print(phrase.text)
+			print(phrase.rank, phrase.count)
+			print(phrase.chunks)
 \end{lstlisting}
-
+Das Listing \ref{textrank} zeigt die Implementierung des \emph{textRankingAlgorithm.py} Moduls. In Zeile 3 wird die \emph{Bedarfsmeldung} als Parameter übergeben. Die Pipeline \emph{en\_core\_web\_sm} wird in Zeile 4 geladen und in Zeile 5 werden die \emph{TextRank} Elemente der Pipeline hinzugefügt. Anschließend wird in Zeile 6 die \emph{Bedarfsmeldung} der Pipeline eingefügt und in Tokens umgewandelt.\\
+\todo{muss noch fertiggestellt werden}\\
 \paragraph{N-Gramm}\mbox{}\\
 Die Methode der \emph{n-Gramme} wurde mit der Bibliothek \emph{nltk} implementiert.
 \begin{lstlisting}[caption={Implementation des Moduls \emph{nGram.py}}, label=lst:ngram]
@@ -191,11 +203,21 @@ Die Methode der \emph{n-Gramme} wurde mit der Bibliothek \emph{nltk} implementie
 \end{lstlisting}
 Das Listing \ref{lst:ngram} zeigt die Implementation des Moduls \emph{nGram.py}. In Zeile zwei ist die Variable \emph{n} definiert, die die Größe eines \emph{n-Gramms} widerspiegelt. Mit der der Methode \lstinline{ngrams()}
 in Zeile 5 können die \emph{n-Gramme} generiert werden. Diese erhält als parameter einen \emph{String} und die Variable \emph{n}. Die \emph{Bedarfsmeldung} wird als Parameter in Zeile 2 übergeben und in Zeile 5 durch die Methode \lstinline{split()}
-in einem Array auf die einzelnen Wörter umgeformt. Die einzelnen Tupel mit den \emph{n-Grammen} werden in Zeile 6-7 in das Array \emph{nGramList} gespeichert und am Ende zurückgegeben.
+in einer List auf die einzelnen Wörter umgeformt. Die einzelnen Tupel mit den \emph{n-Grammen} werden in Zeile 6-7 in die Liste \emph{nGramList} gespeichert und am Ende zurückgegeben.
 \paragraph{POS-Tagging}\mbox{}\\
-
+Zur Implementierung der Methode \emph{POS-Tagging} wurde die Bibliothek \emph{nltk} verwendet. Die \emph{Tags} werden mit dem vortrainierten Modell \emph{averaged\_perceptron\_tagger} ermittelt.
+\begin{lstlisting}[caption={Implementation des Moduls \emph{posTagging.py}}, label=lst:postagging]
+	import nltk
+	nltk.download('averaged_perceptron_tagger')
+	def usePosTagging(requirement):
+		tokens = nltk.word_tokenize(requirement)
+		pos_tags = nltk.pos_tag(tokens)
+		return pos_tags
+\end{lstlisting}
+Im Listing \ref{lst:postagging} sind Details zur Implementierung dargestellt. Als Parameter wird die \emph{Bedarfsmeldung} übergeben und in Zeile 4 in Tokens umgewandelt. Diese Tokens werden in Zeile 5 in die Methode \lstinline{pos_tag()}
+übergeben und eine Liste mit Tupeln, bei dem das Wort und das dazugehörige \emph{Tag} enthalten ist. Diese Liste wird in Zeile 6 zurückgegeben.
 \paragraph{NER}\mbox{}\\
-Um die Methode \emph{NER} zu Implementieren wurde die Bibliothek \emph{spaCy} verwendet. Dieses bietet die NLP-Pipeline \emph{en\_core\_web\_sm}, das mit Internettext vortrainiert wurde und Vokabeln, Syntax und Entitäten enthält.
+Um die Methode \emph{NER} zu Implementieren wurde die Bibliothek \emph{spaCy} und dem Modell \emph{en\_core\_web\_sm} verwendet. 
 \begin{lstlisting}[caption={Implementation des Moduls \emph{ner.py}}, label=lst:ner]
 	import spacy
 	nlp = spacy.load("en_core_web_sm")
@@ -208,20 +230,11 @@ Um die Methode \emph{NER} zu Implementieren wurde die Bibliothek \emph{spaCy} ve
 				entities.append((ent.text, ent.label_))
 	return entities
 \end{lstlisting}
-Im Listing \ref{lst:ner} ist die Implementation des Moduls \emph{ner.py} abgebildet. In Zeile 1 und 2 wird \emph{spaCy} importiert und das Modell \emph{en\_core\_web\_sm} geladen. In Zeile 3 werden die relevanten Kategorien von Wörtern definiert, die aus den \emph{Bedarfsmeldungen} extrahiert werden sollen. Die Kategorien sind Organisation (ORG), Einrichtung (FAC), Ort (GPE), Produkt (PRODUCT), Event (EVENT), Sprache (LANGUAGE), Datum (DATE) und Menge (QUANTITY). Innerhalb der Methode \lstinline{useNER()} wird die Bedarfsmeldung als Parameter übergeben und in Zeile 5 zu Tokens umgeformt. Anschließend werden alle Tokens durchlaufen und nach ihren Kategorien überprüft. Ist ein Token in einer der definierten Kategorien enthalten, wird der Text und die Kategorie in einem Tupel im Array \emph{entities} gespeichert und zurückgegeben.
+Im Listing \ref{lst:ner} ist die Implementierung des Moduls \emph{ner.py} abgebildet. In Zeile 1 und 2 wird \emph{spaCy} importiert und das Modell \emph{en\_core\_web\_sm} geladen. In Zeile 3 werden die relevanten Kategorien von Wörtern definiert, die aus den \emph{Bedarfsmeldungen} extrahiert werden sollen. Die Kategorien sind Organisation (ORG), Einrichtung (FAC), Ort (GPE), Produkt (PRODUCT), Event (EVENT), Sprache (LANGUAGE), Datum (DATE) und Menge (QUANTITY). Innerhalb der Methode \lstinline{useNER()} wird die Bedarfsmeldung als Parameter übergeben und in Zeile 5 zu Tokens umgeformt. Anschließend werden alle Tokens durchlaufen und nach ihren Kategorien überprüft. Ist ein Token in einer der definierten Kategorien enthalten, wird der Text und die Kategorie in einem Tupel in der Liste \emph{entities} gespeichert und zurückgegeben.
 \paragraph{data-fusion}\mbox{}\\
 
-\paragraph{Zeitmessung}\mbox{}\\
-Für die Zeitmessung wird vor dem Aufruf des ersten und nach dem letzten Modul jeweils ein Zeitstempel angelegt. Dazu wird die Bibliothek \emph{time} verwendet.
-\begin{lstlisting}[caption={Implementation der Zeitmessung}, label=lst:zeitmessung]
-	import time
-	start = time.perf_counter()
-		#Module der Pipeline
-	stop = time.perf_counter()
-	print(f"{stop - start:0.4f} seconds")
-\end{lstlisting}
-Die Implementierung ist im Listing \ref{lst:zeitmessung} dargestellt. Die Zeitstempel werden in den Zeilen 2 und 4 durch die Methode \lstinline{perf_counter()}
-generiert und in die Variablen \emph{start} und \emph{stop} zwischengespeichert. Zum Schluss wird in Zeile 5 die Differenz aus beiden Zeitstempeln ermittelt, in sekunden umgerechnet und in der Console ausgegeben.
-\paragraph{Vektorisierung}\mbox{}\\
+implementationsdetail schreiben wie die json aussieht, implementationsdetails wie genau beschreiben --> sobald klar ist wo wir hin wollen zeige ich eher wie ich die pipeline zusammenbaue und weniger wie ich bibliotheken implementiere,
 
-\paragraph{Cosine-Similarity}\mbox{}\\
+gucken ob python ein batch framework anbietet
+
+-->wo erkläre ich wie die daten aus dem profiler aussehen?

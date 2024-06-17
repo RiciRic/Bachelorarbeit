@@ -11,33 +11,53 @@ z.b. erwartungshaltung formulieren und mit cosine similarity gucken was näher d
 
 wie machen das andere ansätze,
 
-\section{Evaluationsmetrik}
+-------------------
+
+-was genau will ich in die evaluation packen, was will ich da machen? (nehme den vergleich mit llm raus)
+
+fall konstruieren indem man ausgangslage festlegt und dann erwartung selber händisch erstellt und mit ergebnis der software vergleicht
+
+beide freitextfelder mit den Methoden vergleichen --> was heißt das denn wenn die deckungsgleich, disjunkt sind,  
+
+projektbeschreibung und anforderungsfelder übereinanderlegen--> überlegen ich habe sack voller infos und kann ich das weiter verwenden? 
+
+(-wo erkläre ich die geschichte mit cosine similarity (also die implementation dazu oder lasse ich das))
+
+an die erwartungshaltung annähern
+
+\section{Versuchsdurchführung}
 -cosine similarity
 -performance, zeit
+
+\paragraph{Zeitmessung}\mbox{}\\
+Für die Zeitmessung wird vor dem Aufruf des ersten und nach dem letzten Modul jeweils ein Zeitstempel angelegt. Dazu wird die Bibliothek \emph{time} verwendet.
+\begin{lstlisting}[caption={Implementation der Zeitmessung}, label=lst:zeitmessung]
+	import time
+	start = time.perf_counter()
+	#Module der Pipeline
+	stop = time.perf_counter()
+	print(f"{stop - start:0.4f} seconds")
+\end{lstlisting}
+Die Implementierung ist im Listing \ref{lst:zeitmessung} dargestellt. Die Zeitstempel werden in den Zeilen 2 und 4 durch die Methode \lstinline{perf_counter()}
+generiert und in die Variablen \emph{start} und \emph{stop} zwischengespeichert. Zum Schluss wird in Zeile 5 die Differenz aus beiden Zeitstempeln ermittelt, in sekunden umgerechnet und in der Console ausgegeben.
+\paragraph{Vektorisierung}\mbox{}\\
+
+\paragraph{Cosine-Similarity}\mbox{}\\
 
 \section{Beschreibung des verwendeten Datensatzes}
 \todo{darauf eingehen welche Felder in der JSON von JIRA sind und worauf sich genau konzentriert wird.}\\
 \newpage
 
-\section{Beschreibung des verwendeten Datensatzes}
-
 überlegung ob tfidf unterschied macht alle bedarfsmeldungen mit einer zu vergleichen und daraus wichtige wörter identifizieren oder eine für sich alleine reicht.
 
 gucken was tokenisierung wirklich macht
 \section{Präsentation und Diskussion der Ergebnisse}
-\newpage
-g
-\newpage
-g
-\newpage
-g
-\newpage
 Zeit und Leistung Übersicht
 \newpage
 g
 \newpage
 
-\section{Vergleich des Systems mit einem Large Language Model-Ansatz}
+%\section{Vergleich des Systems mit einem Large Language Model-Ansatz}
 \newpage
 g
 \newpage
@@ -47,7 +67,7 @@ g
 g
 \newpage
 
-\section{Analyse von Abweichungen, Ähnlichkeiten und Verbesserungspotenzialen des Systems}
+%\section{Analyse von Abweichungen, Ähnlichkeiten und Verbesserungspotenzialen des Systems}
 \newpage
 g
 \newpage
