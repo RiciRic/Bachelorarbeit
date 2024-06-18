@@ -93,17 +93,16 @@ Das Projekt wird in einem git Repository gespeichert und versioniert. Die Projek
 \dirtree{%
 	.1 .git/.
 	.2 modules/.
-	.3 nGram.py.
-	.3 posTagging.py.
-	.3 preprocessing.py.
 	.3 ner.py.
+	.3 nGram.py.
+	.3 preprocessing.py.
+	.3 readRequirements.py.
 	.3 textRankingAlgorithm.py.
 	.3 tfIdf.py.
-	.3 readRequirements.py.
+	.3 transformRequirements.py.
 	.3 translate.py.
 	.2 requirements/.
-	.3 syntheticData.txt.
-	.3 syntheticData.json.
+	.3 jiraTickets.json.
 	.3 ....
 	.2 app.py.
 	.2 ....
@@ -113,35 +112,53 @@ Die einzelnen Module aus dem Flussdiagramm in Kapitel \ref{fig:flowchart} sind i
 \subsection{Modulimplementationen}
 Nachfolgend werden Implementationsdetails zu den einzelnen Modulen gegeben. Dabei werden verwendete Bibliotheken und Code-Details näher erläutert.
 \paragraph{Dateiformat}\mbox{}\\
-Zum laden der \emph{Bedarfsmeldung} sollen die Datenformate \url{.txt} und \url{.json} unterstützt werden. Das Verzeichnis mit den gespeicherten \emph{Bedarfsmeldungen} ist, wie es in Kapitel \ref{sec:projektstruktur} zu sehen ist, nicht im selben Verzeichnis wie die Module. Um die Daten laden zu können muss der richtige Pfad ermittelt werden. Dazu wird die Bibliothek \emph{os} verwendet.
-\begin{lstlisting}[caption={Teilimplementation des Moduls \emph{readRequirements.py}}, label=lst:path]
-	import os
-	ROOT_DIR = os.getcwd()
-	PATH = os.path.join(ROOT_DIR, 'requirements') 
-\end{lstlisting}
-Das Listing \ref{lst:path} zeigt in Zeile 2 die Ermittlung des Root-Verzeichnisses des Projektes durch die Methode \lstinline{os.getcwd()}.
-Diese wird in einem Zwischenschritt in eine Konstante gespeichert. In Zeile 3 des Listings \ref{lst:path} wird das Root-Verzeichnis mit dem Verzeichnis \emph{'requirements'} durch die Methode \lstinline{os.path.join()} kombiniert.
-Um einen Freitext aus einer einzelnen \emph{Bedarfsmeldung} für die Pipeline zu laden werden Daten mit der Endung \url{.txt} verwendet.
-\begin{lstlisting}[caption={Implementation der Methode read() des Moduls \emph{readRequirements.py}}, label=lst:read]
-	def read(filename):
-		path = os.path.join(PATH, filename)
-		file = open(path, "r", encoding="utf-8")
-		content = file.read()
-		file.close()
-		return content
-\end{lstlisting}
-Im Listing \ref{lst:read} ist die Implementierung der Methode zum laden eines Freitextes dargestellt. Durch ein mitgelieferten Parameter \emph{filename} wird der Name der Datei in Zeile 2 an den Pfad angehängt. Mit der Methode \lstinline{open()}
-aus Zeile 3 kann die Datei geladen werden. Die Methode erhält die Parameter Pfad, \emph{'r'} (read) und das encoding \emph{'utf-8'}. Das encoding ist dabei Entscheidend, damit die unstrukturierten \emph{Bedarfsmeldungen} laden können. Bei der Pflege in Jira wird wenig Wert auf eine einheitliche Struktur. Somit können Zeichen enthalten sein, die beim öffnen nicht erkannt werden und eine Fehlermeldung wird zurückgegeben. Zur Vermeidung dieses Fehlers wird das encoding festgelegt. Nach dem laden durch die Methode \lstinline{read()} wird der Inhalt der \url{.txt} Datei in der Variable \emph{content} gespeichert und zurückgegeben.
-Um mehrere \emph{Bedarfsmeldungen} zu laden wird das Dateiformat \url{.json} verwendet, da diese in einer Liste gespeichert sind.
-\begin{lstlisting}[caption={Implementation der Methode loadJson() des Moduls \emph{readRequirements.py}}, label=lst:load]
-	import json
-	def loadJson(filename):
-		path = os.path.join(PATH, filename)
-		file = open(path, 'r', encoding="utf8")
-		content = json.load(file)
-		return content
-\end{lstlisting}
-Im Listing \ref{lst:load} ist die Implementierung der Methode zum laden von JSON-Dateien. Der Aufbau ist wie in der Implementierung aus Listing \ref{lst:read} mit dem Unterschied dass in Zeile 5 die Bibliothek \emph{json} zum öffnen der Datei verwendet wird. Die Rückgabe enthält den Inhalt der geladenen Datei.
+Die \emph{Bedarfsmeldungen} wurden über die Jira-Schnittstelle extrahiert und im Verzeichnis \url{requirements/jiraTickets.json} gespeichert. Zur Eingrenzung der Datenmenge wurde ein Filter angewendet, der nur die \emph{offenen} und \emph{eskalierten} \emph{Bedarfsmeldungen} zurückgibt. Diese sind die relevanten und noch aktuellen \emph{Bedarfsmeldungen}. Zudem wurden alle unrelevanten Felder herausgenommen. Die Daten aus der Jira-API bestehen namentlich aus \emph{customfields} mit einer angehangenen ID. Der Softwareprototyp formt die unstrukturierten Fields in \emph{Bedarfsmeldungs}-Objekte um.
+\begin{center}
+	\begin{tabularx}{1\textwidth} { 
+			| >{\raggedright\arraybackslash}X 
+			| >{\raggedright\arraybackslash}X
+			| >{\raggedright\arraybackslash}X | }
+		\hline
+		Display-Felder & Jira-API-Felder & Objekt-Felder \\
+		\hline
+		\hline
+		Überschrift & summary & header\\
+		\hline
+		Rolle & customfield\_15321 & role\\
+		\hline
+		Aufgaben & customfield\_10288 & tasks\\
+		\hline
+		Skills & customfield\_10296 & skills\\
+		\hline
+		Skill-Level & customfield\_15322 & skillLevel\\
+		\hline
+		Kunde & customfield\_10279 & customer\\
+		\hline
+		Einsatzort & customfield\_10297 & location\\
+		\hline
+		Beginn & customfield\_10293 & timePeriod\\
+		\hline
+		Ende & customfield\_10294 & timePeriod\\
+		\hline
+		Tagessatz & customfield\_10298 & dailyRate\\
+		\hline
+	\end{tabularx}\\
+	\captionof{table}{Übersicht der Datenfelder}
+	\label{tab:jiradaten}
+\end{center}
+In der Tabelle \ref{tab:jiradaten} ist in der ersten Spalte eine Übersicht der Datenfelder, wie diese in der Abbildung \ref{fig:jiraafter} mit dem Mockup einer standardisierten \emph{Bedarfsmeldung} auftauchen. In der zweiten Spalte sind die dazugehörigen Feldernamen, die in der \url{jiraTickets.json} enthalten sind. Die dritte Spalte spiegelt die jeweiligen Namen innherhalb des Bedarfsmeldungs-Objekts im Prototypen wieder. Das Bedarfsmeldungs-Objekt dient der strukturierte Handhabung innerhalb des Systems.
+
+%Um einen Freitext aus einer einzelnen \emph{Bedarfsmeldung} für die Pipeline zu laden werden Daten mit der Endung \url{.txt} verwendet.
+%\begin{lstlisting}[caption={Implementation der Methode read() des Moduls \emph{readRequirements.py}}, label=lst:read]
+%	def read(filename):
+%		path = os.path.join(PATH, filename)
+%		file = open(path, "r", encoding="utf-8")
+%		content = file.read()
+%		file.close()
+%		return content
+%\end{lstlisting}
+%Im Listing \ref{lst:read} ist die Implementierung der Methode zum laden eines Freitextes dargestellt. Durch ein mitgelieferten Parameter \emph{filename} wird der Name der Datei in Zeile 2 an den Pfad angehängt. Mit der Methode \lstinline{open()}
+%aus Zeile 3 kann die Datei geladen werden. Die Methode erhält die Parameter Pfad, \emph{'r'} (read) und das encoding \emph{'utf-8'}. Das encoding ist dabei Entscheidend, damit die unstrukturierten \emph{Bedarfsmeldungen} laden können. Bei der Pflege in Jira wird wenig Wert auf eine einheitliche Struktur. Somit können Zeichen enthalten sein, die beim öffnen nicht erkannt werden und eine Fehlermeldung wird zurückgegeben. Zur Vermeidung dieses Fehlers wird das encoding festgelegt. Nach dem laden durch die Methode \lstinline{read()} wird der Inhalt der \url{.txt} Datei in der Variable \emph{content} gespeichert und zurückgegeben.
 \paragraph{Übersetzung}\mbox{}\\
 Das Module \emph{translate.py} ist dazu da, um die \emph{Bedarfsmeldungen} zu übersetzen. Für die Übersetzung wurde die Python Bibliothek \emph{deep-translator} verwendet. Diese bietet Implementationen unterschiedlicher Übersetzungs-APIs von diversen Anbietern. Der Vorteil ist dabei die vereinfachte Möglichkeit Anbieter bei Bedarf zu wechseln.
 \begin{lstlisting}[caption={Implementation des Moduls \emph{translate.py}}, label=lst:translate]
@@ -153,24 +170,33 @@ Das Module \emph{translate.py} ist dazu da, um die \emph{Bedarfsmeldungen} zu ü
 \end{lstlisting}
 Das Listing \ref{lst:translate} zeigt die Implementation des Moduls. Es wurde sich für den Google Translator entschieden, da hierfür kein API-Key benötigt wird. Die Methode erhält als die \emph{Bedarfsmeldung} als Parameter. Der Google Translator erhält die Parameter \emph{source} und \emph{target}. \emph{source} gibt an in welcher Sprache der Input ist. Durch Angabe von \emph{'auto'} wird die Sprache ermittelt. Der Grund dafür ist, dass grundsätzlich eine anderssprachige \emph{Bedarfsmeldung} enthalten sein kann. \emph{target} ist die Zielsprache in welche der Input übersetzt werden soll. Die Zielsprache ist hier Englisch (\emph{'en'}).
 \paragraph{Preprocessing}\mbox{}\\
-Vor der Durchführung einer \emph{Bedarfsmeldung} mit einer der ausgewählten Methoden ist es erforderlich, die Bedarfsmeldung von irrelevanten Wörtern und Satzzeichen zu befreien. Zur Entfernung von Satzzeichen wurde die Bibliothek \emph{string} verwendet.
-\begin{lstlisting}[caption={Implementation der Methode removePunctuation() des Moduls \emph{preprocessing.py}}, label=lst:punctuation]
-	import string
-	def removePunctuation(requirement):
-		content=""
-		for i in requirement: 
-			if i not in string.punctuation:
-				content+=i    
-		return content
-\end{lstlisting}
-Im Listing \ref{lst:punctuation} ist die Implementierung dargestellt. Die \emph{Bedarfsmeldung} wird in Zeile 2 als Parameter übergeben. In Zeile 4 erfolgt ein Durchlauf jedes Zeichens innerhalb der \emph{Bedarfsmeldung}. Falls innerhalb der Schleife das Aktuelle Zeichen kein Satzzeichen enthält wird dieses in die Variable \emph{content} zwischengespeichert. Nach Abschluss der Schleife wird die Variable zurückgegeben. Zur Elimination wiederaufgetretener Wörter, die keine Relevanz für den Informationsgehalt aufweisen, wurde die Bibliothek \emph{nltk} verwendet. Diese beinhaltet eine Liste an sogenannten \emph{stopwords}.
+Vor der Durchführung einer \emph{Bedarfsmeldung} mit einer der ausgewählten Methoden ist es erforderlich, die Bedarfsmeldung von irrelevanten Wörtern, Zeichen und Formatierungen zu befreien.% Zur Entfernung von Satzzeichen wurde die Bibliothek \emph{string} verwendet.
+%\begin{lstlisting}[caption={Implementation der Methode removePunctuation() des Moduls \emph{preprocessing.py}}, label=lst:punctuation]
+%	import string
+%	def removePunctuation(text):
+%		content=""
+%		for i in text: 
+%			if i not in string.punctuation:
+%				content+=i    
+%		return content
+%\end{lstlisting}
+%Im Listing \ref{lst:punctuation} ist die Implementierung dargestellt. Die \emph{Bedarfsmeldung} wird in Zeile 2 als Parameter übergeben. In Zeile 4 erfolgt ein Durchlauf jedes Zeichens innerhalb der \emph{Bedarfsmeldung}. Falls innerhalb der Schleife das Aktuelle Zeichen kein Satzzeichen enthält wird dieses in die Variable \emph{content} zwischengespeichert. Nach Abschluss der Schleife wird die Variable zurückgegeben. Zur Elimination wiederaufgetretener Wörter, die keine Relevanz für den Informationsgehalt aufweisen, wurde die Bibliothek \emph{nltk} verwendet. Diese beinhaltet eine Liste an sogenannten \emph{stopwords}.
 \begin{lstlisting}[caption={Implementation der Methode removeStopwords() des Moduls \emph{preprocessing.py}}, label=lst:stopwords]
 	from nltk.corpus import stopwords
-	def removeStopwords(requirement):
-		words=[word for word in requirement.split(" ") if word not in set(stopwords.words('english'))]
+	def removeStopwords(text):
+		words=[word for word in text.split(" ") if word not in set(stopwords.words('english'))]
 		return " ".join(str(word) for word in words)
 \end{lstlisting}
-Im Listing \ref{lst:stopwords} ist die Implementierung zur Entfernung von \emph{stopwords} dargestellt. In Zeile 3 werden alle mit einem Leerzeichen getrennten Wörter aus der übergebenen \emph{Bedarfsmeldung} in einer Liste aufgeteilt. Dabei wird jeder Listeneintrag mit der \emph{stopword}-Liste verglichen. Stimmt das Wort nicht mit einem Eintrag der \emph{stopwords} überein, wird diese in die Liste \emph{words} hinzugefügt. Zum Schluss werden in Zeile 4 die Wörter aus \emph{words} zu einem String zusammengetragen und zurückgegeben.
+Im Listing \ref{lst:stopwords} ist die Implementierung zur Entfernung von \emph{stopwords} dargestellt. In Zeile 3 werden alle mit einem Leerzeichen getrennten Wörter aus der übergebenen \emph{Bedarfsmeldung} in einer Liste aufgeteilt. Dabei wird jeder Listeneintrag mit der \emph{stopword}-Liste verglichen. Stimmt das Wort nicht mit einem Eintrag der \emph{stopwords} überein, wird diese in die Liste \emph{words} hinzugefügt. Zum Schluss werden in Zeile 4 die Wörter aus \emph{words} zu einem String zusammengetragen und zurückgegeben. Um weitere Formatierungen und ungewünschte Zeichen zu entfernen wird die Bibliothek \emph{re} verwendet. Diese kann Regular Expression-Patterns anwenden und passende Zeichen entfernen.
+\begin{lstlisting}[caption={Implementation der Methode removeTags() und removeSpecialCharactersAndDigits() des Moduls \emph{preprocessing.py}}, label=lst:re]
+	import re
+	def removeTags(text):
+		return re.sub("</?.*?>"," <> ",text)
+	
+	def removeSpecialCharactersAndDigits(text):
+		return re.sub("(\\d|\\W)+"," ",text)
+\end{lstlisting}
+Im Listing \ref{lst:re} sind Implementationsdetails zur Entfernung von Tags und ungewollte Zeichen dargestellt. Die Methode \lstinline{removeTags()} in Zeile 2-3 erhält die Expression \lstinline{</?.*?>}. Dabei werden \lstinline{<Tags>} ermittelt und mit der Methode \lstinline{sub()} entfernt. Zur Entfernung von Ziffern und Nicht-Alphanummerischen Zeichen wird in Zeile 6 die Expression \lstinline{(\\d|\\W)+} angewendet. Als Ergebnis des Preprocessing wird ein gesäuberter String zurückgegeben.
 \paragraph{TF-IDF}\mbox{}\\
 
 \paragraph{TextRank}\mbox{}\\
@@ -204,18 +230,18 @@ Die Methode der \emph{n-Gramme} wurde mit der Bibliothek \emph{nltk} implementie
 Das Listing \ref{lst:ngram} zeigt die Implementation des Moduls \emph{nGram.py}. In Zeile zwei ist die Variable \emph{n} definiert, die die Größe eines \emph{n-Gramms} widerspiegelt. Mit der der Methode \lstinline{ngrams()}
 in Zeile 5 können die \emph{n-Gramme} generiert werden. Diese erhält als parameter einen \emph{String} und die Variable \emph{n}. Die \emph{Bedarfsmeldung} wird als Parameter in Zeile 2 übergeben und in Zeile 5 durch die Methode \lstinline{split()}
 in einer List auf die einzelnen Wörter umgeformt. Die einzelnen Tupel mit den \emph{n-Grammen} werden in Zeile 6-7 in die Liste \emph{nGramList} gespeichert und am Ende zurückgegeben.
-\paragraph{POS-Tagging}\mbox{}\\
-Zur Implementierung der Methode \emph{POS-Tagging} wurde die Bibliothek \emph{nltk} verwendet. Die \emph{Tags} werden mit dem vortrainierten Modell \emph{averaged\_perceptron\_tagger} ermittelt.
-\begin{lstlisting}[caption={Implementation des Moduls \emph{posTagging.py}}, label=lst:postagging]
-	import nltk
-	nltk.download('averaged_perceptron_tagger')
-	def usePosTagging(requirement):
-		tokens = nltk.word_tokenize(requirement)
-		pos_tags = nltk.pos_tag(tokens)
-		return pos_tags
-\end{lstlisting}
-Im Listing \ref{lst:postagging} sind Details zur Implementierung dargestellt. Als Parameter wird die \emph{Bedarfsmeldung} übergeben und in Zeile 4 in Tokens umgewandelt. Diese Tokens werden in Zeile 5 in die Methode \lstinline{pos_tag()}
-übergeben und eine Liste mit Tupeln, bei dem das Wort und das dazugehörige \emph{Tag} enthalten ist. Diese Liste wird in Zeile 6 zurückgegeben.
+%\paragraph{POS-Tagging}\mbox{}\\
+%Zur Implementierung der Methode \emph{POS-Tagging} wurde die Bibliothek \emph{nltk} verwendet. Die \emph{Tags} werden mit dem vortrainierten Modell \emph{averaged\_perceptron\_tagger} ermittelt.
+%\begin{lstlisting}[caption={Implementation des Moduls \emph{posTagging.py}}, label=lst:postagging]
+%	import nltk
+%	nltk.download('averaged_perceptron_tagger')
+%	def usePosTagging(requirement):
+%		tokens = nltk.word_tokenize(requirement)
+%		pos_tags = nltk.pos_tag(tokens)
+%		return pos_tags
+%\end{lstlisting}
+%Im Listing \ref{lst:postagging} sind Details zur Implementierung dargestellt. Als Parameter wird die \emph{Bedarfsmeldung} übergeben und in Zeile 4 in Tokens umgewandelt. Diese Tokens werden in Zeile 5 in die Methode \lstinline{pos_tag()}
+%übergeben und eine Liste mit Tupeln, bei dem das Wort und das dazugehörige \emph{Tag} enthalten ist. Diese Liste wird in Zeile 6 zurückgegeben.
 \paragraph{NER}\mbox{}\\
 Um die Methode \emph{NER} zu Implementieren wurde die Bibliothek \emph{spaCy} und dem Modell \emph{en\_core\_web\_sm} verwendet. 
 \begin{lstlisting}[caption={Implementation des Moduls \emph{ner.py}}, label=lst:ner]
@@ -231,7 +257,13 @@ Um die Methode \emph{NER} zu Implementieren wurde die Bibliothek \emph{spaCy} un
 	return entities
 \end{lstlisting}
 Im Listing \ref{lst:ner} ist die Implementierung des Moduls \emph{ner.py} abgebildet. In Zeile 1 und 2 wird \emph{spaCy} importiert und das Modell \emph{en\_core\_web\_sm} geladen. In Zeile 3 werden die relevanten Kategorien von Wörtern definiert, die aus den \emph{Bedarfsmeldungen} extrahiert werden sollen. Die Kategorien sind Organisation (ORG), Einrichtung (FAC), Ort (GPE), Produkt (PRODUCT), Event (EVENT), Sprache (LANGUAGE), Datum (DATE) und Menge (QUANTITY). Innerhalb der Methode \lstinline{useNER()} wird die Bedarfsmeldung als Parameter übergeben und in Zeile 5 zu Tokens umgeformt. Anschließend werden alle Tokens durchlaufen und nach ihren Kategorien überprüft. Ist ein Token in einer der definierten Kategorien enthalten, wird der Text und die Kategorie in einem Tupel in der Liste \emph{entities} gespeichert und zurückgegeben.
-\paragraph{data-fusion}\mbox{}\\
+\paragraph{Verknüpfungen}\mbox{}\\
+Wie werden die Daten Kombiniert
+
+1-tf-idf und textRank sind die Ansätze die allgemein Schlüsselwörter ermitteln
+2-ner zeiten ermitteln-->
+-->n=3 gramme bilden und filtern welche ngramme die hochpriorisierten Schlüsselwörter enthalten
+
 
 implementationsdetail schreiben wie die json aussieht, implementationsdetails wie genau beschreiben --> sobald klar ist wo wir hin wollen zeige ich eher wie ich die pipeline zusammenbaue und weniger wie ich bibliotheken implementiere,
 
