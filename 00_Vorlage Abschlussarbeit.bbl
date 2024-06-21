@@ -121,37 +121,6 @@
     \field{year}{1992}
   \endentry
 
-  \entry{bohne2013data}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=BT}{%
-         family={Bohne},
-         familyi={B\bibinitperiod},
-         given={Thomas},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=BUM}{%
-         family={Borghoff},
-         familyi={B\bibinitperiod},
-         given={Uwe\bibnamedelima M},
-         giveni={U\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-    }
-    \list{organization}{1}{%
-      {IEEE}%
-    }
-    \strng{namehash}{BTBUM1}
-    \strng{fullhash}{BTBUM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{booktitle}{2013 20th IEEE International Conference and Workshops on
-  Engineering of Computer Based Systems (ECBS)}
-    \field{pages}{166\bibrangedash 173}
-    \field{title}{Data fusion: Boosting performance in keyword extraction}
-    \field{year}{2013}
-  \endentry
-
   \entry{burke2011recommender}{article}{}
     \name{author}{3}{}{%
       {{hash=BR}{%
@@ -391,83 +360,6 @@
     \field{title}{Praxisbuch Interview, Transkription \& Analyse: Anleitungen
   und Regelsysteme f{\"u}r qualitativ Forschende}
     \field{year}{2015}
-  \endentry
-
-  \entry{famili1997data}{article}{}
-    \name{author}{4}{}{%
-      {{hash=FA}{%
-         family={Famili},
-         familyi={F\bibinitperiod},
-         given={A},
-         giveni={A},
-      }}%
-      {{hash=SWM}{%
-         family={Shen},
-         familyi={S\bibinitperiod},
-         given={Wei-Min},
-         giveni={W\bibinithyphendelim M\bibinitperiod},
-      }}%
-      {{hash=WR}{%
-         family={Weber},
-         familyi={W\bibinitperiod},
-         given={Richard},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=SE}{%
-         family={Simoudis},
-         familyi={S\bibinitperiod},
-         given={Evangelos},
-         giveni={E\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {IOS Press}%
-    }
-    \strng{namehash}{FASWMWR+1}
-    \strng{fullhash}{FASWMWRSE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{F}
-    \field{sortinithash}{F}
-    \field{number}{1}
-    \field{pages}{3\bibrangedash 23}
-    \field{title}{Data preprocessing and intelligent data analysis}
-    \field{volume}{1}
-    \field{journaltitle}{Intelligent data analysis}
-    \field{year}{1997}
-  \endentry
-
-  \entry{frank2005comparing}{article}{}
-    \name{author}{2}{}{%
-      {{hash=FHD}{%
-         family={Frank\bibnamedelima Hsu},
-         familyi={F\bibinitperiod\bibinitdelim H\bibinitperiod},
-         given={D},
-         giveni={D},
-      }}%
-      {{hash=TI}{%
-         family={Taksa},
-         familyi={T\bibinitperiod},
-         given={Isak},
-         giveni={I\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Springer}%
-    }
-    \strng{namehash}{FHDTI1}
-    \strng{fullhash}{FHDTI1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{F}
-    \field{sortinithash}{F}
-    \field{number}{3}
-    \field{pages}{449\bibrangedash 480}
-    \field{title}{Comparing rank and score combination methods for data fusion
-  in information retrieval}
-    \field{volume}{8}
-    \field{journaltitle}{Information retrieval}
-    \field{year}{2005}
   \endentry
 
   \entry{horesh2016information}{inproceedings}{}
@@ -739,45 +631,6 @@
     \field{year}{2002}
   \endentry
 
-  \entry{mansouri2008named}{article}{}
-    \name{author}{3}{}{%
-      {{hash=MA}{%
-         family={Mansouri},
-         familyi={M\bibinitperiod},
-         given={Alireza},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=ALS}{%
-         family={Affendey},
-         familyi={A\bibinitperiod},
-         given={Lilly\bibnamedelima Suriani},
-         giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-      {{hash=MA}{%
-         family={Mamat},
-         familyi={M\bibinitperiod},
-         given={Ali},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Citeseer}%
-    }
-    \strng{namehash}{MAALSMA1}
-    \strng{fullhash}{MAALSMA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{number}{2}
-    \field{pages}{339\bibrangedash 344}
-    \field{title}{Named entity recognition approaches}
-    \field{volume}{8}
-    \field{journaltitle}{International Journal of Computer Science and Network
-  Security}
-    \field{year}{2008}
-  \endentry
-
   \entry{mayring1994qualitative}{book}{}
     \name{author}{1}{}{%
       {{hash=MP}{%
@@ -876,34 +729,6 @@
     \field{title}{Python for data analysis: Data wrangling with Pandas, NumPy,
   and IPython}
     \field{year}{2012}
-  \endentry
-
-  \entry{mihalcea2004textrank}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=MR}{%
-         family={Mihalcea},
-         familyi={M\bibinitperiod},
-         given={Rada},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=TP}{%
-         family={Tarau},
-         familyi={T\bibinitperiod},
-         given={Paul},
-         giveni={P\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MRTP1}
-    \strng{fullhash}{MRTP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{booktitle}{Proceedings of the 2004 conference on empirical methods
-  in natural language processing}
-    \field{pages}{404\bibrangedash 411}
-    \field{title}{Textrank: Bringing order into text}
-    \field{year}{2004}
   \endentry
 
   \entry{partalidou2019design}{inproceedings}{}
