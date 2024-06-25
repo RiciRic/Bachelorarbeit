@@ -631,6 +631,45 @@
     \field{year}{2002}
   \endentry
 
+  \entry{mansouri2008named}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MA}{%
+         family={Mansouri},
+         familyi={M\bibinitperiod},
+         given={Alireza},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ALS}{%
+         family={Affendey},
+         familyi={A\bibinitperiod},
+         given={Lilly\bibnamedelima Suriani},
+         giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mamat},
+         familyi={M\bibinitperiod},
+         given={Ali},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{MAALSMA1}
+    \strng{fullhash}{MAALSMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{number}{2}
+    \field{pages}{339\bibrangedash 344}
+    \field{title}{Named entity recognition approaches}
+    \field{volume}{8}
+    \field{journaltitle}{International Journal of Computer Science and Network
+  Security}
+    \field{year}{2008}
+  \endentry
+
   \entry{mayring1994qualitative}{book}{}
     \name{author}{1}{}{%
       {{hash=MP}{%

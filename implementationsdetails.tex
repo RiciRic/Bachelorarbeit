@@ -13,7 +13,7 @@ In diesem Kapitel werden die Interaktionen zwischen Benutzer und System beschrie
 	\caption{Use-Case Diagramm zum System zur Strukturierung von Bedarfsmeldungen.}
 	\label{fig:usecasediagrammwirklich}
 \end{figure}\mbox{} \\
-In der Abbildung \ref{fig:usecasediagrammwirklich} ist das Use-Case Diagramm zum System zur Strukturierung von \emph{Bedarfsmeldungen}. Es existiert ein Akteur, nämlich der Benutzer. Dieser hat die Möglichkeit unstrukturierte Bedarfsmeldungen zu strukturieren. Dazu kann das System einerseits eine \emph{Bedarfsmeldung} laden und im Falle der unstrukturierten Volltexfelder eine Reihe an Aufgaben durchführen. Um die Volltexte in Stichpunkte zu überführen, kann die \emph{Bedarfsmeldung} übersetzt werden. Zudem kann diese mit Preprocessing-Verfahren reduziert und angepasst werden. Im Rahmen der Überführung von Stichpunkten können die aus den Volltext erstellten \emph{n-Gramme} auf die \emph{n-Gramme}, die mindestens ein Schlüsselwort enthalten gekürzt werden. Die Schlüsselwörter werden mit der \emph{TF-IDF}-Methode ermittelt. Im Anwendungsfall der Überführung des Volltextes in Stichpunkte, können Wortartkombinationen, die nicht zusammengehören entfernt werden. Dadurch trennen sich neben der Filterung von Schlüsselwörter-\emph{n-Grammen} weitere \emph{n-Gramm}-Verbindungen. Schließlich können die \emph{n-Gramme} zu Stichpunkten überführt werden.
+In der Abbildung \ref{fig:usecasediagrammwirklich} ist das Use-Case Diagramm zum System zur Strukturierung von \emph{Bedarfsmeldungen} dargestellt. Es existiert ein Akteur, der die Bezeichnung \emph{Benutzer} hat. Dieser hat die Möglichkeit unstrukturierte Bedarfsmeldungen zu strukturieren. Dazu kann das System einerseits eine \emph{Bedarfsmeldung} laden und im Falle der unstrukturierten Volltexfelder eine Reihe an Aufgaben durchführen. Um die Volltexte in Stichpunkte zu überführen, kann die \emph{Bedarfsmeldung} übersetzt werden. Zudem kann diese mit Preprocessing-Verfahren reduziert und angepasst werden. Im Rahmen der Überführung von Stichpunkten können die aus den Volltext erstellten \emph{n-Gramme} auf die \emph{n-Gramme}, die mindestens ein Schlüsselwort enthalten gekürzt werden. Die Schlüsselwörter werden mit der \emph{TF-IDF}-Methode ermittelt. Im Anwendungsfall der Überführung des Volltextes in Stichpunkte, können Wortartkombinationen, die nicht zusammengehören entfernt werden. Dadurch trennen sich neben der Filterung von Schlüsselwörter-\emph{n-Grammen} weitere \emph{n-Gramm}-Verbindungen. Datums- und Zeitangaben können neben den anderen Anwendungsfällen durch die Methode \emph{NER} separat herausgefiltert werden. Schließlich können die \emph{n-Gramme} zu Stichpunkten überführt werden.
 %Dieser hat die Möglichkeit eine oder mehrere \emph{Bedarfsmeldungen} zu laden. Zudem kann diese ins Englische übersetzt werden. Darüber hinaus kann die \emph{Bedarfsmeldung} durch \emph{Preprocessing} vorverarbeitet werden und irrelevante Wörter und Zeichen aus der \emph{Bedarfsmeldung} ausschließen. Der Benutzer kann die Methoden \emph{TF-IDF}, \emph{TextRank}, \emph{N-Gram}, \emph{POS-Tagging} und \emph{NER} mit der \emph{Bedarfsmeldung} anwenden. Wenn mehrere Methoden in der Pipeline sind, können die Resultate durch die Anwendung von \emph{Data-Fusion} zusammengeführt werden.
 \section{Anforderungen}
 Im Folgenden werden die funktionalen sowie nichtfunktionalen Anforderungen des Systems beschrieben. Diese Informationen wurden aus der Beschreibung des Systems aus Kapitel \ref{sec:beschreibungsystem} und dem Use-Case aus Kapitel \ref{sec:usecase} hergeleitet und bilden den Rahmen des Systems.
@@ -33,19 +33,19 @@ Die funktionalen Anforderungen beschreiben konkrete Funktionalitäten des System
 	\item Das Preprocessing soll ein Volltext als Eingabe erhalten.
 	\item Das Preprocessing soll den bereinigten Volltext als Ausgabe zurückgeben.
 \end{enumerate}
-\todo{hier nochmal gucken}
 \begin{enumerate}[label=4.\arabic*]
 	\item Das System soll die Methode \emph{TF-IDF} als Modul anwenden können.
-	\item Das Modul soll ein Volltext als Eingabe für die implementierte Methode erhalten.
-	\item Als Rückgabe soll das Modul eine Liste mit Schlüsselwörtern basierend auf die Scores aus der \emph{TF-IDF} zurückgeben.
+	\item Das Modul soll eine Liste an Schlüsselwörtern identifizieren.
 \end{enumerate}
 \begin{enumerate}[label=5.\arabic*]
 	\item Das System soll \emph{Bi-Gramme} aus einem Volltext erstellen können.
 	\item Das Modul soll ein Volltext als Eingabe für die implementierte Methode erhalten.
 	\item Als Rückgabe soll das Modul eine Liste mit \emph{Bi-Grammen} zurückgeben.
+	\item Das System soll eine \emph{Bi-Gramm} Liste auf die \emph{Bi-Gramme} reduzieren, die mindestens ein Schlüsselwort enthalten.
 \end{enumerate}
 \begin{enumerate}[label=6.\arabic*]
-	\item Das System soll eine \emph{Bi-Gramm} Liste auf die \emph{Bi-Gramme} reduzieren, die mindestens ein Schlüsselwort enthalten.
+	\item Das System soll die Methode \emph{NER} als Modul anwenden können.
+	\item Das Modul soll aus einem Volltext Datums- und Zeitangaben extrahieren.
 \end{enumerate}
 \begin{enumerate}[label=7.\arabic*]
 	\item Das System soll die Methode \emph{POS-Tagging} als Modul anwenden können.
@@ -58,6 +58,7 @@ Die funktionalen Anforderungen beschreiben konkrete Funktionalitäten des System
 \end{enumerate}
 \begin{enumerate}[label=9.\arabic*]
 	\item Die in Stichpunkte umgebauten Volltexte werden der Bedarfsmeldung beigefügt.
+	\item Die Datums- und Zeitangaben aus der \emph{NER}-Methode werden den Stichpunkten beigefügt.
 	\item Das Ergebnis wird dem Benutzer ausgegeben.
 \end{enumerate}
 \subsection{Nichtfunktionale Anforderungen}
@@ -76,7 +77,7 @@ Dieses Kapitel beschreibt den Ablauf der Pipeline. Dazu wird ein Flussdiagramm m
 	\caption{Flussdiagramm der Pipeline.}
 	\label{fig:flowchart}
 \end{figure}\mbox{} \\
-Die Abbildung \ref{fig:flowchart} zeigt das Flussdiagramm der Python Pipeline. Im ersten Schritt \emph{Bedarfsmeldungen laden} im Ablauf der Pipeline wird eine \emph{Bedarfsmeldung} ausgewählt und in die festgelegte \emph{Bedarfsmeldungsstruktur} aus Kapitel \ref{sec:strukturierungbedarfsmeldung} umgebaut. Die Felder \emph{Einsatzbeginn} und \emph{Einsatzende} werden zu einem Feld \emph{Einsatz} zusammengefügt. Neben den Feldern \emph{Aufgaben} und \emph{Skills} bleiben alle weiteren Felder bis zum letzten Punkt \emph{Bedarfsmeldung zusammenfügen und ausgeben} unverändert. Die Felder \emph{Aufgaben} und \emph{Skills} werden in die parallele Struktur weitergeleitet, wo sie auf Stichpunkte reduziert werden. Der Prozess zur Reduktion durchläuft mehrere Schritte. Zu Beginn werden die Volltexte aus den Feldern im Punkt \emph{Übersetzung} ins Englische übersetzt und in Punkt \emph{Preprocessing} für die weitere Nutzung vorverarbeitet. Dieser Text wird Einerseits für die Ermittlung von relevanten Wörtern durch die \emph{TF-IDF}-Methode und zum anderen zur Erstellung von \emph{Bi-Grammen} verwendet. Beim Punkt \emph{filter Bi-Grams} werden alle \emph{Bi-Gramme} entfernt, bei denen kein relevantes Wort aus der TF-IDF-Methode enthalten sind. Somit erhält der Schritt \emph{POS-Tagging} eine reduzierte Liste mit \emph{Bi-Grammen}, bei dem mindestens eines der beiden \emph{Bi-Gramm}-Wörter ein relevantes Wort darstellt. Jedes Wort der \emph{Bi-Gramm}-Liste durchläuft eine weitere Filterung. Im Englischen existieren Wortarten, die untypischerweise nebeneinander stehen. Durch Entfernung dieser \emph{Bi-Gramme} durch diese POS-Tagging-Kombinationen erfolgt eine weitere Trennung der Wortketten der \emph{Bi-Gramm}-Liste. Wörter die nicht zusammengehören, verlieren dadurch die Verbindung zueinander. Im darauf folgenden Schritt \emph{Bi-Gramm zu Stichpunkten} werden die \emph{Bi-Gramme} jeweils zu einem String zusammengefügt, bei dem im darauf Folgendem \emph{Bi-Gramm} ebenfalls ein relevantes Wort enthalten sind. Dadurch formt sich eine Liste mit Stichpunkten bestehend aus eins bis x vielen Wörtern, die Bezug zueinander haben. Im Schritt \emph{Übersetzen} wird die Liste mit Stichpunkten zurück ins deutsche Übersetzt und im Schritt \emph{Bedarfsmeldung zusammenfügen und ausgeben} in die \emph{Bedarfsmeldung} aufgenommen. Dieser parallele Ablauf wird für die beiden Felder \emph{Aufgaben} und \emph{Skills} durchlaufen. Zum Schluss wird die fertige \emph{Bedarfsmeldung} ausgegeben.
+Die Abbildung \ref{fig:flowchart} zeigt das Flussdiagramm der Python Pipeline. Im ersten Schritt \emph{Bedarfsmeldungen laden} im Ablauf der Pipeline wird eine \emph{Bedarfsmeldung} ausgewählt und in die festgelegte \emph{Bedarfsmeldungsstruktur} aus Kapitel \ref{sec:strukturierungbedarfsmeldung} umgebaut. Die Felder \emph{Einsatzbeginn} und \emph{Einsatzende} werden zu einem Feld \emph{Einsatz} zusammengefügt. Neben den Feldern \emph{Aufgaben} und \emph{Skills} bleiben alle weiteren Felder bis zum letzten Punkt \emph{Bedarfsmeldung zusammenfügen und ausgeben} unverändert. Die Felder \emph{Aufgaben} und \emph{Skills} werden in die parallele Struktur weitergeleitet, wo sie auf Stichpunkte reduziert werden. Der Prozess zur Reduktion durchläuft mehrere Schritte. Zu Beginn werden die Volltexte aus den Feldern im Punkt \emph{Übersetzung} ins Englische übersetzt. Anschließend erfolgt im Schritt \emph{NER} zum einen die Extrahierung der zeitbezogenen Daten. Parallel dazu wird der Volltext Punkt \emph{Preprocessing} für die weitere Nutzung vorverarbeitet. Der Grund warum \emph{NER} nicht nach der Vorverarbeitung durchgeführt werden kann ist, dass im Vorverarbeitungsschritt alle Nummern und somit auch alle zeitbezogenen Daten entfernt werden. Die Resultate des \emph{NER} werden zum Ende hin zurück ins deutsche übersetzt und der fertigen Stichpunktliste beigefügt. Doch zur Erstellung der Stichpunktliste wird der vorverarbeitete Text zu \emph{Bi-Grammen} umgeformt. Parallel dazu werden relevante Schlüsselwörter durch die \emph{TF-IDF}-Methode ermittelt. Beim Punkt \emph{filter Bi-Grams} werden alle \emph{Bi-Gramme} entfernt, bei denen kein relevantes Wort aus der TF-IDF-Methode enthalten sind. Somit erhält der Schritt \emph{POS-Tagging} eine reduzierte Liste mit \emph{Bi-Grammen}, bei dem mindestens eines der beiden \emph{Bi-Gramm}-Wörter ein relevantes Wort darstellt. Jedes Wort der \emph{Bi-Gramm}-Liste durchläuft eine weitere Filterung. Im Englischen existieren Wortarten, die  typischerweise nicht nebeneinander stehen. Durch Entfernung dieser \emph{Bi-Gramme} durch POS-Tagging-Kombinationen erfolgt eine weitere Trennung der Wortketten in der \emph{Bi-Gramm}-Liste. Wörter die nicht zusammengehören, verlieren dadurch die Verbindung zueinander. Im darauf folgenden Schritt \emph{Bi-Gramm zu Stichpunkten} werden die \emph{Bi-Gramme} jeweils zu einem String zusammengefügt, bei dem im darauf Folgendem \emph{Bi-Gramm} ebenfalls ein relevantes Wort enthalten sind. Dadurch formt sich eine Liste mit Stichpunkten bestehend aus eins bis x vielen Wörtern, die Bezug zueinander haben. Im Schritt \emph{Übersetzen} wird die Liste mit Stichpunkten zurück ins deutsche übersetzt und im Schritt \emph{Bedarfsmeldung zusammenfügen und ausgeben} in die \emph{Bedarfsmeldung} aufgenommen. Dieser parallele Ablauf wird für die beiden Felder \emph{Aufgaben} und \emph{Skills} durchlaufen. Zum Schluss wird die fertige \emph{Bedarfsmeldung} ausgegeben.
 \section{Details zur Implementierung der Pipeline}
 Dieses Kapitel beschreibt den technischen Entwicklungsprozess zur Umsetzung der Anforderungen des Systems. Die Implementierung fokussiert sich auf die Umsetzungen von Technologien und Funktionsweisen verschiedener Anforderungen. Zudem wird die Struktur des Projektes aufgezeigt.
 \subsection{Umsetzung}
@@ -87,6 +88,7 @@ Das Projekt wird in einem git Repository gespeichert und versioniert. Die Projek
 \dirtree{%
 	.1 .git/.
 	.2 modules/.
+	.3 ner.py.
 	.3 nGram.py.
 	.3 posTagging.py.
 	.3 preprocessing.py.
@@ -164,6 +166,21 @@ Das Modul \emph{translate.py} ist dazu da, um die \emph{Bedarfsmeldungen} zu üb
 %\end{lstlisting}
 %Das Listing \ref{lst:translate} zeigt die Implementation des Moduls. 
 Es wurde sich für den Google Translator entschieden, da hierfür kein API-Key benötigt wird. Die Methode erhält einen Text als Parameter. Der Google Translator erhält die Parameter \emph{source} und \emph{target}, beidem \emph{source} angibt in welcher Sprache der Eingabetext ist. Durch Angabe von \emph{'auto'} wird die Sprache ermittelt. Der Grund dafür ist, dass grundsätzlich anderssprachige \emph{Bedarfsmeldung} enthalten sein können. Der Parameter \emph{target} ist die Zielsprache in welche der Input übersetzt werden soll. Die Zielsprache ist hier Englisch (\emph{'en'}).
+\paragraph{NER}\mbox{}\\
+Um die Methode \emph{NER} zu Implementieren wurde die Bibliothek \emph{spaCy} und das Modell \emph{en\_core\_web\_sm} verwendet. 
+%\begin{lstlisting}[caption={Implementation des Moduls \emph{ner.py}}, label=lst:ner]
+%	import spacy
+%	nlp = spacy.load("en_core_web_sm")
+%	ner_categories = ["ORG","FAC","GPE","PRODUCT", "EVENT", "LANGUAGE", "DATE", "QUANTITY"]
+%	def useNER(requirement):
+%		tokenized = nlp(requirement)
+%		entities = []
+%		for ent in tokenized.ents:
+%			if ent.label_ in ner_categories:
+%				entities.append((ent.text, ent.label_))
+%	return entities
+%\end{lstlisting}
+Die zu extrahierende Kategorie ist Datum (DATE). Innerhalb der Methode \lstinline{useNER()} wird der Volltext als Parameter übergeben und zu Tokens umgeformt. Anschließend werden alle Tokens durchlaufen und nach ihren Kategorien überprüft. Ist ein Token die definierte Kategorie, wird der Token in eine separate Liste gespeichert und zurückgegeben. Die extrahierten Tokens werden aus dem Volltext entfernt, um am ende keine doppelten Stichpunkte zu erhalten.
 \paragraph{Preprocessing}\mbox{}\\
 Vor der weiteren Nutzung der Daten innerhalb einer \emph{Bedarfsmeldung}, ist es erforderlich diese von irrelevanten Wörtern, Zeichen und Formatierungen zu befreien.% Zur Entfernung von Satzzeichen wurde die Bibliothek \emph{string} verwendet.
 %\begin{lstlisting}[caption={Implementation der Methode removePunctuation() des Moduls \emph{preprocessing.py}}, label=lst:punctuation]
@@ -306,21 +323,6 @@ Zur Implementierung der Methode \emph{POS-Tagging} wurde die Bibliothek \emph{nl
 %Im Listing \ref{lst:postagging} sind Details zur Implementierung dargestellt. 
 Als Parameter wird ein String übergeben, der zwei Wörter aus den \emph{Bi-Grammen} enthält. Dieser String wird in Tokens umgewandelt. Diese werden in die Methode \lstinline{pos_tag()}
 übergeben und eine Liste mit Tupeln, bei dem das Wort und das dazugehörige \emph{Tag} enthalten ist wird zurückgegeben.
-%\paragraph{NER}\mbox{}\\
-%Um die Methode \emph{NER} zu Implementieren wurde die Bibliothek \emph{spaCy} und dem Modell \emph{en\_core\_web\_sm} verwendet. 
-%\begin{lstlisting}[caption={Implementation des Moduls \emph{ner.py}}, label=lst:ner]
-%	import spacy
-%	nlp = spacy.load("en_core_web_sm")
-%	ner_categories = ["ORG","FAC","GPE","PRODUCT", "EVENT", "LANGUAGE", "DATE", "QUANTITY"]
-%	def useNER(requirement):
-%		tokenized = nlp(requirement)
-%		entities = []
-%		for ent in tokenized.ents:
-%			if ent.label_ in ner_categories:
-%				entities.append((ent.text, ent.label_))
-%	return entities
-%\end{lstlisting}
-%Im Listing \ref{lst:ner} ist die Implementierung des Moduls \emph{ner.py} abgebildet. In Zeile 1 und 2 wird \emph{spaCy} importiert und das Modell \emph{en\_core\_web\_sm} geladen. In Zeile 3 werden die relevanten Kategorien von Wörtern definiert, die aus den \emph{Bedarfsmeldungen} extrahiert werden sollen. Die Kategorien sind Organisation (ORG), Einrichtung (FAC), Ort (GPE), Produkt (PRODUCT), Event (EVENT), Sprache (LANGUAGE), Datum (DATE) und Menge (QUANTITY). Innerhalb der Methode \lstinline{useNER()} wird die Bedarfsmeldung als Parameter übergeben und in Zeile 5 zu Tokens umgeformt. Anschließend werden alle Tokens durchlaufen und nach ihren Kategorien überprüft. Ist ein Token in einer der definierten Kategorien enthalten, wird der Text und die Kategorie in einem Tupel in der Liste \emph{entities} gespeichert und zurückgegeben.
 \paragraph{Entfernung von Bi-Grammen mit ungewöhnlichen Wortartenkombinationen}\mbox{}\\
 Die \emph{Bi-Gramm}-Liste muss im nächsten Schritt weiter reduziert werden. Hierbei werden alle \emph{POS-Tagging}-Kombinationen aus der Tabelle \ref{tab:wortkombinationen} mit den Tupeln aus der \emph{Bi-Gramm}-Liste verglichen werden.
 \begin{lstlisting}[caption={Implementation der Filterung von Wortartenkombinationen}, label=lst:wortarten]
@@ -337,7 +339,8 @@ Die \emph{Bi-Gramm}-Liste muss im nächsten Schritt weiter reduziert werden. Hie
 \end{lstlisting}
 Das Listing \ref{lst:wortarten} implementiert diesen Schritt. Dazu werden in Zeile 1 alle Kombinationen als String in eine Liste zwischengespeichert. Als Parameter wird die zu filternde \emph{Bi-Gramm}-Liste übergeben. Diese wird in Zeile 4 traversiert und die Tupel mit den beiden Wörtern aus den \emph{Bi-Grammen} wird in Zeile 5 als String zusammengefügt. Dieser String wird in die \emph{POS-Tagging}-Methode übergeben und als Rückgabewert erhält das System eine Liste mit zwei Tupeln. Diese Tupel beinhalten jeweils eines der Wörter und das dazugehörige Tag aus dem \emph{POS-Tagging}. Die beiden Tags werden in Zeile 7 zusammengefügt, sodass ein String entsteht, wie es in der \emph{combinationsToRemove}-Liste in Zeile 1 ist. In Zeile 8 wird überprüft ob die Kombination aus Tags einer aus der Liste in Zeile 1 entspricht. Ist dies nicht der Fall, wird der Tupel in eine neue Liste eingefügt, die am Ende als Ausgabe zurückgegeben wird.
 \paragraph{Überführung von Bi-Grammen in Stichpunkte}\mbox{}\\
-Da der Volltext aus den Bedarfsmeldungen nicht einzelne Wörter, sondern inhaltlich aufeinander bezogene Stichpunkte entstehen sollen, werden die um die Schlüsselwörter herumliegenden Wörter aneinander gefügt. Dazu werden diejenigen \emph{Bi-Gramme} zu einem Satz zusammengefügt, die im ersten Tupel auf der rechten Seite und im zweiten Tupel auf der linken Seite das gleiche Wort enthalten. Hinzu kommt eine Überprüfung ob das darauffolgende linke Wort ein Schlüsselwort ist. Somit werden nur die Wörter zu Sätzen verkettet, die aus Schlüsselwörtern bestehen. In dem Fall, bei dem im darauf folgenden Tupel kein Schlüsselwort auf der linken sondern nur auf der rechten besteht, entsteht ein neuer Stichpunkt. Als Beispiel können folgende \emph{Bi-Gramme} betrachtet werden: (\grqq expertise\grqq, \grqq aws\grqq) (\grqq aws\grqq, \grqq technologie\grqq) (\grqq technologie\grqq, \grqq pflicht\grqq) (\grqq pflicht\grqq, \grqq englisch\grqq) (\grqq englisch\grqq, \grqq skills\grqq). Als Schlüsselwörter wurden die Wörter \grqq aws\grqq, \grqq pflicht\grqq, \grqq englisch\grqq ermittelt. Die Idee ist es, die zusammengehörigen \emph{Bi-Gramme} an diesen Schlüsselwörtern zusammenzufügen. Daraus werden die Stichpunkte \grqq expertise aws technologie\grqq und \grqq technologie pflicht englisch skills\grqq
+\label{par:stichpunkte}
+Da der Volltext aus den Bedarfsmeldungen nicht einzelne Wörter, sondern inhaltlich aufeinander bezogene Stichpunkte entstehen sollen, werden die um die Schlüsselwörter herumliegenden Wörter aneinander gefügt. Dazu werden diejenigen \emph{Bi-Gramme} zu einem Satz zusammengefügt, die im ersten Tupel auf der rechten Seite und im zweiten Tupel auf der linken Seite das gleiche Wort enthalten. Hinzu kommt eine Überprüfung ob das darauffolgende linke Wort ein Schlüsselwort ist. Somit werden nur die Wörter zu Sätzen verkettet, die aus Schlüsselwörtern bestehen. In dem Fall, bei dem im darauf folgenden Tupel kein Schlüsselwort auf der linken sondern nur auf der rechten besteht, entsteht ein neuer Stichpunkt. Als Beispiel können folgende \emph{Bi-Gramme} betrachtet werden: (\grqq expertise\grqq, \grqq aws\grqq) (\grqq aws\grqq, \grqq technologie\grqq) (\grqq technologie\grqq, \grqq pflicht\grqq) (\grqq pflicht\grqq, \grqq englisch\grqq) (\grqq englisch\grqq, \grqq skills\grqq). Als Schlüsselwörter wurden die Wörter \grqq aws\grqq, \grqq pflicht\grqq, \grqq englisch\grqq ermittelt. Die Idee ist es, die zusammengehörigen \emph{Bi-Gramme} an diesen Schlüsselwörtern zusammenzufügen. Daraus werden die Stichpunkte \grqq expertise aws technologie\grqq und \grqq technologie pflicht englisch skills\grqq.
 \begin{lstlisting}[caption={Umformung der Bi-Gramm Liste in Stichpunkte}, label=lst:stichpunkte]
 	def combineWords(filteredBiGram, keywords):
 		combinedWords = []
@@ -365,14 +368,18 @@ Da der Volltext aus den Bedarfsmeldungen nicht einzelne Wörter, sondern inhaltl
 				currentString += " " + right
 		return currentString
 \end{lstlisting}
-Die Implementierung zu dieser Idee ist im Listing \ref{lst:stichpunkte} dargestellt. Die Methode \lstinline{combineWords} in Zeile 1 erhält die \emph{Bi-Gramm}-Liste und die Schlüsselwörterliste als Parameter. Die \emph{Bi-Gramm}-Liste wird traversiert und ein string aus zusammengehörigen Wörtern wird rekursiv in Zeile 5 mit der Methode \lstinline{recursivCombine} erstellt. Dazu wird in jedem rekursiven Schritt überprüft, ob das darauf folgende rechte wort ein Schlüsselwort und das gleiche wie das linke Wort im aktuellen Tupel entspricht. 
-
+Die Implementierung zu dieser Idee ist im Listing \ref{lst:stichpunkte} dargestellt. Die Methode \lstinline{combineWords} in Zeile 1 erhält die \emph{Bi-Gramm}-Liste und die Schlüsselwörterliste als Parameter. Die \emph{Bi-Gramm}-Liste wird traversiert und ein string aus zusammengehörigen Wörtern wird rekursiv in Zeile 5 mit der Methode \lstinline{recursivCombine} erstellt. Dazu wird in jedem rekursiven Schritt überprüft, ob das darauf folgende rechte wort ein Schlüsselwort und das gleiche wie das linke Wort im aktuellen Tupel entspricht. Ist dies der Fall werden die \emph{bi-Gramm} an der Stelle zusammengefügt. Dies wiederholt sich bis dieser Fall nicht mehr eintritt. Dadurch ist die Rekursion vorbei und ist wird in Zeile 7 bis 11 geprüft wie viele Wörter in einem String gelandet sind. Das ist wichtig um herauszufinden an welcher Stelle in der \emph{bi-Gramm}-Liste weiter gearbeitet werden muss. Sind alle \emph{bi-Gramme} zusammengesetzt worden, wird eine Liste mit allen zusammengesetzten Wörtern zurückgegeben.
 \section{Erklärung des Systems anhand eines Beispiels}
-\todo{Muss ich noch machen}\\
-Dieser Schritt kann in diesem Beispiel besser verstanden werden:\\
+Nachfolgend wird zum besseren Verständnis die Schritte zur Verarbeitung eines Volltextes anhand eines konkreten Beispiels dargestellt.\\
 \begin{enumerate}
-	\item Zu diesem Zeitpunkt haben wir ein relevantes Wort aus der TF-IDF-Methode: \grqq aws\grqq
-	\item In diesem Beispiel haben wir die \emph{Bi-Gramme}: (\grqq expert\grqq, \grqq aws\grqq) und (\grqq aws\grqq, \grqq technologies\grqq)
-	\item Da \grqq aws\grqq ein relevantes Wort ist und beim ersten \emph{Bi-Gramm} rechts und beim zweiten links steht, wird diese Reihe an \emph{Bi-Grammen} zusammengefügt.
-	\item Das Ergebnis ist \grqq expert aws technologies\grqq
+	\item Zu Beginn haben wir folgenden Volltext:\\ \textbf{Für verschiedene IT-Projekte (mit internen und externen Kunden) benötigen wir Unterstützung von einem Projektleiter, mit Erfahrungen in der Planung, Koordination und Durchführung von IT-Migrations- und Implementierungsprojekten im Umfeld von Rechenzentrumsservices. Mindestens 2 Jahre Erfahrung sind erwünscht.}
+	\item Dieser Text wird übersetzt:\\ \textbf{For various IT projects (with internal and external customers) we need support from a project manager with experience in planning, coordinating and executing IT migration and implementation projects in the area of data center services. At least 2 years of experience is desired.}
+	\item Nun werden aus dem Text Datums- und Zeitangaben extrahiert und aus dem Volltext entnommen:\\ \textbf{At least 2 years \grqq Der neue Text beinhaltet: \grqq For various IT projects (with internal and external customers) we need support from a project manager with experience in planning, coordinating and executing IT migration and implementation projects in the area of data center services. of experience is desired.}
+	\item Die Schlüsselwörter bestehen unter anderem aus:\\ \textbf{planning, coordinating, migration, implementation, data, center, services, ...}
+	\item Aus dem Volltext werden diese \emph{bi-Gramme} erstellt:\\ \textbf{('for', 'various'), ('various', 'it'), ('it', 'projects'), ('projects', 'internal'), ('internal', 'external'), ('external', 'customers'), ('customers', 'need'), ('need', 'support'), ('support', 'project'), ('project', 'manager'), ('manager', 'experience'), ('experience', 'planning'), ('planning', 'coordinating'),
+	('coordinating', 'executing'), ('executing', 'it'), ('it', 'migration'), ('migration', 'implementation'), ('implementation', 'projects'), ('projects', 'area'), ('area', 'data'), ('data', 'center'), ('center', 'services'), ('services', 'experience'), ('experience', 'desired')}
+	\item Anschließend werden alle \emph{bi-Gramme} ohne Schlüsselwort entfernt:\\ \textbf{('support', 'project'), ('project', 'manager'), ('manager', 'experience'), ('experience', 'planning'), ('planning', 'coordinating'), ('coordinating', 'executing'), ('it', 'migration'), ('migration', 'implementation'), ('implementation', 'projects'), ('area', 'data'), ('data', 'center'), ('center', 'services'), ('services', 'experience'), ('experience', 'desired')}
+	\item Der nächste Schritt beinhaltet die Entfernung von ungewöhnlichen \emph{POS-Tagging}-Kombinationen. In diesem Beispiel sind alle Kombinationen zulässig, weswegen die \emph{bi-Gramm}-Liste unverändert bleibt.
+	\item Nun werden die \emph{bi-Gramme} nach dem Verfahren aus Kapitel \ref{par:stichpunkte} in folgende Stichpunkte zusammengetragen:\\ \textbf{support project manager, manager experience planning coordinating executing, it migration implementation projects, area data Center services experience desired}.\\ \\ Hinzu kommen die Daten aus dem \emph{NER}-Schritt:\\ \textbf{At least 2 years}
+	\item Nach der Übersetzung ist das Ergebnis: \textbf{\begin{itemize}\item Unterstützung des Projektleiters \item Manager Erfahrung Planung Koordinierung Durchführung \item Projekte zur Implementierung von IT-Migrationen \item Erfahrung im Bereich Rechenzentrumsdienstleistungen erwünscht \item Mindestens 2 Jahre \end{itemize}}
 \end{enumerate}
