@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  25 JUN 2024 14:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  27 JUN 2024 14:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1266,9 +1266,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--155
 
  [5]
 (00_Vorlage Abschlussarbeit.lof
-Overfull \hbox (1.80746pt too wide) in paragraph at lines 5--5
- [][] [][]\T1/lmr/m/n/12 Allgemeines Ab-lauf-mo-dell qua-li-ta-ti-ver In-halts-
-ana-ly-se (May-ring, 1988) 
+Overfull \hbox (2.5512pt too wide) in paragraph at lines 6--6
+ [][] [][]\T1/lmr/m/n/12 UML-Aktivitätsdiagramm zum Ab-lauf-mo-dell der qua-li-
+ta-ti-ven In-halts- 
  []
 
 )
@@ -1344,63 +1344,68 @@ l.6 \section
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
+<Abbildungen/recommendersystem.png, id=197, 569.87906pt x 130.98938pt>
+File: Abbildungen/recommendersystem.png Graphic file (type png)
+<use Abbildungen/recommendersystem.png>
+Package pdftex.def Info: Abbildungen/recommendersystem.png  used on input line 
+11.
+(pdftex.def)             Requested size: 426.79135pt x 98.09987pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--16
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+[2 <./Abbildungen/recommendersystem.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-[2]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-7.
- (C:\Users\ricar\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
+4.
+(C:\Users\ricar\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-[3{C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
+) [3{C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc
+}]
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
-[4])
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+[4] [5])
 \openout2 = `grundlagen.aux'.
 
  (grundlagen.tex
@@ -1420,7 +1425,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-[5
+[6
 
 
 
@@ -1430,7 +1435,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-[6] [7]) [8]
+[7] [8]) [9]
 \openout2 = `entwicklung_erwartungshaltung.aux'.
 
  (entwicklung_erwartungshaltung.tex
@@ -1445,32 +1450,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
-
- []
-
-[9
+[10
 
 
 
 
-] [10]
-Overfull \hbox (7.31445pt too wide) in paragraph at lines 41--41
+]
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[11]
+Overfull \hbox (7.31445pt too wide) in paragraph at lines 39--39
 []|\T1/lmr/m/n/12 Durchführungs- 
  []
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 42.
+(caption)                particular \caption on input line 40.
 See the caption package documentation for explanation.
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
-[11]
+
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
@@ -1486,141 +1508,256 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
  []
 
 
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-[12]
+
 Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
-
- []
-
-<Abbildungen/Ablaufmodell.png, id=324, 148.30406pt x 279.29344pt>
+<Abbildungen/Ablaufmodell.png, id=330, 143.03438pt x 377.15906pt>
 File: Abbildungen/Ablaufmodell.png Graphic file (type png)
 <use Abbildungen/Ablaufmodell.png>
-Package pdftex.def Info: Abbildungen/Ablaufmodell.png  used on input line 100.
-(pdftex.def)             Requested size: 148.30368pt x 279.29276pt.
-[13] [14 <./Abbildungen/Ablaufmodell.png>]
-<Abbildungen/zusammenfassendeInhaltsanalyse.png, id=347, 289.08pt x 651.93562pt
->
-File: Abbildungen/zusammenfassendeInhaltsanalyse.png Graphic file (type png)
-<use Abbildungen/zusammenfassendeInhaltsanalyse.png>
-Package pdftex.def Info: Abbildungen/zusammenfassendeInhaltsanalyse.png  used o
-n input line 126.
-(pdftex.def)             Requested size: 144.53964pt x 325.96701pt.
+Package pdftex.def Info: Abbildungen/Ablaufmodell.png  used on input line 104.
+(pdftex.def)             Requested size: 171.64037pt x 452.58861pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
-[][][]|\T1/lmr/m/n/12 Ab-lauf-mo-dell
+Overfull \hbox (0.92644pt too wide) in paragraph at lines 104--105
+[][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
-\T1/lmr/m/n/12 zu-sam-men-
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
+[][][]|\T1/lmr/m/n/12 UML-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
-\T1/lmr/m/n/12 fas-sen-der In-
+Overfull \hbox (16.03908pt too wide) in paragraph at lines 105--105
+\T1/lmr/m/n/12 Aktivitätsdiagramm
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
-\T1/lmr/m/n/12 halts-ana-ly-se
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
+\T1/lmr/m/n/12 zum Ab-lauf-
  []
 
 
-Underfull \hbox (badness 1571) in paragraph at lines 127--127
-\T1/lmr/m/n/12 (May-ring, 1988)
- []
-
-<Abbildungen/verfahrensregeln.png, id=350, 143.78719pt x 342.5297pt>
-File: Abbildungen/verfahrensregeln.png Graphic file (type png)
-<use Abbildungen/verfahrensregeln.png>
-Package pdftex.def Info: Abbildungen/verfahrensregeln.png  used on input line 1
-32.
-(pdftex.def)             Requested size: 143.78683pt x 342.52885pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
-[][][]|\T1/lmr/m/n/12 Ver-fah-rens-re-
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
+\T1/lmr/m/n/12 mo-dell der
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
-\T1/lmr/m/n/12 geln zu-sam-
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
+\T1/lmr/m/n/12 qua-li-ta-ti-ven
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
-\T1/lmr/m/n/12 men-fas-sen-der
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
 \T1/lmr/m/n/12 In-halts-ana-ly-se
  []
 
 
-Underfull \hbox (badness 1571) in paragraph at lines 133--133
-\T1/lmr/m/n/12 (May-ring, 1988)
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
+\T1/lmr/m/n/12 nach May-ring
  []
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 138--140
+<Abbildungen/zusammenfassendeInhaltsanalyse.png, id=333, 144.54pt x 377.15906pt
+>
+File: Abbildungen/zusammenfassendeInhaltsanalyse.png Graphic file (type png)
+<use Abbildungen/zusammenfassendeInhaltsanalyse.png>
+Package pdftex.def Info: Abbildungen/zusammenfassendeInhaltsanalyse.png  used o
+n input line 110.
+(pdftex.def)             Requested size: 173.4471pt x 452.58861pt.
 
- []
-
-[16 <./Abbildungen/zusammenfassendeInhaltsanalyse.png> <./Abbildungen/verfahren
-sregeln.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 200--203
-
- []
-
-[17] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
-
+Overfull \hbox (2.73317pt too wide) in paragraph at lines 110--111
+[][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+[][][]|\T1/lmr/m/n/12 UML-
+ []
+
+
+Overfull \hbox (16.03908pt too wide) in paragraph at lines 111--111
+\T1/lmr/m/n/12 Aktivitätsdiagramm
+ []
+
+
+Underfull \hbox (badness 6428) in paragraph at lines 111--111
+\T1/lmr/m/n/12 zum Ab-lauf-mo-
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 111--111
+\T1/lmr/m/n/12 dell der zu-sam-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+\T1/lmr/m/n/12 men-fas-sen-den
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+\T1/lmr/m/n/12 In-halts-ana-ly-se
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+\T1/lmr/m/n/12 nach May-ring
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[14]
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[15 <./Abbildungen/Ablaufmodell.png> <./Abbildungen/zusammenfassendeInhaltsanal
+yse.png>]
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 134--136
 
  []
 
-<Abbildungen/jiraBefore.png, id=391, 293.59688pt x 374.90062pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--200
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 204--207
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[18]
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+
+ []
+
+<Abbildungen/jiraBefore.png, id=426, 293.59688pt x 374.90062pt>
 File: Abbildungen/jiraBefore.png Graphic file (type png)
 <use Abbildungen/jiraBefore.png>
-Package pdftex.def Info: Abbildungen/jiraBefore.png  used on input line 286.
+Package pdftex.def Info: Abbildungen/jiraBefore.png  used on input line 291.
 (pdftex.def)             Requested size: 293.59615pt x 374.8997pt.
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 289--291
 
- []
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 
-<Abbildungen/jiraAfter.png, id=399, 246.9225pt x 235.63031pt>
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[21]
+<Abbildungen/jiraAfter.png, id=436, 246.9225pt x 235.63031pt>
 File: Abbildungen/jiraAfter.png Graphic file (type png)
 <use Abbildungen/jiraAfter.png>
-Package pdftex.def Info: Abbildungen/jiraAfter.png  used on input line 296.
+Package pdftex.def Info: Abbildungen/jiraAfter.png  used on input line 302.
 (pdftex.def)             Requested size: 246.92188pt x 235.62973pt.
-[20 <./Abbildungen/jiraBefore.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 299--301
+
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[22 <./Abbildungen/jiraBefore.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 305--307
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--303
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 
- []
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
 
-[21 <./Abbildungen/jiraAfter.png>]) [22]
+[23 <./Abbildungen/jiraAfter.png>])
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11652pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11652pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.99152pt}.
+
+[24]
 \openout2 = `literaturueberblick.aux'.
 
  (literaturueberblick.tex
@@ -1640,7 +1777,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-[23
+[25
 
 
 
@@ -1650,12 +1787,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--17
 
  []
 
-[24]
+[26]
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
-[25] [26]
+[27] [28]
 Underfull \hbox (badness 10000) in paragraph at lines 36--38
 
  []
@@ -1665,7 +1802,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
-[27]
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
@@ -1680,7 +1817,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--47
 
  []
 
-[28]
+[30]
 Overfull \hbox (27.5137pt too wide) in paragraph at lines 54--55
 \T1/lmr/m/n/12 In der Ar-beit ``Im-ple-men-tie-rung und Vi-sua-li-sie-rung N-Gr
 amm-basierter Word-Clouds''[[]26[]]
@@ -1696,7 +1833,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
-[29] [30])
+[31] [32])
 \openout2 = `implementationsdetails.aux'.
 
  (implementationsdetails.tex
@@ -1706,102 +1843,102 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-<Abbildungen/use-case.png, id=483, 456.20438pt x 219.82124pt>
+<Abbildungen/use-case.png, id=520, 456.20438pt x 219.82124pt>
 File: Abbildungen/use-case.png Graphic file (type png)
 <use Abbildungen/use-case.png>
 Package pdftex.def Info: Abbildungen/use-case.png  used on input line 12.
 (pdftex.def)             Requested size: 426.79135pt x 205.65256pt.
-[31
+[33
 
 
 
 
-] [32 <./Abbildungen/use-case.png>] [33]
-<Abbildungen/flowchart.png, id=513, 556.32843pt x 134.00063pt>
+] [34 <./Abbildungen/use-case.png>] [35]
+<Abbildungen/flowchart.png, id=551, 556.32843pt x 134.00063pt>
 File: Abbildungen/flowchart.png Graphic file (type png)
 <use Abbildungen/flowchart.png>
 Package pdftex.def Info: Abbildungen/flowchart.png  used on input line 76.
 (pdftex.def)             Requested size: 426.79135pt x 102.80046pt.
- [34] [35 <./Abbildungen/flowchart.png>]
+ [36] [37 <./Abbildungen/flowchart.png>]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 06.
  (C:\Users\ricar\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-[36]
+[38]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 142.
 See the caption package documentation for explanation.
 
-[37] [38]
+[39] [40]
 Underfull \hbox (badness 10000) in paragraph at lines 184--205
 
  []
 
-[39]
+[41]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 272.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 273.
-
+ [42]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 309.
+(caption)                particular \caption on input line 310.
 See the caption package documentation for explanation.
 
-[40]
-Underfull \hbox (badness 10000) in paragraph at lines 312--313
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--314
 
  []
 
-[41] [42]
-Underfull \hbox (badness 10000) in paragraph at lines 373--375
+[43] [44] [45]
+Underfull \hbox (badness 10000) in paragraph at lines 374--376
 
  []
 
-[43]
-Overfull \hbox (0.64665pt too wide) in paragraph at lines 375--376
+
+Overfull \hbox (0.64665pt too wide) in paragraph at lines 376--377
 \T1/lmr/bx/n/12 Migrations- und Im-ple-men-tie-rungs-pro-jek-ten im Um-feld von
  Re-chen-
  []
 
 
-Overfull \hbox (0.5233pt too wide) in paragraph at lines 378--379
+Overfull \hbox (0.5233pt too wide) in paragraph at lines 379--380
 \T1/lmr/bx/n/12 planning, coor-di-na-ting, mi-gra-ti-on, im-ple-men-ta-ti-on, d
 a-ta, cen-ter, ser-
  []
 
 
-Overfull \hbox (2.38383pt too wide) in paragraph at lines 379--381
+Overfull \hbox (2.38383pt too wide) in paragraph at lines 380--382
 \T1/lmr/bx/n/12 ning', 'coor-di-na-ting'), ('coor-di-na-ting', 'exe-cu-ting'), 
 ('exe-cu-ting', 'it'),
  []
 
-
-Overfull \hbox (8.65474pt too wide) in paragraph at lines 381--382
+[46]
+Overfull \hbox (8.65474pt too wide) in paragraph at lines 382--383
 \T1/lmr/bx/n/12 ('support', 'pro-ject'), ('pro-ject', 'ma-na-ger'), ('ma-na-ger
 ', 'ex-pe-ri-ence'),
  []
 
-[44]
-Overfull \hbox (11.07272pt too wide) in paragraph at lines 382--383
+
+Overfull \hbox (11.07272pt too wide) in paragraph at lines 383--384
 []\T1/lmr/m/n/12 Der nächs-te Schritt bein-hal-tet die Ent-fer-nung von un-ge-w
 öhn-li-chen \T1/lmr/m/it/12 POS-Tagging\T1/lmr/m/n/12 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
+Underfull \hbox (badness 10000) in paragraph at lines 384--385
 
  []
 
 
-Overfull \hbox (11.5833pt too wide) in paragraph at lines 384--384
+Overfull \hbox (11.5833pt too wide) in paragraph at lines 385--385
 []\T1/lmr/bx/n/12 Erfahrung im Be-reich Re-chen-zen-trums-dienst-leis-tun-gen e
 r-wünscht 
  []
 
-) [45]
+) [47]
 \openout2 = `evaluation.aux'.
 
  (evaluation.tex
@@ -1816,7 +1953,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
  []
 
-[46
+[48
 
 
 
@@ -1836,12 +1973,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-[47] [48] [49] [50])
+[49] [50] [51] [52])
 \openout2 = `zusammenfassung.aux'.
 
  (zusammenfassung.tex
 chapter 7.
-[51
+[53
 
 
 
@@ -1899,7 +2036,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-[52
+[54
 
 
 
@@ -1963,7 +2100,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--51
 
  []
 
-[53]
+[55]
 Underfull \hbox (badness 10000) in paragraph at lines 52--55
 
  []
@@ -1998,7 +2135,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--79
 
  []
 
-[54]
+[56]
 Underfull \hbox (badness 10000) in paragraph at lines 80--83
 
  []
@@ -2013,7 +2150,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--91
 
  []
 
-[55]
+[57]
 Underfull \hbox (badness 10000) in paragraph at lines 92--95
 
  []
@@ -2038,7 +2175,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--111
 
  []
 
-[56]
+[58]
 Underfull \hbox (badness 10000) in paragraph at lines 112--115
 
  []
@@ -2068,7 +2205,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--135
 
  []
 
-[57]
+[59]
 Underfull \hbox (badness 10000) in paragraph at lines 136--139
 
  []
@@ -2093,7 +2230,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--157
 
  []
 
-[58]
+[60]
 Underfull \hbox (badness 10000) in paragraph at lines 158--161
 
  []
@@ -2118,7 +2255,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--177
 
  []
 
-[59]
+[61]
 Underfull \hbox (badness 10000) in paragraph at lines 178--181
 
  []
@@ -2128,7 +2265,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--185
 
  []
 
-[60] [61]
+[62] [63]
 Overfull \hbox (0.86128pt too wide) in paragraph at lines 186--189
 \T1/lmr/m/n/12 Wie wer-den dann Be-darfs-mel-dun-gen und die An-for-de-run-gen 
 ty-pi-scher-wei-se bei Ades-
@@ -2144,7 +2281,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--193
 
  []
 
-[62] [63]
+[64] [65]
 Underfull \hbox (badness 10000) in paragraph at lines 194--197
 
  []
@@ -2164,7 +2301,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--209
 
  []
 
-[64] [65]
+[66] [67]
 Underfull \hbox (badness 10000) in paragraph at lines 210--213
 
  []
@@ -2179,7 +2316,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--221
 
  []
 
-[66]
+[68]
 Underfull \hbox (badness 10000) in paragraph at lines 222--225
 
  []
@@ -2194,7 +2331,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 230--233
 
  []
 
-[67]
+[69]
 Underfull \hbox (badness 10000) in paragraph at lines 236--239
 
  []
@@ -2224,7 +2361,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--259
 
  []
 
-[68]
+[70]
 Underfull \hbox (badness 10000) in paragraph at lines 260--263
 
  []
@@ -2254,7 +2391,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 280--283
 
  []
 
-[69]
+[71]
 Underfull \hbox (badness 10000) in paragraph at lines 284--287
 
  []
@@ -2284,7 +2421,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 304--307
 
  []
 
-[70]
+[72]
 Underfull \hbox (badness 10000) in paragraph at lines 308--311
 
  []
@@ -2309,7 +2446,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--327
 
  []
 
-[71]
+[73]
 Underfull \hbox (badness 10000) in paragraph at lines 328--331
 
  []
@@ -2324,7 +2461,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 338--341
 
  []
 
-[72]
+[74]
 Underfull \hbox (badness 10000) in paragraph at lines 342--345
 
  []
@@ -2339,7 +2476,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 350--353
 
  []
 
-[73]
+[75]
 Underfull \hbox (badness 10000) in paragraph at lines 354--357
 
  []
@@ -2354,7 +2491,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 362--365
 
  []
 
-[74]
+[76]
 Underfull \hbox (badness 10000) in paragraph at lines 366--369
 
  []
@@ -2364,7 +2501,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 370--373
 
  []
 
-[75]
+[77]
 Underfull \hbox (badness 10000) in paragraph at lines 374--377
 
  []
@@ -2374,7 +2511,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 378--381
 
  []
 
-[76]
+[78]
 Overfull \hbox (4.86545pt too wide) in paragraph at lines 393--393
 []|\T1/lmr/m/n/12 Fall| 
  []
@@ -2773,47 +2910,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 418--418
  []
 
 
-Underfull \hbox (badness 3849) in paragraph at lines 420--420
+Overfull \vbox (395.87817pt too high) detected at line 420
+ []
+
+
+Underfull \hbox (badness 3849) in paragraph at lines 422--422
 []|\T1/lmr/m/n/12 Gute Ab-stim-mun-gen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--420
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
 \T1/lmr/m/n/12 dung er-stellt wird,
  []
 
 
-Underfull \hbox (badness 6001) in paragraph at lines 420--420
+Underfull \hbox (badness 6001) in paragraph at lines 422--422
 \T1/lmr/m/n/12 ge-ge-be-nen-falls durch
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--420
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
 \T1/lmr/m/n/12 ein Quality-Gate
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--420
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
 []|[]\T1/lmr/m/n/12 Ab[]-[]stim[]-[]mung [][]vor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--420
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
 [][]\T1/lmr/m/n/12 Be[]-[]darfs[]-[]mel[]-[]dungs[]-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--420
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
 []\T1/lmr/m/n/12 er[]-[]stel[]-[]lung [][]durch
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--420
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
 [][]\T1/lmr/m/n/12 Qua[]-[]li[]-[]ty[]-[]Ga[]-[]te [][](Re[]-
- []
-
-
-Overfull \vbox (395.87817pt too high) detected at line 422
  []
 
 
@@ -2922,6 +3059,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 428--428
  []
 
 
+Overfull \hbox (4.33772pt too wide) in paragraph at lines 428--428
+\T1/lmr/m/n/12 Mehrfachbeantwortung  
+ []
+
+
+Overfull \vbox (161.95018pt too high) detected at line 428
+ []
+
+
 Underfull \hbox (badness 3989) in paragraph at lines 430--430
 []|\T1/lmr/m/n/12 Wichtig in Be-darfs-
  []
@@ -2954,15 +3100,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 432--432
 
 Underfull \hbox (badness 10000) in paragraph at lines 432--432
 \T1/lmr/m/n/12 ab-hän-gig von der
- []
-
-
-Overfull \hbox (4.33772pt too wide) in paragraph at lines 432--432
-\T1/lmr/m/n/12 Mehrfachbeantwortung  
- []
-
-
-Overfull \vbox (161.95018pt too high) detected at line 432
  []
 
 
@@ -4095,7 +4232,7 @@ Overfull \hbox (5.4944pt too wide) in alignment at lines 396--491
  [] [] [] [] [] 
  []
 
-[77] [78] [79] [80] [81] [82] [83] [84] [85] [86]) [87]
+[79] [80] [81] [82] [83] [84] [85] [86] [87] [88]) [89]
 \openout2 = `eidesstattliche_erklaerung.aux'.
 
 
@@ -4109,29 +4246,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-[88
+[90
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 55--194
+Underfull \hbox (badness 10000) in paragraph at lines 58--194
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--194
+Underfull \hbox (badness 10000) in paragraph at lines 58--194
 
  []
 
-[89] [90
+[91] [92
 
 
 
-] [91] [92] (00_Vorlage Abschlussarbeit.aux (proposal.aux)
+] [93] [94] (00_Vorlage Abschlussarbeit.aux (proposal.aux)
 (einleitung.aux) (grundlagen.aux) (entwicklung_erwartungshaltung.aux)
 (literaturueberblick.aux) (implementationsdetails.aux) (evaluation.aux)
 (zusammenfassung.aux) (eidesstattliche_erklaerung.aux))
@@ -4148,10 +4285,10 @@ Package logreq Info: Writing requests to '"00_Vorlage Abschlussarbeit".run.xml'
 
  ) 
 Here is how much of TeX's memory you used:
- 27989 strings out of 474592
- 515109 string characters out of 5745798
- 2089533 words of memory out of 5000000
- 49371 multiletter control sequences out of 15000+600000
+ 28004 strings out of 474592
+ 515285 string characters out of 5745798
+ 2090533 words of memory out of 5000000
+ 49373 multiletter control sequences out of 15000+600000
  619024 words of font info for 77 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  108i,14n,107p,10990b,2630s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -4168,9 +4305,9 @@ fb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.p
 fb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sy
 mbols/msam10.pfb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
 zapfding/uzdr.pfb>
-Output written on "00_Vorlage Abschlussarbeit.pdf" (101 pages, 1160329 bytes).
+Output written on "00_Vorlage Abschlussarbeit.pdf" (103 pages, 912749 bytes).
 PDF statistics:
- 1182 PDF objects out of 1200 (max. 8388607)
- 339 named destinations out of 1000 (max. 500000)
- 444 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1226 PDF objects out of 1440 (max. 8388607)
+ 352 named destinations out of 1000 (max. 500000)
+ 452 words of extra memory for PDF output out of 10000 (max. 10000000)
 

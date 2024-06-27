@@ -279,7 +279,8 @@ Zur Entfernung von Bi-Gramm-Tupel, die keine Schlüsselwörter enthalten wurde d
 \end{lstlisting}
 Das Listing \ref{lst:bigram} implementiert diese Methode. Als Parameter wird die \emph{Bi-Gramm}-Liste und die Schlüsselwörterliste übergeben. In Zeile 3 ist zu sehen, dass jeder Tupel traversiert wird. Dabei wird in Zeile 4 jedes Wort im Tupel mit der Schlüsselwörterliste verglichen. Wenn das aktuelle Wort in der Liste enthalten ist, so wird dieser Tupel in eine neue Liste aufgenommen. Diese wird am Ende zurückgegeben, wodurch eine gefilterte Liste mit ausschließlich enthaltenen Schlüsselwörtern vorhanden ist.
 \paragraph{POS-Tagging}\mbox{}\\
-In der Englischen Sprache existieren verschiedene Wortgruppenkombinationen, die zusammen ungewöhnlich klingen und dadurch beim sprechen und schreiben nicht oder nur selten verwendet werden.
+\label{postagging}
+In der Englischen Sprache existieren verschiedene Wortgruppenkombinationen, die zusammen ungewöhnlich klingen und dadurch beim sprechen und schreiben nicht oder nur selten verwendet werden. Wenn diese Kombinationen in den \emph{Bi-Grammen} identifiziert und entfernt werden, können somit Verbindungsketten unterbrochen werden. Dadurch stehen Wörter und spätere Stichpunkte nicht mehr zusammen, die im ursprünglichen Volltext ebenfalls nicht nebeneinander standen.
 \begin{center}
 	\begin{tabularx}{1\textwidth} { 
 			| >{\raggedright\arraybackslash}X 
@@ -309,7 +310,7 @@ In der Englischen Sprache existieren verschiedene Wortgruppenkombinationen, die 
 	\captionof{table}{Untypische Wortartenkombinationen in der englischen Sprache.}
 	\label{tab:wortkombinationen}
 \end{center}
-In der Tabelle \ref{tab:wortkombinationen} sind einige Beispiele für solche ungewöhnlichen Zusammensetzungen. In Spalte eins sind die jeweiligen Wortarten beschrieben. Die zweite Spalte zeigt die dazugehörigen Tags, wie diese mit \emph{POS-Tagging} ermittelt werden. Die dritte Spalte zeigt jeweils ein Beispiel dieser Wortkombinationen. Auch wenn es weitere Kombinationen geben könnte, wurden nur die aus der Tabelle \ref{tab:wortkombinationen} im System verwendet.\\
+In der Tabelle \ref{tab:wortkombinationen} sind einige Beispiele für solche ungewöhnlichen Zusammensetzungen. Die Identifikation erfolgte durch Ausprobieren der verschiedenen Kombinationen unter Zuhilfenahme von ChatGPT, um dies in eine akzeptable Zeit abzuschließen. Es kann nicht ausgeschlossen werden, dass weitere Kombinationen existieren. Dennoch werden nur diese Kombinationen im System beachtet. In Spalte eins sind die jeweiligen Wortarten beschrieben. Die zweite Spalte zeigt die dazugehörigen Tags, wie diese mit \emph{POS-Tagging} ermittelt werden. Die dritte Spalte zeigt jeweils ein Beispiel dieser Wortkombinationen. Auch wenn es weitere Kombinationen geben könnte, wurden nur die aus der Tabelle \ref{tab:wortkombinationen} im System verwendet.\\
 
 Zur Implementierung der Methode \emph{POS-Tagging} wurde die Bibliothek \emph{nltk} verwendet. Die \emph{Tags} werden mit dem vortrainierten Modell \emph{averaged\_perceptron\_tagger} ermittelt.
 %\begin{lstlisting}[caption={Implementation des Moduls \emph{posTagging.py}}, label=lst:postagging]
