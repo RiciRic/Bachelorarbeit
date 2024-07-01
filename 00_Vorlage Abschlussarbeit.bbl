@@ -770,6 +770,28 @@
     \field{year}{2012}
   \endentry
 
+  \entry{ogden1930basic}{article}{}
+    \name{author}{1}{}{%
+      {{hash=OCK}{%
+         family={Ogden},
+         familyi={O\bibinitperiod},
+         given={Charles\bibnamedelima Kay},
+         giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Paul Treber}%
+    }
+    \strng{namehash}{OCK1}
+    \strng{fullhash}{OCK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{title}{Basic English: A general introduction with rules and grammar}
+    \field{year}{1930}
+  \endentry
+
   \entry{partalidou2019design}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=PE}{%
@@ -946,6 +968,44 @@
     \field{volume}{12}
     \field{journaltitle}{Turkish Journal of Computer and Mathematics Education}
     \field{year}{2021}
+  \endentry
+
+  \entry{tayal2014syntax}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=TMA}{%
+         family={Tayal},
+         familyi={T\bibinitperiod},
+         given={Madhuri\bibnamedelima A},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Raghuwanshi},
+         familyi={R\bibinitperiod},
+         given={MM},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={Malik},
+         familyi={M\bibinitperiod},
+         given={Latesh},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{TMARMML1}
+    \strng{fullhash}{TMARMML1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{booktitle}{2014 International Conference on Electronic Systems,
+  Signal Processing and Computing Technologies}
+    \field{pages}{376\bibrangedash 381}
+    \field{title}{Syntax parsing: Implementation using grammar-rules for
+  English language}
+    \field{year}{2014}
   \endentry
 \enddatalist
 \endinput

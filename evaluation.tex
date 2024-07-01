@@ -1,64 +1,64 @@
 \chapter{Evaluierung}
 \label{chap:evaluation}
+Dieses Kapitel befasst sich mit der Evaluierung des entwickelten Systems zur Strukturierung von \emph{Bedarfsmeldungen}. In dem Kapitel \ref{sec:literaturueberblick} wurde gezeigt, dass gängige Methoden zur Evaluierung von den einzelnen Information Retrieval Ansätzen und daraus entstehenden Pipelines und Hybriden die Methoden \emph{Precision, Recall} und \emph{F1-Score} angewendet werden. Grundsätzlich wäre dies ein valider Ansatz zur Evaluation. Dennoch bestehen keine Grundvoraussetzungen zur Durchführung dieser Methoden. Es liegt kein Datensatz mit ausreichenden Trainings und Testdaten vor. Die Erstellung eines Datensatzes auf Basis der originalen \emph{Bedarfsmeldungen} ist Zeitaufwändig und benötigt Präzision. Dies ist im Rahmen der Ausarbeitung nicht weiter möglich. Stattdessen wird eine optimierende Evaluation auf Basis einer vordefinierten Erwartungshaltung durchgeführt um Verbesserungspotenzial innerhalb des Systems zu ermitteln. Durch Anpassungen an Parametern der Pipeline wird versucht sich an die Erwartungshaltung anzunähern. Zudem wird die Zeit der Abläufe festgehalten, um die Durchführungszeitläufe der Anpassungen zu erfassen.
 
-vielleicht erklären warum precision, recall, f1 score nicht gehen -\\
+%nicht überlegen wie evaluieren sonder was will ich evaluieren,\\
+%was sind die fragen die ich beantworten möchte, was sind die aussagen die ich machen will. hypothesen belegen, wiederlegen\\
 
-nicht überlegen wie evaluieren sonder was will ich evaluieren,\\
-was sind die fragen die ich beantworten möchte, was sind die aussagen die ich machen will. hypothesen belegen, wiederlegen\\
-was möchte ich zeigen, (den expertenprozess abbilden, expertenprozess ist ideal, mein prozess hat diese abweichung)\\
+%z.b. erwartungshaltung formulieren und mit cosine similarity gucken was näher dran ist,
 
-z.b. erwartungshaltung formulieren und mit cosine similarity gucken was näher dran ist,
+%wie machen das andere ansätze,
 
-wie machen das andere ansätze,
+%-------------------
 
--------------------
-
--was genau will ich in die evaluation packen, was will ich da machen? (nehme den vergleich mit llm raus)
-
-fall konstruieren indem man ausgangslage festlegt und dann erwartung selber händisch erstellt und mit ergebnis der software vergleicht
-
-beide freitextfelder mit den Methoden vergleichen --> was heißt das denn wenn die deckungsgleich, disjunkt sind,  
-
-projektbeschreibung und anforderungsfelder übereinanderlegen--> überlegen ich habe sack voller infos und kann ich das weiter verwenden? 
-
-(-wo erkläre ich die geschichte mit cosine similarity (also die implementation dazu oder lasse ich das))
-
-an die erwartungshaltung annähern
+%-was genau will ich in die evaluation packen, was will ich da machen? (nehme den vergleich mit llm raus)
 
 \section{Versuchsdurchführung}
+\todo{optimierende Evaluation beschreiben}\\
+fall konstruieren indem man ausgangslage festlegt und dann erwartung selber händisch erstellt und mit ergebnis der software vergleicht
 -cosine similarity
 -performance, zeit
-
 \paragraph{Zeitmessung}\mbox{}\\
 Für die Zeitmessung wird vor dem Aufruf des ersten und nach dem letzten Modul jeweils ein Zeitstempel angelegt. Dazu wird die Bibliothek \emph{time} verwendet.
-\begin{lstlisting}[caption={Implementation der Zeitmessung}, label=lst:zeitmessung]
-	import time
-	start = time.perf_counter()
-	#Module der Pipeline
-	stop = time.perf_counter()
-	print(f"{stop - start:0.4f} seconds")
-\end{lstlisting}
+%\begin{lstlisting}[caption={Implementation der Zeitmessung}, label=lst:zeitmessung]
+%	import time
+%	start = time.perf_counter()
+%	#Module der Pipeline
+%	stop = time.perf_counter()
+%	print(f"{stop - start:0.4f} seconds")
+%\end{lstlisting}
 Die Implementierung ist im Listing \ref{lst:zeitmessung} dargestellt. Die Zeitstempel werden in den Zeilen 2 und 4 durch die Methode \lstinline{perf_counter()}
 generiert und in die Variablen \emph{start} und \emph{stop} zwischengespeichert. Zum Schluss wird in Zeile 5 die Differenz aus beiden Zeitstempeln ermittelt, in sekunden umgerechnet und in der Console ausgegeben.
-\paragraph{Vektorisierung}\mbox{}\\
+\paragraph{Embedding}\mbox{}\\
 
 \paragraph{Cosine-Similarity}\mbox{}\\
 
+\paragraph{Variable Faktoren sind}\mbox{}\\
+pareto evaluation --> ziel ist es die pareto ebene zu finden. Einfach aufschreiben. 80 20 prinzip --> ich habe versucht mit 5 stellschrauben und habe eine qualitätsmetrik(zahl 0-1) ich drehe ein qualitätsmerkmal dann verbessert sich zahl. Fixiere die stellschrauben und mache weiter --> bis ich alles durch habe --> optimierende evaluation (linear)
+
+--> cosine similarity mit standardisierten shit
+
+--> menge an bedarfsmeldungen für schlüsselweörter, threshold
+
+--> IN DER evaluation erklären warum man alles andere als bi gramme nicht funktionieren kann.
+
+--> abschluss den übersetzungsschritt nicht mit reinnehmen und gucken ob das ergebnis wirklich schlechter ist.
+
+evaluation pos tagging kombis einzeln rausnehmen.
+
+proof of concept erstmal mit einer bedarfsmeldung alles testen.
+
 \section{Beschreibung des verwendeten Datensatzes}
-\todo{darauf eingehen welche Felder in der JSON von JIRA sind und worauf sich genau konzentriert wird.}\\
+Ausgangslage ist eine konstruierte Bedarfsmeldung. DIese wurde erstellt aus Koombinationen von echten bedarfsmeldungen wo aber Kundenspezifische Daten ersetzt wurden
+
+\paragraph{Unstrukturierte Bedarfsmeldung}\mbox{}\\
+\paragraph{Erwartungshaltung}\mbox{}\\
+Diese wurrde händisch angefertigt. Hier wollen wir annäherungsweise hinkommen
 \newpage
 
-überlegung ob tfidf unterschied macht alle bedarfsmeldungen mit einer zu vergleichen und daraus wichtige wörter identifizieren oder eine für sich alleine reicht.
-
-gucken was tokenisierung wirklich macht
 \section{Präsentation und Diskussion der Ergebnisse}
-Zeit und Leistung Übersicht
-\newpage
+Zeit und Leistung Übersicht als Tabelle
 
 %\section{Vergleich des Systems mit einem Large Language Model-Ansatz}
-g
-\newpage
-
 %\section{Analyse von Abweichungen, Ähnlichkeiten und Verbesserungspotenzialen des Systems}
-g
 \newpage

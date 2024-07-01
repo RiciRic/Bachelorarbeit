@@ -9,10 +9,10 @@ Reallocating 'name_of_file' (item size: 1) to 13 items.
 A level-1 auxiliary file: proposal.aux
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 A level-1 auxiliary file: einleitung.aux
-Reallocating 'name_of_file' (item size: 1) to 15 items.
-A level-1 auxiliary file: grundlagen.aux
 Reallocating 'name_of_file' (item size: 1) to 34 items.
 A level-1 auxiliary file: entwicklung_erwartungshaltung.aux
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+A level-1 auxiliary file: konzeption.aux
 Reallocating 'name_of_file' (item size: 1) to 24 items.
 A level-1 auxiliary file: literaturueberblick.aux
 Reallocating 'name_of_file' (item size: 1) to 27 items.
@@ -40,47 +40,56 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: 00_Vorlage_Abschlussarbeit-blx.bib
 Database file #2: Literatur.bib
+I was expecting a `,' or a `}'---line 1197 of file Literatur.bib
+ :   organization={IEEE}
+ :                      @inproceedings{tayal2014syntax,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1197 of file Literatur.bib
+ :   organization={IEEE}@inproceedings{tayal2014syntax
+ :                                                    ,
+I'm skipping whatever remains of this entry
 Biblatex version: 3.19
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 30 entries,
+You've used 32 entries,
             6399 wiz_defined-function locations,
-            1379 strings with 14326 characters,
-and the built_in function-call counts, 217704 in all, are:
-= -- 16891
-> -- 3788
-< -- 1234
-+ -- 6293
-- -- 1389
-* -- 15169
-:= -- 23570
+            1389 strings with 14678 characters,
+and the built_in function-call counts, 232664 in all, are:
+= -- 18072
+> -- 4023
+< -- 1307
++ -- 6674
+- -- 1475
+* -- 16278
+:= -- 25180
 add.period$ -- 0
-call.type$ -- 30
-change.case$ -- 679
+call.type$ -- 32
+change.case$ -- 714
 chr.to.int$ -- 42
-cite$ -- 58
-duplicate$ -- 23474
-empty$ -- 18485
-format.name$ -- 2077
-if$ -- 44721
+cite$ -- 62
+duplicate$ -- 24952
+empty$ -- 19820
+format.name$ -- 2213
+if$ -- 47814
 int.to.chr$ -- 0
-int.to.str$ -- 83
+int.to.str$ -- 89
 missing$ -- 0
-newline$ -- 928
-num.names$ -- 1645
-pop$ -- 10355
+newline$ -- 986
+num.names$ -- 1748
+pop$ -- 11062
 preamble$ -- 2
-purify$ -- 838
+purify$ -- 883
 quote$ -- 0
-skip$ -- 6428
+skip$ -- 6828
 stack$ -- 0
-substring$ -- 29101
-swap$ -- 4648
-text.length$ -- 914
-text.prefix$ -- 33
+substring$ -- 31329
+swap$ -- 4937
+text.length$ -- 974
+text.prefix$ -- 35
 top$ -- 1
-type$ -- 1003
+type$ -- 1071
 warning$ -- 0
-while$ -- 2927
+while$ -- 3107
 width$ -- 0
-write$ -- 898
+write$ -- 954
+(There were 2 error messages)
