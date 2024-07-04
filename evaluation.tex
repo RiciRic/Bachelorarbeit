@@ -1,6 +1,6 @@
 \chapter{Evaluierung}
 \label{chap:evaluation}
-Dieses Kapitel befasst sich mit der Evaluierung des entwickelten Systems zur Strukturierung von \emph{Bedarfsmeldungen}. In dem Kapitel \ref{sec:literaturueberblick} wurde gezeigt, dass gängige Methoden zur Evaluierung von den einzelnen Information Retrieval Ansätzen und daraus entstehenden Pipelines und Hybriden die Methoden \emph{Precision, Recall} und \emph{F1-Score} angewendet werden. Grundsätzlich wäre dies ein valider Ansatz zur Evaluation. Dennoch bestehen keine Grundvoraussetzungen zur Durchführung dieser Methoden. Es liegt kein Datensatz mit ausreichenden Trainings und Testdaten vor. Die Erstellung eines Datensatzes auf Basis der originalen \emph{Bedarfsmeldungen} ist Zeitaufwändig und benötigt Präzision. Dies ist im Rahmen der Ausarbeitung nicht weiter möglich. Stattdessen wird eine optimierende Evaluation auf Basis einer vordefinierten Erwartungshaltung durchgeführt um Verbesserungspotenzial innerhalb des Systems zu ermitteln. Durch Anpassungen an Parametern der Pipeline wird versucht sich an die Erwartungshaltung anzunähern. Zudem wird die Zeit der Abläufe festgehalten, um die Durchführungszeitläufe der Anpassungen zu erfassen.
+Das vorliegende Kapitel befasst sich mit der Evaluierung des entwickelten Systems zur Strukturierung von \emph{Bedarfsmeldungen}. In dem Kapitel \ref{sec:literaturueberblick} wurde dargelegt, dass gängige Methoden zur Evaluierung von den einzelnen Information Retrieval Ansätzen und daraus entstehenden Pipelines und Hybriden die Methoden \emph{Precision, Recall} und \emph{F1-Score} angewendet werden. Grundsätzlich wäre dies ein valider Ansatz zur Evaluation. Dennoch bestehen keine Grundvoraussetzungen zur Durchführung dieser Methoden. Es liegt kein Datensatz mit ausreichenden Trainings und Testdaten vor. Die Erstellung eines Datensatzes auf Basis der originalen \emph{Bedarfsmeldungen} ist zeitaufwändig und erfordert Präzision. Dies ist im Rahmen der Ausarbeitung nicht weiter möglich. Stattdessen wird eine optimierende Evaluation auf Basis einer vordefinierten Erwartungshaltung durchgeführt, um Verbesserungspotenzial innerhalb des Systems zu ermitteln. Durch Modifikationen der Parameter der Pipeline wird versucht, eine vordefinierte Erwartungshaltung zu approximieren. Des Weiteren wird die Dauer der Prozessschritte dokumentiert, um die Durchführungszeit der Anpassungen zu erfassen.
 
 %nicht überlegen wie evaluieren sonder was will ich evaluieren,\\
 %was sind die fragen die ich beantworten möchte, was sind die aussagen die ich machen will. hypothesen belegen, wiederlegen\\
@@ -14,50 +14,60 @@ Dieses Kapitel befasst sich mit der Evaluierung des entwickelten Systems zur Str
 %-was genau will ich in die evaluation packen, was will ich da machen? (nehme den vergleich mit llm raus)
 
 \section{Versuchsdurchführung}
-\todo{optimierende Evaluation beschreiben}\\
-fall konstruieren indem man ausgangslage festlegt und dann erwartung selber händisch erstellt und mit ergebnis der software vergleicht
--cosine similarity
--performance, zeit
-\paragraph{Zeitmessung}\mbox{}\\
-Für die Zeitmessung wird vor dem Aufruf des ersten und nach dem letzten Modul jeweils ein Zeitstempel angelegt. Dazu wird die Bibliothek \emph{time} verwendet.
-%\begin{lstlisting}[caption={Implementation der Zeitmessung}, label=lst:zeitmessung]
-%	import time
-%	start = time.perf_counter()
-%	#Module der Pipeline
-%	stop = time.perf_counter()
-%	print(f"{stop - start:0.4f} seconds")
-%\end{lstlisting}
-Die Implementierung ist im Listing \ref{lst:zeitmessung} dargestellt. Die Zeitstempel werden in den Zeilen 2 und 4 durch die Methode \lstinline{perf_counter()}
-generiert und in die Variablen \emph{start} und \emph{stop} zwischengespeichert. Zum Schluss wird in Zeile 5 die Differenz aus beiden Zeitstempeln ermittelt, in sekunden umgerechnet und in der Console ausgegeben.
-\paragraph{Embedding}\mbox{}\\
-
+Der nachfolgende Versuch dient der Überprüfung der Ergebnisqualität des entwickelten Systems in Bezug auf die Strukturierung eines Volltextes in reduzierte Stichpunkte. Dazu wird eine synthetische Eingabe eines Skillfeldes einer \emph{Bedarfsmeldung} erstellt. Aus dieser wird manuell die wichtigsten Punkte auf Basis der Erkenntnisse aus Kapitel \ref{chap:erwartungshaltung} herausgearbeitet. Dieses dient als Erwartungshaltung, zu dem das System annäherungsweise gelangen soll. Zum semantischen Ähnlichkeitsvergleich wird \emph{Cosine-Similarity} verwendet. Dabei werden die Stichpunkte des Systems und der Erwartungshaltung vektorisiert und durch die Berechnung des \emph{Cosine-Similarity} ein Ähnlichkeitsscoring zwischen 0 und 1 ermittelt. Dabei spiegelt der Wert 0 eine niedrige und 1 eine hohe Ähnlichkeit wider. Das Ziel ist es die Schrittweise Anpassung der Parameter, den Ähnlichkeitswert näher zu 1 zu bringen. Bei jedem Durchlauf des Systems wird die Durchlaufzeit gemessen, um Indikatoren für eine Längere Laufzeit zu ermitteln.
+\paragraph{Word Embedding}\mbox{}\\
+\emph{Word Embedding} sind Vektordarstellungen eines Wortes, die durch Training eines neuronalen Netzes auf einem großen Korpus gewonnen werden \cite{sitikhu2019comparison}. Sie finden häufig Anwendung bei der Klassifikation von Texten anhand semantischer Ähnlichkeit \cite{sitikhu2019comparison}. Word2vec stellt eine der am häufigsten verwendeten Formen von \emph{Word Embedding} dar \cite{sitikhu2019comparison}. Das Word2Vec-Modell nimmt einen Textkorpus als Eingabe und erzeugt Wortvektoren als Ausgabe, die anschließend für die Klassifizierung eines beliebigen anderen Wortes verwendet werden können \cite{sitikhu2019comparison}. Dazu wird der entsprechende Vektorwert ermittelt \cite{sitikhu2019comparison}. Im Rahmen des Experiments wurde ein vortrainiertes \emph{Word Embedding}-Modell namens \emph{ConceptNet Numberbatch} \cite{speer2017conceptnet} verwendet, um Vektoren für den Eingabetext zu erstellen.
 \paragraph{Cosine-Similarity}\mbox{}\\
-
-\paragraph{Variable Faktoren sind}\mbox{}\\
-pareto evaluation --> ziel ist es die pareto ebene zu finden. Einfach aufschreiben. 80 20 prinzip --> ich habe versucht mit 5 stellschrauben und habe eine qualitätsmetrik(zahl 0-1) ich drehe ein qualitätsmerkmal dann verbessert sich zahl. Fixiere die stellschrauben und mache weiter --> bis ich alles durch habe --> optimierende evaluation (linear)
-
---> cosine similarity mit standardisierten shit
-
---> menge an bedarfsmeldungen für schlüsselweörter, threshold
-
---> IN DER evaluation erklären warum man alles andere als bi gramme nicht funktionieren kann.
-
---> abschluss den übersetzungsschritt nicht mit reinnehmen und gucken ob das ergebnis wirklich schlechter ist.
-
-evaluation pos tagging kombis einzeln rausnehmen.
-
-proof of concept erstmal mit einer bedarfsmeldung alles testen.
-
+\emph{Cosine-Similarity} misst den Kosinus des Winkels zwischen zwei Vektoren, die auf eine mehrdimensionale Ebene projiziert werden \cite{sitikhu2019comparison}. Es stellt eine weit verbreitete Metrik im Bereich des Information Retrieval \cite{rahutomo2012semantic}. Die Metrik modelliert ein Textdokument als einen Vektor von Begriffen \cite{rahutomo2012semantic}. Die Berechnung des Kosinuswerts zwischen den Vektoren zweier Dokumente erlaubt die Ermittlung der Ähnlichkeit zwischen diesen Dokumenten \cite{rahutomo2012semantic}. Der Grad der Ähnlichkeit zwischen den Vektoren ist ein Indikator für die Relevanz zwischen den Texten \cite{rahutomo2012semantic}.
+%Die Cosinus-Ähnlichkeit ist jedoch nicht in der Lage, die semantische Bedeutung des Textes adäquat zu erfassen. 
+%Die syntaktische Implementierung der Cosinus-Ähnlichkeitsmessung zwischen zwei Vektoren kann mitunter zu unzuverlässigen Ergebnissen führen. Der Syntaxabgleich ist möglicherweise nicht in der Lage, das Problem der unterschiedlichen semantischen Bedeutung zu lösen. Dies kann zu falschen Ergebnissen und einer Verschlechterung der Leistung des Information Retrieval Systems führen.
+\paragraph{Optimierungsmaßnahmen}\label{sec:optimierungsmaßnahmen}\mbox{}\\
+Bei der Durchführung der Evaluation werden vier unterschiedliche Parameter innerhalb des Systems Schrittweise angepasst. Nach jeder Anpassung wird geschaut, ob sich die Cosine-Similarity zur Erwartungshaltung verbessert oder verschlechtert. Wenn der höchste Score ermittelt wurde, wird dieser Parameter in das System fest übernommen und der darauffolgende Parameter wird angepasst. Die vier Parameter sind folgende:
+\begin{enumerate}
+	\item \textbf{Korpusgröße der Schlüsselwortextraktion} \\ Dabei wird die Menge an \emph{Bedarfsmeldungen} als Korpus für die Schlüsselwortextraktion angepasst. Angefangen von nur offenen und eskalierten \emph{Bedarfsmeldungen} werden auch alle bereits geschlossenen \emph{Bedarfsmeldungen} hinzugefügt. Dies erhöht die Wortmenge innerhalb von \emph{TF-IDF} erheblich. Dabei wird evaluiert, ob die Menge innerhalb des Korpus einen positiven Effekt auf die Identifikation der Schlüsselwörter hat oder ob somit das System nur mehr Zeit bei der Ausführung benötigt.
+	\item \textbf{Scorethreshold} \\ Dabei wird der Scorethreshold innerhalb von \emph{TF-IDF} zur Ausschließung von Schlüsselwörtern mit geringem Score angepasst. Der Score wird beginnend mit einem niedrigen Wert (nahe 0) getestet und Schrittweise erhöht.
+	\item \textbf{POS-Tagging Kombinationen erlauben} \\ Hierbei werden die untypischen Wortartenkombinationen Schrittweise im System erlauben. In jedem Schritt wird eine Kombination aus dem System entfernt, bis keine mehr enthalten ist.
+	\item \textbf{Übersetzung beibehalten} \\ Hierbei werden die Übersetzungsschritte entfernt und überprüft wie sich dies auf die Ergebnisqualität auswirkt. Die Übersetzungen sind API-Anfragen, die dafür sorgen können, dass das System länger bei der Durchführung benötigt.
+\end{enumerate}
+%pareto evaluation --> ziel ist es die pareto ebene zu finden. Einfach aufschreiben. 80 20 prinzip --> ich habe versucht mit 5 stellschrauben und habe eine qualitätsmetrik(zahl 0-1) ich drehe ein qualitätsmerkmal dann verbessert sich zahl. Fixiere die stellschrauben und mache weiter --> bis ich alles durch habe --> optimierende evaluation (linear)
+\paragraph{Zeitmessung}\mbox{}\\
+Die Zeitmessung spielt in der Hinsicht eine Rolle als, dass langfristig eine Lösung gesucht wird, die \emph{Bedarfsmeldungen} in Echtzeit bearbeiten kann. Für die Zeitmessung wird vor dem Aufruf des ersten und nach dem letzten Schritt im System jeweils ein Zeitstempel angelegt. Dazu wird die Bibliothek \emph{time} verwendet. Die Zeitstempel werden generiert und in Variablen zwischengespeichert. Zum Schluss wird die Differenz aus beiden Zeitstempeln ermittelt, in Sekunden umgerechnet und ausgegeben.\\
+\todo{sagen welche hardware ich verwendet habe}
 \section{Beschreibung des verwendeten Datensatzes}
 Ausgangslage ist eine konstruierte Bedarfsmeldung. DIese wurde erstellt aus Koombinationen von echten bedarfsmeldungen wo aber Kundenspezifische Daten ersetzt wurden
 
-\paragraph{Unstrukturierte Bedarfsmeldung}\mbox{}\\
+\paragraph{Ausgangslage}\mbox{}\\
 \paragraph{Erwartungshaltung}\mbox{}\\
-Diese wurrde händisch angefertigt. Hier wollen wir annäherungsweise hinkommen
+Diese wurde händisch angefertigt. Hier wollen wir annäherungsweise hinkommen
 \newpage
 
 \section{Präsentation und Diskussion der Ergebnisse}
-Zeit und Leistung Übersicht als Tabelle
+Nachfolgend wird beschrieben, welche Resultate bei den einzelnen Anpassungsschritten aus Kapitel \ref{sec:optimierungsmaßnahmen} herausgefunden wurde.
+\paragraph{1. Korpusgröße der Schlüsselwortextraktion}\mbox{}\\
+\begin{longtable}{| p{0.5cm} | p{8.5cm} | p{1.5cm} | p{3cm} |}
+		\hline
+		Nr. & Beschreibung & Score & Dauer (in Sek.)\\
+		\hline
+		\hline
+		1. &  & 0.8 & 1234\\
+		\hline
+		2. &  &  &  \\
+		\hline
+		3. &  &  &  \\
+		\hline
+		4. &  &  &  \\
+		\hline
+		5. &  &  &  \\
+		\hline
+		\caption{Übersicht der Ergebnisse aus Schritt 1}
+		\label{tab:korpus}
+\end{longtable}
+\paragraph{2. Scorethreshold}\mbox{}\\
+
+\paragraph{3. POS-Tagging Kombinationen erlauben}\mbox{}\\
+
+\paragraph{4. Übersetzung beibehalten}\mbox{}\\
+
 
 %\section{Vergleich des Systems mit einem Large Language Model-Ansatz}
 %\section{Analyse von Abweichungen, Ähnlichkeiten und Verbesserungspotenzialen des Systems}

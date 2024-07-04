@@ -885,6 +885,47 @@
     \field{year}{2019}
   \endentry
 
+  \entry{rahutomo2012semantic}{inproceedings}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{3}{}{%
+      {{hash=RF}{%
+         family={Rahutomo},
+         familyi={R\bibinitperiod},
+         given={Faisal},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Kitasuka},
+         familyi={K\bibinitperiod},
+         given={Teruaki},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=AM}{%
+         family={Aritsugi},
+         familyi={A\bibinitperiod},
+         given={Masayoshi},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {University of Seoul South Korea}%
+    }
+    \strng{namehash}{RFKTAM+1}
+    \strng{fullhash}{RFKTAM+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{booktitle}{The 7th international student conference on advanced
+  science and technology ICAST}
+    \field{number}{1}
+    \field{pages}{1}
+    \field{title}{Semantic cosine similarity}
+    \field{volume}{4}
+    \field{year}{2012}
+  \endentry
+
   \entry{ramos2003using}{inproceedings}{}
     \true{moreauthor}
     \true{morelabelname}
@@ -934,6 +975,87 @@
     \field{sortinithash}{R}
     \field{title}{Recommender Systems: Models and Techniques.}
     \field{year}{2014}
+  \endentry
+
+  \entry{sitikhu2019comparison}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=SP}{%
+         family={Sitikhu},
+         familyi={S\bibinitperiod},
+         given={Pinky},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=PK}{%
+         family={Pahi},
+         familyi={P\bibinitperiod},
+         given={Kritish},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=TP}{%
+         family={Thapa},
+         familyi={T\bibinitperiod},
+         given={Pujan},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Shakya},
+         familyi={S\bibinitperiod},
+         given={Subarna},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{SPPKTP+1}
+    \strng{fullhash}{SPPKTPSS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{2019 artificial intelligence for transforming business
+  and society (AITB)}
+    \field{pages}{1\bibrangedash 4}
+    \field{title}{A comparison of semantic similarity methods for maximum human
+  interpretability}
+    \field{volume}{1}
+    \field{year}{2019}
+  \endentry
+
+  \entry{speer2017conceptnet}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=SR}{%
+         family={Speer},
+         familyi={S\bibinitperiod},
+         given={Robyn},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Chin},
+         familyi={C\bibinitperiod},
+         given={Joshua},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Havasi},
+         familyi={H\bibinitperiod},
+         given={Catherine},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SRCJHC1}
+    \strng{fullhash}{SRCJHC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{pages}{4444\bibrangedash 4451}
+    \field{title}{{ConceptNet} 5.5: An Open Multilingual Graph of General
+  Knowledge}
+    \verb{url}
+    \verb http://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14972
+    \endverb
+    \field{year}{2017}
   \endentry
 
   \entry{suhasini2021hybrid}{article}{}
