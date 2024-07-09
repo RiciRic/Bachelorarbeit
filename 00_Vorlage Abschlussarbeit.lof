@@ -1,17 +1,18 @@
 \babel@toc {ngerman}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces UML-Aktivitätsdiagramm zum Ablaufmodell der qualitativen Inhaltsanalyse nach Mayring \blx@tocontentsinit {0}\cite {mayring2019qualitative}}}{10}{figure.caption.8}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces UML-Aktivitätsdiagramm zum Ablaufmodell der zusammenfassenden Inhaltsanalyse nach Mayring \blx@tocontentsinit {0}\cite {mayring2019qualitative}}}{10}{figure.caption.8}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Mockup des Aufbaus einer \emph {Bedarfsmeldung} in Jira.}}{17}{figure.caption.36}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Mockup einer strukturierten \emph {Bedarfsmeldung}.}}{18}{figure.caption.37}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces UML-Aktivitätsdiagramm zum Ablaufmodell der qualitativen Inhaltsanalyse nach Mayring \blx@tocontentsinit {0}\cite {mayring2019qualitative}}}{11}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces UML-Aktivitätsdiagramm zum Ablaufmodell der zusammenfassenden Inhaltsanalyse nach Mayring \blx@tocontentsinit {0}\cite {mayring2019qualitative}}}{11}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Vereinfachte Darstellung zur Erfassung und Durchführung eines Projektes bei \emph {adesso}.}}{19}{figure.caption.34}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Mockup des Aufbaus einer \emph {Bedarfsmeldung} in Jira.}}{20}{figure.caption.37}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Mockup einer strukturierten \emph {Bedarfsmeldung}.}}{22}{figure.caption.38}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Abstrakte Darstellung des Recommender System zur Mitarbeiterempfehlung.}}{20}{figure.caption.38}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Use-Case Diagramm zum System zur Strukturierung von Bedarfsmeldungen.}}{24}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Abstrakte Darstellung des Systems zur Strukturierung von \emph {Bedarfsmeldungen}.}}{27}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Abstrakte Darstellung des Recommender System zur Mitarbeiterempfehlung.}}{23}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Use-Case Diagramm zum System zur Strukturierung von Bedarfsmeldungen.}}{27}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Abstrakte Darstellung des Systems zur Strukturierung von \emph {Bedarfsmeldungen}.}}{30}{figure.caption.49}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Flussdiagramm der Pipeline.}}{38}{figure.caption.49}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces UML-Aktivitätsdiagramm der Pipeline.}}{41}{figure.caption.58}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
