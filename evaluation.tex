@@ -34,40 +34,68 @@ Bei der Durchführung der Evaluation werden vier unterschiedliche Parameter inne
 Die Zeitmessung spielt in der Hinsicht eine Rolle als, dass langfristig eine Lösung gesucht wird, die \emph{Bedarfsmeldungen} in Echtzeit bearbeiten kann. Für die Zeitmessung wird vor dem Aufruf des ersten und nach dem letzten Schritt im System jeweils ein Zeitstempel angelegt. Dazu wird die Bibliothek \emph{time} verwendet. Die Zeitstempel werden generiert und in Variablen zwischengespeichert. Zum Schluss wird die Differenz aus beiden Zeitstempeln ermittelt, in Sekunden umgerechnet und ausgegeben.\\
 \todo{sagen welche hardware ich verwendet habe}
 \section{Beschreibung des verwendeten Datensatzes}
-Ausgangslage ist eine konstruierte Bedarfsmeldung. DIese wurde erstellt aus Koombinationen von echten bedarfsmeldungen wo aber Kundenspezifische Daten ersetzt wurden
-
+In diesem Kapitel wird eine Ausgangslage und Erwartungshaltung konstruiert. Diese werden für die Berechnung der Kosinus-Ähnlichkeit verwendet, um eine Verbesserung der textuellen Ähnlichkeit festzustellen.
 \paragraph{Ausgangslage}\mbox{}\\
-\paragraph{Erwartungshaltung}\mbox{}\\
-Diese wurde händisch angefertigt. Hier wollen wir annäherungsweise hinkommen
-\newpage
+Die Ausgangslage ist ein synthetischer Datensatz. Dieser wurde aus echten Bedarfsmeldungen abgeleitet. Bei der Erstellung wurde darauf geachtet, dass dieser einer echten \emph{Bedarfsmeldung} ähneln kann. Die Ausgangslage liegt als Volltext vor:\\
 
+\textbf{Aufgabe ist es, beim Aufbau einer Plattform zu unterstützen, die auf Basis von Azure, OpenAI, Java und ReactJS aufgebaut ist. Aktuell (und perspektivisch) haben wir einen Engpass vor allem im Frontend. Hilfe im Backend (Java) wäre aber auch willkommen.\textbackslash r\textbackslash nDas Projekt bietet einiges an Potenzial, d.h. wir erwarten hier noch einige Interessenten für die Plattform. 2 Jahre Erfahrung und Kenntnisse in der Software-Entwicklung mit Java sind erwünscht}\\
+
+Im Volltext sind diverse Zeichen, Formatierungen (\textbackslash r \textbackslash n für Zeilenumbrüche) und Zeitbezogene Daten enthalten.
+\paragraph{Erwartungshaltung}\mbox{}\\
+Die Erwartungshaltung wurde manuell aus der Ausgangslage angefertigt. Bei der Erstellung wurde beachtet, dass Füllwörter entfernt und wichtige Informationen beibehalten wurden, die in Kapitel \ref{chap:erwartungshaltung} erfasst wurden. Das Ziel ist es annäherungsweise an diese Erwartungshaltung heranzukommen:
+\begin{itemize}
+	\item Aufbau einer Plattform
+	\item Azure, OpenAI, Java und ReactJS
+	\item Engpass im Frontend
+	\item Hilfe im Backend (Java)
+	\item bietet Potenzial
+	\item erwarten Interessenten für Plattform.
+	\item 2 Jahre Erfahrung in Java
+\end{itemize}
 \section{Präsentation und Diskussion der Ergebnisse}
 Nachfolgend wird beschrieben, welche Resultate bei den einzelnen Anpassungsschritten aus Kapitel \ref{sec:optimierungsmaßnahmen} herausgefunden wurde.
 \paragraph{1. Korpusgröße der Schlüsselwortextraktion}\mbox{}\\
-\begin{longtable}{| p{0.5cm} | p{8.5cm} | p{1.5cm} | p{3cm} |}
-		\hline
-		Nr. & Beschreibung & Score & Dauer (in Sek.)\\
-		\hline
-		\hline
-		1. &  & 0.8 & 1234\\
-		\hline
-		2. &  &  &  \\
-		\hline
-		3. &  &  &  \\
-		\hline
-		4. &  &  &  \\
-		\hline
-		5. &  &  &  \\
-		\hline
-		\caption{Übersicht der Ergebnisse aus Schritt 1}
-		\label{tab:korpus}
-\end{longtable}
+Die These ist, dass je mehr Wörter und Daten im Textkorpus für die Schlüsselwörterextraktion enthalten sind, auch bessere Ergebnisse in der Qualität der Schlüsselwörter erfolgt. Diese Annahme beruht auf der Idee, dass durch mehr themenbezogene Dokumente, häufig auftauchende fachliche Wörter enthalten sind und diese dadurch bei der Term Frequency-Berechnung einen höheren Score erhalten und eher als potenziell wichtiges Schlüsselwort erfasst werden.\\
+
+Um diese These zu überprüfen werden die Felder \emph{skills} und \emph{tasks} aus \emph{Bedarfsmeldungen} mit bestimmten Status schrittweise hinzugefügt. Zu Beginn werden lediglich \emph{Bedarfsmeldungen} mit dem Status \emph{offen} als Korpus hinzugefügt. Darauffolgend werden zudem auch \emph{Bedarfsmeldungen} mit dem Status \emph{eskaliert} dem Korpus hinzugefügt. Anschließend wird der Status \emph{Angeboten} und abschließend alle übrig gebliebenen \emph{Bedarfsmeldungen} hinzugefügt.
+
+
+
+bis zum erreichen des plateaus wächst der score werden exponentiell mehr weörter benötigt um den score linear darzustellen.
+
+
+man kann einen annähernd linearen zusammenhang zwischen dem score und anzahl der wörter im halblogarithmischen diagramm erkennen. dies bedeutet dass der score proportional zur exponentiellen anzahl der wörter ist.
+
+%\begin{longtable}{| p{1cm} | p{6cm} | p{3cm} | p{3cm} |}
+%		\hline
+%		Schritt & Bedarfsmeldungsfelder & Status & Kumulierte Wörteranzahl \\
+%		\hline
+%		\hline
+%		1 & \emph{tasks}-Felder & \emph{offen} & 2394\\
+%		\hline
+%		2 & \emph{skill}-Felder & \emph{offen} & 2394\\
+%		\hline
+%		3 & \emph{tasks}-Felder & \emph{geschlossen} & 2394\\
+%		\hline
+%		4 & \emph{skill}-Felder & \emph{offen} & 2394\\
+%		\hline
+%		5 &  & & \\
+%		\hline
+%		6 &  & & \\
+%		\hline
+%		\caption{Übersicht der Ergebnisse aus Schritt 1}
+%		\label{tab:korpus}
+%\end{longtable}
 \paragraph{2. Scorethreshold}\mbox{}\\
+Hierbei ist die These, dass die Schlüsselwörterqualität durch einen Threshold gesteigert wird. Wörter unter dem Threshold werden bei der Schlüsselwörterermittlung entfernt, wodurch Wörter mit einem niedrigen Scoring nicht beachtet werden. Ein niedriger Scoring kann bedeuten, dass ein Wort nur einmal Vorkommt, wodurch es kein Schlüsselwort abbildet.\\
+
+Um diese These zu überprüfen werden Threshold-Werte von 0.0 bis 1.0 in 0.001er Schritten durchlaufen.
 
 \paragraph{3. POS-Tagging Kombinationen erlauben}\mbox{}\\
+Die These ist, dass durch die Entfernung von untypischen Wortkombinationen die qualität der Stichpunkte sinkt. % die Informationen aus unterschiedlichen
 
 \paragraph{4. Übersetzung beibehalten}\mbox{}\\
-
+Die These ist, dass ohne Übersetzung ins Englische die Implementierten \emph{NLP}-Ansätze schlechtere Ergebnisse liefern. Die Idee dahinter ist, dass diese mit Englischen Datensätzen trainiert sind und mit deutschen Wörtern eventuell nicht optimal funktionieren.
 
 %\section{Vergleich des Systems mit einem Large Language Model-Ansatz}
 %\section{Analyse von Abweichungen, Ähnlichkeiten und Verbesserungspotenzialen des Systems}

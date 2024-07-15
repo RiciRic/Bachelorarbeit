@@ -765,9 +765,8 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \field{title}{Python for data analysis: Data wrangling with Pandas, NumPy,
-  and IPython}
-    \field{year}{2012}
+    \field{title}{Python for data analysis}
+    \field{year}{2013}
   \endentry
 
   \entry{ogden1930basic}{article}{}

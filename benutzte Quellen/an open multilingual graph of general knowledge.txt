@@ -1,0 +1,2 @@
+https://aaai.org/ocs/AAAI/AAAI17/paper/view/14972
+https://github.com/commonsense/conceptnet-numberbatch
