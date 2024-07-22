@@ -1,6 +1,7 @@
 \chapter{Evaluierung}
 \label{chap:evaluation}
-Das vorliegende Kapitel befasst sich mit der Evaluierung des entwickelten Systems zur Strukturierung von \emph{Bedarfsmeldungen}. In dem Kapitel \ref{sec:literaturueberblick} wurde dargelegt, dass gängige Methoden zur Evaluierung von den einzelnen Information Retrieval Ansätzen und daraus entstehenden Pipelines und Hybriden die Methoden \emph{Precision, Recall} und \emph{F1-Score} angewendet werden. Grundsätzlich wäre dies ein valider Ansatz zur Evaluation. Dennoch bestehen keine Grundvoraussetzungen zur Durchführung dieser Methoden. Es liegt kein Datensatz mit ausreichenden Trainings und Testdaten vor. Die Erstellung eines Datensatzes auf Basis der originalen \emph{Bedarfsmeldungen} ist zeitaufwändig und erfordert Präzision. Dies ist im Rahmen der Ausarbeitung nicht weiter möglich. Stattdessen wird eine optimierende Evaluation auf Basis einer vordefinierten Erwartungshaltung durchgeführt, um Verbesserungspotenzial innerhalb des Systems zu ermitteln. Durch Modifikationen der Parameter der Pipeline wird versucht, eine vordefinierte Erwartungshaltung zu approximieren. Des Weiteren wird die Dauer der Prozessschritte dokumentiert, um die Durchführungszeit der Anpassungen zu erfassen.
+Das vorliegende Kapitel befasst sich mit der Evaluierung des entwickelten Systems zur Strukturierung von \emph{Bedarfsmeldungen}. In dem Kapitel \ref{sec:literaturueberblick} wurde dargelegt, dass gängige Methoden zur Evaluierung von den einzelnen Information Retrieval Ansätzen und daraus entstehenden Pipelines und Hybriden die Methoden \emph{Precision, Recall} und \emph{F1-Score} angewendet werden. Grundsätzlich wäre dies ein valider Ansatz zur Evaluation. Dennoch bestehen keine Grundvoraussetzungen zur Durchführung dieser Methoden. Es liegt kein Datensatz mit ausreichenden Trainings und Testdaten vor. Die Erstellung eines Datensatzes auf Basis der originalen \emph{Bedarfsmeldungen} ist zeitaufwändig und erfordert Präzision. Dies ist im Rahmen der Ausarbeitung nicht weiter möglich. Stattdessen wird eine optimierende Evaluation auf Basis einer vordefinierten Erwartungshaltung durchgeführt, um Verbesserungspotenzial innerhalb des Systems zu ermitteln. Durch Modifikationen der Parameter der Pipeline wird versucht, eine vordefinierte Erwartungshaltung zu approximieren. 
+%Des Weiteren wird die Dauer der Prozessschritte dokumentiert, um die Durchführungszeit der Anpassungen zu erfassen.
 
 %nicht überlegen wie evaluieren sonder was will ich evaluieren,\\
 %was sind die fragen die ich beantworten möchte, was sind die aussagen die ich machen will. hypothesen belegen, wiederlegen\\
@@ -14,35 +15,36 @@ Das vorliegende Kapitel befasst sich mit der Evaluierung des entwickelten System
 %-was genau will ich in die evaluation packen, was will ich da machen? (nehme den vergleich mit llm raus)
 
 \section{Versuchsdurchführung}
-Der nachfolgende Versuch dient der Überprüfung der Ergebnisqualität des entwickelten Systems in Bezug auf die Strukturierung eines Volltextes in reduzierte Stichpunkte. Dazu wird eine synthetische Eingabe eines Skillfeldes einer \emph{Bedarfsmeldung} erstellt. Aus dieser wird manuell die wichtigsten Punkte auf Basis der Erkenntnisse aus Kapitel \ref{chap:erwartungshaltung} herausgearbeitet. Dieses dient als Erwartungshaltung, zu dem das System annäherungsweise gelangen soll. Zum semantischen Ähnlichkeitsvergleich wird \emph{Cosine-Similarity} verwendet. Dabei werden die Stichpunkte des Systems und der Erwartungshaltung vektorisiert und durch die Berechnung des \emph{Cosine-Similarity} ein Ähnlichkeitsscoring zwischen 0 und 1 ermittelt. Dabei spiegelt der Wert 0 eine niedrige und 1 eine hohe Ähnlichkeit wider. Das Ziel ist es die Schrittweise Anpassung der Parameter, den Ähnlichkeitswert näher zu 1 zu bringen. Bei jedem Durchlauf des Systems wird die Durchlaufzeit gemessen, um Indikatoren für eine Längere Laufzeit zu ermitteln.
+Der nachfolgende Versuch dient der Überprüfung der Ergebnisqualität des entwickelten Systems in Bezug auf die Strukturierung eines Volltextes in reduzierte Stichpunkte. Dazu wird eine synthetische Eingabe eines Skillfeldes einer \emph{Bedarfsmeldung} erstellt. Aus dieser wird manuell die wichtigsten Punkte auf Basis der Erkenntnisse aus Kapitel \ref{chap:erwartungshaltung} herausgearbeitet. Dieses dient als Erwartungshaltung, zu dem das System annäherungsweise gelangen soll. Zum semantischen Ähnlichkeitsvergleich wird die Kosinus-Ähnlichkeit verwendet. Dabei werden die Stichpunkte des Systems und der Erwartungshaltung vektorisiert und durch die Berechnung des \emph{Cosine-Similarity} ein Ähnlichkeitsscoring zwischen 0 und 1 ermittelt. Dabei spiegelt der Wert 0 eine niedrige und 1 eine hohe Ähnlichkeit wider. Das Ziel ist es die Schrittweise Anpassung der Parameter, den Ähnlichkeitswert näher zu 1 zu bringen. 
+%Bei jedem Durchlauf des Systems wird die Durchlaufzeit gemessen, um Indikatoren für eine Längere Laufzeit zu ermitteln.
 \paragraph{Word Embedding}\mbox{}\\
 \emph{Word Embedding} sind Vektordarstellungen eines Wortes, die durch Training eines neuronalen Netzes auf einem großen Korpus gewonnen werden \cite{sitikhu2019comparison}. Sie finden häufig Anwendung bei der Klassifikation von Texten anhand semantischer Ähnlichkeit \cite{sitikhu2019comparison}. Word2vec stellt eine der am häufigsten verwendeten Formen von \emph{Word Embedding} dar \cite{sitikhu2019comparison}. Das Word2Vec-Modell nimmt einen Textkorpus als Eingabe und erzeugt Wortvektoren als Ausgabe, die anschließend für die Klassifizierung eines beliebigen anderen Wortes verwendet werden können \cite{sitikhu2019comparison}. Dazu wird der entsprechende Vektorwert ermittelt \cite{sitikhu2019comparison}. Im Rahmen des Experiments wurde ein vortrainiertes \emph{Word Embedding}-Modell namens \emph{ConceptNet Numberbatch} \cite{speer2017conceptnet} verwendet, um Vektoren für den Eingabetext zu erstellen.
 \paragraph{Cosine-Similarity}\mbox{}\\
-\emph{Cosine-Similarity} misst den Kosinus des Winkels zwischen zwei Vektoren, die auf eine mehrdimensionale Ebene projiziert werden \cite{sitikhu2019comparison}. Es stellt eine weit verbreitete Metrik im Bereich des Information Retrieval \cite{rahutomo2012semantic}. Die Metrik modelliert ein Textdokument als einen Vektor von Begriffen \cite{rahutomo2012semantic}. Die Berechnung des Kosinuswerts zwischen den Vektoren zweier Dokumente erlaubt die Ermittlung der Ähnlichkeit zwischen diesen Dokumenten \cite{rahutomo2012semantic}. Der Grad der Ähnlichkeit zwischen den Vektoren ist ein Indikator für die Relevanz zwischen den Texten \cite{rahutomo2012semantic}.
+\emph{Cosine-Similarity} misst den Kosinus des Winkels zwischen zwei Vektoren, die auf eine mehrdimensionale Ebene projiziert werden \cite{sitikhu2019comparison}. Es stellt eine weit verbreitete Metrik im Bereich des Information Retrieval dar \cite{rahutomo2012semantic}. Die Metrik modelliert ein Textdokument als einen Vektor von Begriffen \cite{rahutomo2012semantic}. Die Berechnung des Kosinuswerts zwischen den Vektoren zweier Dokumente erlaubt die Ermittlung der Ähnlichkeit zwischen diesen Dokumenten \cite{rahutomo2012semantic}. Der Grad der Ähnlichkeit zwischen den Vektoren ist ein Indikator für die Relevanz zwischen den Texten \cite{rahutomo2012semantic}.
 %Die Cosinus-Ähnlichkeit ist jedoch nicht in der Lage, die semantische Bedeutung des Textes adäquat zu erfassen. 
 %Die syntaktische Implementierung der Cosinus-Ähnlichkeitsmessung zwischen zwei Vektoren kann mitunter zu unzuverlässigen Ergebnissen führen. Der Syntaxabgleich ist möglicherweise nicht in der Lage, das Problem der unterschiedlichen semantischen Bedeutung zu lösen. Dies kann zu falschen Ergebnissen und einer Verschlechterung der Leistung des Information Retrieval Systems führen.
 \paragraph{Optimierungsmaßnahmen}\label{sec:optimierungsmaßnahmen}\mbox{}\\
-Bei der Durchführung der Evaluation werden vier unterschiedliche Parameter innerhalb des Systems Schrittweise angepasst. Nach jeder Anpassung wird geschaut, ob sich die Cosine-Similarity zur Erwartungshaltung verbessert oder verschlechtert. Wenn der höchste Score ermittelt wurde, wird dieser Parameter in das System fest übernommen und der darauffolgende Parameter wird angepasst. Die vier Parameter sind folgende:
+Im Rahmen der Evaluierung erfolgt eine schrittweise Anpassung der vier Parameter des Systems. Im Anschluss an jede Anpassung erfolgt eine Evaluierung der Cosine-Similarity im Hinblick auf eine etwaige Verbesserung oder Verschlechterung im Vergleich zur Erwartungshaltung. Im Anschluss an die Ermittlung des höchsten Scores erfolgt eine feste Übernahme des betreffenden Parameters in das System. In der Folge wird der darauffolgende Parameter angepasst. Die vier zu evaluierenden Parameter sind wie folgt definiert:
 \begin{enumerate}
-	\item \textbf{Korpusgröße der Schlüsselwortextraktion} \\ Dabei wird die Menge an \emph{Bedarfsmeldungen} als Korpus für die Schlüsselwortextraktion angepasst. Angefangen von nur offenen und eskalierten \emph{Bedarfsmeldungen} werden auch alle bereits geschlossenen \emph{Bedarfsmeldungen} hinzugefügt. Dies erhöht die Wortmenge innerhalb von \emph{TF-IDF} erheblich. Dabei wird evaluiert, ob die Menge innerhalb des Korpus einen positiven Effekt auf die Identifikation der Schlüsselwörter hat oder ob somit das System nur mehr Zeit bei der Ausführung benötigt.
-	\item \textbf{Scorethreshold} \\ Dabei wird der Scorethreshold innerhalb von \emph{TF-IDF} zur Ausschließung von Schlüsselwörtern mit geringem Score angepasst. Der Score wird beginnend mit einem niedrigen Wert (nahe 0) getestet und Schrittweise erhöht.
-	\item \textbf{POS-Tagging Kombinationen erlauben} \\ Hierbei werden die untypischen Wortartenkombinationen Schrittweise im System erlauben. In jedem Schritt wird eine Kombination aus dem System entfernt, bis keine mehr enthalten ist.
-	\item \textbf{Übersetzung beibehalten} \\ Hierbei werden die Übersetzungsschritte entfernt und überprüft wie sich dies auf die Ergebnisqualität auswirkt. Die Übersetzungen sind API-Anfragen, die dafür sorgen können, dass das System länger bei der Durchführung benötigt.
+	\item \textbf{Korpusgröße der Schlüsselwortextraktion} \\ In diesem Zusammenhang erfolgt eine Anpassung der Menge an \emph{Bedarfsmeldungen} als Korpus für die Schlüsselwortextraktion. In einem nächsten Schritt werden neben den \emph{offenen} und \emph{eskalierten} \emph{Bedarfsmeldungen} auch alle bereits \emph{geschlossenen} Bedarfsmeldungen in den Korpus aufgenommen. Dies resultiert in einer signifikanten Erhöhung der Wortmenge innerhalb von \emph{TF-IDF}. Im Rahmen der Evaluierung wird untersucht, ob die Erweiterung des Korpus einen positiven Effekt auf die Identifikation der Schlüsselwörter hat.
+	\item \textbf{Scorethreshold} \\ Innerhalb der \emph{TF-IDF} erfolgt eine Anpassung des Scorethresholds zur Ausschließung von Schlüsselwörtern mit geringem Score. Der Score wird zunächst mit einem niedrigen Wert (nahe 0) getestet und anschließend schrittweise erhöht.
+	\item \textbf{POS-Tagging Kombinationen erlauben} \\ Im Rahmen dieses Prozesses erfolgt eine schrittweise Freigabe von Wortartenkombinationen, die als untypisch definiert wurden. Im Rahmen dieses Prozesses wird in jedem Schritt eine Kombination aus dem System entfernt, bis schließlich keine Kombinationen mehr enthalten sind.
+	\item \textbf{Übersetzung beibehalten} \\ Im Rahmen der Untersuchung werden die einzelnen Übersetzungsschritte entfernt und deren Einfluss auf die Ergebnisqualität evaluiert.
 \end{enumerate}
 %pareto evaluation --> ziel ist es die pareto ebene zu finden. Einfach aufschreiben. 80 20 prinzip --> ich habe versucht mit 5 stellschrauben und habe eine qualitätsmetrik(zahl 0-1) ich drehe ein qualitätsmerkmal dann verbessert sich zahl. Fixiere die stellschrauben und mache weiter --> bis ich alles durch habe --> optimierende evaluation (linear)
-\paragraph{Zeitmessung}\mbox{}\\
-Die Zeitmessung spielt in der Hinsicht eine Rolle als, dass langfristig eine Lösung gesucht wird, die \emph{Bedarfsmeldungen} in Echtzeit bearbeiten kann. Für die Zeitmessung wird vor dem Aufruf des ersten und nach dem letzten Schritt im System jeweils ein Zeitstempel angelegt. Dazu wird die Bibliothek \emph{time} verwendet. Die Zeitstempel werden generiert und in Variablen zwischengespeichert. Zum Schluss wird die Differenz aus beiden Zeitstempeln ermittelt, in Sekunden umgerechnet und ausgegeben.\\
-\todo{sagen welche hardware ich verwendet habe}
+\paragraph{Systemspezifikation}\mbox{}\\
+%Die Zeitmessung spielt in der Hinsicht eine Rolle als, dass langfristig eine Lösung gesucht wird, die \emph{Bedarfsmeldungen} in Echtzeit bearbeiten kann. Bei der Messung in dieser Evaluation gilt es daher Ausreißer zu identifizieren, die bei Veränderungen der Parameter für eine erhebliche zeitliche Erhöhung sorgen. Für die Zeitmessung wird vor dem Aufruf des ersten und nach dem letzten Schritt im System jeweils ein Zeitstempel angelegt. Dazu wird die Bibliothek \emph{time} verwendet. Die Zeitstempel werden generiert und in Variablen zwischengespeichert. Zum Schluss wird die Differenz aus beiden Zeitstempeln ermittelt, in Sekunden umgerechnet und ausgegeben. 
+Im Rahmen der Evaluation wurde ein System eingesetzt, dessen Spezifikationen wie folgt definiert sind: Prozessor: 13th Gen Intel(R) Core(TM) i7-1360P, 2200 MHz, 12 Kerne, 16 logische Prozessoren, RAM: 16 GB\\
 \section{Beschreibung des verwendeten Datensatzes}
-In diesem Kapitel wird eine Ausgangslage und Erwartungshaltung konstruiert. Diese werden für die Berechnung der Kosinus-Ähnlichkeit verwendet, um eine Verbesserung der textuellen Ähnlichkeit festzustellen.
+In diesem Kapitel wird zunächst eine Ausgangslage konstruiert, auf deren Basis anschließend eine Erwartungshaltung definiert wird. Die Berechnung der Kosinus-Ähnlichkeit erfolgt mit dem Ziel, eine Verbesserung der textuellen Ähnlichkeit festzustellen.
 \paragraph{Ausgangslage}\mbox{}\\
-Die Ausgangslage ist ein synthetischer Datensatz. Dieser wurde aus echten Bedarfsmeldungen abgeleitet. Bei der Erstellung wurde darauf geachtet, dass dieser einer echten \emph{Bedarfsmeldung} ähneln kann. Die Ausgangslage liegt als Volltext vor:\\
+Die Ausgangslage bildet ein synthetischer Datensatz. Die Grundlage hierfür bildeten authentische \emph{Bedarfsmeldungen}. Bei der Erstellung wurde darauf geachtet, dass der Datensatz einer echten \emph{Bedarfsmeldung} ähnelt. Der Ausgangsdatenbestand liegt als Volltext vor.\\
 
 \textbf{Aufgabe ist es, beim Aufbau einer Plattform zu unterstützen, die auf Basis von Azure, OpenAI, Java und ReactJS aufgebaut ist. Aktuell (und perspektivisch) haben wir einen Engpass vor allem im Frontend. Hilfe im Backend (Java) wäre aber auch willkommen.\textbackslash r\textbackslash nDas Projekt bietet einiges an Potenzial, d.h. wir erwarten hier noch einige Interessenten für die Plattform. 2 Jahre Erfahrung und Kenntnisse in der Software-Entwicklung mit Java sind erwünscht}\\
 
-Im Volltext sind diverse Zeichen, Formatierungen (\textbackslash r \textbackslash n für Zeilenumbrüche) und Zeitbezogene Daten enthalten.
+Der Volltext weist eine Vielzahl unterschiedlicher Zeichen, Formatierungen (beispielsweise \textbackslash r \textbackslash n für Zeilenumbrüche) sowie zeitbezogene Daten auf.
 \paragraph{Erwartungshaltung}\mbox{}\\
-Die Erwartungshaltung wurde manuell aus der Ausgangslage angefertigt. Bei der Erstellung wurde beachtet, dass Füllwörter entfernt und wichtige Informationen beibehalten wurden, die in Kapitel \ref{chap:erwartungshaltung} erfasst wurden. Das Ziel ist es annäherungsweise an diese Erwartungshaltung heranzukommen:
+Die Erwartungshaltung wurde manuell aus der Ausgangslage abgeleitet. Bei der Erstellung wurde darauf geachtet, dass Füllwörter entfernt und wichtige Informationen beibehalten wurden, die in Kapitel \ref{chap:erwartungshaltung} erfasst wurden. Das Ziel besteht in der Annäherung an die Erwartungshaltung.
 \begin{itemize}
 	\item Aufbau einer Plattform
 	\item Azure, OpenAI, Java und ReactJS
@@ -53,50 +55,50 @@ Die Erwartungshaltung wurde manuell aus der Ausgangslage angefertigt. Bei der Er
 	\item 2 Jahre Erfahrung in Java
 \end{itemize}
 \section{Präsentation und Diskussion der Ergebnisse}
-Nachfolgend wird beschrieben, welche Resultate bei den einzelnen Anpassungsschritten aus Kapitel \ref{sec:optimierungsmaßnahmen} herausgefunden wurde.
+Im Folgenden werden die Resultate der einzelnen Anpassungsschritte, wie sie in Kapitel \ref{sec:optimierungsmaßnahmen} beschrieben sind, dargelegt.
 \paragraph{1. Korpusgröße der Schlüsselwortextraktion}\mbox{}\\
-Die These ist, dass je mehr Wörter und Daten im Textkorpus für die Schlüsselwörterextraktion enthalten sind, auch bessere Ergebnisse in der Qualität der Schlüsselwörter erfolgt. Diese Annahme beruht auf der Idee, dass durch mehr themenbezogene Dokumente, häufig auftauchende fachliche Wörter enthalten sind und diese dadurch bei der Term Frequency-Berechnung einen höheren Score erhalten und eher als potenziell wichtiges Schlüsselwort erfasst werden.\\
+Die These besagt, dass mit einer Zunahme der im Textkorpus enthaltenen Wörter und Daten für die Schlüsselwortextraktion eine Steigerung der Qualität der Schlüsselwörter einhergeht. Diese Annahme basiert auf der Prämisse, dass eine höhere Anzahl an themenbezogenen Dokumenten, die häufig verwendete fachliche Ausdrücke enthalten, zu einer höheren Gewichtung dieser Ausdrücke bei der Term-Frequency-Berechnung führt. Dies wiederum resultiert in einer höheren Wahrscheinlichkeit, dass sie als potenziell wichtige Schlüsselwörter identifiziert werden.\\
 
-Um diese These zu überprüfen werden die Felder \emph{skills} und \emph{tasks} aus \emph{Bedarfsmeldungen} mit bestimmten Status schrittweise hinzugefügt. Zu Beginn werden lediglich \emph{Bedarfsmeldungen} mit dem Status \emph{offen} als Korpus hinzugefügt. Darauffolgend werden zudem auch \emph{Bedarfsmeldungen} mit dem Status \emph{eskaliert} dem Korpus hinzugefügt. Anschließend wird der Status \emph{Angeboten} und abschließend alle übrig gebliebenen \emph{Bedarfsmeldungen} hinzugefügt.
-
-
-
-bis zum erreichen des plateaus wächst der score werden exponentiell mehr weörter benötigt um den score linear darzustellen.
-
-
-man kann einen annähernd linearen zusammenhang zwischen dem score und anzahl der wörter im halblogarithmischen diagramm erkennen. dies bedeutet dass der score proportional zur exponentiellen anzahl der wörter ist.
-
-%\begin{longtable}{| p{1cm} | p{6cm} | p{3cm} | p{3cm} |}
-%		\hline
-%		Schritt & Bedarfsmeldungsfelder & Status & Kumulierte Wörteranzahl \\
-%		\hline
-%		\hline
-%		1 & \emph{tasks}-Felder & \emph{offen} & 2394\\
-%		\hline
-%		2 & \emph{skill}-Felder & \emph{offen} & 2394\\
-%		\hline
-%		3 & \emph{tasks}-Felder & \emph{geschlossen} & 2394\\
-%		\hline
-%		4 & \emph{skill}-Felder & \emph{offen} & 2394\\
-%		\hline
-%		5 &  & & \\
-%		\hline
-%		6 &  & & \\
-%		\hline
-%		\caption{Übersicht der Ergebnisse aus Schritt 1}
-%		\label{tab:korpus}
-%\end{longtable}
+Die zuvor aufgestellte These soll durch eine schrittweise Erhöhung der Anzahl der im Textkorpus enthaltenen Wörter überprüft werden. Dazu wird die \emph{TF-IDF}-Methode eingesetzt. Die Bedarfsmeldungen mit den Status \emph{offen}, \emph{eskaliert} und \emph{angeboten} wurden gemäß der Vorverarbeitung in Kapitel \ref{tfidf} zu Textblöcken mit Wörtern zusammengefasst. Die ersten zehn Wörter der \emph{offenen Bedarfsmeldungen} dienen als Grundlage für die weitere Analyse. Im Rahmen der Analyse werden den \emph{Bedarfsmeldungen} sukzessive mehr Wörter hinzugefügt, um die Veränderung des Scores zu beobachten.
+\begin{figure}[H]
+	\centering  
+	\includegraphics[width=\linewidth]{plot/e1-woerter-score.png}
+	\caption{Diagramm zur Anzahl der Wörter im Verhältnis zum Score.}
+	\label{fig:woertervsscore}
+\end{figure}\mbox{} \\
+In der Abbildung \ref{fig:woertervsscore} wird das Verhältnis der Anzahl an Wörtern zum Score in Form eines Diagramms dargestellt. Im halblogarithmischen Diagramm lässt sich ein annähernd linearer Zusammenhang zwischen dem Score und der Anzahl der Wörter erkennen. Dies impliziert, dass der Score proportional zur exponentiellen Anzahl der Wörter ist. Der beschriebene Effekt ist bis zum Erreichen eines Plateaus bei 80.000 Wörtern erkennbar. In der Konsequenz lässt sich ein Anstieg der Ergebnisqualität bis zu einem gewissen Punkt feststellen, je mehr Wörter im Textkorpus enthalten sind. Eine Überschreitung dieses Punktes führt zu einer Stagnation der Ergebnisqualität. Bei einer zu geringen Anzahl an Wörtern im Textkorpus (n < 10) konnten keine Scoring-Werte generiert werden. Die Generierung von Stichpunkten durch das System ist nur möglich, wenn die entsprechenden Schlüsselwörter vorhanden sind, da andernfalls keine Zuordnung erfolgen kann.
 \paragraph{2. Scorethreshold}\mbox{}\\
-Hierbei ist die These, dass die Schlüsselwörterqualität durch einen Threshold gesteigert wird. Wörter unter dem Threshold werden bei der Schlüsselwörterermittlung entfernt, wodurch Wörter mit einem niedrigen Scoring nicht beachtet werden. Ein niedriger Scoring kann bedeuten, dass ein Wort nur einmal Vorkommt, wodurch es kein Schlüsselwort abbildet.\\
+Die vorliegende These postuliert, dass die Qualität von Schlüsselwörtern durch einen Threshold-Parameter optimiert werden kann. Wörter, die den Threshold unterschreiten, werden bei der Ermittlung der Schlüsselwörter nicht berücksichtigt, wodurch Wörter mit einem niedrigen Scoring keine Berücksichtigung finden. Ein niedriger Score kann darauf hinweisen, dass ein Wort lediglich einmalig im Kontext vorkommt und folglich kein Schlüsselwort darstellt.\\
 
-Um diese These zu überprüfen werden Threshold-Werte von 0.0 bis 1.0 in 0.001er Schritten durchlaufen.
+Die zuvor aufgestellte These soll im Folgenden einer Überprüfung unterzogen werden. Zu diesem Zweck werden die Threshold-Werte in Intervallen von 0,0 bis 1,0 in Schritten von 0,01 durchlaufen.
+\begin{figure}[H]
+	\centering  
+	\includegraphics[width=\linewidth]{plot/e2-threshold-score.png}
+	\caption{Diagramm zum Threshold im Verhältnis zum Score.}
+	\label{fig:thresholdvsscore}
+\end{figure}\mbox{} \\
+In der nachfolgenden Abbildung \ref{fig:thresholdvsscore} ist das Diagramm dargestellt, das die Thresholds im Verhältnis zum Score widerspiegelt. Die dargestellten 0,01-Schritte genügen, um einen Abwärtstrend zu identifizieren. Die aufgestellte These ist als falsch zu erachten, da bei einer Erhöhung des Thresholds der Score annähernd linear sinkt. Dies geschieht bis zum Threshold-Wert 0.24. Ein darüber hinausgehender Wert entfernt zu viele Wörter aus der Schlüsselwortermittlung, wodurch keine Stichpunkte gebildet werden und der Score den Wert 0 annimmt.\\
 
+Eine manuelle Betrachtung der Ergebnisse hat gezeigt, dass ohne die Anwendung eines Thresholds eine deutliche Zunahme der Stichpunktlänge zu verzeichnen ist. Die Inhalte der Stichpunkte sind von hoher Präzision und Relevanz, was zu einem entsprechend hohen Score führt. Dennoch kann ein geringer Threshold einen positiven Effekt auf die Stichpunkte ausüben auch wenn der Score dadurch leicht abfällt. Der direkte manuelle Vergleich hat ergeben, dass für die ausgewählte Ausgangslage ein Score im Bereich von 0.04 bis 0.07 die Stichpunkte verkürzt, ohne die wichtigen Informationen zu beeinträchtigen.
 \paragraph{3. POS-Tagging Kombinationen erlauben}\mbox{}\\
-Die These ist, dass durch die Entfernung von untypischen Wortkombinationen die qualität der Stichpunkte sinkt. % die Informationen aus unterschiedlichen
+Die hier vorgestellte These besagt, dass die Qualität der Stichpunkte durch die Entfernung von untypischen Wortkombinationen beeinträchtigt wird. Durch fehlende Entfernung untypischer Wortkombinationen könnten Stichpunkte entstehen, die inhaltlich eine geringere Kohärenz beinhalten und dadurch auch einen geringeren Score erhalten.\\
 
+Die in Kapitel \ref{postagging} präsentierte Liste mit POS-Tagging-Kombinationen wird im Folgenden schrittweise modifiziert, um die zugrundeliegende These zu überprüfen.
+\begin{figure}[H]
+	\centering  
+	\includegraphics[width=\linewidth]{plot/e3-wortkombinationen-score.png}
+	\caption{Diagramm zur Anzahl von zu entfernenden Wortartenkombinationen im Verhältnis zum Score.}
+	\label{fig:wordcombinationvsscore}
+\end{figure}\mbox{} \\
+In der Abbildung \ref{fig:wordcombinationvsscore} ist das Diagramm zur Anzahl der zu entfernenden Wortartenkombinationen im Verhältnis zum Score dargestellt. Die Werte auf der X-Achse quantifizieren die Anzahl der enthaltenen Wortkombinationen. Der Wert null entspricht der Durchführung des Systems ohne den Schritt der Entfernung von untypischen Wortkombinationen. Der Wert 8 stellt demgemäß den Schritt dar, bei dem sämtliche acht Kombinationen aus der Tabelle \ref{tab:wortkombinationen} aus dem Kapitel \ref{postagging} in die Auswertung einbezogen sind. Die Werte dazwischen repräsentieren die jeweilige Anzahl der zu dem Zeitpunkt enthaltenen Kombinationen. Es lässt sich erkennen, dass sich der Score von 0,84529346 auf 0,85460645 verbessert hat, nachdem im Schritt 2 die zu entfernende Kombination aus Verb und Adjektiv hinzugefügt wurde. Dies belegt, dass die aufgestellte These korrekt ist und das System durch die Entfernung untypischer Wortkombinationen ein besseres Ergebnis liefert.
 \paragraph{4. Übersetzung beibehalten}\mbox{}\\
-Die These ist, dass ohne Übersetzung ins Englische die Implementierten \emph{NLP}-Ansätze schlechtere Ergebnisse liefern. Die Idee dahinter ist, dass diese mit Englischen Datensätzen trainiert sind und mit deutschen Wörtern eventuell nicht optimal funktionieren.
+Die These lautet, dass die implementierten Ansätze ohne eine Übersetzung ins Englische zu schlechteren Ergebnissen führen. Die These basiert auf der Annahme, dass die Modelle mit englischen Datensätzen trainiert wurden und daher bei der Anwendung auf deutsche Wörter möglicherweise nicht die optimalen Ergebnisse liefern.\\
 
+Es lässt sich feststellen, dass die Qualität der Stichpunkte ohne die Übersetzung abnimmt. Dies kann darauf zurückgeführt werden, dass die Stopwords-Entfernung auf englische Begriffe ausgelegt ist. Dies hat zur Konsequenz, dass diese bei der Entfernung nicht erfasst werden. Des Weiteren ist der Korpus mit englischsprachigen Übersetzungen gefüllt, was eine effiziente Ermittlung der Schlüsselwörter verhindert. Die Stichpunkte im Verfahren ohne die Übersetzung sind kurz und bestehen aus Wörtern, die nach der Übersetzung unverändert bleiben. Zu diesen Wörtern gehören unter anderem Technologien und feststehende Namen. Der aktuelle Aufbau sowie die genutzten Technologien im System benötigen eine Übersetzung, um bessere Ergebnisse zu erzielen. Dennoch konnte ein Optimierungspotenzial in der Übersetzung selbst identifiziert werden. Die Wahl der Übersetzungsschnittstelle basiert auf der öffentlichen Verfügbarkeit des Google Übersetzers. Die Nutzung eines anderen Anbieters, der über die Funktion verfügt, fachlich-softwareentwicklungsspezifische Wörter adäquat zu übersetzen, könnte zu einer präziseren Übersetzung führen. Da der Textkorpus zur Ermittlung der Schlüsselwörter mit derselben Methode wie der Volltext vorverarbeitet und übersetzt wurde, sind die Ergebnisse mit dem Google Übersetzer als ausreichend zu betrachten.
+\paragraph{Zusätzliche Erkenntnis}\mbox{}\\
+Im Rahmen der Evaluierung wurde ersichtlich, dass die eigentlich essenzielle Abfolge des erst Übersetzens und anschließenden Vorverarbeitens eine Problematik generiert. Die ursprüngliche Überlegung zur Reihenfolge des Vorübersetzens basierte auf der Annahme, dass beim Vorverarbeiten Satzzeichen entfernt werden, wodurch die Möglichkeit verloren geht, einzelne Satzkontexte zu identifizieren. Dies würde eine Reduktion der Übersetzungsqualität zur Folge haben. Es hat sich gezeigt, dass Formatierungszeichen wie \textbackslash r \textbackslash n dazu führen, dass nach der Übersetzung Situationen entstehen, die die ursprüngliche Struktur der Wörter nicht mehr erkennen lassen. So wird aus dem nicht zusammengehörenden Wörtern \emph{Java\textbackslash r\textbackslash nSpring} nach der Übersetzung das zusammengesetzte Wort \emph{JavarnSpring}. Diese Problematik ist auf die Funktionsweise der Übersetzungsfunktion zurückzuführen. Um das genannte Problem zu umgehen, wird eine Entfernung der genannten Formatierungen noch vor der Übersetzung durchgeführt, wodurch das Problem gelöst wird.\\
+
+Des Weiteren wurde festgestellt, dass in einigen Fällen ein Kontext der zeitbezogenen Daten wünschenswert wäre. Die ermittelten Zeiten sind korrekt, allerdings fehlen Angaben dazu, wofür die Zeiten stehen. In dem Datensatz aus der Evaluation werden die 2 Jahre korrekt identifiziert, allerdings fehlt die Information, dass es sich bei den 2 Jahren um Java-Erfahrung handelt.
 %\section{Vergleich des Systems mit einem Large Language Model-Ansatz}
 %\section{Analyse von Abweichungen, Ähnlichkeiten und Verbesserungspotenzialen des Systems}
 \newpage

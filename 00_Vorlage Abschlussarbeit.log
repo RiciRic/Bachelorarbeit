@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  16 JUL 2024 01:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  21 JUL 2024 21:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1395,11 +1395,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
-
- []
-
 [4])
 \openout2 = `entwicklung_erwartungshaltung.aux'.
 
@@ -1487,7 +1482,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
-<Abbildungen/Ablaufmodell.png, id=259, 143.03438pt x 377.15906pt>
+<Abbildungen/Ablaufmodell.png, id=266, 143.03438pt x 377.15906pt>
 File: Abbildungen/Ablaufmodell.png Graphic file (type png)
 <use Abbildungen/Ablaufmodell.png>
 Package pdftex.def Info: Abbildungen/Ablaufmodell.png  used on input line 106.
@@ -1532,7 +1527,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--107
 \T1/lmr/m/n/12 nach May-ring
  []
 
-<Abbildungen/zusammenfassendeInhaltsanalyse.png, id=263, 144.54pt x 377.15906pt
+<Abbildungen/zusammenfassendeInhaltsanalyse.png, id=270, 144.54pt x 377.15906pt
 >
 File: Abbildungen/zusammenfassendeInhaltsanalyse.png Graphic file (type png)
 <use Abbildungen/zusammenfassendeInhaltsanalyse.png>
@@ -1606,85 +1601,85 @@ Overfull \hbox (0.78362pt too wide) in paragraph at lines 215--215
  []
 
 
-Overfull \hbox (0.78362pt too wide) in paragraph at lines 222--222
+Overfull \hbox (0.78362pt too wide) in paragraph at lines 223--223
 []|\T1/lmr/m/n/12 K2| 
  []
 
 
-Overfull \hbox (0.78362pt too wide) in paragraph at lines 234--234
+Overfull \hbox (0.78362pt too wide) in paragraph at lines 236--236
 []|\T1/lmr/m/n/12 K3| 
  []
 
 
-Underfull \hbox (badness 3547) in paragraph at lines 234--234
+Underfull \hbox (badness 3547) in paragraph at lines 236--236
 []|\T1/lmr/m/n/12 Wichtige In-for-ma-tio-
  []
 
 
-Overfull \hbox (0.78362pt too wide) in paragraph at lines 244--244
+Overfull \hbox (0.78362pt too wide) in paragraph at lines 247--247
 []|\T1/lmr/m/n/12 K4| 
  []
 
 
-Overfull \hbox (0.78362pt too wide) in paragraph at lines 255--255
+Overfull \hbox (0.78362pt too wide) in paragraph at lines 259--259
 []|\T1/lmr/m/n/12 K5| 
  []
 
 
-Overfull \hbox (0.78362pt too wide) in paragraph at lines 265--265
+Overfull \hbox (0.78362pt too wide) in paragraph at lines 270--270
 []|\T1/lmr/m/n/12 K6| 
  []
 
 
-Overfull \hbox (0.78362pt too wide) in paragraph at lines 275--275
+Overfull \hbox (0.78362pt too wide) in paragraph at lines 281--281
 []|\T1/lmr/m/n/12 K7| 
  []
 
-[14] [15] [16] [17]
-<Abbildungen/bedarfsmeldungsprozess.png, id=361, 517.18219pt x 318.43968pt>
+[14] [15] [16]
+<Abbildungen/bedarfsmeldungsprozess.png, id=364, 517.18219pt x 318.43968pt>
 File: Abbildungen/bedarfsmeldungsprozess.png Graphic file (type png)
 <use Abbildungen/bedarfsmeldungsprozess.png>
 Package pdftex.def Info: Abbildungen/bedarfsmeldungsprozess.png  used on input 
-line 367.
+line 374.
 (pdftex.def)             Requested size: 413.7463pt x 254.75209pt.
- [18]
-Underfull \hbox (badness 10000) in paragraph at lines 370--372
+ [17]
+Underfull \hbox (badness 10000) in paragraph at lines 377--379
 
  []
 
-[19 <./Abbildungen/bedarfsmeldungsprozess.png>]
-<Abbildungen/jiraBefore.png, id=374, 293.59688pt x 374.90062pt>
+[18 <./Abbildungen/bedarfsmeldungsprozess.png>]
+<Abbildungen/jiraBefore.png, id=377, 293.59688pt x 374.90062pt>
 File: Abbildungen/jiraBefore.png Graphic file (type png)
 <use Abbildungen/jiraBefore.png>
-Package pdftex.def Info: Abbildungen/jiraBefore.png  used on input line 378.
+Package pdftex.def Info: Abbildungen/jiraBefore.png  used on input line 385.
 (pdftex.def)             Requested size: 293.59615pt x 374.8997pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--383
+Underfull \hbox (badness 10000) in paragraph at lines 388--390
 
  []
 
-[20 <./Abbildungen/jiraBefore.png>]
-<Abbildungen/jiraAfter.png, id=385, 246.9225pt x 235.63031pt>
+[19 <./Abbildungen/jiraBefore.png>]
+<Abbildungen/jiraAfter.png, id=388, 246.9225pt x 235.63031pt>
 File: Abbildungen/jiraAfter.png Graphic file (type png)
 <use Abbildungen/jiraAfter.png>
-Package pdftex.def Info: Abbildungen/jiraAfter.png  used on input line 388.
+Package pdftex.def Info: Abbildungen/jiraAfter.png  used on input line 395.
 (pdftex.def)             Requested size: 246.92188pt x 235.62973pt.
- [21]
-Underfull \hbox (badness 10000) in paragraph at lines 391--393
+ [20]
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 394--395
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
 
  []
 
-) [22 <./Abbildungen/jiraAfter.png>]
+) [21 <./Abbildungen/jiraAfter.png>]
 \openout2 = `konzeption.aux'.
 
  (konzeption.tex
 chapter 3.
-<Abbildungen/recommendersystem.png, id=399, 450.9347pt x 105.39375pt>
+<Abbildungen/recommendersystem.png, id=401, 450.9347pt x 105.39375pt>
 File: Abbildungen/recommendersystem.png Graphic file (type png)
 <use Abbildungen/recommendersystem.png>
 Package pdftex.def Info: Abbildungen/recommendersystem.png  used on input line 
@@ -1700,7 +1695,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--16
 
  []
 
-[23
+[22
 
 
 
@@ -1715,21 +1710,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
-[24] [25] [26]
-<Abbildungen/use-case.png, id=456, 459.21562pt x 222.07968pt>
+[23] [24] [25]
+<Abbildungen/use-case.png, id=459, 459.21562pt x 222.07968pt>
 File: Abbildungen/use-case.png Graphic file (type png)
 <use Abbildungen/use-case.png>
 Package pdftex.def Info: Abbildungen/use-case.png  used on input line 33.
 (pdftex.def)             Requested size: 426.79135pt x 206.40997pt.
- [27 <./Abbildungen/use-case.png>] [28] [29]
-<Abbildungen/bedarfsmeldungstrukturieren.png, id=503, 411.03563pt x 150.5625pt>
+ [26 <./Abbildungen/use-case.png>] [27] [28]
+<Abbildungen/bedarfsmeldungstrukturieren.png, id=506, 411.03563pt x 150.5625pt>
 
 File: Abbildungen/bedarfsmeldungstrukturieren.png Graphic file (type png)
 <use Abbildungen/bedarfsmeldungstrukturieren.png>
 Package pdftex.def Info: Abbildungen/bedarfsmeldungstrukturieren.png  used on i
 nput line 93.
 (pdftex.def)             Requested size: 426.79135pt x 156.33318pt.
-) [30 <./Abbildungen/bedarfsmeldungstrukturieren.png>]
+) [29 <./Abbildungen/bedarfsmeldungstrukturieren.png>]
 \openout2 = `literaturueberblick.aux'.
 
  (literaturueberblick.tex
@@ -1749,7 +1744,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-[31
+[30
 
 
 
@@ -1759,7 +1754,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-[32]
+[31]
 Underfull \hbox (badness 10000) in paragraph at lines 16--18
 
  []
@@ -1769,12 +1764,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
-[33]
+[32]
 Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-[34]
+[33]
 Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
@@ -1784,7 +1779,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--42
 
  []
 
-[35]
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
@@ -1794,7 +1789,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
-[36]
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
@@ -1804,7 +1799,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--51
 
  []
 
-[37]
+[36]
 Overfull \hbox (9.23575pt too wide) in paragraph at lines 53--54
 \T1/lmr/m/n/12 In der Ar-beit ``Im-ple-men-tie-rung und Vi-sua-li-sie-rung N-Gr
 amm-basierter Word-Clouds''
@@ -1820,7 +1815,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-[38] [39])
+[37] [38])
 \openout2 = `implementationsdetails.aux'.
 
  (implementationsdetails.tex
@@ -1830,131 +1825,167 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-<Abbildungen/flowchart.png, id=602, 421.575pt x 177.66376pt>
+<Abbildungen/flowchart.png, id=605, 421.575pt x 177.66376pt>
 File: Abbildungen/flowchart.png Graphic file (type png)
 <use Abbildungen/flowchart.png>
 Package pdftex.def Info: Abbildungen/flowchart.png  used on input line 10.
 (pdftex.def)             Requested size: 426.79135pt x 179.86458pt.
-[40
+[39
 
 
 
 
-] [41 <./Abbildungen/flowchart.png>]
+] [40 <./Abbildungen/flowchart.png>]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
-0.
+1.
 
 (C:\Users\ricar\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [42]
+) [41]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 76.
 See the caption package documentation for explanation.
 
-[43] [44]
+[42]
 Underfull \hbox (badness 10000) in paragraph at lines 118--139
 
  []
 
-[45]
+[43] [44]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 206.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 207.
- [46]
+
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 243.
 See the caption package documentation for explanation.
 
-
+[45]
 Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
 
-[47] [48] [49]
+[46] [47] [48]
 Underfull \hbox (badness 10000) in paragraph at lines 306--308
 
  []
 
 
-Overfull \hbox (0.64665pt too wide) in paragraph at lines 308--309
+Overfull \hbox (0.64665pt too wide) in paragraph at lines 309--310
 \T1/lmr/bx/n/12 Migrations- und Im-ple-men-tie-rungs-pro-jek-ten im Um-feld von
  Re-chen-
  []
 
-[50]
-Overfull \hbox (0.5233pt too wide) in paragraph at lines 312--313
+
+Overfull \hbox (0.5233pt too wide) in paragraph at lines 313--314
 \T1/lmr/bx/n/12 planning, coor-di-na-ting, mi-gra-ti-on, im-ple-men-ta-ti-on, d
 a-ta, cen-ter, ser-
  []
 
-
-Overfull \hbox (2.38383pt too wide) in paragraph at lines 313--315
+[49]
+Overfull \hbox (2.38383pt too wide) in paragraph at lines 314--316
 \T1/lmr/bx/n/12 ning', 'coor-di-na-ting'), ('coor-di-na-ting', 'exe-cu-ting'), 
 ('exe-cu-ting', 'it'),
  []
 
 
-Overfull \hbox (8.65474pt too wide) in paragraph at lines 315--316
+Overfull \hbox (8.65474pt too wide) in paragraph at lines 316--317
 \T1/lmr/bx/n/12 ('support', 'pro-ject'), ('pro-ject', 'ma-na-ger'), ('ma-na-ger
 ', 'ex-pe-ri-ence'),
  []
 
 
-Overfull \hbox (11.07272pt too wide) in paragraph at lines 316--317
-[]\T1/lmr/m/n/12 Der nächs-te Schritt bein-hal-tet die Ent-fer-nung von un-ge-w
-öhn-li-chen \T1/lmr/m/it/12 POS-Tagging\T1/lmr/m/n/12 -
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
 
  []
 
-[51]
-Overfull \hbox (11.5833pt too wide) in paragraph at lines 318--318
+
+Overfull \hbox (11.5833pt too wide) in paragraph at lines 319--319
 []\T1/lmr/bx/n/12 Erfahrung im Be-reich Re-chen-zen-trums-dienst-leis-tun-gen e
 r-wünscht 
  []
 
-) [52]
+) [50]
 \openout2 = `evaluation.aux'.
 
  (evaluation.tex
 chapter 6.
-[53
+[51
 
 
 
 
-] [54]
-Underfull \hbox (badness 10000) in paragraph at lines 38--40
+] [52]
+Underfull \hbox (badness 10000) in paragraph at lines 35--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
-[55]
-Underfull \hbox (badness 10000) in paragraph at lines 57--59
+[53]
+Underfull \hbox (badness 10000) in paragraph at lines 59--61
 
  []
 
-[56]
-Underfull \hbox (badness 10000) in paragraph at lines 89--91
+<plot/e1-woerter-score.png, id=806, 722.7pt x 433.62pt>
+File: plot/e1-woerter-score.png Graphic file (type png)
+<use plot/e1-woerter-score.png>
+Package pdftex.def Info: plot/e1-woerter-score.png  used on input line 65.
+(pdftex.def)             Requested size: 426.79135pt x 256.07838pt.
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 70--72
 
  []
 
-[57])
+[55 <./plot/e1-woerter-score.png>]
+<plot/e2-threshold-score.png, id=823, 722.7pt x 433.62pt>
+File: plot/e2-threshold-score.png Graphic file (type png)
+<use plot/e2-threshold-score.png>
+Package pdftex.def Info: plot/e2-threshold-score.png  used on input line 76.
+(pdftex.def)             Requested size: 426.79135pt x 256.07838pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
+
+ []
+
+[56 <./plot/e2-threshold-score.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
+
+ []
+
+<plot/e3-wortkombinationen-score.png, id=831, 722.7pt x 433.62pt>
+File: plot/e3-wortkombinationen-score.png Graphic file (type png)
+<use plot/e3-wortkombinationen-score.png>
+Package pdftex.def Info: plot/e3-wortkombinationen-score.png  used on input lin
+e 89.
+(pdftex.def)             Requested size: 426.79135pt x 256.07838pt.
+[57 <./plot/e3-wortkombinationen-score.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 94--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
+
+ []
+
+[58] [59])
 \openout2 = `zusammenfassung.aux'.
 
  (zusammenfassung.tex
 chapter 7.
-[58
+[60
 
 
 
@@ -2012,7 +2043,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-[59
+[61
 
 
 
@@ -2076,7 +2107,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--51
 
  []
 
-[60]
+[62]
 Underfull \hbox (badness 10000) in paragraph at lines 52--55
 
  []
@@ -2111,7 +2142,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--79
 
  []
 
-[61]
+[63]
 Underfull \hbox (badness 10000) in paragraph at lines 80--83
 
  []
@@ -2126,7 +2157,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--91
 
  []
 
-[62]
+[64]
 Underfull \hbox (badness 10000) in paragraph at lines 92--95
 
  []
@@ -2151,7 +2182,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--111
 
  []
 
-[63]
+[65]
 Underfull \hbox (badness 10000) in paragraph at lines 112--115
 
  []
@@ -2181,7 +2212,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--135
 
  []
 
-[64]
+[66]
 Underfull \hbox (badness 10000) in paragraph at lines 136--139
 
  []
@@ -2206,7 +2237,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--157
 
  []
 
-[65]
+[67]
 Underfull \hbox (badness 10000) in paragraph at lines 158--161
 
  []
@@ -2231,7 +2262,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--177
 
  []
 
-[66]
+[68]
 Underfull \hbox (badness 10000) in paragraph at lines 178--181
 
  []
@@ -2241,7 +2272,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--185
 
  []
 
-[67] [68]
+[69] [70]
 Overfull \hbox (0.86128pt too wide) in paragraph at lines 186--189
 \T1/lmr/m/n/12 Wie wer-den dann Be-darfs-mel-dun-gen und die An-for-de-run-gen 
 ty-pi-scher-wei-se bei Ades-
@@ -2257,7 +2288,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--193
 
  []
 
-[69] [70]
+[71] [72]
 Underfull \hbox (badness 10000) in paragraph at lines 194--197
 
  []
@@ -2277,7 +2308,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--209
 
  []
 
-[71] [72]
+[73] [74]
 Underfull \hbox (badness 10000) in paragraph at lines 210--213
 
  []
@@ -2292,7 +2323,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--221
 
  []
 
-[73]
+[75]
 Underfull \hbox (badness 10000) in paragraph at lines 222--225
 
  []
@@ -2307,7 +2338,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 230--233
 
  []
 
-[74]
+[76]
 Underfull \hbox (badness 10000) in paragraph at lines 236--239
 
  []
@@ -2337,7 +2368,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--259
 
  []
 
-[75]
+[77]
 Underfull \hbox (badness 10000) in paragraph at lines 260--263
 
  []
@@ -2367,7 +2398,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 280--283
 
  []
 
-[76]
+[78]
 Underfull \hbox (badness 10000) in paragraph at lines 284--287
 
  []
@@ -2397,7 +2428,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 304--307
 
  []
 
-[77]
+[79]
 Underfull \hbox (badness 10000) in paragraph at lines 308--311
 
  []
@@ -2422,7 +2453,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--327
 
  []
 
-[78]
+[80]
 Underfull \hbox (badness 10000) in paragraph at lines 328--331
 
  []
@@ -2437,7 +2468,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 338--341
 
  []
 
-[79]
+[81]
 Underfull \hbox (badness 10000) in paragraph at lines 342--345
 
  []
@@ -2452,7 +2483,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 350--353
 
  []
 
-[80]
+[82]
 Underfull \hbox (badness 10000) in paragraph at lines 354--357
 
  []
@@ -2467,7 +2498,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 362--365
 
  []
 
-[81]
+[83]
 Underfull \hbox (badness 10000) in paragraph at lines 366--369
 
  []
@@ -2477,7 +2508,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 370--373
 
  []
 
-[82]
+[84]
 Underfull \hbox (badness 10000) in paragraph at lines 374--377
 
  []
@@ -2487,7 +2518,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 378--381
 
  []
 
-[83]
+[85]
 Overfull \hbox (4.86545pt too wide) in paragraph at lines 393--393
 []|\T1/lmr/m/n/12 Fall| 
  []
@@ -4208,7 +4239,7 @@ Overfull \hbox (5.4944pt too wide) in alignment at lines 396--491
  [] [] [] [] [] 
  []
 
-[84] [85] [86] [87] [88] [89] [90] [91] [92] [93]) [94]
+[86] [87] [88] [89] [90] [91] [92] [93] [94] [95]) [96]
 \openout2 = `eidesstattliche_erklaerung.aux'.
 
 
@@ -4222,7 +4253,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-[95
+[97
 
 
 ]
@@ -4240,12 +4271,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--194
 
  []
 
-[96] [97
+[98] [99
 
 
-] [98
+] [100
 
-] [99] [100] (00_Vorlage Abschlussarbeit.aux (proposal.aux)
+] [101] [102] (00_Vorlage Abschlussarbeit.aux (proposal.aux)
 (einleitung.aux) (entwicklung_erwartungshaltung.aux) (konzeption.aux)
 (literaturueberblick.aux) (implementationsdetails.aux) (evaluation.aux)
 (zusammenfassung.aux) (eidesstattliche_erklaerung.aux))
@@ -4262,10 +4293,10 @@ Package logreq Info: Writing requests to '"00_Vorlage Abschlussarbeit".run.xml'
 
  ) 
 Here is how much of TeX's memory you used:
- 28069 strings out of 474592
- 517737 string characters out of 5745798
+ 28051 strings out of 474592
+ 518099 string characters out of 5745798
  2090533 words of memory out of 5000000
- 49405 multiletter control sequences out of 15000+600000
+ 49380 multiletter control sequences out of 15000+600000
  619024 words of font info for 77 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  108i,14n,107p,10990b,2630s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -4282,9 +4313,9 @@ fb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.p
 fb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sy
 mbols/msam10.pfb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
 zapfding/uzdr.pfb>
-Output written on "00_Vorlage Abschlussarbeit.pdf" (109 pages, 1037367 bytes).
+Output written on "00_Vorlage Abschlussarbeit.pdf" (111 pages, 1547194 bytes).
 PDF statistics:
- 1288 PDF objects out of 1440 (max. 8388607)
- 385 named destinations out of 1000 (max. 500000)
- 390 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1318 PDF objects out of 1440 (max. 8388607)
+ 392 named destinations out of 1000 (max. 500000)
+ 405 words of extra memory for PDF output out of 10000 (max. 10000000)
 
