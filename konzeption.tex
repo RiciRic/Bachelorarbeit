@@ -3,7 +3,7 @@
 In diesem Kapitel wird auf Basis der Ergebnisse aus Kapitel \ref{chap:erwartungshaltung} ein System konzipiert, das als Teilsystem des Recommender System zur Mitarbeiterempfehlung dienen soll.
 \section{Idee des Recommender System zur Mitarbeiterempfehlung}
 Das zu unterstützende Recommender System zur Mitarbeiterempfehlung besteht aus mehreren Schritten.\\
-\todo{meinen Teil eventuell farblich markieren}\\
+%\todo{meinen Teil eventuell farblich markieren}\\
 \begin{figure}[H]
 	\centering  
 	\includegraphics[width=\linewidth]{Abbildungen/recommendersystem.png}
@@ -41,39 +41,47 @@ Im Folgenden werden die funktionalen sowie nichtfunktionalen Anforderungen des S
 \subsubsection{Funktionale Anforderungen}
 Die funktionalen Anforderungen beschreiben konkrete Funktionalitäten des Systems. Dazu werden zusammengehörende Anforderungen nummeriert und in detaillierte Unterpunkte aufgelistet und beschrieben.
 \begin{enumerate}[label=1.\arabic*]
+	%\itemsep-0.5em
 	\item Die \emph{Bedarfsmeldungen} sollen geladen werden können.
 	\item Beim laden wird eine \emph{Bedarfsmeldung} ausgewählt.
 	\item Die ausgewählte \emph{Bedarfsmeldung} muss in die vordefinierte Struktur überführt werden.
 \end{enumerate}
 \begin{enumerate}[label=2.\arabic*]
+	%\itemsep-0.5em
 	\item Das System soll Methoden der Vorverarbeitung zur Bereinigung eines Volltextes anwenden können.
 	\item Die Vorverarbeitung soll ein Volltext als Eingabe erhalten.
 	\item Das Vorverarbeitung soll den bereinigten Volltext als Ausgabe zurückgeben.
 \end{enumerate}
 \begin{enumerate}[label=3.\arabic*]
+	%\itemsep-0.5em
 	\item Das System soll eine Methode zur Identifizierung von Schlüsselwörtern anwenden können.
 	\item Das Modul soll eine Liste mit Schlüsselwörtern anlegen.
 \end{enumerate}
 \begin{enumerate}[label=4.\arabic*]
+	%\itemsep-0.5em
 	\item Das System soll Wortketten aus einem Volltext erstellen können.
 	\item Das Modul soll einen Volltext als Eingabe für diese Methode erhalten.
 	\item Als Rückgabe soll das Modul eine Liste mit Wortketten zurückgeben.
 	\item Das System soll eine Wortketten-Liste auf die Wörter reduzieren, die mindestens ein Schlüsselwort enthalten.
 \end{enumerate}
 \begin{enumerate}[label=5.\arabic*]
+	%\itemsep-0.5em
 	\item Das System soll eine Methode zur Extraktion von Zeitangaben anwenden können.
 	\item Das Modul soll aus einem Volltext Datums- und Zeitangaben extrahieren.
 \end{enumerate}
 \begin{enumerate}[label=6.\arabic*]
+	%\itemsep-0.5em
 	\item Das System soll eine Methode zur Identifikation von untypischenn Wortkombinationen anwenden können.
 	\item Das Modul soll Wortkombinationen aus der Wortkette erhalten und überprüfen ob die Wörter nebeneinander stehen dürfen.
 	\item Wortketten werden entfernt, die nicht nebeneinander stehen sollen.
 \end{enumerate}
 \begin{enumerate}[label=7.\arabic*]
+	%\itemsep-0.5em
 	\item Das System soll die Wortketten in zusammengehörende Stichpunkte zusammenführen.
 	\item Als Ergebnis wird eine Liste mit Stichpunkten zurückgegeben.
 \end{enumerate}
 \begin{enumerate}[label=8.\arabic*]
+	%\itemsep-0.5em
 	\item Die in Stichpunkte umgebauten Volltexte werden der \emph{Bedarfsmeldung} beigefügt.
 	\item Die Datums- und Zeitangaben werden den Stichpunkten beigefügt.
 	\item Das Ergebnis wird dem Benutzer ausgegeben.
@@ -81,6 +89,7 @@ Die funktionalen Anforderungen beschreiben konkrete Funktionalitäten des System
 \subsubsection{Nichtfunktionale Anforderungen}
 Hierbei handelt es sich um qualitätsbezogene Anforderungen. Diese umfassen nicht konkrete Funktionen des Systems, sondern stellen Rahmenbedingungen des Systems im Ganzen zusammen.
 \begin{enumerate}
+	%\itemsep-0.5em
 	\item Das System soll modular aufgebaut sein, um die einzelnen Schritte und Methoden austauschen zu können.
 	\item Das System soll in der Lage sein, mehrere \emph{Bedarfsmeldungen} laden zu können.
 	\item Das System muss in der Lage sein, die \emph{Bedarfsmeldungen} in einer akzeptablen Zeitspanne zu verarbeiten.

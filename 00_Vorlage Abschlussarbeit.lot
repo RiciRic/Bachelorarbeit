@@ -2,13 +2,17 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {2.1}{\ignorespaces Übersicht der Experten}}{8}{table.2.1}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces Ergebnisse der qualitativen Inhaltsanalyse.}}{17}{table.2.2}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Ergebnisse der qualitativen Inhaltsanalyse.}}{15}{table.2.2}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Übersicht der Datenfelder}}{42}{table.5.1}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Untypische Wortartenkombinationen in der englischen Sprache.}}{46}{table.5.2}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Übersicht der Datenfelder}}{41}{table.5.1}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Untypische Wortartenkombinationen in der englischen Sprache.}}{44}{table.5.2}%
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Gegenüberstellung der Ergebnisse mit 4000 und 8070 Wörtern im Textkorpus.}}{53}{table.6.1}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Gegenüberstellung der Ergebnisse mit dem Threshold 0.0 und 0.05.}}{55}{table.6.2}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Gegenüberstellung der Ergebnisse mit 1 und 2 untypischen Wortkombinationen.}}{57}{table.6.3}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Gegenüberstellung der Ergebnisse mit und ohne Übersetzungsschritt.}}{58}{table.6.4}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {A.1}{\ignorespaces Erstellung der Kategorien aus den Experteninterviews.}}{96}{table.A.1}%
