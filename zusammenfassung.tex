@@ -1,20 +1,26 @@
 \chapter{Zusammenfassung und Ausblick}
 \label{chap:ergebnisseausblick}
+Die vorliegende Arbeit verfolgt das Ziel, durch die Anwendung von Ansätzen des Information Retrieval semi-strukturierte \emph{Bedarfsmeldungen} in einen überschaubaren und auf die wichtigsten Inhalte reduzierten Informationsgehalt zu überführen. Zu diesem Zweck wurden im Rahmen von Experteninterviews die essenziellen Inhalte einer \emph{Bedarfsmeldung} ermittelt und auf dieser Grundlage eine Vorlage für eine strukturierte Bedarfsmeldung erstellt. Auf Basis der erarbeiteten Ergebnisse wurde ein prototypisches System entwickelt, das die Reduktion von Bedarfsmeldungen sowie die Zusammenfassung unstrukturierter Volltextbereiche auf die wichtigsten Stichpunkte ermöglicht.\\
 
-ergebnis der arbeit: diese modelle in der reihenfolge kommen am nähesten an die bedarfsmeldung
+Die Evaluierung hat ergeben, dass durch Vorverarbeitungsschritte vor und nach einer Übersetzung der Volltexte eine Ausgangslage geschaffen wird, die beim Abgleich der identifizierten Schlüsselwörter durch \emph{TF-IDF} zur Qualität der Stichpunkte beiträgt. Die Identifikation einer Sammlung von Schlüsselwörtern, deren weitere Reduzierung eine wesentliche Rolle spielt, ist durch einen entsprechend großen Textkorpus möglich, wobei die Größe des Textkorpus ab einem gewissen Punkt keine weitere Rolle spielt. Die Bildung von Wortketten, die auf zusammengehörigen Schlüsselwörtern basieren, ist ein wesentlicher Aspekt des Verfahrens. Die Präzision dieser Wortketten kann durch einen Threshold-Wert für die Schlüsselwörter weiter erhöht werden. Der Schritt der Erkennung untypischer Wortarten konnte bei der Evaluation keinen positiven, aber auch keinen negativen Effekt verzeichnen. Im Rahmen der Tests konnten keine gesuchten Wortkombinationen identifiziert werden, sodass sich das Ergebnis nicht verändert hat. Die Resultate weisen noch Optimierungspotenzial auf. Es zeigt sich, dass nicht jede Information einen relevanten Inhalt widerspiegelt und Stichpunkte teils eine ungewöhnliche Struktur aufweisen. \\
 
-Fragestellung beantworten
+Das prototypische hybride System stellt ein Proof of Concept dar. Die resultierenden deterministischen Ergebnisse sind vielversprechend und verdienen weitere Untersuchung.
 
-- ist deterministisch
+%ergebnis der arbeit: diese modelle in der reihenfolge kommen am nähesten an die bedarfsmeldung
 
-schluss --> was habe ich gebaut und wie performt das, system funktioniert hinreichend gut,
+%Fragestellung beantworten
 
-schluss--> es macht sinn oder nicht das system weiter zu erforschen
+%- ist deterministisch
 
-prototyp proof of concept --> gucken ob es vielversprechend
+%schluss --> was habe ich gebaut und wie performt das, system funktioniert hinreichend gut,
+
+
+%schluss--> es macht sinn oder nicht das system weiter zu erforschen
+
+%prototyp proof of concept --> gucken ob es vielversprechend
 
 
 
 \subsection*{Ausblick}
-Im Rahmen künftiger Überlegungen könnte die Ermittlung der Schlüsselwörter alternativ mittels eines durch Experten angelegten Katalogs mit aus der Branche enthaltenen Schlüsselwörtern erfolgen. Eine Steigerung der Ergebnisqualität ist potenziell zu erwarten, wenn präzisere Schlüsselwörter verwendet werden. Ein weiterer Evaluationsschritt in Bezug auf die NLP-Modelle könnte in einem Austausch der Modellgrößen bestehen. Eine Steigerung der Ergebnisqualität könnte durch den Einsatz von größeren und komplexeren Modelle erzielt werden. Des Weiteren besteht die Möglichkeit, den Übersetzungsschritt durch andere Anbieter durchführen zu lassen, wodurch fachlich korrektere Übersetzungen gewährleistet werden können. In Bezug auf das Recommender-System zur Mitarbeiterempfehlung kann eine Evaluierung erfolgen, ob eine Anwendung dieses Systems auch für die Mitarbeiterprofile denkbar wäre.
+Im Rahmen künftiger Überlegungen könnte die Ermittlung der Schlüsselwörter alternativ mittels eines durch Experten angelegten Katalogs mit aus der Branche enthaltenen Schlüsselwörtern erfolgen. Eine Steigerung der Ergebnisqualität ist potenziell zu erwarten, wenn präzisere Schlüsselwörter verwendet werden. Die Evaluation hat ergeben, dass die Kosinusähnlichkeit an ihre Grenzen gestoßen ist, wodurch die Hinzunahme weiterer Metriken zur Evaluierungen wichtig ist. Ein weiterer Evaluationsschritt in Bezug auf die NLP-Modelle könnte in einem Austausch der Modellgrößen bestehen. Eine Steigerung der Ergebnisqualität könnte durch den Einsatz von größeren und komplexeren Modelle erzielt werden. Des Weiteren besteht die Möglichkeit, den Übersetzungsschritt durch andere Anbieter durchführen zu lassen, wodurch fachlich korrektere Übersetzungen gewährleistet werden können. Es wäre von großem Interesse, eine direkte Gegenüberstellung mit einem System vorzunehmen, das auf Large Language Models basiert. In dem Aspekt wäre es aufschlussreich, die Ergebnisse zu vergleichen, wie es sich in Bezug auf den Ressourcenverbrauch und die inhaltliche Performance schlägt.
 \newpage
