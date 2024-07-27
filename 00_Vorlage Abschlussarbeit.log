@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  25 JUL 2024 11:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  27 JUL 2024 16:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1846,65 +1846,54 @@ chapter 6.
 
 
 ] [49]
-Underfull \hbox (badness 10000) in paragraph at lines 40--42
+Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
 [50]
-Underfull \hbox (badness 10000) in paragraph at lines 60--62
+Underfull \hbox (badness 10000) in paragraph at lines 59--61
 
  []
 
-<plot/e1-woerter-score.png, id=790, 722.7pt x 433.62pt>
+[51]
+<plot/e1-woerter-score.png, id=801, 722.7pt x 433.62pt>
 File: plot/e1-woerter-score.png Graphic file (type png)
 <use plot/e1-woerter-score.png>
-Package pdftex.def Info: plot/e1-woerter-score.png  used on input line 66.
+Package pdftex.def Info: plot/e1-woerter-score.png  used on input line 65.
 (pdftex.def)             Requested size: 426.79135pt x 256.07838pt.
-[51]
+ [52 <./plot/e1-woerter-score.png>]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 103.
+(caption)                particular \caption on input line 102.
 See the caption package documentation for explanation.
 
-[52 <./plot/e1-woerter-score.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 107--109
+[53]
+Underfull \hbox (badness 10000) in paragraph at lines 106--108
 
  []
 
-<plot/e2-threshold-score.png, id=807, 722.7pt x 433.62pt>
+<plot/e2-threshold-score.png, id=814, 722.7pt x 433.62pt>
 File: plot/e2-threshold-score.png Graphic file (type png)
 <use plot/e2-threshold-score.png>
-Package pdftex.def Info: plot/e2-threshold-score.png  used on input line 113.
+Package pdftex.def Info: plot/e2-threshold-score.png  used on input line 112.
 (pdftex.def)             Requested size: 426.79135pt x 256.07838pt.
-[53]
+[54 <./plot/e2-threshold-score.png>]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 148.
+(caption)                particular \caption on input line 147.
 See the caption package documentation for explanation.
 
-[54 <./plot/e2-threshold-score.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 152--154
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
 
  []
 
-<plot/e3-wortkombinationen-score.png, id=823, 722.7pt x 433.62pt>
-File: plot/e3-wortkombinationen-score.png Graphic file (type png)
-<use plot/e3-wortkombinationen-score.png>
-Package pdftex.def Info: plot/e3-wortkombinationen-score.png  used on input lin
-e 158.
-(pdftex.def)             Requested size: 426.79135pt x 256.07838pt.
-[55]
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 186.
-See the caption package documentation for explanation.
-
-[56 <./plot/e3-wortkombinationen-score.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 191--193
 
  []
@@ -1914,17 +1903,17 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 222.
 See the caption package documentation for explanation.
 
-[57] [58]
+[56]
 Underfull \hbox (badness 10000) in paragraph at lines 226--228
 
  []
 
-
+[57]
 Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
-[59])
+[58])
 \openout2 = `zusammenfassung.aux'.
 
  (zusammenfassung.tex
@@ -1939,12 +1928,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-[60
+[59
 
 
 
 
-] [61]) (anhang.tex
+] [60]) (anhang.tex
 chapter A.
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
@@ -1997,7 +1986,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-[62
+[61
 
 
 
@@ -2061,7 +2050,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--51
 
  []
 
-[63]
+[62]
 Underfull \hbox (badness 10000) in paragraph at lines 52--55
 
  []
@@ -2096,7 +2085,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--79
 
  []
 
-[64]
+[63]
 Underfull \hbox (badness 10000) in paragraph at lines 80--83
 
  []
@@ -2111,7 +2100,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--91
 
  []
 
-[65]
+[64]
 Underfull \hbox (badness 10000) in paragraph at lines 92--95
 
  []
@@ -2136,7 +2125,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--111
 
  []
 
-[66]
+[65]
 Underfull \hbox (badness 10000) in paragraph at lines 112--115
 
  []
@@ -2166,7 +2155,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--135
 
  []
 
-[67]
+[66]
 Underfull \hbox (badness 10000) in paragraph at lines 136--139
 
  []
@@ -2191,7 +2180,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--157
 
  []
 
-[68]
+[67]
 Underfull \hbox (badness 10000) in paragraph at lines 158--161
 
  []
@@ -2216,7 +2205,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--177
 
  []
 
-[69]
+[68]
 Underfull \hbox (badness 10000) in paragraph at lines 178--181
 
  []
@@ -2226,7 +2215,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--185
 
  []
 
-[70] [71]
+[69] [70]
 Overfull \hbox (0.86128pt too wide) in paragraph at lines 186--189
 \T1/lmr/m/n/12 Wie wer-den dann Be-darfs-mel-dun-gen und die An-for-de-run-gen 
 ty-pi-scher-wei-se bei Ades-
@@ -2242,7 +2231,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--193
 
  []
 
-[72] [73]
+[71] [72]
 Underfull \hbox (badness 10000) in paragraph at lines 194--197
 
  []
@@ -2262,7 +2251,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--209
 
  []
 
-[74] [75]
+[73] [74]
 Underfull \hbox (badness 10000) in paragraph at lines 210--213
 
  []
@@ -2277,7 +2266,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--221
 
  []
 
-[76]
+[75]
 Underfull \hbox (badness 10000) in paragraph at lines 222--225
 
  []
@@ -2292,7 +2281,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 230--233
 
  []
 
-[77]
+[76]
 Underfull \hbox (badness 10000) in paragraph at lines 236--239
 
  []
@@ -2322,7 +2311,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--259
 
  []
 
-[78]
+[77]
 Underfull \hbox (badness 10000) in paragraph at lines 260--263
 
  []
@@ -2352,7 +2341,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 280--283
 
  []
 
-[79]
+[78]
 Underfull \hbox (badness 10000) in paragraph at lines 284--287
 
  []
@@ -2382,7 +2371,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 304--307
 
  []
 
-[80]
+[79]
 Underfull \hbox (badness 10000) in paragraph at lines 308--311
 
  []
@@ -2407,7 +2396,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--327
 
  []
 
-[81]
+[80]
 Underfull \hbox (badness 10000) in paragraph at lines 328--331
 
  []
@@ -2422,7 +2411,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 338--341
 
  []
 
-[82]
+[81]
 Underfull \hbox (badness 10000) in paragraph at lines 342--345
 
  []
@@ -2437,7 +2426,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 350--353
 
  []
 
-[83]
+[82]
 Underfull \hbox (badness 10000) in paragraph at lines 354--357
 
  []
@@ -2452,7 +2441,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 362--365
 
  []
 
-[84]
+[83]
 Underfull \hbox (badness 10000) in paragraph at lines 366--369
 
  []
@@ -2462,7 +2451,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 370--373
 
  []
 
-[85]
+[84]
 Underfull \hbox (badness 10000) in paragraph at lines 374--377
 
  []
@@ -2472,7 +2461,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 378--381
 
  []
 
-[86]
+[85]
 Overfull \hbox (4.86545pt too wide) in paragraph at lines 393--393
 []|\T1/lmr/m/n/12 Fall| 
  []
@@ -4193,11 +4182,32 @@ Overfull \hbox (5.4944pt too wide) in alignment at lines 396--491
  [] [] [] [] [] 
  []
 
-[87] [88] [89] [90] [91] [92] [93] [94] [95] [96]) [97]
+[86] [87] [88] [89] [90] [91] [92] [93] [94] [95] [96]
+Underfull \hbox (badness 10000) in paragraph at lines 498--500
+
+ []
+
+
+Overfull \hbox (9.71587pt too wide) in paragraph at lines 516--518
+\T1/lmr/m/n/12 zung, Ein-rich-ten und Sup-por-ten von mo-der-nen In-fra-struk-t
+u-ren (Ku-ber-ne-tes,\r\nGCP,
+ []
+
+
+Overfull \hbox (50.1523pt too wide) in paragraph at lines 516--518
+\T1/lmr/m/n/12 be-ne Ent-wick-lung) und\r\nautomatisierte Tests\r\nLinux Skrip-
+te er-stel-len\r\nKollaboratives
+ []
+
+[97]
+Underfull \hbox (badness 10000) in paragraph at lines 518--520
+
+ []
+
+) [98]
 \openout2 = `eidesstattliche_erklaerung.aux'.
 
-
-(eidesstattliche_erklaerung.tex
+ (eidesstattliche_erklaerung.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
@@ -4207,7 +4217,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-[98
+[99
 
 
 ]
@@ -4225,12 +4235,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--195
 
  []
 
-[99] [100
+[100] [101
 
 
-] [101
+] [102
 
-] [102] [103] (00_Vorlage Abschlussarbeit.aux (proposal.aux)
+] [103] [104] (00_Vorlage Abschlussarbeit.aux (proposal.aux)
 (einleitung.aux) (entwicklung_erwartungshaltung.aux) (konzeption.aux)
 (literaturueberblick.aux) (implementationsdetails.aux) (evaluation.aux)
 (zusammenfassung.aux) (eidesstattliche_erklaerung.aux))
@@ -4247,10 +4257,10 @@ Package logreq Info: Writing requests to '"00_Vorlage Abschlussarbeit".run.xml'
 
  ) 
 Here is how much of TeX's memory you used:
- 28049 strings out of 474592
- 518193 string characters out of 5745798
+ 28054 strings out of 474592
+ 518010 string characters out of 5745798
  2088533 words of memory out of 5000000
- 49384 multiletter control sequences out of 15000+600000
+ 49379 multiletter control sequences out of 15000+600000
  619024 words of font info for 77 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  108i,14n,107p,10990b,2630s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -4267,9 +4277,9 @@ fb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.p
 fb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sy
 mbols/msam10.pfb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
 zapfding/uzdr.pfb>
-Output written on "00_Vorlage Abschlussarbeit.pdf" (112 pages, 1553875 bytes).
+Output written on "00_Vorlage Abschlussarbeit.pdf" (113 pages, 1441511 bytes).
 PDF statistics:
- 1320 PDF objects out of 1440 (max. 8388607)
- 386 named destinations out of 1000 (max. 500000)
- 397 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1339 PDF objects out of 1440 (max. 8388607)
+ 396 named destinations out of 1000 (max. 500000)
+ 416 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -20,9 +20,7 @@ Der nachfolgende Versuch dient der Überprüfung der Ergebnisqualität des entwi
 \paragraph{Word Embedding}\mbox{}\\
 \emph{Word Embedding} sind Vektordarstellungen eines Wortes, die durch Training eines neuronalen Netzes auf einem großen Korpus gewonnen werden \cite{sitikhu2019comparison}. Sie finden häufig Anwendung bei der Klassifikation von Texten anhand semantischer Ähnlichkeit \cite{sitikhu2019comparison}. Word2vec stellt eine der am häufigsten verwendeten Formen von \emph{Word Embedding} dar \cite{sitikhu2019comparison}. Das Word2Vec-Modell nimmt einen Textkorpus als Eingabe und erzeugt Wortvektoren als Ausgabe, die anschließend für die Klassifizierung eines beliebigen anderen Wortes verwendet werden können \cite{sitikhu2019comparison}. Dazu wird der entsprechende Vektorwert ermittelt \cite{sitikhu2019comparison}. Im Rahmen des Experiments wurde ein vortrainiertes \emph{Word Embedding}-Modell namens \emph{ConceptNet Numberbatch} \cite{speer2017conceptnet} verwendet, um Vektoren für den Eingabetext zu erstellen.
 \paragraph{Cosine-Similarity}\mbox{}\\
-\emph{Cosine-Similarity} misst den Kosinus des Winkels zwischen zwei Vektoren, die auf eine mehrdimensionale Ebene projiziert werden \cite{sitikhu2019comparison}. Es stellt eine weit verbreitete Metrik im Bereich des Information Retrieval dar \cite{rahutomo2012semantic}. Die Metrik modelliert ein Textdokument als einen Vektor von Begriffen \cite{rahutomo2012semantic}. Die Berechnung des Kosinuswerts zwischen den Vektoren zweier Dokumente erlaubt die Ermittlung der Ähnlichkeit zwischen diesen Dokumenten \cite{rahutomo2012semantic}. Der Grad der Ähnlichkeit zwischen den Vektoren ist ein Indikator für die Relevanz zwischen den Texten \cite{rahutomo2012semantic}.
-%Die Cosinus-Ähnlichkeit ist jedoch nicht in der Lage, die semantische Bedeutung des Textes adäquat zu erfassen. 
-%Die syntaktische Implementierung der Cosinus-Ähnlichkeitsmessung zwischen zwei Vektoren kann mitunter zu unzuverlässigen Ergebnissen führen. Der Syntaxabgleich ist möglicherweise nicht in der Lage, das Problem der unterschiedlichen semantischen Bedeutung zu lösen. Dies kann zu falschen Ergebnissen und einer Verschlechterung der Leistung des Information Retrieval Systems führen.
+\emph{Cosine-Similarity} misst den Kosinus des Winkels zwischen zwei Vektoren, die auf eine mehrdimensionale Ebene projiziert werden \cite{sitikhu2019comparison}. Es stellt eine weit verbreitete Metrik im Bereich des Information Retrieval dar \cite{rahutomo2012semantic}. Die Metrik modelliert ein Textdokument als einen Vektor von Begriffen \cite{rahutomo2012semantic}. Die Berechnung des Kosinuswerts zwischen den Vektoren zweier Dokumente erlaubt die Ermittlung der Ähnlichkeit zwischen diesen Dokumenten \cite{rahutomo2012semantic}. Der Grad der Ähnlichkeit zwischen den Vektoren ist ein Indikator für die Relevanz zwischen den Texten \cite{rahutomo2012semantic}. Die Cosinus-Ähnlichkeit ist jedoch nicht in der Lage, die semantische Bedeutung des Textes präzise zu erfassen \cite{rahutomo2012semantic}. Die syntaktische Implementierung der Cosinus-Ähnlichkeitsmessung zwischen zwei Vektoren kann mitunter zu unzuverlässigen Ergebnissen führen \cite{rahutomo2012semantic}. Dadurch ist es notwendig zusätzlich manuell auf die Ergebnisse zu schauen.
 \paragraph{Optimierungsmaßnahmen}\label{sec:optimierungsmaßnahmen}\mbox{}\\
 Im Rahmen der Evaluierung erfolgt eine schrittweise Anpassung der vier Parameter des Systems. Im Anschluss an jede Anpassung erfolgt eine Evaluierung der Cosine-Similarity im Hinblick auf eine etwaige Verbesserung oder Verschlechterung im Vergleich zur Erwartungshaltung. Im Anschluss an die Ermittlung des höchsten Scores werden die Ergebnisse dargestellt und Auffälligkeiten diskutiert. Zum Schluss jedes Schrittes erfolgt eine feste Übernahme des betreffenden Parameters in das System. In der Folge wird der darauffolgende Parameter angepasst. Die vier zu evaluierenden Parameter sind wie folgt definiert:
 \begin{enumerate}
@@ -55,8 +53,9 @@ Die Erwartungshaltung wurde manuell aus der Ausgangslage abgeleitet. Bei der Ers
 	\item erwarten Interessenten für Plattform.
 	\item 2 Jahre Erfahrung in Java
 \end{itemize}
+Des Weiteren werden zwei weitere synthetische Daten in den Evaluationsprozess integriert, um zusätzliche Erkenntnisse über das Systemverhalten zu gewinnen. Im Rahmen des zweiten Durchlaufs wurde ein Volltext gewählt, der sich aus unstrukturiertem Volltext sowie leicht strukturierten Auflistungen zusammensetzt. Des Weiteren wurde eine zeitbezogene Information integriert, welche es zu vermeiden gilt, um die korrekte Übermittlung dieser Information zu evaluieren. Im dritten Durchlauf zeigt sich eine gewisse Ähnlichkeit zum ersten Durchlauf, wobei hier ein längerer Volltext mit einer größeren Anzahl an relevanten Informationen zugrunde liegt. (siehe Anhang \ref{synthetischedaten})
 \section{Präsentation und Diskussion der Ergebnisse}
-Im Folgenden werden die Resultate der einzelnen Anpassungsschritte, wie sie in Kapitel \ref{sec:optimierungsmaßnahmen} beschrieben sind, dargelegt.
+Im Folgenden werden die Resultate der einzelnen Anpassungsschritte, wie sie in Kapitel \ref{sec:optimierungsmaßnahmen} beschrieben sind, dargelegt. Der Erste Durchlauf ist in den Graphen mit der Farbe Blau markiert. Durchlauf zwei ist mit Rot und drei ist mit Grün markiert.
 \paragraph{1. Korpusgröße der Schlüsselwortextraktion}\mbox{}\\
 Die These besagt, dass mit einer Zunahme der im Textkorpus enthaltenen Wörter und Daten für die Schlüsselwortextraktion eine Steigerung der Qualität der Schlüsselwörter einhergeht. Diese Annahme basiert auf der Prämisse, dass eine höhere Anzahl an themenbezogenen Dokumenten, die häufig verwendete fachliche Ausdrücke enthalten, zu einer höheren Gewichtung dieser Ausdrücke bei der Term-Frequency-Berechnung führt. Dies wiederum resultiert in einer höheren Wahrscheinlichkeit, dass sie als potenziell wichtige Schlüsselwörter identifiziert werden.\\
 
@@ -67,7 +66,7 @@ Die zuvor aufgestellte These soll durch eine schrittweise Erhöhung der Anzahl d
 	\caption{Diagramm zur Anzahl der Wörter im Verhältnis zum Score.}
 	\label{fig:woertervsscore}
 \end{figure}\mbox{} \\
-In der Abbildung \ref{fig:woertervsscore} wird das Verhältnis der Anzahl an Wörtern zum Score in Form eines Diagramms dargestellt. Im halblogarithmischen Diagramm lässt sich ein annähernd linearer Zusammenhang zwischen dem Score und der Anzahl der Wörter erkennen. Dies impliziert, dass der Score proportional zur exponentiellen Anzahl der Wörter ist. Der beschriebene Effekt ist bis zum Erreichen eines Plateaus bei 80.000 Wörtern erkennbar. In der Konsequenz lässt sich ein Anstieg der Ergebnisqualität bis zu einem gewissen Punkt feststellen, je mehr Wörter im Textkorpus enthalten sind. Eine Überschreitung dieses Punktes führt zu einer Stagnation der Ergebnisqualität. Bei einer zu geringen Anzahl an Wörtern im Textkorpus (n < 10) konnten keine Scoring-Werte generiert werden. Die Generierung von Stichpunkten durch das System ist nur möglich, wenn die entsprechenden Schlüsselwörter vorhanden sind, da andernfalls keine Zuordnung erfolgen kann.
+In der Abbildung \ref{fig:woertervsscore} wird das Verhältnis der Anzahl an Wörtern zum Score in Form eines Diagramms dargestellt. Im halblogarithmischen Diagramm lässt sich mit dem blauen Datensatz ein annähernd linearer Zusammenhang zwischen dem Score und der Anzahl der Wörter erkennen. Dies impliziert, dass der Score proportional zur exponentiellen Anzahl der Wörter ist. Der beschriebene Effekt ist bis zum Erreichen eines Plateaus bei 80.000 Wörtern erkennbar. In der Konsequenz lässt sich ein Anstieg der Ergebnisqualität bis zu einem gewissen Punkt feststellen, je mehr Wörter im Textkorpus enthalten sind. Eine Überschreitung dieses Punktes führt zu einer Stagnation der Ergebnisqualität. Bei einer zu geringen Anzahl an Wörtern im Textkorpus (n < 10) konnten keine Scoring-Werte generiert werden. Die Generierung von Stichpunkten durch das System ist nur möglich, wenn die entsprechenden Schlüsselwörter vorhanden sind, da andernfalls keine Zuordnung erfolgen kann.
 \begin{center}
 	\begin{tabularx}{1\textwidth} { 
 			| >{\raggedright\arraybackslash}X 
@@ -103,7 +102,7 @@ In der Abbildung \ref{fig:woertervsscore} wird das Verhältnis der Anzahl an Wö
 	\captionof{table}{Gegenüberstellung der Ergebnisse mit 4000 und 8070 Wörtern im Textkorpus.}
 	\label{tab:gegenüberstellung-e1}
 \end{center}
-In der Tabelle \ref{tab:gegenüberstellung-e1} erfolgt eine Gegenüberstellung der Ergebnisse bei einer Wortanzahl von 4.000 bzw. 8.0070 Wörtern. In der linken Spalte findet sich das Resultat mit dem höchsten Score. Das darauffolgende Ergebnis in der rechten Spalte ist Bestandteil des beobachteten Plateaus. Der Unterschied zwischen den beiden Resultaten manifestiert sich in der linken Spalte, Punkt 7, beim Stichwort \emph{d. h. interessiert}. Dieses ist auf der rechten Seite der Tabelle in Punkt 6 zu finden. Der Unterschied ist marginal, sodass der Beginn der Plateaus ab 8070 Wörtern als Anhaltspunkt für die weitere Evaluation verwendet werden kann.
+In der Tabelle \ref{tab:gegenüberstellung-e1} erfolgt eine Gegenüberstellung der Ergebnisse bei einer Wortanzahl von 4.000 bzw. 8.0070 Wörtern. In der linken Spalte findet sich das Resultat mit dem höchsten Score. Das darauffolgende Ergebnis in der rechten Spalte ist Bestandteil des beobachteten Plateaus. Der Unterschied zwischen den beiden Resultaten manifestiert sich in der linken Spalte, Punkt 7, beim Stichwort \emph{d. h. interessiert}. Dieses ist auf der rechten Seite der Tabelle in Punkt 6 zu finden. Der Unterschied ist marginal, sodass der Beginn der Plateaus ab 8070 Wörtern als Anhaltspunkt für die weitere Evaluation verwendet werden kann. Auch wenn bei Durchlauf zwei (rot) und drei (grün) der lineare Zusammenhang nicht unmittelbar ersichtlich ist, lässt sich bei einer manuellen Betrachtung der Ergebnisse feststellen, dass die Ergebnisqualität mit einem entsprechend großen Korpus besser ist als mit einem kleinen Korpus. Bei einem zu geringen Umfang des Korpus liegt die Stichwortmenge auch bei einer längeren synthetischen Datenreihe bei 0 bis 4, wodurch ein zu geringer Informationsgehalt zu verzeichnen ist.
 \paragraph{2. Scorethreshold}\mbox{}\\
 Die vorliegende These beschreibt, dass die Qualität von Schlüsselwörtern durch einen Threshold-Parameter optimiert werden kann. Wörter, die den Threshold unterschreiten, werden bei der Ermittlung der Schlüsselwörter nicht berücksichtigt, wodurch Wörter mit einem niedrigen Scoring keine Berücksichtigung finden. Ein niedriger Score kann darauf hinweisen, dass ein Wort lediglich einmalig im Kontext vorkommt und folglich kein Schlüsselwort darstellt.\\
 
@@ -148,46 +147,47 @@ In der Abbildung \ref{fig:thresholdvsscore} ist das Diagramm dargestellt, das di
 	\captionof{table}{Gegenüberstellung der Ergebnisse mit dem Threshold 0.0 und 0.05.}
 	\label{tab:gegenüberstellung-e2}
 \end{center}
-Eine manuelle Betrachtung der Ergebnisse hat gezeigt, dass ohne die Anwendung eines Thresholds eine deutliche Zunahme der Stichpunktlänge von 2-5 Wörtern pro Stichpunkt zu 2-9 Wörtern pro Stichpunkt zu verzeichnen ist. Dies ist in Tabelle \ref{tab:gegenüberstellung-e2} durch die Ergebnisse mit den Thresholds 0.0 und 0.05 dargestellt. Die Inhalte der Stichpunkte sind von hoher Relevanz, was zu einem entsprechend hohen Score führt. Dennoch kann ein geringer Threshold einen positiven Effekt auf die Stichpunkte ausüben auch wenn der Score dadurch leicht abfällt. Der direkte manuelle Vergleich hat ergeben, dass für die ausgewählte Ausgangslage ein Score im Bereich von 0.04 bis 0.07 die Stichpunkte verkürzt werden, ohne die wichtigen Informationen zu beeinträchtigen. Somit kann für die weitere Evaluation der Wert 0.05 aus der Gegenüberstellung weiter verwendet werden.
+Eine manuelle Betrachtung der Ergebnisse hat gezeigt, dass ohne die Anwendung eines Thresholds eine deutliche Zunahme der Stichpunktlänge von 2-5 Wörtern pro Stichpunkt zu 2-9 Wörtern pro Stichpunkt zu verzeichnen ist. Dies ist in Tabelle \ref{tab:gegenüberstellung-e2} durch die Ergebnisse mit den Thresholds 0.0 und 0.05 dargestellt. Die Inhalte der Stichpunkte sind von hoher Relevanz, was zu einem entsprechend hohen Score führt. Dennoch kann ein geringer Threshold einen positiven Effekt auf die Stichpunkte ausüben auch wenn der Score dadurch leicht abfällt. Der direkte manuelle Vergleich hat ergeben, dass für die ausgewählte Ausgangslage ein Score im Bereich von 0.04 bis 0.07 die Stichpunkte verkürzt werden, ohne die wichtigen Informationen zu beeinträchtigen. Somit kann für die weitere Evaluation der Wert 0.05 aus der Gegenüberstellung weiter verwendet werden. Auch bei Durchlauf zwei (rot) und drei (grün) lassen sich ähnliche Ergebnisse erkennen. Der fallende Trend ist ebenfalls erkennbar.
 \paragraph{3. POS-Tagging Kombinationen erlauben}\mbox{}\\
 Die hier vorgestellte These besagt, dass die Qualität der Stichpunkte durch die Entfernung von untypischen Wortkombinationen beeinträchtigt wird. Durch fehlende Entfernung untypischer Wortkombinationen könnten Stichpunkte entstehen, die inhaltlich eine geringere Kohärenz beinhalten und dadurch auch einen geringeren Score erhalten.\\
 
-Die in Kapitel \ref{postagging} präsentierte Liste mit POS-Tagging-Kombinationen wird im Folgenden schrittweise modifiziert, um die zugrundeliegende These zu überprüfen.
-\begin{figure}[H]
-	\centering  
-	\includegraphics[width=\linewidth]{plot/e3-wortkombinationen-score.png}
-	\caption{Diagramm zur Anzahl von zu entfernenden Wortartenkombinationen im Verhältnis zum Score.}
-	\label{fig:wordcombinationvsscore}
-\end{figure}\mbox{} \\
-In der Abbildung \ref{fig:wordcombinationvsscore} ist das Diagramm zur Anzahl der zu entfernenden Wortartenkombinationen im Verhältnis zum Score dargestellt. Die Werte auf der X-Achse quantifizieren die Anzahl der enthaltenen Wortkombinationen. Der Wert 0 entspricht der Durchführung des Systems ohne den Schritt der Entfernung von untypischen Wortkombinationen. Der Wert 8 stellt demgemäß den Schritt dar, bei dem sämtliche acht Kombinationen aus der Tabelle \ref{tab:wortkombinationen} aus dem Kapitel \ref{postagging} in die Auswertung einbezogen sind. Die Werte dazwischen repräsentieren die jeweilige Anzahl der zu dem Zeitpunkt enthaltenen Kombinationen. 
-\begin{center}
-	\begin{tabularx}{1\textwidth} { 
-			| >{\raggedright\arraybackslash}X 
-			|| >{\raggedright\arraybackslash}X | }
-		\hline
-		Anz. untypischer Wortkombinationen: 1
-		& Anz. untypischer Wortkombinationen: 2 \\
-		\hline
-		\begin{itemize}[topsep=0pt]
-			\itemsep-0.5em
-			\item die Aufgabe
-			\item Entwicklungsplattform zur Aufgabenunterstützung
-			\item OpenAI, Java, ReactJS
-			\item Backend Java würde
-			\item begrüßen das Projekt Los
-			\item Plattformerfahrung Kenntnisse Softwareentwicklung Java erwünscht
-			\item 2 Jahre
-		\end{itemize} & \begin{itemize}[topsep=0pt]
-			\itemsep-0.5em
-			\item 
-		\end{itemize}\\
-		\hline
-	\end{tabularx}\\
-	\captionof{table}{Gegenüberstellung der Ergebnisse mit 1 und 2 untypischen Wortkombinationen.}
-	\label{tab:gegenüberstellung-e3}
-\end{center}
-Es lässt sich erkennen, dass sich der Score von 0,84529346 auf 0,85460645 verbessert hat, nachdem im Schritt 2 die zu entfernende Kombination aus Verb und Adjektiv hinzugefügt wurde. Dies belegt, dass die aufgestellte These korrekt ist und das System durch die Entfernung untypischer Wortkombinationen ein besseres Ergebnis liefert.
-\todo{nochmal gucken. Kann die Werte nicht mehr reproduzieren}
+Nach Abschluss aller drei Durchläufe ist festzustellen, dass sich das Scoring nicht verändert hat. Dies lässt sich auf die Nicht-Existenz der Wortartenkombinationen innerhalb der gewählten synthetischen Daten zurückführen. Ein weiterer Grund für die fehlende Signifikanz könnte jedoch auch in der Unhaltbarkeit des gewählten Ansatzes liegen. In Konsequenz kann die untersuchte These weder als wahr noch als falsch klassifiziert werden.
+%Die in Kapitel \ref{postagging} präsentierte Liste mit POS-Tagging-Kombinationen wird im Folgenden schrittweise modifiziert, um die zugrundeliegende These zu überprüfen.
+%\begin{figure}[H]
+%	\centering  
+%	\includegraphics[width=\linewidth]{plot/e3-wortkombinationen-score.png}
+%	\caption{Diagramm zur Anzahl von zu entfernenden Wortartenkombinationen im Verhältnis zum Score.}
+%	\label{fig:wordcombinationvsscore}
+%\end{figure}\mbox{} \\
+%In der Abbildung \ref{fig:wordcombinationvsscore} ist das Diagramm zur Anzahl der zu entfernenden Wortartenkombinationen im Verhältnis zum Score dargestellt. Die Werte auf der X-Achse quantifizieren die Anzahl der enthaltenen Wortkombinationen. Der Wert 0 entspricht der Durchführung des Systems ohne den Schritt der Entfernung von untypischen Wortkombinationen. Der Wert 8 stellt demgemäß den Schritt dar, bei dem sämtliche acht Kombinationen aus der Tabelle \ref{tab:wortkombinationen} aus dem Kapitel \ref{postagging} in die Auswertung einbezogen sind. Die Werte dazwischen repräsentieren die jeweilige Anzahl der zu dem Zeitpunkt enthaltenen Kombinationen. 
+%\begin{center}
+%	\begin{tabularx}{1\textwidth} { 
+%			| >{\raggedright\arraybackslash}X 
+%			|| >{\raggedright\arraybackslash}X | }
+%		\hline
+%		Anz. untypischer Wortkombinationen: 1
+%		& Anz. untypischer Wortkombinationen: 2 \\
+%		\hline
+%		\begin{itemize}[topsep=0pt]
+%			\itemsep-0.5em
+%			\item die Aufgabe
+%			\item Entwicklungsplattform zur Aufgabenunterstützung
+%			\item OpenAI, Java, ReactJS
+%			\item Backend Java würde
+%			\item begrüßen das Projekt Los
+%			\item Plattformerfahrung Kenntnisse Softwareentwicklung Java erwünscht
+%			\item 2 Jahre
+%		\end{itemize} & \begin{itemize}[topsep=0pt]
+%			\itemsep-0.5em
+%			\item 
+%		\end{itemize}\\
+%		\hline
+%	\end{tabularx}\\
+%	\captionof{table}{Gegenüberstellung der Ergebnisse mit 1 und 2 untypischen Wortkombinationen.}
+%	\label{tab:gegenüberstellung-e3}
+%\end{center}
+%Es lässt sich erkennen, dass sich der Score von 0,84529346 auf 0,85460645 verbessert hat, nachdem im Schritt 2 die zu entfernende Kombination aus Verb und Adjektiv hinzugefügt wurde. Dies belegt, dass die aufgestellte These korrekt ist und das System durch die Entfernung untypischer Wortkombinationen ein besseres Ergebnis liefert.
+%\todo{nochmal gucken. Kann die Werte nicht mehr reproduzieren}
 \paragraph{4. Übersetzung beibehalten}\mbox{}\\
 Die These lautet, dass die implementierten Ansätze ohne eine Übersetzung ins Englische zu schlechteren Ergebnissen führen. Die These basiert auf der Annahme, dass die Modelle mit englischen Datensätzen trainiert wurden und daher bei der Anwendung auf deutsche Wörter möglicherweise nicht die optimalen Ergebnisse liefern.\\
 
@@ -226,7 +226,7 @@ Die nachfolgende Tabelle \ref{tab:gegenüberstellung-e4} präsentiert eine Gegen
 \paragraph{Zusätzliche Erkenntnis}\mbox{}\\
 Im Rahmen der Evaluierung wurde ersichtlich, dass die eigentlich essenzielle Abfolge des erst Übersetzens und anschließenden Vorverarbeitens eine Problematik generiert. Die ursprüngliche Überlegung zur Reihenfolge des Vorübersetzens basierte auf der Annahme, dass beim Vorverarbeiten Satzzeichen entfernt werden, wodurch die Möglichkeit verloren geht, einzelne Satzkontexte zu identifizieren. Dies würde eine Reduktion der Übersetzungsqualität zur Folge haben. Es hat sich gezeigt, dass Formatierungszeichen wie \textbackslash r \textbackslash n dazu führen, dass nach der Übersetzung Situationen entstehen, die die ursprüngliche Struktur der Wörter nicht mehr erkennen lassen. So wird aus dem nicht zusammengehörenden Wörtern \emph{Java\textbackslash r\textbackslash nSpring} nach der Übersetzung das zusammengesetzte Wort \emph{JavarnSpring}. Diese Problematik ist auf die Funktionsweise der Übersetzungsfunktion zurückzuführen. Um das genannte Problem zu umgehen, wird eine Entfernung der genannten Formatierungen noch vor der Übersetzung durchgeführt, wodurch das Problem gelöst wird.\\
 
-Des Weiteren wurde festgestellt, dass in einigen Fällen ein Kontext der zeitbezogenen Daten wünschenswert wäre. Die ermittelten Zeiten sind korrekt, allerdings fehlen Angaben dazu, wofür die Zeiten stehen. In dem Datensatz aus der Evaluation werden die 2 Jahre korrekt identifiziert, allerdings fehlt die Information, dass es sich bei den 2 Jahren um Java-Erfahrung handelt.\\
+Des Weiteren wurde festgestellt, dass in einigen Fällen ein Kontext der zeitbezogenen Daten wünschenswert wäre. Die ermittelten Zeiten sind korrekt, allerdings fehlen Angaben dazu, wofür die Zeiten stehen. In dem Datensatz aus der Evaluation werden die 2 Jahre korrekt identifiziert, allerdings fehlt die Information, dass es sich bei den 2 Jahren um Java-Erfahrung handelt. Im zweiten Durchlauf ist eine Information enthalten, dass mehr als 10 Jahre Erfahrung nicht notwendig ist. Dies wurde durch das System interpretiert als benötigte 10 Jahre Erfahrung.\\
 
 Es besteht weiterhin Optimierungspotenzial hinsichtlich der Stichpunkte. Auch wenn Anpassungen an den Parametern vorgenommen wurden, weist ein Teil der Ergebnisse unwichtigen Informationsgehalt auf. Auch die Struktur der Stichpunkte weisen untypische und unvollständige Abschnitte auf, wie es im finalen Ergebnis aus der Tabelle \ref{tab:gegenüberstellung-e4} mit dem Punkt \emph{begrüßen das Projekt Los} zu entnehmen ist. Dennoch werden die wichtigsten Informationen zusammengetragen, sodass der Prototyp einen Schritt in Richtung eines funktionsfähigen Systems darstellt.
 %\section{Vergleich des Systems mit einem Large Language Model-Ansatz}
