@@ -24,66 +24,67 @@
 \contentsline {paragraph}{\nonumberline 5. Rücküberprüfung des Kategoriesystems am Ausgangsmaterial}{16}{paragraph*.33}%
 \contentsline {section}{\numberline {2.7}Interpretation der Ergebnisse}{16}{section.2.7}%
 \contentsline {paragraph}{\nonumberline Aktuelle Struktur einer Bedarfsmeldung}{17}{paragraph*.36}%
-\contentsline {section}{\numberline {2.8}Strukturierung von Bedarfsmeldungen}{19}{section.2.8}%
-\contentsline {chapter}{\numberline {3}Konzeptionierung}{21}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Idee des Recommender System zur Mitarbeiterempfehlung}{21}{section.3.1}%
-\contentsline {paragraph}{\nonumberline Recommender Systems Historie und aktueller Stand der Forschung}{21}{paragraph*.41}%
-\contentsline {paragraph}{\nonumberline Information Retrieval und Information Filtering}{23}{paragraph*.43}%
-\contentsline {section}{\numberline {3.2}Anforderungsanalyse}{24}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Anwendungsfälle}{25}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Anforderungen}{26}{subsection.3.2.2}%
-\contentsline {subsubsection}{\nonumberline Funktionale Anforderungen}{26}{subsubsection*.46}%
-\contentsline {subsubsection}{\nonumberline Nichtfunktionale Anforderungen}{27}{subsubsection*.48}%
-\contentsline {subsection}{\numberline {3.2.3}Ablauf des Systems}{28}{subsection.3.2.3}%
-\contentsline {chapter}{\numberline {4}Literaturüberblick}{29}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Techniken}{29}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Ergebnis}{37}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Umsetzung}{38}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Beschreibung}{38}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Konkreter Ablauf der Pipeline}{38}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Implementationsdetails}{40}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Pipeline}{40}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Projektstruktur}{40}{subsection.5.3.2}%
+\contentsline {section}{\numberline {2.8}Strukturierung von Bedarfsmeldungen}{18}{section.2.8}%
+\contentsline {chapter}{\numberline {3}Konzeptionierung}{20}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Idee des Recommender System zur Mitarbeiterempfehlung}{20}{section.3.1}%
+\contentsline {paragraph}{\nonumberline Recommender Systems Historie und aktueller Stand der Forschung}{20}{paragraph*.41}%
+\contentsline {paragraph}{\nonumberline Information Retrieval und Information Filtering}{22}{paragraph*.43}%
+\contentsline {section}{\numberline {3.2}Anforderungsanalyse}{23}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Anwendungsfälle}{24}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Anforderungen}{25}{subsection.3.2.2}%
+\contentsline {subsubsection}{\nonumberline Funktionale Anforderungen}{25}{subsubsection*.46}%
+\contentsline {subsubsection}{\nonumberline Nichtfunktionale Anforderungen}{26}{subsubsection*.48}%
+\contentsline {subsection}{\numberline {3.2.3}Ablauf des Systems}{27}{subsection.3.2.3}%
+\contentsline {chapter}{\numberline {4}Literaturüberblick}{28}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Techniken}{28}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Ergebnis}{36}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Umsetzung}{37}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Beschreibung}{37}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Konkreter Ablauf der Pipeline}{37}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Implementationsdetails}{39}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Pipeline}{39}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Projektstruktur}{39}{subsection.5.3.2}%
 \contentsline {subsection}{\numberline {5.3.3}Modulimplementationen}{40}{subsection.5.3.3}%
-\contentsline {paragraph}{\nonumberline Strukturierung von Bedarfsmeldungen}{41}{paragraph*.60}%
-\contentsline {paragraph}{\nonumberline Übersetzung}{41}{paragraph*.62}%
-\contentsline {paragraph}{\nonumberline NER}{42}{paragraph*.64}%
-\contentsline {paragraph}{\nonumberline Preprocessing}{42}{paragraph*.66}%
-\contentsline {paragraph}{\nonumberline TF-IDF}{43}{paragraph*.68}%
-\contentsline {paragraph}{\nonumberline N-Gramm}{43}{paragraph*.70}%
+\contentsline {paragraph}{\nonumberline Strukturierung von Bedarfsmeldungen}{40}{paragraph*.60}%
+\contentsline {paragraph}{\nonumberline Übersetzung}{40}{paragraph*.62}%
+\contentsline {paragraph}{\nonumberline NER}{41}{paragraph*.64}%
+\contentsline {paragraph}{\nonumberline Preprocessing}{41}{paragraph*.66}%
+\contentsline {paragraph}{\nonumberline TF-IDF}{42}{paragraph*.68}%
+\contentsline {paragraph}{\nonumberline N-Gramm}{42}{paragraph*.70}%
 \contentsline {paragraph}{\nonumberline Entfernung von Bi-Grammen ohne Schlüsselwörter}{43}{paragraph*.72}%
-\contentsline {paragraph}{\nonumberline POS-Tagging}{44}{paragraph*.74}%
-\contentsline {paragraph}{\nonumberline Entfernung von Bi-Grammen mit untypischen Wortartenkombinationen}{45}{paragraph*.76}%
-\contentsline {paragraph}{\nonumberline Überführung von Bi-Grammen in Stichpunkte}{46}{paragraph*.78}%
-\contentsline {chapter}{\numberline {6}Evaluierung}{48}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Versuchsdurchführung}{48}{section.6.1}%
-\contentsline {paragraph}{\nonumberline Word Embedding}{48}{paragraph*.80}%
-\contentsline {paragraph}{\nonumberline Cosine-Similarity}{49}{paragraph*.82}%
-\contentsline {paragraph}{\nonumberline Optimierungsmaßnahmen}{49}{paragraph*.84}%
-\contentsline {paragraph}{\nonumberline Systemspezifikation}{50}{paragraph*.86}%
-\contentsline {section}{\numberline {6.2}Beschreibung des verwendeten Datensatzes}{50}{section.6.2}%
-\contentsline {paragraph}{\nonumberline Ausgangslage}{50}{paragraph*.88}%
-\contentsline {paragraph}{\nonumberline Erwartungshaltung}{51}{paragraph*.90}%
-\contentsline {section}{\numberline {6.3}Präsentation und Diskussion der Ergebnisse}{51}{section.6.3}%
-\contentsline {paragraph}{\nonumberline 1. Korpusgröße der Schlüsselwortextraktion}{51}{paragraph*.92}%
-\contentsline {paragraph}{\nonumberline 2. Scorethreshold}{54}{paragraph*.95}%
-\contentsline {paragraph}{\nonumberline 3. POS-Tagging Kombinationen erlauben}{56}{paragraph*.98}%
-\contentsline {paragraph}{\nonumberline 4. Übersetzung beibehalten}{56}{paragraph*.100}%
-\contentsline {paragraph}{\nonumberline Zusätzliche Erkenntnis}{57}{paragraph*.102}%
-\contentsline {chapter}{\numberline {7}Zusammenfassung und Ausblick}{59}{chapter.7}%
-\contentsline {chapter}{\numberline {A}Anhang}{61}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Interviewtranskripte}{61}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Vorabtest Fragen und Antworten}{61}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Interview 2}{63}{subsection.A.1.2}%
-\contentsline {subsection}{\numberline {A.1.3}Interview 3}{67}{subsection.A.1.3}%
-\contentsline {subsection}{\numberline {A.1.4}Interview 4}{77}{subsection.A.1.4}%
-\contentsline {subsection}{\numberline {A.1.5}Interview 5}{81}{subsection.A.1.5}%
-\contentsline {section}{\numberline {A.2}Paraphrasierung, Generalisierung und Reduktion}{86}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Synthetische Daten}{97}{section.A.3}%
-\contentsline {subsection}{\numberline {A.3.1}Durchlauf zwei}{97}{subsection.A.3.1}%
-\contentsline {paragraph}{\nonumberline Ausgangslage}{97}{paragraph*.105}%
-\contentsline {paragraph}{\nonumberline Erwartungshaltung}{97}{paragraph*.107}%
-\contentsline {subsection}{\numberline {A.3.2}Durchlauf drei}{98}{subsection.A.3.2}%
-\contentsline {paragraph}{\nonumberline Ausgangslage}{98}{paragraph*.109}%
-\contentsline {paragraph}{\nonumberline Erwartungshaltung}{98}{paragraph*.111}%
+\contentsline {paragraph}{\nonumberline POS-Tagging}{43}{paragraph*.74}%
+\contentsline {paragraph}{\nonumberline Entfernung von Bi-Grammen mit untypischen Wortartenkombinationen}{44}{paragraph*.76}%
+\contentsline {paragraph}{\nonumberline Überführung von Bi-Grammen in Stichpunkte}{45}{paragraph*.78}%
+\contentsline {section}{\numberline {5.4}Erklärung des Systems anhand eines Beispiels}{46}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Evaluierung}{49}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Versuchsdurchführung}{49}{section.6.1}%
+\contentsline {paragraph}{\nonumberline Word Embedding}{49}{paragraph*.80}%
+\contentsline {paragraph}{\nonumberline Cosine-Similarity}{50}{paragraph*.82}%
+\contentsline {paragraph}{\nonumberline Optimierungsmaßnahmen}{50}{paragraph*.84}%
+\contentsline {paragraph}{\nonumberline Systemspezifikation}{51}{paragraph*.86}%
+\contentsline {section}{\numberline {6.2}Beschreibung des verwendeten Datensatzes}{51}{section.6.2}%
+\contentsline {paragraph}{\nonumberline Ausgangslage}{51}{paragraph*.88}%
+\contentsline {paragraph}{\nonumberline Erwartungshaltung}{52}{paragraph*.90}%
+\contentsline {section}{\numberline {6.3}Präsentation und Diskussion der Ergebnisse}{52}{section.6.3}%
+\contentsline {paragraph}{\nonumberline 1. Korpusgröße der Schlüsselwortextraktion}{52}{paragraph*.92}%
+\contentsline {paragraph}{\nonumberline 2. Scorethreshold}{55}{paragraph*.95}%
+\contentsline {paragraph}{\nonumberline 3. POS-Tagging Kombinationen erlauben}{57}{paragraph*.98}%
+\contentsline {paragraph}{\nonumberline 4. Übersetzung beibehalten}{57}{paragraph*.100}%
+\contentsline {paragraph}{\nonumberline Zusätzliche Erkenntnis}{58}{paragraph*.102}%
+\contentsline {chapter}{\numberline {7}Zusammenfassung und Ausblick}{60}{chapter.7}%
+\contentsline {chapter}{\numberline {A}Anhang}{62}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Interviewtranskripte}{62}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Vorabtest Fragen und Antworten}{62}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Interview 2}{64}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Interview 3}{68}{subsection.A.1.3}%
+\contentsline {subsection}{\numberline {A.1.4}Interview 4}{78}{subsection.A.1.4}%
+\contentsline {subsection}{\numberline {A.1.5}Interview 5}{82}{subsection.A.1.5}%
+\contentsline {section}{\numberline {A.2}Paraphrasierung, Generalisierung und Reduktion}{87}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Synthetische Daten}{98}{section.A.3}%
+\contentsline {subsection}{\numberline {A.3.1}Durchlauf zwei}{98}{subsection.A.3.1}%
+\contentsline {paragraph}{\nonumberline Ausgangslage}{98}{paragraph*.105}%
+\contentsline {paragraph}{\nonumberline Erwartungshaltung}{98}{paragraph*.107}%
+\contentsline {subsection}{\numberline {A.3.2}Durchlauf drei}{99}{subsection.A.3.2}%
+\contentsline {paragraph}{\nonumberline Ausgangslage}{99}{paragraph*.109}%
+\contentsline {paragraph}{\nonumberline Erwartungshaltung}{99}{paragraph*.111}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
