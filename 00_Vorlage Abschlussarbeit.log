@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  31 JUL 2024 08:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.25)  31 JUL 2024 17:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1807,13 +1807,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 306--308
 
  []
 
-
+[46]
 Overfull \hbox (0.64665pt too wide) in paragraph at lines 309--310
 \T1/lmr/bx/n/12 Migrations- und Im-ple-men-tie-rungs-pro-jek-ten im Um-feld von
  Re-chen-
  []
 
-[46]
+
 Overfull \hbox (0.5233pt too wide) in paragraph at lines 313--314
 \T1/lmr/bx/n/12 planning, coor-di-na-ting, mi-gra-ti-on, im-ple-men-ta-ti-on, d
 a-ta, cen-ter, ser-
@@ -1825,13 +1825,13 @@ Overfull \hbox (2.38383pt too wide) in paragraph at lines 314--316
 ('exe-cu-ting', 'it'),
  []
 
-
+[47]
 Overfull \hbox (8.65474pt too wide) in paragraph at lines 316--317
 \T1/lmr/bx/n/12 ('support', 'pro-ject'), ('pro-ject', 'ma-na-ger'), ('ma-na-ger
 ', 'ex-pe-ri-ence'),
  []
 
-[47]
+
 Underfull \hbox (badness 10000) in paragraph at lines 318--319
 
  []
@@ -1862,7 +1862,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--61
  []
 
 [52]
-<plot/e1-woerter-score.png, id=821, 722.7pt x 433.62pt>
+<plot/e1-woerter-score.png, id=822, 722.7pt x 433.62pt>
 File: plot/e1-woerter-score.png Graphic file (type png)
 <use plot/e1-woerter-score.png>
 Package pdftex.def Info: plot/e1-woerter-score.png  used on input line 65.
@@ -1878,7 +1878,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--108
 
  []
 
-<plot/e2-threshold-score.png, id=833, 722.7pt x 433.62pt>
+<plot/e2-threshold-score.png, id=834, 722.7pt x 433.62pt>
 File: plot/e2-threshold-score.png Graphic file (type png)
 <use plot/e2-threshold-score.png>
 Package pdftex.def Info: plot/e2-threshold-score.png  used on input line 112.
@@ -4272,9 +4272,9 @@ fb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.p
 fb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sy
 mbols/msam10.pfb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
 zapfding/uzdr.pfb>
-Output written on "00_Vorlage Abschlussarbeit.pdf" (113 pages, 1448197 bytes).
+Output written on "00_Vorlage Abschlussarbeit.pdf" (113 pages, 1448198 bytes).
 PDF statistics:
- 1360 PDF objects out of 1440 (max. 8388607)
+ 1361 PDF objects out of 1440 (max. 8388607)
  407 named destinations out of 1000 (max. 500000)
  424 words of extra memory for PDF output out of 10000 (max. 10000000)
 
